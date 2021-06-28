@@ -14,23 +14,23 @@
 <meta property="og:site_name" content="mixley">
 <meta property="og:description" content="相信很多小伙伴在阅读分布式事务相关文章时，都有碰到过，上来就是分析各种解决方案(全局事务、基于可靠消息、最大努力通知、TCC)，又掺杂着两阶段提交协议2PC&#x2F;TCC(提个小问题2PC和TCC的关系?)看似内容丰满，但看完之后没有条理，记不住这么多。今天从分布式事务4种模式的角度，来聊聊分布式事务理论的发展及其模式的迭代。（再往上层走，才是具体实现，具体实现都是必然的事）   常见分布式事务解决方">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://mixley.github.io/2021/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-fc62c13c3039f512328ec5a4c50a5514_720w.jpg">
-<meta property="og:image" content="https://mixley.github.io/2021/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-c2df76b462cd22fcc1b1435113e82e49_720w.jpg">
-<meta property="og:image" content="https://mixley.github.io/2021/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-75048a7c0f655654032213658742b7d5_720w.jpg">
-<meta property="og:image" content="https://mixley.github.io/2021/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-12a2fb645ded74b2ace2728d052a7bff_720w.jpg">
-<meta property="og:image" content="https://mixley.github.io/2021/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-31392058372bc71ad3f14bc738c31033_720w.jpg">
-<meta property="og:image" content="https://mixley.github.io/2021/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-3acebdb0ef0f62da7bff967e0b0eab73_720w.jpg">
-<meta property="og:image" content="https://mixley.github.io/2021/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-db3703aeaee047c39b5ecfd8c65e5c6c_720w.jpg">
-<meta property="og:image" content="https://mixley.github.io/2021/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-4bae80b23dac30a00f22816625481d4e_720w.jpg">
-<meta property="og:image" content="https://mixley.github.io/2021/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-d6fd8568cb4006c71924320f0e96c9af_720w.jpg">
-<meta property="og:image" content="https://mixley.github.io/2021/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-92bee26d8525e2c097c8717e94447e67_720w-1624359859406.jpg">
-<meta property="og:image" content="https://mixley.github.io/2021/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-85d4dcfedf9927854b178a4f46fcd55d_720w-1624359861424.jpg">
+<meta property="og:image" content="https://mixley.github.io/2021/36WRKNE/v2-fc62c13c3039f512328ec5a4c50a5514_720w.jpg">
+<meta property="og:image" content="https://mixley.github.io/2021/36WRKNE/v2-c2df76b462cd22fcc1b1435113e82e49_720w.jpg">
+<meta property="og:image" content="https://mixley.github.io/2021/36WRKNE/v2-75048a7c0f655654032213658742b7d5_720w.jpg">
+<meta property="og:image" content="https://mixley.github.io/2021/36WRKNE/v2-12a2fb645ded74b2ace2728d052a7bff_720w.jpg">
+<meta property="og:image" content="https://mixley.github.io/2021/36WRKNE/v2-31392058372bc71ad3f14bc738c31033_720w.jpg">
+<meta property="og:image" content="https://mixley.github.io/2021/36WRKNE/v2-3acebdb0ef0f62da7bff967e0b0eab73_720w.jpg">
+<meta property="og:image" content="https://mixley.github.io/2021/36WRKNE/v2-db3703aeaee047c39b5ecfd8c65e5c6c_720w.jpg">
+<meta property="og:image" content="https://mixley.github.io/2021/36WRKNE/v2-4bae80b23dac30a00f22816625481d4e_720w.jpg">
+<meta property="og:image" content="https://mixley.github.io/2021/36WRKNE/v2-d6fd8568cb4006c71924320f0e96c9af_720w.jpg">
+<meta property="og:image" content="https://mixley.github.io/2021/36WRKNE/v2-92bee26d8525e2c097c8717e94447e67_720w-1624359859406.jpg">
+<meta property="og:image" content="https://mixley.github.io/2021/36WRKNE/v2-85d4dcfedf9927854b178a4f46fcd55d_720w-1624359861424.jpg">
 <meta property="article:published_time" content="2021-06-28T13:29:34.710Z">
 <meta property="article:modified_time" content="2021-06-28T12:13:54.724Z">
 <meta property="article:author" content="mixley">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://mixley.github.io/2021/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-fc62c13c3039f512328ec5a4c50a5514_720w.jpg">
+<meta name="twitter:image" content="https://mixley.github.io/2021/36WRKNE/v2-fc62c13c3039f512328ec5a4c50a5514_720w.jpg">
   
     <link rel="alternate" href="/atom.xml" title="mixley" type="application/atom+xml">
   
@@ -184,7 +184,7 @@
 </li>
 <li><p>在 AT 模式下，用户只需关注自己的“业务 SQL”，用户的 “业务 SQL” 作为一阶段，Seata 框架会自动生成事务的二阶段提交和回滚操作。</p>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-fc62c13c3039f512328ec5a4c50a5514_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-fc62c13c3039f512328ec5a4c50a5514_720w.jpg" alt="img"></p>
 </li>
 <li><p>AT 模式如何做到对业务的无侵入 ：</p>
 </li>
@@ -192,26 +192,26 @@
 <li>一阶段：<br>在一阶段，Seata 会拦截“业务 SQL”，首先解析 SQL 语义，找到“业务 SQL”要更新的业务数据，在业务数据被更新前，将其保存成“before image”，然后执行“业务 SQL”更新业务数据，在业务数据更新之后，再将其保存成“after image”，最后生成行锁。以上操作全部在一个数据库事务内完成，这样保证了一阶段操作的原子性。</li>
 </ul>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-c2df76b462cd22fcc1b1435113e82e49_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-c2df76b462cd22fcc1b1435113e82e49_720w.jpg" alt="img"></p>
 </li>
 <li><ul>
 <li>二阶段提交：<br>二阶段如果是提交的话，因为“业务 SQL”在一阶段已经提交至数据库， 所以 Seata 框架只需将一阶段保存的快照数据和行锁删掉，完成数据清理即可。</li>
 </ul>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-75048a7c0f655654032213658742b7d5_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-75048a7c0f655654032213658742b7d5_720w.jpg" alt="img"></p>
 </li>
 <li><ul>
 <li>二阶段回滚：<br>二阶段如果是回滚的话，Seata 就需要回滚一阶段已经执行的“业务 SQL”，还原业务数据。回滚方式便是用“before image”还原业务数据；但在还原前要首先要校验脏写，对比“数据库当前业务数据”和 “after image”，如果两份数据完全一致就说明没有脏写，可以还原业务数据，如果不一致就说明有脏写，出现脏写就需要转人工处理。</li>
 </ul>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-12a2fb645ded74b2ace2728d052a7bff_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-12a2fb645ded74b2ace2728d052a7bff_720w.jpg" alt="img"></p>
 </li>
 <li><p>AT 模式的一阶段、二阶段提交和回滚均由 Seata 框架自动生成，用户只需编写“业务 SQL”，便能轻松接入分布式事务，AT 模式是一种对业务无任何侵入的分布式事务解决方案。</p>
 </li>
 <li><h3 id="TCC-模式"><a href="#TCC-模式" class="headerlink" title="TCC 模式"></a><strong>TCC 模式</strong></h3></li>
 <li><p>TCC 模式需要用户根据自己的业务场景实现 Try、Confirm 和 Cancel 三个操作；事务发起方在一阶段执行 Try 方式，在二阶段提交执行 Confirm 方法，二阶段回滚执行 Cancel 方法。</p>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-31392058372bc71ad3f14bc738c31033_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-31392058372bc71ad3f14bc738c31033_720w.jpg" alt="img"></p>
 </li>
 <li><p>TCC 三个方法描述：</p>
 </li>
@@ -230,7 +230,7 @@
 </li>
 <li><p>以“扣钱”场景为例，在接入 TCC 前，对 A 账户的扣钱，只需一条更新账户余额的 SQL 便能完成；但是在接入 TCC 之后，用户就需要考虑如何将原来一步就能完成的扣钱操作，拆成两阶段，实现成三个方法，并且保证一阶段 Try 成功的话 二阶段 Confirm 一定能成功。</p>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-3acebdb0ef0f62da7bff967e0b0eab73_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-3acebdb0ef0f62da7bff967e0b0eab73_720w.jpg" alt="img"></p>
 </li>
 <li><p>如上图所示，Try 方法作为一阶段准备方法，需要做资源的检查和预留。在扣钱场景下，Try 要做的事情是就是检查账户余额是否充足，预留转账资金，预留的方式就是冻结 A 账户的 转账资金。Try 方法执行之后，账号 A 余额虽然还是 100，但是其中 30 元已经被冻结了，不能被其他事务使用。</p>
 </li>
@@ -242,30 +242,30 @@
 </li>
 <li><p><strong>2 TCC 设计 - 允许空回滚：</strong></p>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-db3703aeaee047c39b5ecfd8c65e5c6c_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-db3703aeaee047c39b5ecfd8c65e5c6c_720w.jpg" alt="img"></p>
 </li>
 <li><p>Cancel 接口设计时需要允许空回滚。在 Try 接口因为丢包时没有收到，事务管理器会触发回滚，这时会触发 Cancel 接口，这时 Cancel 执行时发现没有对应的事务 xid 或主键时，需要返回回滚成功。让事务服务管理器认为已回滚，否则会不断重试，而 Cancel 又没有对应的业务数据可以进行回滚。</p>
 </li>
 <li><p><strong>3 TCC 设计 - 防悬挂控制：</strong></p>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-4bae80b23dac30a00f22816625481d4e_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-4bae80b23dac30a00f22816625481d4e_720w.jpg" alt="img"></p>
 </li>
 <li><p>悬挂的意思是：Cancel 比 Try 接口先执行，出现的原因是 Try 由于网络拥堵而超时，事务管理器生成回滚，触发 Cancel 接口，而最终又收到了 Try 接口调用，但是 Cancel 比 Try 先到。按照前面允许空回滚的逻辑，回滚会返回成功，事务管理器认为事务已回滚成功，则此时的 Try 接口不应该执行，否则会产生数据不一致，所以我们在 Cancel 空回滚返回成功之前先记录该条事务 xid 或业务主键，标识这条记录已经回滚过，Try 接口先检查这条事务xid或业务主键如果已经标记为回滚成功过，则不执行 Try 的业务操作。</p>
 </li>
 <li><p><strong>4 TCC 设计 - 幂等控制：</strong></p>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-d6fd8568cb4006c71924320f0e96c9af_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-d6fd8568cb4006c71924320f0e96c9af_720w.jpg" alt="img"></p>
 </li>
 <li><p>幂等性的意思是：对同一个系统，使用同样的条件，一次请求和重复的多次请求对系统资源的影响是一致的。因为网络抖动或拥堵可能会超时，事务管理器会对资源进行重试操作，所以很可能一个业务操作会被重复调用，为了不因为重复调用而多次占用资源，需要对服务设计时进行幂等控制，通常我们可以用事务 xid 或业务主键判重来控制。</p>
 </li>
 <li><h3 id="saga模式"><a href="#saga模式" class="headerlink" title="saga模式"></a><strong>saga模式</strong></h3></li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-92bee26d8525e2c097c8717e94447e67_720w-1624359859406.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-92bee26d8525e2c097c8717e94447e67_720w-1624359859406.jpg" alt="img"></p>
 </li>
 <li><p>Saga 理论出自 Hector &amp; Kenneth 1987发表的论文 Sagas。<br>saga模式的实现，是长事务解决方案。</p>
 </li>
 <li><p>Saga 是一种补偿协议，在 Saga 模式下，分布式事务内有多个参与者，每一个参与者都是一个冲正补偿服务，需要用户根据业务场景实现其正向操作和逆向回滚操作。</p>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-85d4dcfedf9927854b178a4f46fcd55d_720w-1624359861424.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-85d4dcfedf9927854b178a4f46fcd55d_720w-1624359861424.jpg" alt="img"></p>
 </li>
 <li><pre><code>如图：T1~T3都是正向的业务流程，都对应着一个冲正逆向操作C1~C3
 </code></pre>
@@ -327,7 +327,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/36WRKNE.html" data-id="ckqgnrblq0016twjmgcju4yc0" class="article-share-link">Share</a>
+      <a data-url="https://mixley.github.io/2021/36WRKNE.html" data-id="ckqgo7gg0000ogwjm82sbe7lh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li></ul>

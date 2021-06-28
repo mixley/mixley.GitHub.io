@@ -106,7 +106,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/1QSVE77.html" data-id="ckqgnrbli000qtwjm1r0yexc8" class="article-share-link">Share</a>
+      <a data-url="https://mixley.github.io/2021/1QSVE77.html" data-id="ckqgo7gg1000rgwjmg5dja2wc" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring/" rel="tag">spring</a></li></ul>
@@ -147,15 +147,15 @@
         <p>aop依赖·spring-boot-starter-aop</p>
 <p>过滤器—依赖回调（Servlet）</p>
 <p>过滤器的配置比较简单，直接实现Filter 接口即可，也可以通过@WebFilter注解实现对特定URL拦截</p>
-<p><img src="AOP/aop.png" alt="img"></p>
+<p><img src="/2021/2996F6V/aop.png" alt="img"></p>
 <p>拦截器—依赖反射（spring）</p>
 <p>拦截器它是链式调用，通过HandlerInterceptor</p>
-<p><img src="AOP/filter.png" alt="img"></p>
+<p><img src="/2021/2996F6V/filter.png" alt="img"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/2996F6V.html" data-id="ckqgnrblg000ntwjmbp3gae90" class="article-share-link">Share</a>
+      <a data-url="https://mixley.github.io/2021/2996F6V.html" data-id="ckqgo7gg0000pgwjm2z2r1mm0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/aop/" rel="tag">aop</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring/" rel="tag">spring</a></li></ul>
@@ -272,7 +272,7 @@
 </li>
 <li><p>在 AT 模式下，用户只需关注自己的“业务 SQL”，用户的 “业务 SQL” 作为一阶段，Seata 框架会自动生成事务的二阶段提交和回滚操作。</p>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-fc62c13c3039f512328ec5a4c50a5514_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-fc62c13c3039f512328ec5a4c50a5514_720w.jpg" alt="img"></p>
 </li>
 <li><p>AT 模式如何做到对业务的无侵入 ：</p>
 </li>
@@ -280,26 +280,26 @@
 <li>一阶段：<br>在一阶段，Seata 会拦截“业务 SQL”，首先解析 SQL 语义，找到“业务 SQL”要更新的业务数据，在业务数据被更新前，将其保存成“before image”，然后执行“业务 SQL”更新业务数据，在业务数据更新之后，再将其保存成“after image”，最后生成行锁。以上操作全部在一个数据库事务内完成，这样保证了一阶段操作的原子性。</li>
 </ul>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-c2df76b462cd22fcc1b1435113e82e49_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-c2df76b462cd22fcc1b1435113e82e49_720w.jpg" alt="img"></p>
 </li>
 <li><ul>
 <li>二阶段提交：<br>二阶段如果是提交的话，因为“业务 SQL”在一阶段已经提交至数据库， 所以 Seata 框架只需将一阶段保存的快照数据和行锁删掉，完成数据清理即可。</li>
 </ul>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-75048a7c0f655654032213658742b7d5_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-75048a7c0f655654032213658742b7d5_720w.jpg" alt="img"></p>
 </li>
 <li><ul>
 <li>二阶段回滚：<br>二阶段如果是回滚的话，Seata 就需要回滚一阶段已经执行的“业务 SQL”，还原业务数据。回滚方式便是用“before image”还原业务数据；但在还原前要首先要校验脏写，对比“数据库当前业务数据”和 “after image”，如果两份数据完全一致就说明没有脏写，可以还原业务数据，如果不一致就说明有脏写，出现脏写就需要转人工处理。</li>
 </ul>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-12a2fb645ded74b2ace2728d052a7bff_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-12a2fb645ded74b2ace2728d052a7bff_720w.jpg" alt="img"></p>
 </li>
 <li><p>AT 模式的一阶段、二阶段提交和回滚均由 Seata 框架自动生成，用户只需编写“业务 SQL”，便能轻松接入分布式事务，AT 模式是一种对业务无任何侵入的分布式事务解决方案。</p>
 </li>
 <li><h3 id="TCC-模式"><a href="#TCC-模式" class="headerlink" title="TCC 模式"></a><strong>TCC 模式</strong></h3></li>
 <li><p>TCC 模式需要用户根据自己的业务场景实现 Try、Confirm 和 Cancel 三个操作；事务发起方在一阶段执行 Try 方式，在二阶段提交执行 Confirm 方法，二阶段回滚执行 Cancel 方法。</p>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-31392058372bc71ad3f14bc738c31033_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-31392058372bc71ad3f14bc738c31033_720w.jpg" alt="img"></p>
 </li>
 <li><p>TCC 三个方法描述：</p>
 </li>
@@ -318,7 +318,7 @@
 </li>
 <li><p>以“扣钱”场景为例，在接入 TCC 前，对 A 账户的扣钱，只需一条更新账户余额的 SQL 便能完成；但是在接入 TCC 之后，用户就需要考虑如何将原来一步就能完成的扣钱操作，拆成两阶段，实现成三个方法，并且保证一阶段 Try 成功的话 二阶段 Confirm 一定能成功。</p>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-3acebdb0ef0f62da7bff967e0b0eab73_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-3acebdb0ef0f62da7bff967e0b0eab73_720w.jpg" alt="img"></p>
 </li>
 <li><p>如上图所示，Try 方法作为一阶段准备方法，需要做资源的检查和预留。在扣钱场景下，Try 要做的事情是就是检查账户余额是否充足，预留转账资金，预留的方式就是冻结 A 账户的 转账资金。Try 方法执行之后，账号 A 余额虽然还是 100，但是其中 30 元已经被冻结了，不能被其他事务使用。</p>
 </li>
@@ -330,30 +330,30 @@
 </li>
 <li><p><strong>2 TCC 设计 - 允许空回滚：</strong></p>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-db3703aeaee047c39b5ecfd8c65e5c6c_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-db3703aeaee047c39b5ecfd8c65e5c6c_720w.jpg" alt="img"></p>
 </li>
 <li><p>Cancel 接口设计时需要允许空回滚。在 Try 接口因为丢包时没有收到，事务管理器会触发回滚，这时会触发 Cancel 接口，这时 Cancel 执行时发现没有对应的事务 xid 或主键时，需要返回回滚成功。让事务服务管理器认为已回滚，否则会不断重试，而 Cancel 又没有对应的业务数据可以进行回滚。</p>
 </li>
 <li><p><strong>3 TCC 设计 - 防悬挂控制：</strong></p>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-4bae80b23dac30a00f22816625481d4e_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-4bae80b23dac30a00f22816625481d4e_720w.jpg" alt="img"></p>
 </li>
 <li><p>悬挂的意思是：Cancel 比 Try 接口先执行，出现的原因是 Try 由于网络拥堵而超时，事务管理器生成回滚，触发 Cancel 接口，而最终又收到了 Try 接口调用，但是 Cancel 比 Try 先到。按照前面允许空回滚的逻辑，回滚会返回成功，事务管理器认为事务已回滚成功，则此时的 Try 接口不应该执行，否则会产生数据不一致，所以我们在 Cancel 空回滚返回成功之前先记录该条事务 xid 或业务主键，标识这条记录已经回滚过，Try 接口先检查这条事务xid或业务主键如果已经标记为回滚成功过，则不执行 Try 的业务操作。</p>
 </li>
 <li><p><strong>4 TCC 设计 - 幂等控制：</strong></p>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-d6fd8568cb4006c71924320f0e96c9af_720w.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-d6fd8568cb4006c71924320f0e96c9af_720w.jpg" alt="img"></p>
 </li>
 <li><p>幂等性的意思是：对同一个系统，使用同样的条件，一次请求和重复的多次请求对系统资源的影响是一致的。因为网络抖动或拥堵可能会超时，事务管理器会对资源进行重试操作，所以很可能一个业务操作会被重复调用，为了不因为重复调用而多次占用资源，需要对服务设计时进行幂等控制，通常我们可以用事务 xid 或业务主键判重来控制。</p>
 </li>
 <li><h3 id="saga模式"><a href="#saga模式" class="headerlink" title="saga模式"></a><strong>saga模式</strong></h3></li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-92bee26d8525e2c097c8717e94447e67_720w-1624359859406.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-92bee26d8525e2c097c8717e94447e67_720w-1624359859406.jpg" alt="img"></p>
 </li>
 <li><p>Saga 理论出自 Hector &amp; Kenneth 1987发表的论文 Sagas。<br>saga模式的实现，是长事务解决方案。</p>
 </li>
 <li><p>Saga 是一种补偿协议，在 Saga 模式下，分布式事务内有多个参与者，每一个参与者都是一个冲正补偿服务，需要用户根据业务场景实现其正向操作和逆向回滚操作。</p>
 </li>
-<li><p><img src="%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/v2-85d4dcfedf9927854b178a4f46fcd55d_720w-1624359861424.jpg" alt="img"></p>
+<li><p><img src="/2021/36WRKNE/v2-85d4dcfedf9927854b178a4f46fcd55d_720w-1624359861424.jpg" alt="img"></p>
 </li>
 <li><pre><code>如图：T1~T3都是正向的业务流程，都对应着一个冲正逆向操作C1~C3
 </code></pre>
@@ -415,7 +415,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/36WRKNE.html" data-id="ckqgnrblq0016twjmgcju4yc0" class="article-share-link">Share</a>
+      <a data-url="https://mixley.github.io/2021/36WRKNE.html" data-id="ckqgo7gg0000ogwjm82sbe7lh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li></ul>
@@ -459,7 +459,7 @@
 <figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#$&#123;project.artifactId&#125;#$&#123;project.version&#125;#$&#123;project.packaging&#125;#$&#123;project.timestamp&#125;#</span></span><br></pre></td></tr></table></figure>
 
 <p>截图示例：（下面的是目录结构及version中包含的内容）</p>
-<p><img src="version%E7%89%88%E6%9C%AC%E8%87%AA%E5%8A%A8%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6/clip_image002.jpg" alt="img"></p>
+<p><img src="/2021/19RCFHX/clip_image002.jpg" alt="img"></p>
 <p>2、 增加properties</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">   &lt;!— 日期显示格式 --&gt;</span><br><span class="line">   <span class="tag">&lt;<span class="name">maven.build.timestamp.format</span>&gt;</span>yyyy-MM-dd HH:mm:ss<span class="tag">&lt;/<span class="name">maven.build.timestamp.format</span>&gt;</span></span><br><span class="line">   &lt;!— 对应version里面显示的project.timestamp --&gt;</span><br><span class="line">   <span class="tag">&lt;<span class="name">project.timestamp</span>&gt;</span>$&#123;maven.build.timestamp&#125;<span class="tag">&lt;/<span class="name">project.timestamp</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 文件拷贝时的编码 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.build.sourceEncoding</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">project.reporting.outputEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.reporting.outputEncoding</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 编译时的编码 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">maven.compiler.encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">maven.compiler.encoding</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- maven方式跳过maven test, 等同$ mvn package -Dmaven.test.skip=true --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">maven.test.skip</span>&gt;</span>true<span class="tag">&lt;/<span class="name">maven.test.skip</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -470,7 +470,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/19RCFHX.html" data-id="ckqgnrblh000otwjm5hx7fmq2" class="article-share-link">Share</a>
+      <a data-url="https://mixley.github.io/2021/19RCFHX.html" data-id="ckqgo7gfz000ngwjm8zfx99dj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -510,16 +510,16 @@
 <h2 id="Maven生命周期及生命周期绑定"><a href="#Maven生命周期及生命周期绑定" class="headerlink" title="Maven生命周期及生命周期绑定"></a>Maven生命周期及生命周期绑定</h2><h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3><p><strong>package</strong> <strong>即将本地编译好的文件打包为war 或者jar</strong> </p>
 <p><strong>install</strong> <strong>将打包的代码存放到本地maven仓库，可供本地其它项目依赖使用</strong> </p>
 <p><strong>deploy</strong> <strong>将打包在本地仓库中的项目发到服务器，供他人依赖使用</strong> </p>
-<p><img src="MAVEN%E4%BD%BF%E7%94%A8/clip_image002.png" alt="img"></p>
-<h3 id="Plugins绑定maven生命周期"><a href="#Plugins绑定maven生命周期" class="headerlink" title="Plugins绑定maven生命周期"></a>Plugins绑定maven生命周期</h3><p>新建一个plugin工具后，通过**<executions><phase><strong>绑定生命周期，maven-</strong>-plugin的groupId为org.apache.maven.plugins一般都有<strong>默认的生命周期</strong>。如maven-jar-plugin</p>
-<p><img src="MAVEN%E4%BD%BF%E7%94%A8/clip_image004.jpg" alt="img"></p>
-<h2 id="无法在maven中引用的lib包处理"><a href="#无法在maven中引用的lib包处理" class="headerlink" title="无法在maven中引用的lib包处理"></a>无法在maven中引用的lib包处理</h2><h3 id="Idea使用时报错处理"><a href="#Idea使用时报错处理" class="headerlink" title="Idea使用时报错处理"></a>Idea使用时报错处理</h3><p><img src="MAVEN%E4%BD%BF%E7%94%A8/clip_image006.jpg" alt="img"></p>
-<h3 id="Maven编译打包报错时处理"><a href="#Maven编译打包报错时处理" class="headerlink" title="Maven编译打包报错时处理"></a>Maven编译打包报错时处理</h3><p><img src="MAVEN%E4%BD%BF%E7%94%A8/clip_image008.jpg" alt="img"></p>
+<p><img src="/2021/S3R6PQ/clip_image002.png" alt="img"></p>
+<h3 id="Plugins绑定maven生命周期"><a href="#Plugins绑定maven生命周期" class="headerlink" title="Plugins绑定maven生命周期"></a>Plugins绑定maven生命周期</h3><p>新建一个plugin工具后，通过**<executions><phase><strong>绑定生命周期，maven-</strong>-plugin的groupId为org.apache.maven.plugins一般都有<strong>默认的生命周期</strong>。如maven-jar-plugin</phase></executions></p>
+<p><img src="/2021/S3R6PQ/clip_image004.jpg" alt="img"></p>
+<h2 id="无法在maven中引用的lib包处理"><a href="#无法在maven中引用的lib包处理" class="headerlink" title="无法在maven中引用的lib包处理"></a>无法在maven中引用的lib包处理</h2><h3 id="Idea使用时报错处理"><a href="#Idea使用时报错处理" class="headerlink" title="Idea使用时报错处理"></a>Idea使用时报错处理</h3><p><img src="/2021/S3R6PQ/clip_image006.jpg" alt="img"></p>
+<h3 id="Maven编译打包报错时处理"><a href="#Maven编译打包报错时处理" class="headerlink" title="Maven编译打包报错时处理"></a>Maven编译打包报错时处理</h3><p><img src="/2021/S3R6PQ/clip_image008.jpg" alt="img"></p>
 <h2 id="Maven项目Version版本自动写入文件"><a href="#Maven项目Version版本自动写入文件" class="headerlink" title="Maven项目Version版本自动写入文件"></a>Maven项目Version版本自动写入文件</h2><h3 id="resources目录下-新增文件version"><a href="#resources目录下-新增文件version" class="headerlink" title="resources目录下 新增文件version"></a>resources目录下 新增文件version</h3><p>内容复制为：</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#$&#123;project.artifactId&#125;#$&#123;project.version&#125;#$&#123;project.packaging&#125;#$&#123;project.timestamp&#125;#</span><br></pre></td></tr></table></figure>
 
 <p>截图示例：（下面的是目录结构及version中包含的内容）</p>
-<p><img src="MAVEN%E4%BD%BF%E7%94%A8/clip_image010.jpg" alt="img"></p>
+<p><img src="/2021/S3R6PQ/clip_image010.jpg" alt="img"></p>
 <h3 id="Properties配置"><a href="#Properties配置" class="headerlink" title="Properties配置"></a>Properties配置</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">   &lt;!— 日期显示格式 --&gt;</span><br><span class="line">   <span class="tag">&lt;<span class="name">maven.build.timestamp.format</span>&gt;</span>yyyy-MM-dd HH:mm:ss<span class="tag">&lt;/<span class="name">maven.build.timestamp.format</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  &lt;!— 对应version里面显示的project.timestamp --&gt;</span><br><span class="line">   <span class="tag">&lt;<span class="name">project.timestamp</span>&gt;</span>$&#123;maven.build.timestamp&#125;<span class="tag">&lt;/<span class="name">project.timestamp</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 文件拷贝时的编码 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.build.sourceEncoding</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">project.reporting.outputEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.reporting.outputEncoding</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 编译时的编码 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">maven.compiler.encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">maven.compiler.encoding</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- maven方式跳过maven test, 等同$ mvn package -Dmaven.test.skip=true --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">maven.test.skip</span>&gt;</span>true<span class="tag">&lt;/<span class="name">maven.test.skip</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="Build配置"><a href="#Build配置" class="headerlink" title="Build配置"></a>Build配置</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">finalName</span>&gt;</span>$&#123;artifactId&#125;<span class="tag">&lt;/<span class="name">finalName</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">       <span class="comment">&lt;!-- 编译配置，source源码版本target编译器版本1.7表示jdk7 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.6.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">encoding</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">source</span>&gt;</span>1.7<span class="tag">&lt;/<span class="name">source</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">target</span>&gt;</span>1.7<span class="tag">&lt;/<span class="name">target</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 编译帮助工具，这里用作时区转换工具 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.codehaus.mojo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>build-helper-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">&lt;!— 执行这个命令timestamp-property --&gt;</span><br><span class="line">                        <span class="tag">&lt;<span class="name">goal</span>&gt;</span>timestamp-property<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">&lt;!— 生命周期 validate时执行--&gt;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">phase</span>&gt;</span>validate<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">&lt;!— 替换project.timestamp的值(没有这里时区是UTC)--&gt;</span><br><span class="line">                        <span class="tag">&lt;<span class="name">name</span>&gt;</span>project.timestamp<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">pattern</span>&gt;</span>$&#123;maven.build.timestamp.format&#125;<span class="tag">&lt;/<span class="name">pattern</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">timeZone</span>&gt;</span>GMT+8<span class="tag">&lt;/<span class="name">timeZone</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">&lt;!— 处理资源文件 --&gt;</span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-resources-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">&lt;!— 生命周期 validate时执行--&gt;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">phase</span>&gt;</span>validate<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">goal</span>&gt;</span>copy-resources<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">outputDirectory</span>&gt;</span>$&#123;project.build.directory&#125;/$&#123;project.build.finalName&#125;<span class="tag">&lt;/<span class="name">outputDirectory</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">                                <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/resources<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">                                <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>true<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">                                <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                                    &lt;!— 选择文件--&gt;</span><br><span class="line">                                    <span class="tag">&lt;<span class="name">include</span>&gt;</span>version<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                                <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -535,7 +535,7 @@
 <h3 id="配置清理及不清理的文件maven-clean-plugin"><a href="#配置清理及不清理的文件maven-clean-plugin" class="headerlink" title="配置清理及不清理的文件maven-clean-plugin"></a>配置清理及不清理的文件maven-clean-plugin</h3><p>**(<strong>与绑定生命周期一起用时，可以在package时清理一些指定文件)</strong></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span>     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-clean-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>     <span class="tag">&lt;<span class="name">configuration</span>&gt;</span>         <span class="tag">&lt;<span class="name">filesets</span>&gt;</span>             <span class="tag">&lt;<span class="name">fileset</span>&gt;</span>                 <span class="tag">&lt;<span class="name">directory</span>&gt;</span>deploy/release<span class="tag">&lt;/<span class="name">directory</span>&gt;</span>                 <span class="tag">&lt;<span class="name">excludes</span>&gt;</span>                     <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>BusControl.properties<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span>                     <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>排除文件.jar<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span>                 <span class="tag">&lt;/<span class="name">excludes</span>&gt;</span>             <span class="tag">&lt;/<span class="name">fileset</span>&gt;</span>         <span class="tag">&lt;/<span class="name">filesets</span>&gt;</span>     <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span> <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h2 id="多模块项目（重复工作放在一个模块下）"><a href="#多模块项目（重复工作放在一个模块下）" class="headerlink" title="多模块项目（重复工作放在一个模块下）"></a>多模块项目（重复工作放在一个模块下）</h2><h3 id="多模块展示及创建方法（主模块右击新建模块）"><a href="#多模块展示及创建方法（主模块右击新建模块）" class="headerlink" title="多模块展示及创建方法（主模块右击新建模块）"></a>多模块展示及创建方法<strong>（主模块右击新建模块）</strong></h3><p><img src="MAVEN%E4%BD%BF%E7%94%A8/clip_image012.jpg" alt="img"><img src="MAVEN%E4%BD%BF%E7%94%A8/clip_image014.jpg" alt="img"></p>
+<h2 id="多模块项目（重复工作放在一个模块下）"><a href="#多模块项目（重复工作放在一个模块下）" class="headerlink" title="多模块项目（重复工作放在一个模块下）"></a>多模块项目（重复工作放在一个模块下）</h2><h3 id="多模块展示及创建方法（主模块右击新建模块）"><a href="#多模块展示及创建方法（主模块右击新建模块）" class="headerlink" title="多模块展示及创建方法（主模块右击新建模块）"></a>多模块展示及创建方法<strong>（主模块右击新建模块）</strong></h3><p><img src="/2021/S3R6PQ/clip_image012.jpg" alt="img"><img src="/2021/S3R6PQ/clip_image014.jpg" alt="img"></p>
 <h3 id="指定项目中公有的模块"><a href="#指定项目中公有的模块" class="headerlink" title="指定项目中公有的模块"></a>指定项目中公有的模块</h3><p><strong>父pom指定公用模块</strong></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--指定项目中公有的模块--&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">dependencyManagement</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.newland<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>Utils<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;project.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">dependencyManagement</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -560,13 +560,13 @@
 <h3 id="Maven-引用的jar包导致的冲突（dependencies工具）"><a href="#Maven-引用的jar包导致的冲突（dependencies工具）" class="headerlink" title="**Maven ** 引用的jar包导致的冲突（dependencies工具）"></a>**Maven ** 引用的jar包导致的冲突（dependencies工具）</h3><p>可以直接用exclusions排除，或者使用show dependencies查看冲突关系</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span>     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.struts<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>struts-core<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>     <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.3.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span>     <span class="tag">&lt;<span class="name">exclusions</span>&gt;</span>         <span class="tag">&lt;<span class="name">exclusion</span>&gt;</span>             <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>org.apache.commons<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>             <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>commons-lang3<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>         <span class="tag">&lt;/<span class="name">exclusion</span>&gt;</span>     <span class="tag">&lt;/<span class="name">exclusions</span>&gt;</span> <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="MAVEN%E4%BD%BF%E7%94%A8/clip_image016.jpg" alt="img"></p>
-<p><img src="MAVEN%E4%BD%BF%E7%94%A8/clip_image018.jpg" alt="img"></p>
+<p><img src="/2021/S3R6PQ/clip_image016.jpg" alt="img"></p>
+<p><img src="/2021/S3R6PQ/clip_image018.jpg" alt="img"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/S3R6PQ.html" data-id="ckqgnrblg000mtwjm02o03wyw" class="article-share-link">Share</a>
+      <a data-url="https://mixley.github.io/2021/S3R6PQ.html" data-id="ckqgo7gfz000mgwjm5ilqe8w6" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li></ul>
@@ -612,7 +612,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/22QZT25.html" data-id="ckqgnrblb000btwjm9rim5ekw" class="article-share-link">Share</a>
+      <a data-url="https://mixley.github.io/2021/22QZT25.html" data-id="ckqgo7gfu000cgwjm8n0jae55" class="article-share-link">Share</a>
       
       
     </footer>
@@ -656,7 +656,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/33EC4YR.html" data-id="ckqgnrbla0009twjm8uljedy8" class="article-share-link">Share</a>
+      <a data-url="https://mixley.github.io/2021/33EC4YR.html" data-id="ckqgo7gfs000agwjmamswecko" class="article-share-link">Share</a>
       
       
     </footer>
@@ -696,7 +696,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/1GZ10CQ.html" data-id="ckqgnrblc000ctwjm5f6xeyl2" class="article-share-link">Share</a>
+      <a data-url="https://mixley.github.io/2021/1GZ10CQ.html" data-id="ckqgo7gft000bgwjm9zr9abmr" class="article-share-link">Share</a>
       
       
     </footer>
@@ -737,7 +737,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/2PH6SP6.html" data-id="ckqgnrbla000atwjmcetr6p1o" class="article-share-link">Share</a>
+      <a data-url="https://mixley.github.io/2021/2PH6SP6.html" data-id="ckqgo7gfr0009gwjm930n4m2b" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li></ul>
@@ -781,21 +781,21 @@
 <p>Git设置中完善名称与Emial信息，用户密码信息也可以使用命令行</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;</span><br><span class="line">git config --global user.email &quot;email@mail.com&quot;</span><br></pre></td></tr></table></figure>
 
-<p><img src="git/image-20210628205042362.png" alt="image-20210628205042362"></p>
+<p><img src="/2021/18RWRBW/image-20210628205042362.png" alt="image-20210628205042362"></p>
 <h3 id="设置SSH密钥"><a href="#设置SSH密钥" class="headerlink" title="设置SSH密钥"></a>设置SSH密钥</h3><p>可以使用命令行或者PuTTygen</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">命令行</span></span><br><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
 
 <p>打开PuTTygen，选择Generate后，鼠标狂动，直到进度条完成。</p>
-<p><img src="git/image-20210628205817573.png" alt="image-20210628205817573"></p>
-<p><img src="git/image-20210628210325806.png" alt="image-20210628210325806"></p>
+<p><img src="/2021/18RWRBW/image-20210628205817573.png" alt="image-20210628205817573"></p>
+<p><img src="/2021/18RWRBW/image-20210628210325806.png" alt="image-20210628210325806"></p>
 <p>public key  可以复制到Github中 OpenSSHkey导出到 “C:\Users\用户.ssh\id_rsa” 。</p>
 <p>下图为Github中SSH key设置。</p>
-<p><img src="git/image-20210628210649154.png" alt="image-20210628210649154"></p>
+<p><img src="/2021/18RWRBW/image-20210628210649154.png" alt="image-20210628210649154"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/18RWRBW.html" data-id="ckqgnrbl90007twjm5xe81ba5" class="article-share-link">Share</a>
+      <a data-url="https://mixley.github.io/2021/18RWRBW.html" data-id="ckqgo7gfq0008gwjm6vx49euh" class="article-share-link">Share</a>
       
       
     </footer>
