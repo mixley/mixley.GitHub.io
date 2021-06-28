@@ -79,14 +79,14 @@
   </url>
   
   <url>
-    <loc>https://mixley.github.io/2021/19RCFHX.html</loc>
+    <loc>https://mixley.github.io/2021/2996F6V.html</loc>
     
     <lastmod>2021-06-28</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mixley.github.io/2021/2996F6V.html</loc>
+    <loc>https://mixley.github.io/2021/19RCFHX.html</loc>
     
     <lastmod>2021-06-28</lastmod>
     
@@ -354,13 +354,6 @@
   </url>
   
   <url>
-    <loc>https://mixley.github.io/tags/back-end/</loc>
-    <lastmod>2021-06-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://mixley.github.io/tags/mixley/</loc>
     <lastmod>2021-06-28</lastmod>
     <changefreq>daily</changefreq>
@@ -376,6 +369,13 @@
   
   <url>
     <loc>https://mixley.github.io/tags/collect/</loc>
+    <lastmod>2021-06-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mixley.github.io/tags/back-end/</loc>
     <lastmod>2021-06-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -412,14 +412,14 @@
 
   
   <url>
-    <loc>https://mixley.github.io/categories/squalid/</loc>
+    <loc>https://mixley.github.io/categories/tool/</loc>
     <lastmod>2021-06-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://mixley.github.io/categories/tool/</loc>
+    <loc>https://mixley.github.io/categories/squalid/</loc>
     <lastmod>2021-06-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -447,13 +447,6 @@
   </url>
   
   <url>
-    <loc>https://mixley.github.io/categories/tool/minio/</loc>
-    <lastmod>2021-06-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://mixley.github.io/categories/tool/blog/</loc>
     <lastmod>2021-06-28</lastmod>
     <changefreq>daily</changefreq>
@@ -461,7 +454,21 @@
   </url>
   
   <url>
+    <loc>https://mixley.github.io/categories/tool/minio/</loc>
+    <lastmod>2021-06-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://mixley.github.io/categories/tool/develop/</loc>
+    <lastmod>2021-06-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mixley.github.io/categories/deep/computer-vision/</loc>
     <lastmod>2021-06-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -476,13 +483,6 @@
   
   <url>
     <loc>https://mixley.github.io/categories/operations/linux/</loc>
-    <lastmod>2021-06-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://mixley.github.io/categories/deep/computer-vision/</loc>
     <lastmod>2021-06-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
