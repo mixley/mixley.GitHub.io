@@ -1,0 +1,1436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Adobe全家桶</title>
+    <url>/2021/R3Z4XC.html</url>
+    <content><![CDATA[<p>PS</p>
+<p>PR</p>
+<p>FLASH</p>
+<p>AE</p>
+<p>AU</p>
+]]></content>
+      <categories>
+        <category>杂项</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>常用工具</title>
+    <url>/2021/1R51GPM.html</url>
+    <content><![CDATA[<p>效率神器+操作技巧</p>
+<h2 id="系统高效快捷键"><a href="#系统高效快捷键" class="headerlink" title="系统高效快捷键"></a>系统高效快捷键</h2><table>
+<thead>
+<tr>
+<th>Windows 部分高效快捷键</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>打开文件管理器</td>
+<td>Win键 + E</td>
+</tr>
+<tr>
+<td>剪贴板历史功能(还能固定某些选项)</td>
+<td>Win键 + V</td>
+</tr>
+<tr>
+<td>打开高级用户功能（等同右击开始）</td>
+<td>Win键 + X</td>
+</tr>
+<tr>
+<td>显示桌面</td>
+<td>Win键 + D</td>
+</tr>
+<tr>
+<td>Xbox游戏录制工具栏(虽然是游戏工具栏，但是提供录屏、截屏)</td>
+<td>Win键 + G</td>
+</tr>
+<tr>
+<td>截屏(推荐，可延迟截图，可编辑)</td>
+<td>Win键 + Shift + S</td>
+</tr>
+<tr>
+<td>录屏(推荐，录屏后可再Win+G中编辑导出)</td>
+<td>Win键 + Alt + R</td>
+</tr>
+<tr>
+<td>运行（可输入命令行）</td>
+<td>Win键 + R</td>
+</tr>
+<tr>
+<td>Windows搜索(开启搜索增强后，文件搜索更方便)</td>
+<td>Win键 + S</td>
+</tr>
+<tr>
+<td>任务管理器</td>
+<td>Ctrl+Shift+Esc</td>
+</tr>
+</tbody></table>
+<h2 id="装机必备"><a href="#装机必备" class="headerlink" title="装机必备"></a>装机必备</h2><h3 id="uTools-免费效率神器"><a href="#uTools-免费效率神器" class="headerlink" title="uTools  免费效率神器"></a><a href="https://u.tools/">uTools</a>  免费效率神器</h3><p>对我而言，最常用的是搜索软件和翻译【大雾】，这种类似的效率神器还有<a href="https://docs.microsoft.com/zh-cn/windows/powertoys/">PowerToys</a>微软家的（功能不多）、<a href="https://getquicker.net/">Quicker</a>国产指尖工具集（这个可以与其它工具结合，设计感不强需要一段时间上手，但是很强大）、<a href="https://github.com/Wox-launcher/Wox">Wox</a>开源win下<strong>Spotlight</strong>神器（和uTools功能重合）……当然，嫌弃麻烦的可能使用Win+S直接打开windows搜索功能完成一切，毕竟现在win的搜索功能也不差了，而mac下面有Spotlight了。</p>
+<p>快捷键 「Alt + Space」，功能：搜索软件、使用插件提供的场景功能</p>
+<p><img src="/2021/1R51GPM/utools-plugins.png" alt="img"></p>
+<h3 id="7-zip-开源压缩软件"><a href="#7-zip-开源压缩软件" class="headerlink" title="7-zip  开源压缩软件"></a><a href="https://sparanoid.com/lab/7z/">7-zip</a>  开源压缩软件</h3><p>这里必须说一句，7z养活了一大票的国产软件，实际上按道理使用开源协议写的程序也应该开源的，但是实际国产某些X压不仅不开源，一开始还夹带私货让7z或者其它压缩软件无法兼容。后续，现在的国产压缩软件不再去搞什么“独家”压缩算法了，现在兼容性都不错。开源与不开源的争论不好说，如果现在都这样做：使用社区开源的产品做收费，不贡献代码去提升社区产品，甚至想把社区产品击垮。这样的行为真是，没法说。。</p>
+<p><img src="/2021/1R51GPM/image-20210627213154683.png" alt="image-20210627213154683"></p>
+<h3 id="QuickLook-开源空格键预览神器-仅Win-Mac本身有空格预览功能"><a href="#QuickLook-开源空格键预览神器-仅Win-Mac本身有空格预览功能" class="headerlink" title="QuickLook  开源空格键预览神器(仅Win,Mac本身有空格预览功能)"></a><a href="https://pooi.moe/QuickLook/">QuickLook </a> 开源空格键预览神器(仅Win,Mac本身有空格预览功能)</h3><p>空格键可以预览声音、视频、macdown、doc、excel等等，无需下载安装对应的软件，只需要在对应文件上按下空格。</p>
+<p>office文档需要插件，<a href="https://github.com/QL-Win/QuickLook/wiki/Available-Plugins%EF%BC%8C%E4%B8%8B%E8%BD%BD%E5%90%8E%E7%A9%BA%E6%A0%BC%E9%94%AE%E5%AE%89%E8%A3%85">https://github.com/QL-Win/QuickLook/wiki/Available-Plugins，下载后空格键安装</a></p>
+<h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><h3 id="VsCode-微软开源编辑器-VSCodium前者的开源编译版"><a href="#VsCode-微软开源编辑器-VSCodium前者的开源编译版" class="headerlink" title="VsCode 微软开源编辑器/VSCodium前者的开源编译版"></a><a href="https://code.visualstudio.com/">VsCode </a>微软开源编辑器/<a href="https://vscodium.com/">VSCodium</a>前者的开源编译版</h3><p>大名鼎鼎的VsCode，记事本超级替代工具，编码人员神器，超多插件。介意微软遥测等功能的，可以使用开源编译版本VSCodium，VSCodium已经是能找到的最”干净”的vscode了 。</p>
+<p>VsCode缺陷：正则替换大文件会卡顿</p>
+<p><img src="/2021/1R51GPM/image-20210627213520484.png" alt="image-20210627213520484"></p>
+<h3 id="Typora-MacDown编辑神器"><a href="#Typora-MacDown编辑神器" class="headerlink" title="Typora  MacDown编辑神器"></a><a href="https://typora.io/">Typora</a>  MacDown编辑神器</h3><p>已经是bate版N多年的”免费”使用的MacDown编辑器，所见即所得。缺陷是非常长的文档编写时会卡顿，但是这个缺陷我从未碰到，因为没有写很长的文章，长到6k字以上的。</p>
+<h2 id="办公神器"><a href="#办公神器" class="headerlink" title="办公神器"></a>办公神器</h2><h3 id="scrcpy-开源投屏神器-QtScrcpy-基于前者二开的开源投屏神器-荐！"><a href="#scrcpy-开源投屏神器-QtScrcpy-基于前者二开的开源投屏神器-荐！" class="headerlink" title="scrcpy 开源投屏神器/QtScrcpy 基于前者二开的开源投屏神器(荐！)"></a><a href="https://github.com/Genymobile/scrcpy">scrcpy</a> 开源投屏神器/<a href="https://github.com/barry-ran/QtScrcpy">QtScrcpy</a> 基于前者二开的开源投屏神器(荐！)</h3><p>USB(或通过TCP/IP)连接Android设备，并进行显示和控制，不需要root权限，不需手机安装apk。电脑上可以直接点击操作手机哦！</p>
+<table>
+<thead>
+<tr>
+<th>关键点</th>
+<th>scrcpy</th>
+<th>QtScrcpy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>界面</td>
+<td>sdl</td>
+<td>qt</td>
+</tr>
+<tr>
+<td>视频解码</td>
+<td>ffmpeg</td>
+<td>ffmpeg</td>
+</tr>
+<tr>
+<td>视频渲染</td>
+<td>sdl</td>
+<td>opengl</td>
+</tr>
+<tr>
+<td>跨平台基础设施</td>
+<td>自己封装</td>
+<td>Qt提供</td>
+</tr>
+<tr>
+<td>编程语言</td>
+<td>C</td>
+<td>C++</td>
+</tr>
+<tr>
+<td>编程方式</td>
+<td>同步</td>
+<td>异步</td>
+</tr>
+<tr>
+<td>按键映射</td>
+<td>不支持自定义</td>
+<td>支持自定义按键映射</td>
+</tr>
+<tr>
+<td>编译方式</td>
+<td>meson+gradle</td>
+<td>Qt Creator</td>
+</tr>
+</tbody></table>
+<h2 id="程序员必备"><a href="#程序员必备" class="headerlink" title="程序员必备"></a>程序员必备</h2><h3 id="GitHub-Proxy-GitHub下载加速-在线"><a href="#GitHub-Proxy-GitHub下载加速-在线" class="headerlink" title="GitHub Proxy  GitHub下载加速(在线)"></a><a href="https://ghproxy.com/">GitHub Proxy</a>  GitHub下载加速(在线)</h3><p>良心加速、速度稳定、快，可以去作者那里点点赞。</p>
+<p><img src="/2021/1R51GPM/image-20210627222205161.png" alt="image-20210627222205161"></p>
+<h3 id="dev-sidecar-开发者边车-开源开发者便利工具"><a href="#dev-sidecar-开发者边车-开源开发者便利工具" class="headerlink" title="dev-sidecar 开发者边车  开源开发者便利工具"></a><a href="https://github.com/docmirror/dev-sidecar">dev-sidecar</a> 开发者边车  开源开发者便利工具</h3><p>这个车是个便车，实际上也包含了GitHub访问加速、下载加速等功能，梯子的话你可以慢慢从代码中周旋一下，大致步骤：<br>1、找到注释<br>2、URL解码注释内容<br>3、Base64解码2中内容<br>4、打开解码后网址<br>5、找到网址中的二维码并扫码界面二维码中的文字</p>
+<p><img src="/2021/1R51GPM/image-20210627222243502.png" alt="image-20210627222243502"></p>
+<h2 id="其它程序清单"><a href="#其它程序清单" class="headerlink" title="其它程序清单"></a>其它程序清单</h2><p><a href="http://www.foobar2000.com.cn/interface/showimg.php?lang=cn&id=73">Foobox</a> 音乐发烧友专用,搜索功能有”点”东西</p>
+<p>FastStoneCapture 滚动窗口截图、屏幕录像一应俱全</p>
+<p>📦工具<br> ┣ 📜aardio.7z<br> ┣ 📜Adobe_Illustrator_2020_24.2.3.521_SP_20200801.rar<br> ┣ 📜Alibaba_Dragonwell8_Linux_x64_8.0-preview.tar.gz<br> ┣ 📜Alibaba_Dragonwell_8.2.2-Experimental_Windows_x64.zip<br> ┣ 📜apache-tomcat-7.0.103-windows-x86.zip<br> ┣ 📜AtomSetup-x64.exe<br> ┣ 📜BalsamiqMockups_6603.zip<br> ┣ 📜BvSshClient-Inst.exe<br> ┣ 📜deepin-boot-maker.exe<br> ┣ 📜deepin-desktop-community-1002-amd64.iso<br> ┣ 📜deepin-system-installer.exe<br> ┣ 📜dragonwell11-dragonwell-11.0.8.3_jdk-11.0.8-ga.zip<br> ┣ 📜Everything-1.4.1.969.x64-Setup.exe<br> ┣ 📜exe封包工具_v2.3.exe<br> ┣ 📜FastStoneCapturePortable.zip<br> ┣ 📜Feem_v4.3.0_beta_Windows_Installer.exe<br> ┣ 📜Fiddler 5.0.20194.41348汉化版.7z<br> ┣ 📜Fish-v3210.zip<br> ┣ 📜Foobox-6.1.5.3.zip<br> ┣ 📜GeePlayerSetup_app.exe<br> ┣ 📜GifCam.exe<br> ┣ 📜Git-2.24.0.2-64-bit.exe<br> ┣ 📜ideaIU-2019.3.1.exe<br> ┣ 📜Insomnia.Core-2020.4.1.exe<br> ┣ 📜jarrun.zip<br> ┣ 📜Kx80_UPD_8.0.1121_RC3c.zip<br> ┣ 📜LogView.zip<br> ┣ 📜MouseClick_Setup_1.0.24.0.exe<br> ┣ 📜mysql-connector-odbc-8.0.21-win32.msi<br> ┣ 📜mysql-connector-odbc-8.0.21-winx64.msi<br> ┣ 📜mysql-jjb.zip<br> ┣ 📜navicat150_premium_cs_x64.exe<br> ┣ 📜NewLandTestTool.exe<br> ┣ 📜nginx-1.16.1.tar.gz<br> ┣ 📜nginx-1.17.6.zip<br> ┣ 📜pencil-3.1.0.ga-x86_64.exe<br> ┣ 📜PowerToysSetup-0.16.1-x64.msi<br> ┣ 📜proguard6.2.0.zip<br> ┣ 📜pycharm-community-2020.1.2.exe<br> ┣ 📜python-3.8.3-amd64.exe<br> ┣ 📜qbittorrent_4.2.0_x64_setup.exe<br> ┣ 📜RedGiantTrapcodeSuite14.1.2WinX64.zip<br> ┣ 📜Redis-x64-3.2.100.zip<br> ┣ 📜scrcpy.zip<br> ┣ 📜ScrcpyGui-1.5.1.win64.exe<br> ┣ 📜Snipaste-2.2.4-Beta-x64.zip<br> ┣ 📜SoapUI-x32-5.5.0.exe<br> ┣ 📜ssr-win.zip<br> ┣ 📜SwitchHosts.exe<br> ┣ 📜taobao-tomcat-7.0.59.tgz<br> ┣ 📜TopazGigapixelAI-5.4.4-windows-x64-Full-Installer.exe<br> ┣ 📜topazGigapixelAI.reg<br> ┣ 📜TortoiseGit-2.9.0.0-64bit.msi<br> ┣ 📜TortoiseGit-LanguagePack-2.9.0.0-64bit-zh_CN.msi<br> ┣ 📜Windows10Manager.zip<br> ┣ 📜Writage-1.12.msi<br> ┣ 📜XMind_2020_v10.1.3_便携版_64位.exe<br> ┣ 📜转转大师PDF转换工具V4.9破解版.rar<br> ┗ 📜远程工具.rar</p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>代码接触史</title>
+    <url>/2021/GA2E64.html</url>
+    <content><![CDATA[<h2 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h2><p>最开始接触的basic，大概是08年，使用的是visual basic 6.0 ，一开始正常的搞点正常的比如计算器、实现程序只启动一次、操作文件搞点批量、操作access数据库啥的。后面渐渐失控搞了很多乱七八糟的东西：点击答题，然后到了最后怎么都是关机；关闭按钮满屏幕乱跑，就是不让你鼠标点中……</p>
+<!---more--->
+
+<p>界面是拖动的，入门太简单，玩的很兴起，各种骚操作都弄出来。但是没多久，发现360在各个网吧都安装了，并且没有经过360认证的程序都跑不了，自己开发的都不行。。。</p>
+<p>后续，可能用excel写宏代码？或者说搞了一点小工具？大约14年的时候，还真有这样的操作。</p>
+<p><strong>家教中心（大学的一个勤工助学部门）的数据查询工具</strong></p>
+<p>简单的说，系统的查询不好用，自己搞了一个（系统不好用，重新做一个又是另外的一个故事了）。而且附带一个可以连接数据库的Excel文件，更加灵活。在家教中心的网络下面，只需要开启Excel宏功能的电脑打开这个Excel文件，点击查询按钮，就把平时要做的操作直接查询下来。</p>
+<p><strong>Java静默安装器</strong></p>
+<p>学习Java的时候，自己搞了个服务器放JDK安装包，程序上提示你选择安装JDK版本，然后静默安装，还把Path配置好了。</p>
+<p>嗯原理，大致就是利用Java安装的命令行，其实Java 本身就是有静默安装指令的。</p>
+<p><strong>字体转换</strong></p>
+<p>泡妞专用，妹子是搞语言文学的，有啥篆体字啥的。做了一个切换字体的软件。名字叫文字转换器，实际名称应该叫字体切换器。（P.s.最后，这玩意她都不搭理，且从未用过。确实，因为她们存了网站，找到软件打开和找到网页打开，实际是没差别的。）</p>
+<h2 id="C"><a href="#C" class="headerlink" title="C"></a>C</h2><p>大约09的样子，接触的C语言，并且刚好是360搞的不想看vb的那阵子。C语言的学习可以这样描述：枯燥且使人沉迷。</p>
+<p>要说C语言做过什么或者有什么成就？唯一的有一个吧，就是高中什么编程比赛未成年组还是啥的比赛拿到市一等奖（比赛名字都没映像），但是等我们收到奖的时候，省比赛已经结束了。可能也不是个什么大的比赛，只记得去了岳阳的什么学校，感觉比赛比较水，题目非常简单，难道参加的少儿组？</p>
+<p>玩C的时候，也就能搞搞算法才维持的了生活的样子（大雾）</p>
+<h2 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h2><p>13年的时候接触的C++。主要是有这个课程，进一步打好基础吧。对C++感觉更多是数据结构、输入输出等东西的学习。</p>
+<p>嗯，C++也没有搞事情。玩C++的时候，也就摸摸鱼才能维持的了快乐的样子。</p>
+<h2 id="C-2"><a href="#C-2" class="headerlink" title="C#"></a>C#</h2><p>啥时候用？没啥印象了，大概就是会了C/C++后，感觉C#就会了？作为C系列的编程语言，选择大概就是，学习C/C++进行入门，了解编程，学习编程，但是C相关的开发，我可能还是会选择C#。</p>
+<p>究其原因，总结两个字：封装。C#被微软封装的太精美，看不到细节，C与C++这种能做的东西更灵活没有太多封装的，反而在学习编程的时候，才是更容易打好基础。</p>
+<p>做了啥？基本也是工作上的代码维护而已。</p>
+<p><strong>结算系统（ASP）</strong></p>
+<p>大致就是一个维护客运汽车站、车辆、结算协议、结算规则的一个结算平台，是客运系统下的子系统。</p>
+<p>填填坑，补补BUG，也没啥好说的，优化主要是SQL的故事了。</p>
+<p><strong>结算系统客户端（C# .NET）</strong></p>
+<p>是结算系统的子系统，.NET 3.5的古老版本，得兼容XP。改了几个小bug，加了几个小的新功能而已。</p>
+<p><strong>自助售票机(C# .NET版)</strong></p>
+<p>老款自助机，你值得拥有，win系统的自助机，界面风格同样古老。做做改版，改改bug，也是缝缝补补的工作比较多。</p>
+<h2 id="汇编"><a href="#汇编" class="headerlink" title="汇编"></a>汇编</h2><p>略</p>
+<p>真的没啥想法，太高级，玩不转。大学学过，想搞点事情都看到脱壳加壳上去了，跳过。</p>
+<h2 id="单片机"><a href="#单片机" class="headerlink" title="单片机"></a>单片机</h2><p>嗯，怎么说，一直想玩这个，又没有付诸行动的东西。就只能搞个跑马灯一闪一闪亮晶晶。同样是大学，我玩的发指令跑马灯，隔壁家玩的机器人。都是杨博下的实验室，我们这个实验室搞的SSM、数据分析，隔壁实验室搞的树莓派做人脸识别，再隔壁实验室带太阳能的不知道啥玩意，印象中那个太阳能大锅属向日葵的，跟着太阳转。其它实验室的，不知道还有啥好玩的，反正电子班的都跑去机器人大赛了，也不知道比的啥啊。</p>
+<p>其实对硬件编程我还是挺想玩一玩的，但是只能口嗨一下，等咱年老了，再看还想玩不。指不定未来我遛的就是机器人小狗，这里得留<strong>点</strong>畅想，<strong>加粗</strong>为证。</p>
+<h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><p>有了点HTML基础，有了点编程基础（主要是C的基础吧），直接上手干了。学习的过程与项目的过程是一体的，现在觉得羞耻的是，这个PHP没有使用框架，代码还是写HTML里面的，粗糙。</p>
+<h3 id="师大家教网-点我打开"><a href="#师大家教网-点我打开" class="headerlink" title="师大家教网 点我打开"></a>师大家教网 <a href="http://www.shidajiajiao.com/">点我打开</a></h3><p>大约在14年放寒假前调研，总共花了3、4个月左右，基本是我一个人。没有框架、没有做过web项目，这大概是我最疯魔的一段时间之一了。原因是之前的网站不好用，大概是我接手家教中心网宣部部长(部门是技术部门，管数据库和网站，也负责修电脑和网线。)做的我当时觉得最伟大，现在觉得很羞耻但是隐隐约约还有点小骄傲的事情。</p>
+<p>其实对界面是有遗憾的，当时用老魏想让他搞前端，但是我们开始的时候他出去旅游了，等他回来，我们已经搞完了。可以说他几乎全程完美避开所有事情了。还有一个小崔同学，让他做了前端的那个筛选表格。</p>
+<p>那个时候没版权意识哈，不知道那些插件是否是可用的，全部网上找的。现在维权估计也没法找我，只能找学校了。你们现在看到的这个丑不垃圾，不兼容手机的网站就是我干的了。其实给你们看到的都是没啥内容的东西，最重要的后台的管理变得很丰富了，可惜没法拿出来看。</p>
+<p>插一嘴，我们那个勤工俭学的家教中心，是企业化管理，推行狼文化与家文化。总共6、70多人，每个月有各种活动，还挺怀念的。我嘛是属于加入家教中心基本没做过正常家教的人，只教过几次老爷爷做视频，后来就是参加公益家教。当时每个月发160来着，当了主管好像是240块了，啧啧，阶级。</p>
+<h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a><strong>Java</strong></h2><p>Java的故事比较长，我得加粗，而且想分成几块来具体描述。</p>
+<h3 id="Android-初始Java"><a href="#Android-初始Java" class="headerlink" title="Android 初始Java"></a>Android 初始Java</h3><p>没错，我最开始认识Java来自与安卓，在我刚上高中时候，正是智能机火的时候。当我到了大学，发现选修居然有Android可以学？</p>
+]]></content>
+      <categories>
+        <category>杂项</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>java</tag>
+        <tag>人脸识别</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文艺范</title>
+    <url>/2021/1XJ7S7J.html</url>
+    <content><![CDATA[<p>励志：</p>
+<p>求上得中，求中得下</p>
+<p>没有最好，只有更好</p>
+<p>咸鱼：</p>
+<p>明天的事情，后天就知道了</p>
+]]></content>
+      <categories>
+        <category>杂项</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>minio</title>
+    <url>/2021/35DBDK5.html</url>
+    <content><![CDATA[<h2 id="minio介绍"><a href="#minio介绍" class="headerlink" title="minio介绍"></a>minio介绍</h2><p>minio 是高性能、可扩展、云的原生支持、开源免费的企业级文件存储服务，与Amazon S3 兼容，配置极简。<br>minio中文网：<a href="http://www.minio.org.cn/">http://www.minio.org.cn/</a><br>minio官网：<a href="https://min.io/">https://min.io/</a></p>
+<h3 id="linux下配置"><a href="#linux下配置" class="headerlink" title="linux下配置"></a>linux下配置</h3><p><img src="/2021/35DBDK5/simplicity.gif" alt="img"></p>
+<p>1、下载minio，建议下载到/usr/local/bin/ 目录下，可全局访问</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /usr/local/bin/</span><br><span class="line">wget   http://dl.minio.org.cn/server/minio/release/linux-amd64/minio</span><br><span class="line">chmod +x minio</span><br></pre></td></tr></table></figure>
+
+<p>2、设置minio用户名密码到临时环境变量（重启后消失）</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export MINIO_ACCESS_KEY=admin</span><br><span class="line">export MINIO_SECRET_KEY=password</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">查看环境变量</span></span><br><span class="line">echo $MINIO_ACCESS_KEY</span><br><span class="line">echo $MINIO_SECRET_KEY</span><br></pre></td></tr></table></figure>
+
+<p>3、永久环境变量</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 修改系统配置</span></span><br><span class="line">vim /etc/profile</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">最后一行输入</span></span><br><span class="line">export MINIO_ACCESS_KEY=admin</span><br><span class="line">export MINIO_SECRET_KEY=password</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 设置立即生效</span></span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+
+<p>4、指定配置路径后启动 （建议修改默认端口）</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">后端启动</span></span><br><span class="line">nohup minio server --address &#x27;:9000&#x27; --config-dir /root/.minio /data/minio &gt; /data/minio.log 2&gt;&amp;1 &amp;</span><br><span class="line"><span class="meta">#</span><span class="bash">确认是否启动</span></span><br><span class="line">ps -ef | grep minio | grep -v grep</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">前端启动</span></span><br><span class="line">minio server --address &#x27;:9000&#x27; --config-dir /root/.minio /data/minio</span><br></pre></td></tr></table></figure>
+
+<p>5、开机启动（方式很多，例举其一）</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">修改系统配置</span></span><br><span class="line"></span><br><span class="line">vim /etc/profile</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">最后一行输入</span></span><br><span class="line">nohup minio server --address &#x27;:9000&#x27; --config-dir /root/.minio /data/minio &gt; /data/minio.log 2&gt;&amp;1 &amp;</span><br></pre></td></tr></table></figure>
+
+<h3 id="win配置"><a href="#win配置" class="headerlink" title="win配置"></a>win配置</h3><p>1、下载minio，下载到C:\WINDOWS可全局启动</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#powershell 命令直接下载，选定</span></span><br><span class="line">powershell (<span class="built_in">new-object</span> System.Net.WebClient).DownloadFile(<span class="string">&#x27;http://dl.minio.org.cn/server/minio/release/windows-amd64/minio.exe&#x27;</span>,<span class="string">&#x27;minio.exe&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">### 下载时建议下载到环境变量，或者建议设置path路径，使用minio即可访问最好。</span></span><br></pre></td></tr></table></figure>
+
+<p>2、设置minio用户名密码到临时环境变量（重启后消失）</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> MINIO_ACCESS_KEY=admin</span><br><span class="line"><span class="built_in">set</span> MINIO_SECRET_KEY=password</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看环境变量</span></span><br><span class="line"><span class="built_in">echo</span> %MINIO_ACCESS_KEY%</span><br><span class="line"><span class="built_in">echo</span> %MINIO_SECRET_KEY%</span><br></pre></td></tr></table></figure>
+
+<p>3、永久环境变量（手动设置也比较简单）</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#用户环境变量</span></span><br><span class="line">setx MINIO_ACCESS_KEY admin</span><br><span class="line">setx MINIO_SECRET_KEY password</span><br><span class="line"></span><br><span class="line"><span class="comment">#系统环境变量(需管理员，建议)</span></span><br><span class="line">setx MINIO_ACCESS_KEY admin /m</span><br><span class="line">setx MINIO_SECRET_KEY password /m</span><br><span class="line"></span><br><span class="line"><span class="comment">#以下指令保存为setMinio.bat后，自动获取管理员权限</span></span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">%<span class="number">1</span>  %<span class="number">2</span>  mshta  vbscript:createobject(<span class="string">&quot;shell.application&quot;</span>).shellexecute(<span class="string">&quot;%~s0&quot;</span>,<span class="string">&quot;goto  :runas&quot;</span>,<span class="string">&quot;&quot;</span>,<span class="string">&quot;runas&quot;</span>,<span class="number">1</span>)(window.close)&amp;<span class="keyword">exit</span> </span><br><span class="line">:runas setMinio.bat</span><br><span class="line">setx MINIO_ACCESS_KEY admin /m</span><br><span class="line">setx MINIO_SECRET_KEY password /m</span><br><span class="line"><span class="built_in">echo</span> MINIO_ACCESS_KEY=%MINIO_ACCESS_KEY%</span><br><span class="line"><span class="built_in">echo</span> MINIO_SECRET_KEY=%MINIO_SECRET_KEY%</span><br><span class="line">pause&amp;<span class="keyword">exit</span> </span><br></pre></td></tr></table></figure>
+
+<p>4、指定配置路径后启动 （建议修改默认端口）</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#静默启动(服务启动，以下命令设置服务为自动，开机后会自启动)</span></span><br><span class="line"><span class="built_in">set</span> confdir=<span class="string">&quot;D:\\data\\.minio&quot;</span></span><br><span class="line"><span class="built_in">set</span> datadir=<span class="string">&quot;D:\\data\\minio&quot;</span></span><br><span class="line"><span class="built_in">sc</span> create minio binpath=<span class="string">&quot;minio server --address &#x27;:9000&#x27; --config-dir %confdir% %datadir%&quot;</span> <span class="built_in">type</span>=own <span class="built_in">start</span>=auto displayname=minio</span><br><span class="line"><span class="comment">#启动服务 sc [start|stop|delete] server</span></span><br><span class="line"><span class="built_in">sc</span> <span class="built_in">start</span> minio</span><br><span class="line"><span class="comment">#查看服务状态</span></span><br><span class="line"><span class="built_in">sc</span> query minio</span><br><span class="line"></span><br><span class="line"><span class="comment">#cmd启动</span></span><br><span class="line">minio server -<span class="literal">-address</span> <span class="string">&#x27;:9000&#x27;</span> -<span class="literal">-config</span><span class="literal">-dir</span> D:\\data\\.minio D:\\data\\minio </span><br></pre></td></tr></table></figure>
+
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a><strong>注意事项</strong></h4><h5 id="使用cmd-minio-server无法启动解决办法"><a href="#使用cmd-minio-server无法启动解决办法" class="headerlink" title="使用cmd minio server无法启动解决办法"></a>使用cmd minio server无法启动解决办法</h5><p>1、若文件夹在本地，使用./minio server再重试</p>
+<p>2、环境变量中设置path，指定minio目录路径</p>
+<h5 id="执行命令时提示需要管理员权限"><a href="#执行命令时提示需要管理员权限" class="headerlink" title="执行命令时提示需要管理员权限"></a>执行命令时提示需要管理员权限</h5><p>方法1：可使用管理员命令窗口打开</p>
+<p>方法2：参考<strong>永久环境变量</strong>，设置一个cmd脚本自动提升管理员权限</p>
+]]></content>
+      <categories>
+        <category>工具</category>
+        <category>minio</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>后端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于管理与写博客</title>
+    <url>/2021/35XMGZW.html</url>
+    <content><![CDATA[<p>说到博客，我想将博客编写的主要内容分为两个大的块。</p>
+<p>第一块：文章部分，我们可能随时的，随手的就编写很多心得或者笔记或者心情，创作应该是无打扰且不用考虑太多额外事情的。</p>
+<p>第二块：展示部分，界面到底怎么展示，文章标题内容图片怎么显示，个性化的界面需要进行一些什么样的调整。这个部分调整可能会频繁，可能会比较个性，可能会很繁琐，但是最好是不要参与到创作中影响效率的。</p>
+<p>所以由此我希望拥有一个简单的不受影响的创作环境，然后通过一些后期方式将文章展示到我定制的个性页面中是我最终的目的,下面我从现有结构和我的思路来讲一下我想怎么管理和写博客。</p>
+<h3 id="文章部分"><a href="#文章部分" class="headerlink" title="文章部分"></a>文章部分</h3><p>下面是我们常见的一个文档管理方式，不论doc也好，还是md也罢，我们都喜欢通过建立文件夹的方式进行分类然后梳理，下面的我通过建立文档同名的方式表示文档需要的文件。</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">📦macdown</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂工具</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂minio</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂minio</span> <span class="comment"># 对应md文件的附件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜simplicity.gif</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜minio.md</span> <span class="comment">#md文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂博客</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂使用Hexo搭建博客</span>  <span class="comment">#对应md文件的附件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜image-20210623193347044.png</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜使用Hexo搭建博客.md</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜关于管理与写博客.md</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜常用工具.md</span> <span class="comment">#文章</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂开发</span> <span class="comment">#分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📂bat</span> <span class="comment">#更多分类与文章</span></span><br></pre></td></tr></table></figure>
+<p>上面这个目录结构，我相信不管是写博客还是仅仅做笔记或者整理资料的人，大部分过程应该都是这样的。我们以上面这个目录结构出发，来发布我们的程序。</p>
+<h3 id="推荐神器：Typora-万年bate版本，免费使用"><a href="#推荐神器：Typora-万年bate版本，免费使用" class="headerlink" title="推荐神器：Typora(万年bate版本，免费使用)"></a>推荐神器：Typora(万年bate版本，免费使用)</h3><h4 id="Typora文档管理功能"><a href="#Typora文档管理功能" class="headerlink" title="Typora文档管理功能"></a>Typora文档管理功能</h4><p><img src="/2021/35XMGZW/image-20210626111012923.png" alt="image-20210626111012923"></p>
+<h4 id="Typora图片设置"><a href="#Typora图片设置" class="headerlink" title="Typora图片设置"></a>Typora图片设置</h4><p><img src="/2021/35XMGZW/image-20210626110210201.png" alt="image-20210626110210201"></p>
+<p>其他建议的配置</p>
+<p><img src="/2021/35XMGZW/image-20210626132716924-1624685244750.png" alt="image-20210626132716924"></p>
+]]></content>
+      <categories>
+        <category>工具</category>
+        <category>博客</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>使用Hexo搭建博客</title>
+    <url>/2021/3NPATC1.html</url>
+    <content><![CDATA[<p>快速、简洁且高效的博客框架</p>
+<p>Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g #全局安装hexo</span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo init &lt;folder&gt;</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> &lt;folder&gt;</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install</span></span><br></pre></td></tr></table></figure>
+<p>安装后目录结构说明：</p>
+<!-- vscode -> file-tree-generator -->
+
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">📦blog</span> <span class="comment">#博客·安装路径</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂scaffolds</span>	<span class="comment">#模板文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜draft.md</span>	<span class="comment">#草稿模板</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜page.md</span>	<span class="comment">#页面模板</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜post.md</span>	<span class="comment">#文章模板</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂source</span>	<span class="comment">#资源文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📂_posts</span>	<span class="comment">#文章路径</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜hello-world.md</span>	<span class="comment">#实际文章</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂themes</span>	<span class="comment">#主题</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜.gitkeep</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📜package.json</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📜_config.landscape.yml</span>	<span class="comment">#_config.[theme].yml 用于编辑主题配置</span></span><br><span class="line"> <span class="string">┗</span> <span class="string">📜_config.yml</span>	<span class="comment">#配置文件 ！重要！！</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="运行命令"><a href="#运行命令" class="headerlink" title="运行命令"></a>运行命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 更多详细命令查看官网：https://hexo.io/zh-cn/docs/commands.html</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 启动</span></span><br><span class="line">hexo s</span><br><span class="line"><span class="meta">#</span><span class="bash"> 下面为指定配置文件</span></span><br><span class="line">hexo s --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/3NPATC1/image-20210623193347044.png" alt="image-20210623193347044"></p>
+<p>打开浏览器输入<a href="http://localhost:4000/">http://localhost:4000/</a> 出现hexo界面则表示启动成功了</p>
+<h2 id="管理与编写博客"><a href="#管理与编写博客" class="headerlink" title="管理与编写博客"></a>管理与编写博客</h2><h3 id="文档管理结构"><a href="#文档管理结构" class="headerlink" title="文档管理结构"></a>文档管理结构</h3><p>下面是我们常见的一个文档管理方式，不论doc也好，还是md也罢，我们都喜欢通过建立文件夹的方式进行分类然后梳理，下面的我通过建立文档同名的方式表示文档需要的文件。</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">📦macdown</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂工具</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂minio</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂minio</span> <span class="comment"># 对应md文件的附件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜simplicity.gif</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜minio.md</span> <span class="comment">#md文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂博客</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂使用Hexo搭建博客</span>  <span class="comment">#对应md文件的附件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜image-20210623193347044.png</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜使用Hexo搭建博客.md</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜关于管理与写博客.md</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜常用工具.md</span> <span class="comment">#文章</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂开发</span> <span class="comment">#分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📂bat</span> <span class="comment">#更多分类与文章</span></span><br></pre></td></tr></table></figure>
+
+<p>上面这个目录结构，我相信不管是写博客还是仅仅做笔记或者整理资料的人，大部分过程应该都是这样的。</p>
+<h3 id="安装工具"><a href="#安装工具" class="headerlink" title="安装工具"></a>安装工具</h3><p>推荐神器：<a href="https://typora.io/">Typora</a>  MacDown编辑神器 (万年bate版本，免费使用)</p>
+<h4 id="Typora文档管理功能"><a href="#Typora文档管理功能" class="headerlink" title="Typora文档管理功能"></a>Typora文档管理功能</h4><p><img src="/2021/3NPATC1/image-20210626111012923.png" alt="image-20210626111012923"></p>
+<h4 id="Typora图片设置"><a href="#Typora图片设置" class="headerlink" title="Typora图片设置"></a>Typora图片设置</h4><p><img src="/2021/3NPATC1/image-20210626110210201.png" alt="image-20210626110210201"></p>
+<h2 id="发布配置"><a href="#发布配置" class="headerlink" title="发布配置"></a>发布配置</h2><p>下面的自定义配置为使用git发布博客，首先需安装hexo-deployer-git 插件,其它插件为更方便使用</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> git上传发布，一键部署时使用</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> hexo增强配置，可以不用手动维护 front-matter，文章标题建议使用 20210628 标题.md</span></span><br><span class="line">npm install hexo-enhancer --save</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 处理图片路径转换问题，当开启post_asset_folder时，使用文件路径转换</span></span><br><span class="line">npm hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+
+<p>自定义配置文件如下，可在hexo目录下建立<strong>custom.yml</strong>文件，自定义以下内容，不污染原始文件便于后期升级hexo</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 详情看附录中配置文件详细介绍</span></span><br><span class="line"><span class="comment"># Site 网站设置 基础设置</span></span><br><span class="line"><span class="comment"># 网站标题</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">mixley</span></span><br><span class="line"><span class="comment"># 网站副标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;呜啦啦&#x27;</span></span><br><span class="line"><span class="comment"># 网站描述，SEO优化时会扫描</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 网站关键字，SEO优化时会扫描，多个逗号分隔</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&#x27;技术栈A,技术栈B&#x27;</span></span><br><span class="line"><span class="comment"># 作者</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">mixley</span></span><br><span class="line"><span class="comment"># 语言，使用主题时支持的语言列表,主题文件中languages文件夹下查看</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="comment"># 时区，默认为电脑时区，中国大陆：Asia/Shanghai</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL 网址 基础设置,url如果发布到gitbub，请参考注册github.io建立免费页面</span></span><br><span class="line"><span class="comment"># 生成的地址中，会携带这个地址，博客根路径(怎么访问的就怎么填写)</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">&#x27;https://mixley.github.io&#x27;</span></span><br><span class="line"><span class="comment"># 文章访问编号 hexo-enhancer增强配置中提供</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:abbrlink.html</span></span><br><span class="line"><span class="comment"># 网站关键字，增强配置专用，其余tag会收集keywords中tags自动匹配</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">&#x27;关键字A,关键字B&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动 Asset 文件夹(推荐开启，会将同名目录一起打包，否则只打包md，也可以使用第三方图床解决)</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 把链接改为与根目录的相对位址</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Home page setting 首页文章设置（可以不设置）</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="comment">#每页数量</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Category &amp; Tag   分类 &amp; 标签 中文标签可能存在编码问题，需转换，格式为 中文: 英文 多个记录直接换行</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="comment"># 分类对应值 后期建立文件夹，需要在这里增加英文映射</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line">	<span class="string">嘿嘿:</span> <span class="string">heihei</span></span><br><span class="line">	<span class="string">哈哈:</span> <span class="string">haha</span></span><br><span class="line"><span class="comment"># 标签对应值 keywords 关键字中文全部需要进行处理，tags中关键字同样需要处理</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br><span class="line">	<span class="string">技术栈A:</span> <span class="string">jA</span></span><br><span class="line">	<span class="string">技术栈B:</span> <span class="string">jB</span></span><br><span class="line">	</span><br><span class="line"><span class="comment"># Pagination 分页设置（可以不设置）</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用主题，可以选择其它主题，这是默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 发布配置，若使用git，需要安装 npm install hexo-deployer-git --save</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line"><span class="comment">#多服务配置</span></span><br><span class="line"> <span class="attr">repository:</span></span><br><span class="line">   <span class="comment">#使用ssh的方式，配置ssh密钥可以免登录发布</span></span><br><span class="line">   <span class="attr">github:</span> <span class="string">git@github.com:mixley/mixley.GitHub.io.git</span></span><br><span class="line">   <span class="attr">gitee:</span> <span class="string">git@gitee.com:mixley/mixley.git</span></span><br><span class="line"> <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Hexo三连命令"><a href="#Hexo三连命令" class="headerlink" title="Hexo三连命令"></a>Hexo三连命令</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 清除</span></span><br><span class="line">hexo clean</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 指定配置文件生成</span></span><br><span class="line">hexo g --config custom.yml</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 发布</span></span><br><span class="line">hexo d --config custom.yml</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="主题推荐：next"><a href="#主题推荐：next" class="headerlink" title="主题推荐：next"></a>主题推荐：<a href="http://theme-next.iissnan.com/getting-started.html">next</a></h3><h3 id="配置文件详解"><a href="#配置文件详解" class="headerlink" title="配置文件详解"></a>配置文件详解</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Hexo Configuration</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/configuration.html</span></span><br><span class="line"><span class="comment">## Source: https://github.com/hexojs/hexo/</span></span><br><span class="line"><span class="comment">## 中文文档：https://hexo.io/zh-cn/docs/configuration</span></span><br><span class="line"><span class="comment"># Site 网站设置 基础设置</span></span><br><span class="line"><span class="comment"># 网站标题</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hexo</span></span><br><span class="line"><span class="comment"># 网站副标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 网站描述，SEO优化时会扫描</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;全栈的自我修养……&#x27;</span></span><br><span class="line"><span class="comment"># 网站关键字，SEO优化时会扫描，多个逗号分隔</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&#x27;java,C&#x27;</span></span><br><span class="line"><span class="comment"># 作者</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">John</span></span><br><span class="line"><span class="comment"># 语言，使用主题时支持的语言列表,主题文件中languages文件夹下查看</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="comment"># 时区，默认为电脑时区，中国大陆：Asia/Shanghai</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL 网址 基础设置,url如果发布到gitbub，请参考注册github.io建立免费</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="comment"># 生成的地址中，会携带这个地址，博客根路径(怎么访问的就怎么填写)</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">&#x27;http://example.com&#x27;</span></span><br><span class="line"><span class="comment"># 文章路径，title为中文在github发布无法显示</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span>	<span class="string">&#x27;&#x27;</span>					<span class="comment">#永久链接中各部分的默认值,如下</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">#permalink_defaults: </span></span><br><span class="line"><span class="comment"># year: 2021</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="comment"># 是否在永久链接中保留尾部的 index.html，设置为 false 时去除</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Directory 目录</span></span><br><span class="line"><span class="comment"># 资源文件夹，这个文件夹用来存放内容</span></span><br><span class="line"><span class="attr">source_dir:</span> <span class="string">source</span></span><br><span class="line"><span class="comment"># 公共文件夹，这个文件夹用于存放生成的站点文件</span></span><br><span class="line"><span class="attr">public_dir:</span> <span class="string">public</span></span><br><span class="line"><span class="comment"># 标签文件夹</span></span><br><span class="line"><span class="attr">tag_dir:</span> <span class="string">tags</span></span><br><span class="line"><span class="comment"># 归档文件夹</span></span><br><span class="line"><span class="attr">archive_dir:</span> <span class="string">archives</span></span><br><span class="line"><span class="comment"># 分类文件夹</span></span><br><span class="line"><span class="attr">category_dir:</span> <span class="string">categories</span></span><br><span class="line"><span class="comment"># Include code 文件夹，source_dir 下的子目录</span></span><br><span class="line"><span class="attr">code_dir:</span> <span class="string">downloads/code</span></span><br><span class="line"><span class="comment"># 国际化（i18n）文件夹</span></span><br><span class="line"><span class="attr">i18n_dir:</span> <span class="string">:lang</span></span><br><span class="line"><span class="comment"># 跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 public 目录中。您可使用 glob 表达式来匹配路径。如下</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">##skip_render: &quot;mypage/**/*&quot;</span></span><br><span class="line"><span class="comment"># 将会直接将 `source/mypage/index.html` 和 `source/mypage/code.js` 不做改动地输出到 &#x27;public&#x27; 目录</span></span><br><span class="line"><span class="comment"># 你也可以用这种方法来跳过对指定文章文件的渲染</span></span><br><span class="line"><span class="comment">#skip_render: &quot;_posts/test-post.md&quot;</span></span><br><span class="line"><span class="comment"># 这将会忽略对 &#x27;test-post.md&#x27; 的渲染</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">skip_render:</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Writing 文章 基本不用动，只有那个post_asset_folder用来设置图片路径</span></span><br><span class="line"><span class="comment"># 新文章的文件名称</span></span><br><span class="line"><span class="attr">new_post_name:</span> <span class="string">:title.md</span></span><br><span class="line"><span class="comment"># 预设布局，默认布局是文章</span></span><br><span class="line"><span class="attr">default_layout:</span> <span class="string">post</span></span><br><span class="line"><span class="comment"># 把标题转换为 title case</span></span><br><span class="line"><span class="attr">titlecase:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">external_link:</span></span><br><span class="line">  <span class="comment"># 在新标签中打开链接</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 对整个网站（site）生效或仅对文章（post）生效</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span></span><br><span class="line">  <span class="comment"># 需要排除的域名。主域名和子域名如 www 需分别配置[]</span></span><br><span class="line">  <span class="attr">exclude:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 把文件名称转换为 (1) 小写或 (2) 大写</span></span><br><span class="line"><span class="attr">filename_case:</span> <span class="number">0</span></span><br><span class="line"><span class="comment"># 显示草稿</span></span><br><span class="line"><span class="attr">render_drafts:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># 启动 Asset 文件夹(推荐开启)</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 把链接改为与根目录的相对位址</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># 显示未来的文章  ??</span></span><br><span class="line"><span class="attr">future:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 代码块的设置, 请参考 Highlight.js 进行设置</span></span><br><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">auto_detect:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">hljs:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># 代码块的设置, 请参考 PrismJS 进行设置</span></span><br><span class="line"><span class="attr">prismjs:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">preprocess:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Home page setting 首页文章设置</span></span><br><span class="line"><span class="comment"># path: Root path for your blogs index page. (default = &#x27;&#x27;)</span></span><br><span class="line"><span class="comment"># per_page: Posts displayed per page. (0 = disable pagination)</span></span><br><span class="line"><span class="comment"># order_by: Posts order. (Order by date descending by default)</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Category &amp; Tag   分类 &amp; 标签 !!需要映射为URLEncode</span></span><br><span class="line"><span class="comment"># uncategorized默认从属分类,%E6%9C%AA%E5%88%86%E7%B1%BB是未分类的URLEncode值</span></span><br><span class="line"><span class="comment"># default_category: uncategorized</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="comment"># 分类对应值</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line"><span class="comment"># 标签对应值</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Metadata elements</span></span><br><span class="line"><span class="comment">## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta</span></span><br><span class="line"><span class="comment"># Meta generator 标签。 值为 false 时 Hexo 不会在头部插入该标签</span></span><br><span class="line"><span class="attr">meta_generator:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Date / Time format</span></span><br><span class="line"><span class="comment">## Hexo uses Moment.js to parse and display date</span></span><br><span class="line"><span class="comment">## You can customize the date format as defined in</span></span><br><span class="line"><span class="comment">## http://momentjs.com/docs/#/displaying/format/</span></span><br><span class="line"><span class="attr">date_format:</span> <span class="string">YYYY-MM-DD</span></span><br><span class="line"><span class="attr">time_format:</span> <span class="string">HH:mm:ss</span></span><br><span class="line"><span class="comment">## updated_option supports &#x27;mtime&#x27;, &#x27;date&#x27;, &#x27;empty&#x27;</span></span><br><span class="line"><span class="attr">updated_option:</span> <span class="string">&#x27;mtime&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Pagination</span></span><br><span class="line"><span class="comment">## Set per_page to 0 to disable pagination</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Include / Exclude file(s)</span></span><br><span class="line"><span class="comment">## include:/exclude: options only apply to the &#x27;source/&#x27; folder</span></span><br><span class="line"><span class="comment"># Hexo 默认会忽略隐藏文件和文件夹（包括名称以下划线和 . 开头的文件和文件夹，Hexo 的 _posts 和 _data 等目录除外）。通过设置此字段将使 Hexo 处理他们并将它们复制到 source 目录下。</span></span><br><span class="line"><span class="attr">include:</span></span><br><span class="line"><span class="comment"># Hexo 会忽略这些文件和目录，项目文件忽略配置</span></span><br><span class="line"><span class="attr">exclude:</span></span><br><span class="line"><span class="comment"># Ignore files/folders,忽略包括themes/下文件与文件夹(所有上传忽略配置)</span></span><br><span class="line"><span class="attr">ignore:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment"># 使用主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="comment"># 发布配置，若使用git，需要安装 npm install hexo-deployer-git --save</span></span><br><span class="line"><span class="comment"># 安装</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">#deploy:</span></span><br><span class="line"><span class="comment">#  type: git</span></span><br><span class="line"><span class="comment"># 单服务配置</span></span><br><span class="line"><span class="comment">#  repo: &lt;repository url&gt; # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io</span></span><br><span class="line"><span class="comment"># 多服务配置</span></span><br><span class="line"><span class="comment">#  repository:</span></span><br><span class="line"><span class="comment">#    github: &lt;github url&gt;</span></span><br><span class="line"><span class="comment">#    gitee: &lt;gitee url&gt;</span></span><br><span class="line"><span class="comment">#  branch: [branch]</span></span><br><span class="line"><span class="comment">#  message: [message]</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>工具</category>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>mixley</tag>
+        <tag>全栈</tag>
+        <tag>收集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git</title>
+    <url>/2021/18RWRBW.html</url>
+    <content><![CDATA[<h2 id="Git下载安装"><a href="#Git下载安装" class="headerlink" title="Git下载安装"></a>Git下载安装</h2><p>什么？现在还有不用git的吗？是村里没有通网吗🤣【大雾】。</p>
+<p>git不用介绍了，git官方地址：<a href="https://git-scm.com/%EF%BC%8C%E4%B8%8B%E8%BD%BDgit%E8%B7%AF%E5%BE%84%EF%BC%9Ahttps://git-scm.com/downloads">https://git-scm.com/，下载git路径：https://git-scm.com/downloads</a></p>
+<h2 id="设置全局用户名与邮箱"><a href="#设置全局用户名与邮箱" class="headerlink" title="设置全局用户名与邮箱"></a>设置全局用户名与邮箱</h2><p>安装完成后，下载<a href="https://tortoisegit.org/download/">TortoiseGit</a>使用界面管理</p>
+<p>Git设置中完善名称与Emial信息，用户密码信息也可以使用命令行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;</span><br><span class="line">git config --global user.email &quot;email@mail.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/18RWRBW/image-20210628205042362.png" alt="image-20210628205042362"></p>
+<h3 id="设置SSH密钥"><a href="#设置SSH密钥" class="headerlink" title="设置SSH密钥"></a>设置SSH密钥</h3><p>可以使用命令行或者PuTTygen</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">命令行</span></span><br><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+
+<p>打开PuTTygen，选择Generate后，鼠标狂动，直到进度条完成。</p>
+<p><img src="/2021/18RWRBW/image-20210628205817573.png" alt="image-20210628205817573"></p>
+<p><img src="/2021/18RWRBW/image-20210628210325806.png" alt="image-20210628210325806"></p>
+<p>public key  可以复制到Github中 OpenSSHkey导出到 “C:\Users\用户.ssh\id_rsa” 。</p>
+<p>下图为Github中SSH key设置。</p>
+<p><img src="/2021/18RWRBW/image-20210628210649154.png" alt="image-20210628210649154"></p>
+]]></content>
+      <categories>
+        <category>工具</category>
+        <category>开发</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>idea插件推荐</title>
+    <url>/2021/2PH6SP6.html</url>
+    <content><![CDATA[<p>1、IDE Eval Reset 如题<br>    Plugins手动添加 <a href="https://plugins.zhile.io/">https://plugins.zhile.io</a> 安装，效果。。。<br>2、Alibaba Java Coding Guidelines 阿里巴巴代码规范插件<br>    推荐新手使用，性能不好的电脑用着稍微有点卡<br>3、Easy Javadoc 注释工具，推荐<br>4、Lombok 简化代码神器，推荐<br>5、GenerateAllSetter 对实体对象生成set方法<br>6、Codota AI帮你写代码<br>7、Translation 英渣必备翻译</p>
+]]></content>
+      <categories>
+        <category>工具</category>
+        <category>开发</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>jdk</title>
+    <url>/2021/1GZ10CQ.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>工具</category>
+        <category>开发</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>node</title>
+    <url>/2021/22QZT25.html</url>
+    <content><![CDATA[<p>下载地址<br><a href="http://nodejs.cn/download/">http://nodejs.cn/download/</a></p>
+<p><a href="https://blog.csdn.net/jincheng_921/article/details/100109747">https://blog.csdn.net/jincheng_921/article/details/100109747</a></p>
+<p>1、设置NODE_PATH<br>2、设置path：%NODE_PATH%、%NODE_PATH%\node-global</p>
+<p>npm config set cache “D:\soft\node\node-cache”<br>npm config set prefix “D:\soft\node\node-global”<br>npm config set registry <a href="http://registry.npm.taobao.org/">http://registry.npm.taobao.org/</a><br>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></p>
+]]></content>
+      <categories>
+        <category>工具</category>
+        <category>开发</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>maven</title>
+    <url>/2021/33EC4YR.html</url>
+    <content><![CDATA[<p>环境变量</p>
+<p>本地路径</p>
+<p>仓库路径</p>
+<p>云仓库地址</p>
+]]></content>
+      <categories>
+        <category>工具</category>
+        <category>开发</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>什么是人脸识别</title>
+    <url>/2021/27HT6PR.html</url>
+    <content><![CDATA[<p>人脸识别</p>
+<p>严格定义上的人脸识别分为四个步骤：</p>
+<p>①人脸检测：从图片中准确定位到人脸 （mtcnn）</p>
+<p>②人脸矫正（对齐）： 检测到的人脸，可能角度不是很正，需要使其对齐（旋转、仿射变换、裁剪）</p>
+<p>③对矫正后的人脸进行特征提取（facenet）</p>
+<p>④对两张人脸图像的特征向量进行对比，计算相似度(欧式距离)</p>
+<p>图像处理：像素转换、归一化、旋转、裁剪</p>
+]]></content>
+      <categories>
+        <category>深度</category>
+        <category>人脸识别</category>
+      </categories>
+      <tags>
+        <tag>人脸识别</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>win开启linux</title>
+    <url>/2021/N609DF.html</url>
+    <content><![CDATA[<p>子系统开启：</p>
+<p>启用“适用于 Linux 的 Windows 子系统”可选功能</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">dism.exe /online /<span class="built_in">enable-feature</span> /featurename:Microsoft<span class="literal">-Windows</span><span class="literal">-Subsystem</span><span class="literal">-Linux</span> /all /norestart</span><br></pre></td></tr></table></figure>
+
+<p>启用“虚拟机平台”可选功能。 以管理员身份打开 PowerShell 并运行：</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">dism.exe /online /<span class="built_in">enable-feature</span>/featurename:VirtualMachinePlatform /all /norestart</span><br></pre></td></tr></table></figure>
+
+<p>重新启动计算机，以完成 WSL 安装并更新到 WSL 2。</p>
+<p> 来自 <a href="https://zhuanlan.zhihu.com/p/224753478">https://zhuanlan.zhihu.com/p/224753478</a> </p>
+<p> su密码修改：</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">sudo passwd </span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>运维</category>
+        <category>linux</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>图片的放大缩小旋转与裁剪</title>
+    <url>/2021/400Q6V.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>深度</category>
+        <category>计算机视觉</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>格式标准</title>
+    <url>/2021/MYHZWP.html</url>
+    <content><![CDATA[<p><a href="https://www.cnblogs.com/gwind/p/8215771.html">https://www.cnblogs.com/gwind/p/8215771.html</a></p>
+]]></content>
+      <categories>
+        <category>深度</category>
+        <category>计算机视觉</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>图片的由来与存储</title>
+    <url>/2021/1DC25F7.html</url>
+    <content><![CDATA[<p>我们知道，计算机中的数据都是0和1，但是展示在我们屏幕上的却是多姿多彩，文字、图片、视频和游戏等等，0和1怎么变成我们从屏幕看到的内容的？</p>
+<h2 id="黑白图片"><a href="#黑白图片" class="headerlink" title="黑白图片"></a>黑白图片</h2><p>假定，1=白色，0=黑色，我们现在就可以用0和1组合为一个黑白画面了</p>
+<p>我们使用ps新建一个只有0、1的位图</p>
+<p><img src="/2021/1DC25F7/1.png" alt="img"></p>
+<p>图片新建完成如下（放大后效果），附带附件</p>
+<p><img src="/2021/1DC25F7/2.png" alt="img"></p>
+<p>&lt;&lt;白黑.bmp&gt;&gt;</p>
+<p>假定我们直接按1表示白，0表示黑的方式排列，可以得到我们的存储结果</p>
+<p><img src="/2021/1DC25F7/3.png" alt="img"></p>
+<h2 id="图片存储格式"><a href="#图片存储格式" class="headerlink" title="图片存储格式"></a>图片存储格式</h2><p>我们按 OS/2 bmp 方式进行保存（win位图最初保存方式，且无压缩，这里面去除了ps自动生成的元信息）</p>
+<p><img src="/2021/1DC25F7/4.png" alt="img"></p>
+<p>OS/2 bmp：</p>
+<p>0x00-0x01: 2byte 424D表示BMP格式</p>
+<p>0x02-0x05: 4byte 此文件大小是0x0030bit(注意高低位，低位在前)</p>
+<p>0x06-0x09: 4byte 保留位</p>
+<p>0x0A-0x0D: 4byte 偏移量，数据开始起点，图中数据从0x0020开始 </p>
+<p>0x0E-0x11: 4byte BITMAPINFOHEADER结构体大小(以下为结构体定义)，图中大小为0x000C（OS/2：12 | Windows DIB 40）</p>
+<p>0x12-0x13: 2byte 图像宽 图中为4像素</p>
+<p>0x14-0x15: 2byte 图像高 图中为2像素 </p>
+<p>0x16-0x17: 2byte 图像平面数 图中为1</p>
+<p>0x18-0x19: 2byte 一个像素有多少bit 图中为1</p>
+<p>0x1A-0x1C: 3byte 0表示的颜色BGR格式，图中为0x000000黑色</p>
+<p>0x1D-0x1F: 3byte 1表示的颜色BGR格式，图中为0xFFFFFF白色</p>
+<p>由于Windows默认的扫描的最小单位是4byte，所以bmp默认每行对齐是4的倍数，我们可以得到第一行的长度为宽度4<em>1分辨率</em>1位(bit)=4bit,对齐为byte时最小单位4byte，所以需要占用4byte，但仅前4个bit填充的值有效。</p>
+<p>且bmp是从左下角开始扫码，从左到右，从下到上，二进制转换0101为5，1010为a</p>
+<p>最终对应的结果在不对齐的情况下为a5a5，在对齐后补0的情况如下所示：</p>
+<p>A0 00 00 00 50 00 00 00 A0 00 00 00 50 00 00 00</p>
+<p>但是ps等软件在生成时会有一些元信息，所以可能会出现对齐为4byte时不是补0的情况，在算法读取时会自动跳过，但是人眼进行查看时，会造成干扰，自己排除掉即可</p>
+<p><img src="/2021/1DC25F7/5.png" alt="img"></p>
+<p>上图中，6 7F、8 22 56 F3等数据都是干扰数据，可替换为0或者替换为其它内容。</p>
+<h2 id="图片放大"><a href="#图片放大" class="headerlink" title="图片放大"></a>图片放大</h2><p>图片放大是在图片使用中最常使用的功能，我们从图片放大这个角度看下黑白颜色后面该怎么处理，尝试放大下面这个长宽2x2的黑白图</p>
+<p><img src="/2021/1DC25F7/6.png" alt="img"></p>
+<p>我们存储在电脑中的数据可以抽象理解为，长宽2个像素的</p>
+<p><img src="/2021/1DC25F7/7.png" alt="img"></p>
+<p>当我们将这个放大为长宽4个像素很好处理</p>
+<p>![а о 11  е 011  11 ее  11 ее ](图片的由来与存储/8 .png)</p>
+<p>我们得到的图片还是这样的没什么变化</p>
+<p>但是当我们想将这个放大为长宽3像素呢？要知道，我们的图片放大缩小，从来都不是按倍数放大，动不动就直接放大2倍的，几乎没有。</p>
+<p>可能我们得到的理想结果是</p>
+<p>![e ø.5 1  ø.5 ø.5 ø.s ](图片的由来与存储/9 .png)</p>
+<p>但是我们的01世界中，不存在0.5这种数据，按四舍五入或者退1法，我们可以得到这样的结果</p>
+<p>![1 1 1 ](图片的由来与存储/10 .png)</p>
+<p><img src="/2021/1DC25F7/11.png" alt="img"></p>
+<p>但是这无疑是差距太大了，一个小的图片差距都如此大，更大一点的图片也会出现更大的偏差，无疑只使用黑白两个颜色是无法将图片的细节表述清楚的。</p>
+<p>那么我们现在拓展下：0b00表示黑色，0b11表示白色，0b01与0b10表示灰色。这样在放大的时候可以有灰色填充，某些细节可以达到完善的程度了。（这只是一个极端例子，不用深究,我要表达的是0与1黑白中间拓展更多的颜色表达，让图片内容更加丰富）</p>
+<h2 id="8位灰阶"><a href="#8位灰阶" class="headerlink" title="8位灰阶"></a>8位灰阶</h2><p>在计算机中，8位是1个字节，1byte=8bit，我们存储的最小单元几乎都是使用byte进行存储，8位灰阶就是将黑白颜色数据继续拓展，都是黑、灰、白色之间，有256个层次组成。</p>
+<p>或许五彩斑斓的黑无法实现，但是层次分明的灰是可以达成的。</p>
+<p><img src="/2021/1DC25F7/12.png" alt="img"></p>
+<h2 id><a href="#" class="headerlink" title></a></h2><h2 id="彩色图片"><a href="#彩色图片" class="headerlink" title="彩色图片"></a>彩色图片</h2><p>层次分明的灰再怎么分明，都无法表达我们看到的真实颜色，光学三原色与颜料三原色中红、绿、蓝可以组合出所有颜色，依据无色系黑白灰+彩色系红绿蓝可以组合出任何颜色的特性，我们继续拓展到0和1中的队伍来。</p>
+<p><img src="/2021/1DC25F7/13.jpeg" alt="img"></p>
+<p>首先 红+绿+蓝，在RGB光学三原色中可以组成白色，所有颜色都不存在，则可以变成黑色。</p>
+<p>按上图我们先简单扩展（自定义），3位表示3个颜色0b000表示白色 0b100 表示红色 0b010表示绿色，0b001表示蓝色，0b111是白色，对应的0b010+0b001=0b011，蓝+绿=青,0b110=红+绿=黄，0b101=红+蓝=紫。彩色出现了。</p>
+<p>那么现在我们已经有了最基本的颜色后，我们依然需要进行图片的放大</p>
+<p>看下面这个四像素的图片，我们依然希望放大</p>
+<p><img src="/2021/1DC25F7/14.png" alt="img"></p>
+<p><img src="/2021/1DC25F7/15.png" alt="е10 001  тео оое "></p>
+<p>图片的放大肯定不是相加，而是中间是一个过渡的颜色进行替换，我们现在使用最简单粗暴的替换颜色相加取中间值的方式处理。</p>
+<p>以红绿中间的填充色为例（0b010+0b100）/2,应该是靠近这两个颜色中的颜色，结果是2.5，我们不能用0b010绿色去填充，也不能用0b100红色去填充，如果使用0b110,黄色，更是相差太远，在一个大的照片的放大过程中，尽量的贴合两边的颜色的中间颜色，应该是棕褐色，既有绿的过渡也需要红的过渡。(下图的展示可能不是很明显，也不很合适，因为图片的放大，极少有长宽2像素放大为长宽3像素这种操作，颜色直接的过渡也不会这么夸张。)</p>
+<p><img src="/2021/1DC25F7/img.png" alt="img"></p>
+<p>对于我们棕褐色，在我们刚才的拓展中，是不存在的，正如灰色在01表示的黑白中不存在，所以我们依然需要一个拓展来表达更多的颜色。</p>
+<p>我们现在将颜色拓展为6个bit了，0b000000表示黑色，0b111111表示白色，其余的0b1100000是红，0b001100是绿，0b000011是蓝色。第0-2位的00-11中可以表达4种不同程度的红，黑（无红）、淡红、浅红、正红，其余的等同划分。</p>
+<p>现在，差不多可以将棕色表达出来了，虽然依然不够细致，虽然我们现在有2^6=64种颜色了。</p>
+<h2 id="高彩色"><a href="#高彩色" class="headerlink" title="高彩色"></a>高彩色</h2><p>15或16位彩色（高彩色）：电脑所用的三原色是红、绿和蓝。在15位彩色中，每种原色有2^5=32个层次，共32768种颜色；而在16位彩色中，绿色有2^6=64个，共有65536个颜色</p>
+<h2 id="真彩色"><a href="#真彩色" class="headerlink" title="真彩色"></a>真彩色</h2><p>24位彩色（真彩色）：每种原色都有256个层次，它们的组合便有256<em>256</em>256种颜色。</p>
+<h2 id="32位彩色"><a href="#32位彩色" class="headerlink" title="32位彩色"></a>32位彩色</h2><p>32位彩色：除了24位彩色的颜色外，额外的8位是储存重叠图层的图形资料(alpha频道)。</p>
+<p>另外有高动态范围影像(High Dynamic Range Image)，这种影像使用超过一般的256色阶来储存影像，通常来说每个像素会分配到32+32+32个bit来储存颜色资讯，也就是说对于每一个原色都使用一个32bit的浮点数来储存.</p>
+]]></content>
+      <categories>
+        <category>深度</category>
+        <category>计算机视觉</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>isnull</title>
+    <url>/2021/JC8HKX.html</url>
+    <content><![CDATA[<h2 id="Sql-isnull"><a href="#Sql-isnull" class="headerlink" title="Sql isnull"></a>Sql isnull</h2><p>isnull会使用前面的字段长度替换后面的字段长度，造成截断。使用时，后面尽量使用常量或使用前注意字段长度保持一致</p>
+]]></content>
+      <categories>
+        <category>运维</category>
+        <category>sql</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>索引</title>
+    <url>/2021/3FSMRFQ.html</url>
+    <content><![CDATA[<h1 id="Sql-server"><a href="#Sql-server" class="headerlink" title="Sql server"></a>Sql server</h1><p>① 使用 “with INDEX(‘指定索引名称’)”</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">--指定使用PK_index</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="number">1</span>)</span><br><span class="line"><span class="keyword">from</span> table1 a <span class="keyword">with</span>(nolock)</span><br><span class="line"><span class="keyword">join</span> table2 b <span class="keyword">with</span>(nolock,INDEX( PK_table2 )) <span class="keyword">on</span> a.key_col<span class="operator">=</span>b.key_col</span><br><span class="line"><span class="keyword">where</span> b.some_col<span class="operator">=</span><span class="string">&#x27;aaa&#x27;</span> </span><br></pre></td></tr></table></figure>
+
+<p>② 使用”with FORCESEEK” 指定从哪个数据表里查找</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="number">1</span>)</span><br><span class="line"><span class="keyword">from</span> table1 a <span class="keyword">with</span>(nolock)</span><br><span class="line"><span class="keyword">join</span> table2 b <span class="keyword">with</span>(FORCESEEK) <span class="keyword">on</span> a.key_col<span class="operator">=</span>b.key_col</span><br><span class="line"><span class="keyword">where</span> b.some_col<span class="operator">=</span><span class="string">&#x27;aaa&#x27;</span></span><br><span class="line"> <span class="comment">--系统自动选用IX_index</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="number">1</span>)</span><br><span class="line"><span class="keyword">from</span> table1 a <span class="keyword">with</span>(nolock)</span><br><span class="line"><span class="keyword">join</span> table2 b <span class="keyword">with</span>(nolock) <span class="keyword">on</span> a.key_col<span class="operator">=</span>b.key_col</span><br><span class="line"><span class="keyword">where</span> b.some_col<span class="operator">=</span> <span class="string">&#x27;aaa&#x27;</span> </span><br><span class="line"><span class="comment">--系统自动选用PK_index</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="number">1</span>)</span><br><span class="line"><span class="keyword">from</span> table1 a <span class="keyword">with</span>(nolock)</span><br><span class="line"><span class="keyword">join</span> table2 b <span class="keyword">with</span>(nolock) <span class="keyword">on</span> a.key_col<span class="operator">=</span>b.key_col</span><br><span class="line"><span class="keyword">where</span> b.some_col<span class="operator">=</span> <span class="string">&#x27;bbb&#x27;</span> </span><br></pre></td></tr></table></figure>
+
+<h1 id="mysql强制指定索引查询"><a href="#mysql强制指定索引查询" class="headerlink" title="mysql强制指定索引查询"></a>mysql强制指定索引查询</h1><p>使用 关键字 <strong>force</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#########mysql强制使用指定索引查询</span><br><span class="line">SELECT * FROM `yrd_pay_flow` FORCE INDEX(`idx_trxn_date`) </span><br><span class="line">WHERE trxn_date &gt; &#x27;2017-08-12 59:59:59&#x27; AND trxn_date &lt; &#x27;2016-06-23 00:00:00&#x27;; </span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>运维</category>
+        <category>sql</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>如何右击新建MacDown</title>
+    <url>/2021/21437N4.html</url>
+    <content><![CDATA[<p>1、注册右击创建macdown文件</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">;注册.md路径的文件，并指定编辑对象为Macdown.md</span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@=&quot;Macdown.md&quot;</span><br><span class="line">;创建Macdown.md对象 指定在右击文件夹中显示的名字和新增文件的显示名字</span><br><span class="line">[HKEY_CLASSES_ROOT\Macdown.md]</span><br><span class="line">@=&quot;Macdown&quot;</span><br><span class="line">&quot;FriendlyTypeName&quot;=&quot;Macdown&quot;</span><br><span class="line">;ShellNew中FileName指定模板文件</span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line">&quot;FileName&quot;=&quot;Macdown.md&quot;</span><br><span class="line">&quot;NullFile&quot;=&quot;&quot;</span><br></pre></td></tr></table></figure>
+
+<p>2、C:\Windows\SHELLNEW下新建Macdown.md模板</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>运维</category>
+        <category>win</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>隐藏盘符</title>
+    <url>/2021/35CC7A2.html</url>
+    <content><![CDATA[<p><a href="https://jingyan.baidu.com/article/6d704a13ee963369da51ca03.html">https://jingyan.baidu.com/article/6d704a13ee963369da51ca03.html</a></p>
+<p><a href="https://blog.csdn.net/wangshui898/article/details/107011608">https://blog.csdn.net/wangshui898/article/details/107011608</a></p>
+<p>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</p>
+<p>diskpart  #运行diskpart工具<br>lis dis #列出所有磁盘<br>sel dis 1  #选中需要隐藏盘符的硬盘<br>lis par  #列出所有分区<br>sel par 0  #选中efi分区（需要隐藏的分区）</p>
+<p>set id=D3BFE2DE-3DAF-11DF-BA40-E3A556D89593 #For GPT ,将分区设置为GPT,进行隐藏，#<a href="https://social.technet.microsoft.com/Forums/en-US/6f4842da-b992-43e6-bffe-f9c5dc4577a2/diskpart-set-id-command-not-working">https://social.technet.microsoft.com/Forums/en-US/6f4842da-b992-43e6-bffe-f9c5dc4577a2/diskpart-set-id-command-not-working</a></p>
+]]></content>
+      <categories>
+        <category>运维</category>
+        <category>win</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>version版本自动写入文件</title>
+    <url>/2021/19RCFHX.html</url>
+    <content><![CDATA[<p>Maven项目Version版本自动写入文件（实际复制就可以了，基本不用修改）</p>
+<p>1、 resources目录下 新增文件version</p>
+<p>内容复制为：</p>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="comment">#$&#123;project.artifactId&#125;#$&#123;project.version&#125;#$&#123;project.packaging&#125;#$&#123;project.timestamp&#125;#</span></span><br></pre></td></tr></table></figure>
+
+<p>截图示例：（下面的是目录结构及version中包含的内容）</p>
+<p><img src="/2021/19RCFHX/clip_image002.jpg" alt="img"></p>
+<p>2、 增加properties</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">   &lt;!— 日期显示格式 --&gt;</span><br><span class="line">   <span class="tag">&lt;<span class="name">maven.build.timestamp.format</span>&gt;</span>yyyy-MM-dd HH:mm:ss<span class="tag">&lt;/<span class="name">maven.build.timestamp.format</span>&gt;</span></span><br><span class="line">   &lt;!— 对应version里面显示的project.timestamp --&gt;</span><br><span class="line">   <span class="tag">&lt;<span class="name">project.timestamp</span>&gt;</span>$&#123;maven.build.timestamp&#125;<span class="tag">&lt;/<span class="name">project.timestamp</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 文件拷贝时的编码 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.build.sourceEncoding</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">project.reporting.outputEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.reporting.outputEncoding</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 编译时的编码 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">maven.compiler.encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">maven.compiler.encoding</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- maven方式跳过maven test, 等同$ mvn package -Dmaven.test.skip=true --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">maven.test.skip</span>&gt;</span>true<span class="tag">&lt;/<span class="name">maven.test.skip</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>3、 Build配置</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">finalName</span>&gt;</span>$&#123;artifactId&#125;<span class="tag">&lt;/<span class="name">finalName</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">       <span class="comment">&lt;!-- 编译配置，source源码版本target编译器版本1.7表示jdk7 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.6.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">encoding</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">source</span>&gt;</span>1.7<span class="tag">&lt;/<span class="name">source</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">target</span>&gt;</span>1.7<span class="tag">&lt;/<span class="name">target</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 编译帮助工具，这里用作时区转换工具 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.codehaus.mojo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>build-helper-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">&lt;!— 执行这个命令timestamp-property --&gt;</span><br><span class="line">                        <span class="tag">&lt;<span class="name">goal</span>&gt;</span>timestamp-property<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">&lt;!— 生命周期 validate时执行--&gt;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">phase</span>&gt;</span>validate<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">&lt;!— 替换project.timestamp的值(没有这里时区是UTC)--&gt;</span><br><span class="line">                        <span class="tag">&lt;<span class="name">name</span>&gt;</span>project.timestamp<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">pattern</span>&gt;</span>$&#123;maven.build.timestamp.format&#125;<span class="tag">&lt;/<span class="name">pattern</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">timeZone</span>&gt;</span>GMT+8<span class="tag">&lt;/<span class="name">timeZone</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">&lt;!— 处理资源文件 --&gt;</span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-resources-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">&lt;!— 生命周期 validate时执行--&gt;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">phase</span>&gt;</span>validate<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">goal</span>&gt;</span>copy-resources<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">outputDirectory</span>&gt;</span>$&#123;project.build.directory&#125;/$&#123;project.build.finalName&#125;<span class="tag">&lt;/<span class="name">outputDirectory</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">                                <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/resources<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">                                <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>true<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">                                <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                                    &lt;!— 选择文件--&gt;</span><br><span class="line">                                    <span class="tag">&lt;<span class="name">include</span>&gt;</span>version<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                                <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>maven</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>MAVEN使用</title>
+    <url>/2021/S3R6PQ.html</url>
+    <content><![CDATA[<p>MAVEN使用</p>
+<h2 id="Maven生命周期及生命周期绑定"><a href="#Maven生命周期及生命周期绑定" class="headerlink" title="Maven生命周期及生命周期绑定"></a>Maven生命周期及生命周期绑定</h2><h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3><p><strong>package</strong> <strong>即将本地编译好的文件打包为war 或者jar</strong> </p>
+<p><strong>install</strong> <strong>将打包的代码存放到本地maven仓库，可供本地其它项目依赖使用</strong> </p>
+<p><strong>deploy</strong> <strong>将打包在本地仓库中的项目发到服务器，供他人依赖使用</strong> </p>
+<p><img src="/2021/S3R6PQ/clip_image002.png" alt="img"></p>
+<h3 id="Plugins绑定maven生命周期"><a href="#Plugins绑定maven生命周期" class="headerlink" title="Plugins绑定maven生命周期"></a>Plugins绑定maven生命周期</h3><p>新建一个plugin工具后，通过**<executions><phase><strong>绑定生命周期，maven-</strong>-plugin的groupId为org.apache.maven.plugins一般都有<strong>默认的生命周期</strong>。如maven-jar-plugin</phase></executions></p>
+<p><img src="/2021/S3R6PQ/clip_image004.jpg" alt="img"></p>
+<h2 id="无法在maven中引用的lib包处理"><a href="#无法在maven中引用的lib包处理" class="headerlink" title="无法在maven中引用的lib包处理"></a>无法在maven中引用的lib包处理</h2><h3 id="Idea使用时报错处理"><a href="#Idea使用时报错处理" class="headerlink" title="Idea使用时报错处理"></a>Idea使用时报错处理</h3><p><img src="/2021/S3R6PQ/clip_image006.jpg" alt="img"></p>
+<h3 id="Maven编译打包报错时处理"><a href="#Maven编译打包报错时处理" class="headerlink" title="Maven编译打包报错时处理"></a>Maven编译打包报错时处理</h3><p><img src="/2021/S3R6PQ/clip_image008.jpg" alt="img"></p>
+<h2 id="Maven项目Version版本自动写入文件"><a href="#Maven项目Version版本自动写入文件" class="headerlink" title="Maven项目Version版本自动写入文件"></a>Maven项目Version版本自动写入文件</h2><h3 id="resources目录下-新增文件version"><a href="#resources目录下-新增文件version" class="headerlink" title="resources目录下 新增文件version"></a>resources目录下 新增文件version</h3><p>内容复制为：</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">#$&#123;project.artifactId&#125;#$&#123;project.version&#125;#$&#123;project.packaging&#125;#$&#123;project.timestamp&#125;#</span><br></pre></td></tr></table></figure>
+
+<p>截图示例：（下面的是目录结构及version中包含的内容）</p>
+<p><img src="/2021/S3R6PQ/clip_image010.jpg" alt="img"></p>
+<h3 id="Properties配置"><a href="#Properties配置" class="headerlink" title="Properties配置"></a>Properties配置</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">   &lt;!— 日期显示格式 --&gt;</span><br><span class="line">   <span class="tag">&lt;<span class="name">maven.build.timestamp.format</span>&gt;</span>yyyy-MM-dd HH:mm:ss<span class="tag">&lt;/<span class="name">maven.build.timestamp.format</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  &lt;!— 对应version里面显示的project.timestamp --&gt;</span><br><span class="line">   <span class="tag">&lt;<span class="name">project.timestamp</span>&gt;</span>$&#123;maven.build.timestamp&#125;<span class="tag">&lt;/<span class="name">project.timestamp</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 文件拷贝时的编码 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.build.sourceEncoding</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">project.reporting.outputEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.reporting.outputEncoding</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 编译时的编码 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">maven.compiler.encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">maven.compiler.encoding</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- maven方式跳过maven test, 等同$ mvn package -Dmaven.test.skip=true --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">maven.test.skip</span>&gt;</span>true<span class="tag">&lt;/<span class="name">maven.test.skip</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Build配置"><a href="#Build配置" class="headerlink" title="Build配置"></a>Build配置</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">finalName</span>&gt;</span>$&#123;artifactId&#125;<span class="tag">&lt;/<span class="name">finalName</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">       <span class="comment">&lt;!-- 编译配置，source源码版本target编译器版本1.7表示jdk7 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.6.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">encoding</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">source</span>&gt;</span>1.7<span class="tag">&lt;/<span class="name">source</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">target</span>&gt;</span>1.7<span class="tag">&lt;/<span class="name">target</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 编译帮助工具，这里用作时区转换工具 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.codehaus.mojo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>build-helper-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">&lt;!— 执行这个命令timestamp-property --&gt;</span><br><span class="line">                        <span class="tag">&lt;<span class="name">goal</span>&gt;</span>timestamp-property<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">&lt;!— 生命周期 validate时执行--&gt;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">phase</span>&gt;</span>validate<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">&lt;!— 替换project.timestamp的值(没有这里时区是UTC)--&gt;</span><br><span class="line">                        <span class="tag">&lt;<span class="name">name</span>&gt;</span>project.timestamp<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">pattern</span>&gt;</span>$&#123;maven.build.timestamp.format&#125;<span class="tag">&lt;/<span class="name">pattern</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">timeZone</span>&gt;</span>GMT+8<span class="tag">&lt;/<span class="name">timeZone</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">&lt;!— 处理资源文件 --&gt;</span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-resources-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">&lt;!— 生命周期 validate时执行--&gt;</span><br><span class="line">                    <span class="tag">&lt;<span class="name">phase</span>&gt;</span>validate<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">goal</span>&gt;</span>copy-resources<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">outputDirectory</span>&gt;</span>$&#123;project.build.directory&#125;/$&#123;project.build.finalName&#125;<span class="tag">&lt;/<span class="name">outputDirectory</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">                                <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/resources<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">                                <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>true<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">                                <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                                    &lt;!— 选择文件--&gt;</span><br><span class="line">                                    <span class="tag">&lt;<span class="name">include</span>&gt;</span>version<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                                <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Maven常用工具"><a href="#Maven常用工具" class="headerlink" title="Maven常用工具"></a>Maven常用工具</h2><h3 id="jar包打包（需依赖外部lib）maven-jar-plugin"><a href="#jar包打包（需依赖外部lib）maven-jar-plugin" class="headerlink" title="jar包打包（需依赖外部lib）maven-jar-plugin"></a>jar包打包（需依赖外部lib）maven-jar-plugin</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span>     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-jar-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>     <span class="tag">&lt;<span class="name">configuration</span>&gt;</span>         <span class="tag">&lt;<span class="name">archive</span>&gt;</span>             <span class="tag">&lt;<span class="name">manifest</span>&gt;</span>                 <span class="tag">&lt;<span class="name">addClasspath</span>&gt;</span>true<span class="tag">&lt;/<span class="name">addClasspath</span>&gt;</span>                 <span class="tag">&lt;<span class="name">classpathPrefix</span>&gt;</span>lib/<span class="tag">&lt;/<span class="name">classpathPrefix</span>&gt;</span>                 <span class="tag">&lt;<span class="name">mainClass</span>&gt;</span>com.newland.buscontrol.message.MainServer<span class="tag">&lt;/<span class="name">mainClass</span>&gt;</span>             <span class="tag">&lt;/<span class="name">manifest</span>&gt;</span>         <span class="tag">&lt;/<span class="name">archive</span>&gt;</span>         <span class="tag">&lt;<span class="name">outputDirectory</span>&gt;</span>../deploy/release<span class="tag">&lt;/<span class="name">outputDirectory</span>&gt;</span>     <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span> <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Jar单文件打包（无需依赖）maven-assembly-plugin"><a href="#Jar单文件打包（无需依赖）maven-assembly-plugin" class="headerlink" title="Jar单文件打包（无需依赖）maven-assembly-plugin"></a>Jar单文件打包（无需依赖）maven-assembly-plugin</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span>     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-assembly-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>     <span class="tag">&lt;<span class="name">executions</span>&gt;</span>         <span class="tag">&lt;<span class="name">execution</span>&gt;</span>             <span class="tag">&lt;<span class="name">phase</span>&gt;</span>package<span class="tag">&lt;/<span class="name">phase</span>&gt;</span>             <span class="tag">&lt;<span class="name">goals</span>&gt;</span>                 <span class="tag">&lt;<span class="name">goal</span>&gt;</span>assembly<span class="tag">&lt;/<span class="name">goal</span>&gt;</span>             <span class="tag">&lt;/<span class="name">goals</span>&gt;</span>         <span class="tag">&lt;/<span class="name">execution</span>&gt;</span>     <span class="tag">&lt;/<span class="name">executions</span>&gt;</span>     <span class="tag">&lt;<span class="name">configuration</span>&gt;</span>         <span class="tag">&lt;<span class="name">archive</span>&gt;</span>             <span class="tag">&lt;<span class="name">manifest</span>&gt;</span>                 <span class="tag">&lt;<span class="name">mainClass</span>&gt;</span>$&#123;mainClass&#125;<span class="tag">&lt;/<span class="name">mainClass</span>&gt;</span>             <span class="tag">&lt;/<span class="name">manifest</span>&gt;</span>         <span class="tag">&lt;/<span class="name">archive</span>&gt;</span>         <span class="tag">&lt;<span class="name">appendAssemblyId</span>&gt;</span>false<span class="tag">&lt;/<span class="name">appendAssemblyId</span>&gt;</span>         <span class="tag">&lt;<span class="name">descriptorRefs</span>&gt;</span>             <span class="tag">&lt;<span class="name">descriptorRef</span>&gt;</span>jar-with-dependencies<span class="tag">&lt;/<span class="name">descriptorRef</span>&gt;</span>         <span class="tag">&lt;/<span class="name">descriptorRefs</span>&gt;</span>         <span class="tag">&lt;<span class="name">outputDirectory</span>&gt;</span>../deploy/release<span class="tag">&lt;/<span class="name">outputDirectory</span>&gt;</span>      <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span> <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="配置清理及不清理的文件maven-clean-plugin"><a href="#配置清理及不清理的文件maven-clean-plugin" class="headerlink" title="配置清理及不清理的文件maven-clean-plugin"></a>配置清理及不清理的文件maven-clean-plugin</h3><p>**(<strong>与绑定生命周期一起用时，可以在package时清理一些指定文件)</strong></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span>     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-clean-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>     <span class="tag">&lt;<span class="name">configuration</span>&gt;</span>         <span class="tag">&lt;<span class="name">filesets</span>&gt;</span>             <span class="tag">&lt;<span class="name">fileset</span>&gt;</span>                 <span class="tag">&lt;<span class="name">directory</span>&gt;</span>deploy/release<span class="tag">&lt;/<span class="name">directory</span>&gt;</span>                 <span class="tag">&lt;<span class="name">excludes</span>&gt;</span>                     <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>BusControl.properties<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span>                     <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>排除文件.jar<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span>                 <span class="tag">&lt;/<span class="name">excludes</span>&gt;</span>             <span class="tag">&lt;/<span class="name">fileset</span>&gt;</span>         <span class="tag">&lt;/<span class="name">filesets</span>&gt;</span>     <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span> <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="多模块项目（重复工作放在一个模块下）"><a href="#多模块项目（重复工作放在一个模块下）" class="headerlink" title="多模块项目（重复工作放在一个模块下）"></a>多模块项目（重复工作放在一个模块下）</h2><h3 id="多模块展示及创建方法（主模块右击新建模块）"><a href="#多模块展示及创建方法（主模块右击新建模块）" class="headerlink" title="多模块展示及创建方法（主模块右击新建模块）"></a>多模块展示及创建方法<strong>（主模块右击新建模块）</strong></h3><p><img src="/2021/S3R6PQ/clip_image012.jpg" alt="img"><img src="/2021/S3R6PQ/clip_image014.jpg" alt="img"></p>
+<h3 id="指定项目中公有的模块"><a href="#指定项目中公有的模块" class="headerlink" title="指定项目中公有的模块"></a>指定项目中公有的模块</h3><p><strong>父pom指定公用模块</strong></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--指定项目中公有的模块--&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">dependencyManagement</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.newland<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>Utils<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;project.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">dependencyManagement</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>子模块使用(可以不用指定版本号)</strong></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencys</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.newland<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>Utils<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="指定项目公共插件及插件公共配置"><a href="#指定项目公共插件及插件公共配置" class="headerlink" title="指定项目公共插件及插件公共配置"></a>指定项目公共插件及插件公共配置</h3><p><strong>父pom指定公共插件</strong></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            <span class="tag">&lt;<span class="name">plugins</span>&gt;</span>                 <span class="tag">&lt;<span class="name">plugin</span>&gt;</span>                     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>                     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-assembly-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>                     <span class="tag">&lt;<span class="name">executions</span>&gt;</span>                         <span class="tag">&lt;<span class="name">execution</span>&gt;</span>                             <span class="tag">&lt;<span class="name">phase</span>&gt;</span>package<span class="tag">&lt;/<span class="name">phase</span>&gt;</span>                             <span class="tag">&lt;<span class="name">goals</span>&gt;</span>                                 <span class="tag">&lt;<span class="name">goal</span>&gt;</span>assembly<span class="tag">&lt;/<span class="name">goal</span>&gt;</span>                             <span class="tag">&lt;/<span class="name">goals</span>&gt;</span>                         <span class="tag">&lt;/<span class="name">execution</span>&gt;</span>                     <span class="tag">&lt;/<span class="name">executions</span>&gt;</span>                     <span class="tag">&lt;<span class="name">configuration</span>&gt;</span>                         <span class="tag">&lt;<span class="name">appendAssemblyId</span>&gt;</span>false<span class="tag">&lt;/<span class="name">appendAssemblyId</span>&gt;</span>                         <span class="tag">&lt;<span class="name">descriptorRefs</span>&gt;</span>                             <span class="tag">&lt;<span class="name">descriptorRef</span>&gt;</span>jar-with-dependencies<span class="tag">&lt;/<span class="name">descriptorRef</span>&gt;</span>                         <span class="tag">&lt;/<span class="name">descriptorRefs</span>&gt;</span>                         <span class="tag">&lt;<span class="name">outputDirectory</span>&gt;</span>../deploy/release<span class="tag">&lt;/<span class="name">outputDirectory</span>&gt;</span>                      <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span>                 <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span>                 <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span>             <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span>         <span class="tag">&lt;/<span class="name">pluginManagement</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>子模块使用（不需版本号与其它公共配置）</strong></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span>     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-assembly-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>     <span class="tag">&lt;<span class="name">configuration</span>&gt;</span>         <span class="tag">&lt;<span class="name">archive</span>&gt;</span>             <span class="tag">&lt;<span class="name">manifest</span>&gt;</span>                 <span class="tag">&lt;<span class="name">mainClass</span>&gt;</span>$&#123;mainClass&#125;<span class="tag">&lt;/<span class="name">mainClass</span>&gt;</span>             <span class="tag">&lt;/<span class="name">manifest</span>&gt;</span>         <span class="tag">&lt;/<span class="name">archive</span>&gt;</span>     <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span> <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Maven模块引用配置"><a href="#Maven模块引用配置" class="headerlink" title="Maven模块引用配置"></a><strong>Maven</strong>模块引用配置</h2><h3 id="环境选择classifier（json-lib）"><a href="#环境选择classifier（json-lib）" class="headerlink" title="环境选择classifier（json-lib）"></a>环境选择classifier（json-lib）</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>net.sf.json-lib<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>json-lib<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">classifier</span>&gt;</span>jdk15<span class="tag">&lt;/<span class="name">classifier</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Jar包冲突之运行环境冲突-使用provided"><a href="#Jar包冲突之运行环境冲突-使用provided" class="headerlink" title="Jar包冲突之运行环境冲突**(**使用provided)"></a><strong>Jar</strong>包冲突之运行环境冲突**(**使用<scope>provided</scope>)</h3><p>在运行环境中存在（tomcat中）且项目中需要直接使用的包，如果直接加maven引用会导致jar冲突。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span>     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>javax.servlet<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>javax.servlet-api<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>     <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.0.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span>     <span class="tag">&lt;<span class="name">scope</span>&gt;</span>provided<span class="tag">&lt;/<span class="name">scope</span>&gt;</span> <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span> <span class="tag">&lt;<span class="name">dependency</span>&gt;</span>     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>javax.servlet.jsp<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jsp-api<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>     <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span>     <span class="tag">&lt;<span class="name">scope</span>&gt;</span>provided<span class="tag">&lt;/<span class="name">scope</span>&gt;</span> <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Maven-引用的jar包导致的冲突（dependencies工具）"><a href="#Maven-引用的jar包导致的冲突（dependencies工具）" class="headerlink" title="**Maven ** 引用的jar包导致的冲突（dependencies工具）"></a>**Maven ** 引用的jar包导致的冲突（dependencies工具）</h3><p>可以直接用exclusions排除，或者使用show dependencies查看冲突关系</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span>     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.struts<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>struts-core<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>     <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.3.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span>     <span class="tag">&lt;<span class="name">exclusions</span>&gt;</span>         <span class="tag">&lt;<span class="name">exclusion</span>&gt;</span>             <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>org.apache.commons<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>             <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>commons-lang3<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>         <span class="tag">&lt;/<span class="name">exclusion</span>&gt;</span>     <span class="tag">&lt;/<span class="name">exclusions</span>&gt;</span> <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/S3R6PQ/clip_image016.jpg" alt="img"></p>
+<p><img src="/2021/S3R6PQ/clip_image018.jpg" alt="img"></p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>maven</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WebFlux编程</title>
+    <url>/2021/KM97CY.html</url>
+    <content><![CDATA[<p>异步Servlet,非阻塞式编程，异步Servlet</p>
+<p>仅支持：Reactive Mongo DB ，反应式数据库</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>AOP</title>
+    <url>/2021/2996F6V.html</url>
+    <content><![CDATA[<p>aop依赖·spring-boot-starter-aop</p>
+<p>过滤器—依赖回调（Servlet）</p>
+<p>过滤器的配置比较简单，直接实现Filter 接口即可，也可以通过@WebFilter注解实现对特定URL拦截</p>
+<p><img src="/2021/2996F6V/aop.png" alt="img"></p>
+<p>拦截器—依赖反射（spring）</p>
+<p>拦截器它是链式调用，通过HandlerInterceptor</p>
+<p><img src="/2021/2996F6V/filter.png" alt="img"></p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+        <tag>aop</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>banner</title>
+    <url>/2021/1QSVE77.html</url>
+    <content><![CDATA[<p>在src/main/resources目录下新建banner.txt</p>
+<p>文本转banner：<a href="http://www.network-science.de/ascii/">http://www.network-science.de/ascii/</a></p>
+<p>图片转banner：<a href="https://www.degraeve.com/img2txt.php">https://www.degraeve.com/img2txt.php</a></p>
+<p>SpringApplication::setBannerMode(Mode.OFF) 关闭banner</p>
+<p>设置banner编码</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">banner:</span></span><br><span class="line"> <span class="attr">charset:</span> <span class="string">UTF-8</span></span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>单元测试</title>
+    <url>/2021/37FJFQ3.html</url>
+    <content><![CDATA[<ul>
+<li>JUnit，标准的单元测试Java应用程序；</li>
+<li>Spring Test &amp; Spring Boot      Test，对Spring Boot应用程序的单元测试提供支持；</li>
+<li>Mockito, Java      mocking框架，用于模拟任何Spring管理的Bean，比如在单元测试中模拟一个第三方系统Service接口返回的数据，而不会去真正调用第三方系统；</li>
+<li>AssertJ，一个流畅的assertion库，同时也提供了更多的期望值与测试返回值的比较方式；</li>
+<li>Hamcrest，库的匹配对象（也称为约束或谓词）；</li>
+<li>JsonPath，提供类似XPath那样的符号来获取JSON数据片段；</li>
+<li>JSONassert，对JSON对象或者JSON字符串断言的库。</li>
+</ul>
+<ul>
+<li>mock框架使用，测试应得值</li>
+</ul>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>spring</tag>
+        <tag>spring boot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>内容协商</title>
+    <url>/2021/19H39GS.html</url>
+    <content><![CDATA[<p><a href="https://mrbird.cc/Spring-Boot-Diy-Resolver.html">https://mrbird.cc/Spring-Boot-Diy-Resolver.html</a></p>
+<p>内容协商机制是指客户端和服务器端就响应的资源内容进行交涉，然后提供给客户端最为适合的资源。内容协商会以响应资源的语言、字符集、编码方式等作为判断的基准。HTTP请求头中Content-Type，Accept等内容就是内容协商判断的标准。在Spring Boot中，一个完整的内容协商过程如下图所示：</p>
+<p><img src="/2021/19H39GS/askfljasdfneiw.png" alt="askfljasdfneiw.png"></p>
+<table>
+<thead>
+<tr>
+<th><strong>组件</strong></th>
+<th><strong>名称</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ContentNegotiationManager</td>
+<td>内容协商管理器</td>
+<td>ContentNegotiationStrategy  控制策略</td>
+</tr>
+<tr>
+<td>MediaType</td>
+<td>媒体类型</td>
+<td>HTTP  消息媒体类型，如 text/html</td>
+</tr>
+<tr>
+<td>@RequestMapping#consumes</td>
+<td>消费媒体类型</td>
+<td>请求头  Content-Type 媒体类型映射</td>
+</tr>
+<tr>
+<td>@RequestMapping#produces</td>
+<td>生产媒体类型</td>
+<td>响应头  Content-Type 媒体类型映射</td>
+</tr>
+<tr>
+<td>HttpMessageConverter</td>
+<td>HTTP消息转换器接口</td>
+<td>HTTP  消息转换器，用于反序列化 HTTP 请求或序列化响应</td>
+</tr>
+<tr>
+<td>WebMvcConfigurer</td>
+<td>Web MVC  配置器</td>
+<td>配置 REST  相关的组件</td>
+</tr>
+<tr>
+<td>HandlerMethod</td>
+<td>处理方法</td>
+<td>@RequestMapping  标注的方法</td>
+</tr>
+<tr>
+<td>HandlerMethodArgumentResolver</td>
+<td>处理方法参数解析器</td>
+<td>用于 HTTP  请求中解析 HandlerMethod 参数内容</td>
+</tr>
+<tr>
+<td>HandlerMethodReturnValueHandler</td>
+<td>处理方法返回值解析器</td>
+<td>用于  HandlerMethod 返回值解析为 HTTP 响应内容</td>
+</tr>
+</tbody></table>
+<p>自定义：HttpMessageConverter</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+        <tag>spring boot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安全</title>
+    <url>/2021/2CXV9JB.html</url>
+    <content><![CDATA[<p>使用Jsoup防御XSS攻击</p>
+<p>druid防止sql注入</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>开始</title>
+    <url>/2021/3XJ06KH.html</url>
+    <content><![CDATA[<p>快速开始：<a href="https://start.aliyun.com/">https://start.aliyun.com/</a></p>
+<p><img src="/2021/3XJ06KH/image-20210525105828827.png" alt="image-20210525105828827"></p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>异常处理</title>
+    <url>/2021/18GXXZ.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>异步调用</title>
+    <url>/2021/2W8PYN.html</url>
+    <content><![CDATA[<p>入口类：@EnableAsync 开启异步方法支持</p>
+<p>方法： @Async，其余方法异步执行</p>
+<p>指定线程池：</p>
+<p>1、创建bean：ThreadPoolTaskExecutor</p>
+<p>2、指定bean名称 @Async(“asyncThreadPoolTaskExecutor”)</p>
+<p>@Configuration</p>
+<p>@EnableAsync</p>
+<p>public class AsyncTaskConfiguration implements AsyncConfigurer {</p>
+<p>  //注册执行器</p>
+<p>  @Override</p>
+<p>  public Executor getAsyncExecutor() {</p>
+<p>​    ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();</p>
+<p>​    taskExecutor.setCorePoolSize(10);</p>
+<p>​    taskExecutor.setMaxPoolSize(80);</p>
+<p>​    taskExecutor.setQueueCapacity(100);</p>
+<p>​    taskExecutor.initialize();//如果不初始化，导致找到不到执行器</p>
+<p>​    return taskExecutor;</p>
+<p>  }</p>
+<p>  // 用于捕获异步异常</p>
+<p>  @Override</p>
+<p>  public AsyncUncaughtExceptionHandler getAsyncUncaughtExceptionHandler() {</p>
+<p>​    return null;</p>
+<p>  }</p>
+<p>}</p>
+<p>回调：</p>
+<p>返回Future<String>，Future.get为阻塞方法，可指定超时时间</String></p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>数据库</title>
+    <url>/2021/AEMVFQ.html</url>
+    <content><![CDATA[<p>Mybatis:<a href="http://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/">http://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/</a></p>
+<p>Druid:<a href="https://github.com/alibaba/druid">https://github.com/alibaba/druid</a></p>
+<p>Mybatis-Plus:<a href="https://mybatis.plus/">https://mybatis.plus/</a></p>
+<p>sqllocalDB</p>
+<p>这里我们创建一个新的来完整的测试一遍。</p>
+<p>1、创建一个新的实例名 </p>
+<p>sqllocaldb c MyLocaldb</p>
+<p>2、启动这个实例名</p>
+<p>sqllocaldb s MyLocaldb</p>
+<p>3、 查看实例名详情</p>
+<p>sqllocaldb i MyLocaldb</p>
+<p>4、停止这个实例名</p>
+<p>sqllocaldb p MyLocaldb</p>
+<p>5、删除这个实例名 </p>
+<p>sqllocaldb d MyLocaldb</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>监控</title>
+    <url>/2021/1CQ8DE5.html</url>
+    <content><![CDATA[<h1 id="actuator"><a href="#actuator" class="headerlink" title="actuator"></a>actuator</h1><p><a href="https://mrbird.cc/Acutator-Spring-Boot.html">https://mrbird.cc/Acutator-Spring-Boot.html</a></p>
+<p>actuator还可以切换日志级别，方便必要时候进行调试</p>
+<p><a href="https://mrbird.cc/Spring-Boot-Admin.html">https://mrbird.cc/Spring-Boot-Admin.html</a></p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>模板引擎</title>
+    <url>/2021/FEX6EK.html</url>
+    <content><![CDATA[<p>FreeMarker、Groovy、Thymeleaf和Mustache</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>缓存</title>
+    <url>/2021/251BTJZ.html</url>
+    <content><![CDATA[<p>开启缓存(入口类）：@EnableCaching</p>
+<p> 切换缓存：@Configuration – extends CachingConfigurerSupport</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>表单校验</title>
+    <url>/2021/3MPFY6E.html</url>
+    <content><![CDATA[<p>Spring Boot中结合Hibernate Validator可以实现优雅的参数校验</p>
+<p>自定义：@Constraint(validatedBy = MyConstraintValidator.class) – implements ConstraintValidator&lt;MyConstraint, Object&gt; </p>
+<table>
+<thead>
+<tr>
+<th>注解</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>@Null</td>
+<td>限制只能为null</td>
+</tr>
+<tr>
+<td>@NotNull</td>
+<td>限制必须不为null</td>
+</tr>
+<tr>
+<td>@AssertFalse</td>
+<td>限制必须为false</td>
+</tr>
+<tr>
+<td>@AssertTrue</td>
+<td>限制必须为true</td>
+</tr>
+<tr>
+<td>@DecimalMax(value)</td>
+<td>限制必须为一个不大于指定值的数字</td>
+</tr>
+<tr>
+<td>@DecimalMin(value)</td>
+<td>限制必须为一个不小于指定值的数字</td>
+</tr>
+<tr>
+<td>@Digits(integer,fraction)</td>
+<td>限制必须为一个小数，且整数部分的位数不能超过integer，  小数部分的位数不能超过fraction</td>
+</tr>
+<tr>
+<td>@Future</td>
+<td>限制必须是一个将来的日期</td>
+</tr>
+<tr>
+<td>@Past</td>
+<td>限制必须是一个过去的日期</td>
+</tr>
+<tr>
+<td>@Max(value)</td>
+<td>限制必须为一个不大于指定值的数字</td>
+</tr>
+<tr>
+<td>@Min(value)</td>
+<td>限制必须为一个不小于指定值的数字</td>
+</tr>
+<tr>
+<td>@Past</td>
+<td>限制必须是一个过去的日期</td>
+</tr>
+<tr>
+<td>@Pattern(value)</td>
+<td>限制必须符合指定的正则表达式</td>
+</tr>
+<tr>
+<td>@Size(max,min)</td>
+<td>限制字符长度必须在min到max之间</td>
+</tr>
+<tr>
+<td>@SafeHtml</td>
+<td>字符串是安全的html</td>
+</tr>
+<tr>
+<td>@URL</td>
+<td>字符串是合法的URL</td>
+</tr>
+<tr>
+<td>@NotBlank</td>
+<td>字符串必须有字符</td>
+</tr>
+<tr>
+<td>@NotEmpty</td>
+<td>字符串不为NULL，集合有字符</td>
+</tr>
+<tr>
+<td>@AssertFalse</td>
+<td>必须是false</td>
+</tr>
+<tr>
+<td>@AssertTrue</td>
+<td>必须是true</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+        <tag>spring boot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>跨域</title>
+    <url>/2021/1CAVNZ9.html</url>
+    <content><![CDATA[<p>@CrossOrigin</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>含义</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>value</td>
+<td>指定所支持域的集合，<em><strong>表示所有域都支持，默认值为</strong></em>。这些值对应HTTP请求头中的<em>Access-Control-Allow-Origin</em></td>
+</tr>
+<tr>
+<td>origins</td>
+<td>同value</td>
+</tr>
+<tr>
+<td>allowedHeaders</td>
+<td>允许请求头中的header，默认都支持</td>
+</tr>
+<tr>
+<td>exposedHeaders</td>
+<td>响应头中允许访问的header，默认为空</td>
+</tr>
+<tr>
+<td>methods</td>
+<td>支持请求的方法，比如<em>GET</em>，<em>POST</em>，<em>PUT</em>等，默认和Controller中的方法上标注的一致。</td>
+</tr>
+<tr>
+<td>allowCredentials</td>
+<td>是否允许cookie随请求发送，使用时必须指定具体的域</td>
+</tr>
+<tr>
+<td>maxAge</td>
+<td>预请求的结果的有效期，默认30分钟</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>配置</title>
+    <url>/2021/N188PJ.html</url>
+    <content><![CDATA[<p>位置：</p>
+<p>读取</p>
+<p>1、属性添加 @Value(“${属性名}”)来加载配置文件中的属性值</p>
+<p>2、类上指定(get,set)：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@ConfigurationProperties(prefix=&quot;blog&quot;)</span></span><br></pre></td></tr></table></figure>
+
+<p>需开启</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@EnableConfigurationProperties(&#123;ConfigBean.class&#125;)</span></span><br></pre></td></tr></table></figure>
+
+<p>3、指定自定义配置文件：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@PropertySource(&quot;classpath:test.properties&quot;)</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>互相引用</p>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="meta">blog.wholeTitle</span>=<span class="string">$&#123;blog.name&#125;--$&#123;blog.title&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>环境配置：Profile</p>
+<p>WebMvcConfigurer (mvc配置接口)</p>
+<p>configurePathMatch 路径相关配置</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分布式事务</title>
+    <url>/2021/36WRKNE.html</url>
+    <content><![CDATA[<blockquote>
+<p>相信很多小伙伴在阅读分布式事务相关文章时，都有碰到过，上来就是分析各种解决方案(全局事务、基于可靠消息、最大努力通知、TCC)，又掺杂着两阶段提交协议2PC/TCC(提个小问题2PC和TCC的关系?)<br>看似内容丰满，但看完之后没有条理，记不住这么多。今天从分布式事务4种模式的角度，来聊聊分布式事务理论的发展及其模式的迭代。（再往上层走，才是具体实现，具体实现都是必然的事）</p>
+</blockquote>
+<ul>
+<li><p><strong>常见分布式事务解决方案</strong><br>1、seata 阿里分布式事务框架<br>2、消息队列<br>3、saga<br>4、XA</p>
+</li>
+<li><p>他们有一个共同点，都是“两阶段”。“两阶段”是指完成整个分布式事务，划分成两个步骤完成。</p>
+</li>
+<li><p>实际上，这四种常见的分布式事务解决方案，分别对应着<code>分布式事务的四种模式：AT、TCC、Saga、XA；</code></p>
+</li>
+<li><p>四种分布式事务模式，都有各自的理论基础，分别在不同的时间被提出；每种模式都有它的适用场景，同样每个模式也都诞生有各自的代表产品；而这些代表产品，可能就是我们常见的(全局事务、基于可靠消息、最大努力通知、TCC)。</p>
+</li>
+<li><p>今天，我们会分别来看4种模式（AT、TCC、Saga、XA）的分布式事务实现。</p>
+</li>
+<li><p>在看具体实现之前，先回顾下分布式事务的理论基础。</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h3 id="分布式事务理论基础"><a href="#分布式事务理论基础" class="headerlink" title="分布式事务理论基础"></a><strong>分布式事务理论基础</strong></h3></li>
+<li><p>解决分布式事务，也有相应的规范和协议。分布式事务相关的协议有2PC、3PC。</p>
+</li>
+<li><p>由于<code>三阶段提交协议3PC</code>非常难实现，目前市面主流的分布式事务解决方案都是2PC协议。这就是文章开始提及的常见分布式事务解决方案里面，那些列举的都有一个共同点“两阶段”的内在原因。</p>
+</li>
+<li><p>有些文章分析2PC时，几乎都会用TCC两阶段的例子，第一阶段try，第二阶段完成confirm或cancel。其实2PC并不是专为实现TCC设计的，2PC具有普适性——协议一样的存在，目前绝大多数分布式解决方案都是以两阶段提交协议2PC为基础的。</p>
+</li>
+<li><p>TCC（Try-Confirm-Cancel） 实际上是服务化的两阶段提交协议。</p>
+</li>
+<li><h3 id="2PC两阶段提交协议"><a href="#2PC两阶段提交协议" class="headerlink" title="2PC两阶段提交协议"></a><strong>2PC两阶段提交协议</strong></h3></li>
+<li><p>两阶段提交协议：事务管理器分两个阶段来协调资源管理器，第一阶段准备资源，也就是预留事务所需的资源，如果每个资源管理器都资源预留成功，则进行第二阶段资源提交，否则协调资源管理器回滚资源。</p>
+</li>
+<li><p>2PC协议的核心是，划分出了事务参与者和协调者的角色，并将整个过程划分成两个阶段。</p>
+</li>
+<li><p>第一阶段：所有事务参与者，执行后进行预提交；直到协调者收到所有参与者的预提交才会进入第二步；</p>
+</li>
+<li><ul>
+<li>如果在协调者的超时时间内，有任意参与者的预提交preCommit没发送或未到达，都会结束事务。</li>
+</ul>
+</li>
+<li><p>第二阶段：所有事务预提交了各自的结果后，由协调者决定最终事务是成功(commit)还是失败(rollback)。</p>
+</li>
+<li><p>二阶段提交看起来确实能够提供原子性的操作，但是不幸的事，二阶段提交还是有几个缺点的：</p>
+</li>
+<li><p>1.执行过程中，所有参与节点都是事务阻塞型的。当参与者占有公共资源时，其他第三方节点访问公共资源不得不处于阻塞状态。<br>2.参与者发生故障。协调者需要给每个参与者额外指定超时机制，超时后整个事务失败。（没有多少容错机制）<br>3.协调者发生故障。参与者会一直阻塞下去。需要额外的备机进行容错。（这个可以依赖后面要讲的Paxos协议实现HA）<br>4.二阶段无法解决的问题：协调者再发出commit消息之后宕机，而唯一接收到这条消息的参与者同时也宕机了。那么即使协调者通过选举协议产生了新的协调者，这条事务的状态也是不确定的，没人知道事务是否被已经提交。</p>
+</li>
+<li><p>为此，Dale Skeen和Michael Stonebraker在“A Formal Model of Crash Recovery in a Distributed System”中提出了三阶段提交协议（3PC）。</p>
+</li>
+<li><h3 id="三阶段提交协议-3PC"><a href="#三阶段提交协议-3PC" class="headerlink" title="三阶段提交协议 3PC"></a><strong>三阶段提交协议 3PC</strong></h3></li>
+<li><p>与两阶段提交不同的是，三阶段提交有两个改动点。</p>
+</li>
+<li><ul>
+<li>引入超时机制。同时在协调者和参与者中都引入超时机制。</li>
+<li>在第一阶段和第二阶段中插入一个准备阶段。保证了在最后提交阶段之前各参与节点的状态是一致的。</li>
+</ul>
+</li>
+<li><p>也就是说，除了引入超时机制之外，3PC把2PC的准备阶段再次一分为二，这样三阶段提交就有CanCommit、PreCommit、DoCommit三个阶段。</p>
+</li>
+<li><p><strong>1. CanCommit阶段</strong></p>
+</li>
+<li><p>3PC的CanCommit阶段其实和2PC的准备阶段很像。协调者向参与者发送commit请求，参与者如果可以提交就返回Yes响应，否则返回No响应。<br>1.事务询问 协调者向参与者发送CanCommit请求。询问是否可以执行事务提交操作。然后开始等待参与者的响应。<br>2.响应反馈 参与者接到CanCommit请求之后，正常情况下，如果其自身认为可以顺利执行事务，则返回Yes响应，并进入预备状态。否则反馈No</p>
+</li>
+<li><p><strong>2. PreCommit阶段</strong></p>
+</li>
+<li><p>协调者根据参与者的反应情况来决定是否可以继续事务的PreCommit操作。根据响应情况，有以下两种可能。 假如协调者从所有的参与者获得的反馈都是Yes响应，那么就会执行事务的预执行。<br>1.发送预提交请求 协调者向参与者发送PreCommit请求，并进入Prepared阶段。<br>2.事务预提交 参与者接收到PreCommit请求后，会执行事务操作，并将undo和redo信息记录到事务日志中。<br>3.响应反馈 如果参与者成功的执行了事务操作，则返回ACK响应，同时开始等待最终指令。</p>
+</li>
+<li><p>假如有任何一个参与者向协调者发送了No响应，或者等待超时之后，协调者都没有接到参与者的响应，那么就执行事务的中断。<br>1.发送中断请求 协调者向所有参与者发送abort请求。<br>2.中断事务 参与者收到来自协调者的abort请求之后（或超时之后，仍未收到协调者的请求），执行事务的中断。</p>
+</li>
+<li><p><strong>3. doCommit阶段</strong><br>该阶段进行真正的事务提交，也可以分为以下两种情况。<br><strong>3.1 执行提交</strong><br>1.发送提交请求 协调接收到参与者发送的ACK响应，那么他将从预提交状态进入到提交状态。并向所有参与者发送doCommit请求。<br>2.事务提交 参与者接收到doCommit请求之后，执行正式的事务提交。并在完成事务提交之后释放所有事务资源。<br>3.响应反馈 事务提交完之后，向协调者发送Ack响应。<br>4.完成事务 协调者接收到所有参与者的ack响应之后，完成事务。<br><strong>3.2 中断事务</strong><br>协调者没有接收到参与者发送的ACK响应（可能是接受者发送的不是ACK响应，也可能响应超时），那么就会执行中断事务。<br>1.发送中断请求 协调者向所有参与者发送abort请求<br>2.事务回滚 参与者接收到abort请求之后，利用其在阶段二记录的undo信息来执行事务的回滚操作，并在完成回滚之后释放所有的事务资源。<br>3.反馈结果 参与者完成事务回滚之后，向协调者发送ACK消息<br>4.中断事务 协调者接收到参与者反馈的ACK消息之后，执行事务的中断。</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>下面我们分别来看4种模式（AT、TCC、Saga、XA）的分布式事务实现。</p>
+</li>
+<li><h3 id="AT模式"><a href="#AT模式" class="headerlink" title="AT模式"></a><strong>AT模式</strong></h3></li>
+<li><p>AT 模式是一种无侵入的分布式事务解决方案。<br>阿里seata框架，实现了该模式。</p>
+</li>
+<li><p>在 AT 模式下，用户只需关注自己的“业务 SQL”，用户的 “业务 SQL” 作为一阶段，Seata 框架会自动生成事务的二阶段提交和回滚操作。</p>
+</li>
+<li><p><img src="/2021/36WRKNE/v2-fc62c13c3039f512328ec5a4c50a5514_720w.jpg" alt="img"></p>
+</li>
+<li><p>AT 模式如何做到对业务的无侵入 ：</p>
+</li>
+<li><ul>
+<li>一阶段：<br>在一阶段，Seata 会拦截“业务 SQL”，首先解析 SQL 语义，找到“业务 SQL”要更新的业务数据，在业务数据被更新前，将其保存成“before image”，然后执行“业务 SQL”更新业务数据，在业务数据更新之后，再将其保存成“after image”，最后生成行锁。以上操作全部在一个数据库事务内完成，这样保证了一阶段操作的原子性。</li>
+</ul>
+</li>
+<li><p><img src="/2021/36WRKNE/v2-c2df76b462cd22fcc1b1435113e82e49_720w.jpg" alt="img"></p>
+</li>
+<li><ul>
+<li>二阶段提交：<br>二阶段如果是提交的话，因为“业务 SQL”在一阶段已经提交至数据库， 所以 Seata 框架只需将一阶段保存的快照数据和行锁删掉，完成数据清理即可。</li>
+</ul>
+</li>
+<li><p><img src="/2021/36WRKNE/v2-75048a7c0f655654032213658742b7d5_720w.jpg" alt="img"></p>
+</li>
+<li><ul>
+<li>二阶段回滚：<br>二阶段如果是回滚的话，Seata 就需要回滚一阶段已经执行的“业务 SQL”，还原业务数据。回滚方式便是用“before image”还原业务数据；但在还原前要首先要校验脏写，对比“数据库当前业务数据”和 “after image”，如果两份数据完全一致就说明没有脏写，可以还原业务数据，如果不一致就说明有脏写，出现脏写就需要转人工处理。</li>
+</ul>
+</li>
+<li><p><img src="/2021/36WRKNE/v2-12a2fb645ded74b2ace2728d052a7bff_720w.jpg" alt="img"></p>
+</li>
+<li><p>AT 模式的一阶段、二阶段提交和回滚均由 Seata 框架自动生成，用户只需编写“业务 SQL”，便能轻松接入分布式事务，AT 模式是一种对业务无任何侵入的分布式事务解决方案。</p>
+</li>
+<li><h3 id="TCC-模式"><a href="#TCC-模式" class="headerlink" title="TCC 模式"></a><strong>TCC 模式</strong></h3></li>
+<li><p>TCC 模式需要用户根据自己的业务场景实现 Try、Confirm 和 Cancel 三个操作；事务发起方在一阶段执行 Try 方式，在二阶段提交执行 Confirm 方法，二阶段回滚执行 Cancel 方法。</p>
+</li>
+<li><p><img src="/2021/36WRKNE/v2-31392058372bc71ad3f14bc738c31033_720w.jpg" alt="img"></p>
+</li>
+<li><p>TCC 三个方法描述：</p>
+</li>
+<li><ul>
+<li>Try：资源的检测和预留；</li>
+<li>Confirm：执行的业务操作提交；要求 Try 成功 Confirm 一定要能成功；</li>
+<li>Cancel：预留资源释放；</li>
+</ul>
+</li>
+<li><h3 id="TCC-的实践经验"><a href="#TCC-的实践经验" class="headerlink" title="TCC 的实践经验"></a><strong>TCC 的实践经验</strong></h3></li>
+<li><p>蚂蚁金服TCC实践,总结以下注意事项:</p>
+</li>
+<li><p>➢业务模型分2阶段设计<br>➢并发控制<br>➢允许空回滚<br>➢防悬挂控制<br>➢幂等控制</p>
+</li>
+<li><p><strong>1 TCC 设计 - 业务模型分 2 阶段设计：</strong><br>用户接入 TCC ，最重要的是考虑如何将自己的业务模型拆成两阶段来实现。</p>
+</li>
+<li><p>以“扣钱”场景为例，在接入 TCC 前，对 A 账户的扣钱，只需一条更新账户余额的 SQL 便能完成；但是在接入 TCC 之后，用户就需要考虑如何将原来一步就能完成的扣钱操作，拆成两阶段，实现成三个方法，并且保证一阶段 Try 成功的话 二阶段 Confirm 一定能成功。</p>
+</li>
+<li><p><img src="/2021/36WRKNE/v2-3acebdb0ef0f62da7bff967e0b0eab73_720w.jpg" alt="img"></p>
+</li>
+<li><p>如上图所示，Try 方法作为一阶段准备方法，需要做资源的检查和预留。在扣钱场景下，Try 要做的事情是就是检查账户余额是否充足，预留转账资金，预留的方式就是冻结 A 账户的 转账资金。Try 方法执行之后，账号 A 余额虽然还是 100，但是其中 30 元已经被冻结了，不能被其他事务使用。</p>
+</li>
+<li><p>二阶段 Confirm 方法执行真正的扣钱操作。Confirm 会使用 Try 阶段冻结的资金，执行账号扣款。Confirm 方法执行之后，账号 A 在一阶段中冻结的 30 元已经被扣除，账号 A 余额变成 70 元 。</p>
+</li>
+<li><p>如果二阶段是回滚的话，就需要在 Cancel 方法内释放一阶段 Try 冻结的 30 元，使账号 A 的回到初始状态，100 元全部可用。</p>
+</li>
+<li><p>用户接入 TCC 模式，最重要的事情就是考虑如何将业务模型拆成 2 阶段，实现成 TCC 的 3 个方法，并且保证 Try 成功 Confirm 一定能成功。相对于 AT 模式，TCC 模式对业务代码有一定的侵入性，但是 TCC 模式无 AT 模式的全局行锁，TCC 性能会比 AT 模式高很多。</p>
+</li>
+<li><p><strong>2 TCC 设计 - 允许空回滚：</strong></p>
+</li>
+<li><p><img src="/2021/36WRKNE/v2-db3703aeaee047c39b5ecfd8c65e5c6c_720w.jpg" alt="img"></p>
+</li>
+<li><p>Cancel 接口设计时需要允许空回滚。在 Try 接口因为丢包时没有收到，事务管理器会触发回滚，这时会触发 Cancel 接口，这时 Cancel 执行时发现没有对应的事务 xid 或主键时，需要返回回滚成功。让事务服务管理器认为已回滚，否则会不断重试，而 Cancel 又没有对应的业务数据可以进行回滚。</p>
+</li>
+<li><p><strong>3 TCC 设计 - 防悬挂控制：</strong></p>
+</li>
+<li><p><img src="/2021/36WRKNE/v2-4bae80b23dac30a00f22816625481d4e_720w.jpg" alt="img"></p>
+</li>
+<li><p>悬挂的意思是：Cancel 比 Try 接口先执行，出现的原因是 Try 由于网络拥堵而超时，事务管理器生成回滚，触发 Cancel 接口，而最终又收到了 Try 接口调用，但是 Cancel 比 Try 先到。按照前面允许空回滚的逻辑，回滚会返回成功，事务管理器认为事务已回滚成功，则此时的 Try 接口不应该执行，否则会产生数据不一致，所以我们在 Cancel 空回滚返回成功之前先记录该条事务 xid 或业务主键，标识这条记录已经回滚过，Try 接口先检查这条事务xid或业务主键如果已经标记为回滚成功过，则不执行 Try 的业务操作。</p>
+</li>
+<li><p><strong>4 TCC 设计 - 幂等控制：</strong></p>
+</li>
+<li><p><img src="/2021/36WRKNE/v2-d6fd8568cb4006c71924320f0e96c9af_720w.jpg" alt="img"></p>
+</li>
+<li><p>幂等性的意思是：对同一个系统，使用同样的条件，一次请求和重复的多次请求对系统资源的影响是一致的。因为网络抖动或拥堵可能会超时，事务管理器会对资源进行重试操作，所以很可能一个业务操作会被重复调用，为了不因为重复调用而多次占用资源，需要对服务设计时进行幂等控制，通常我们可以用事务 xid 或业务主键判重来控制。</p>
+</li>
+<li><h3 id="saga模式"><a href="#saga模式" class="headerlink" title="saga模式"></a><strong>saga模式</strong></h3></li>
+<li><p><img src="/2021/36WRKNE/v2-92bee26d8525e2c097c8717e94447e67_720w-1624359859406.jpg" alt="img"></p>
+</li>
+<li><p>Saga 理论出自 Hector &amp; Kenneth 1987发表的论文 Sagas。<br>saga模式的实现，是长事务解决方案。</p>
+</li>
+<li><p>Saga 是一种补偿协议，在 Saga 模式下，分布式事务内有多个参与者，每一个参与者都是一个冲正补偿服务，需要用户根据业务场景实现其正向操作和逆向回滚操作。</p>
+</li>
+<li><p><img src="/2021/36WRKNE/v2-85d4dcfedf9927854b178a4f46fcd55d_720w-1624359861424.jpg" alt="img"></p>
+</li>
+<li><pre><code>如图：T1~T3都是正向的业务流程，都对应着一个冲正逆向操作C1~C3
+</code></pre>
+</li>
+<li><p>分布式事务执行过程中，依次执行各参与者的正向操作，如果所有正向操作均执行成功，那么分布式事务提交。如果任何一个正向操作执行失败，那么分布式事务会退回去执行前面各参与者的逆向回滚操作，回滚已提交的参与者，使分布式事务回到初始状态。</p>
+</li>
+<li><p>Saga 正向服务与补偿服务也需要业务开发者实现。因此是业务入侵的。</p>
+</li>
+<li><p>Saga 模式下分布式事务通常是由事件驱动的，各个参与者之间是异步执行的，Saga 模式是一种长事务解决方案。</p>
+</li>
+<li><h3 id="Saga-模式使用场景"><a href="#Saga-模式使用场景" class="headerlink" title="Saga 模式使用场景"></a><strong>Saga 模式使用场景</strong></h3></li>
+<li><p>Saga 模式适用于业务流程长且需要保证事务最终一致性的业务系统，Saga 模式一阶段就会提交本地事务，无锁、长流程情况下可以保证性能。</p>
+</li>
+<li><p>事务参与者可能是其它公司的服务或者是遗留系统的服务，无法进行改造和提供 TCC 要求的接口，可以使用 Saga 模式。</p>
+</li>
+<li><p>Saga模式的优势是：</p>
+</li>
+<li><ul>
+<li>一阶段提交本地数据库事务，无锁，高性能；</li>
+<li>参与者可以采用事务驱动异步执行，高吞吐；</li>
+<li>补偿服务即正向服务的“反向”，易于理解，易于实现；</li>
+</ul>
+</li>
+<li><p>缺点：Saga 模式由于一阶段已经提交本地数据库事务，且没有进行“预留”动作，所以不能保证隔离性。后续会讲到对于缺乏隔离性的应对措施。</p>
+</li>
+<li><p>与TCC实践经验相同的是，Saga 模式中，每个事务参与者的冲正、逆向操作，需要支持：</p>
+</li>
+<li><ul>
+<li>空补偿：逆向操作早于正向操作时；</li>
+<li>防悬挂控制：空补偿后要拒绝正向操作</li>
+<li>幂等</li>
+</ul>
+</li>
+<li><h3 id="XA模式"><a href="#XA模式" class="headerlink" title="XA模式"></a><strong>XA模式</strong></h3></li>
+<li><p>XA是X/Open DTP组织（X/Open DTP group）定义的两阶段提交协议，XA被许多数据库（如Oracle、DB2、SQL Server、MySQL）和中间件等工具(如CICS 和 Tuxedo)本地支持 。<br>X/Open DTP模型（1994）包括应用程序（AP）、事务管理器（TM）、资源管理器（RM）。</p>
+</li>
+<li><p>XA接口函数由数据库厂商提供。<code>XA规范的基础是两阶段提交协议2PC。</code><br>JTA(Java Transaction API) 是Java实现的XA规范的增强版 接口。</p>
+</li>
+<li><p>在XA模式下，需要有一个[全局]协调器，每一个数据库事务完成后，进行第一阶段预提交，并通知协调器，把结果给协调器。协调器等所有分支事务操作完成、都预提交后，进行第二步；第二步：协调器通知每个数据库进行逐个commit/rollback。<br>其中，这个全局协调器就是XA模型中的TM角色，每个分支事务各自的数据库就是RM。</p>
+</li>
+<li><p>MySQL 提供的XA实现（<a href="https://dev.mysql.com/doc/refman/5.7/en/xa.html">https://dev.mysql.com/doc/refman/5.7/en/xa.html</a> ）</p>
+</li>
+<li><p>XA模式下的 开源框架有atomikos，其开发公司也有商业版本。<br>XA模式缺点：事务粒度大。高并发下，系统可用性低。因此很少使用。</p>
+</li>
+<li><h3 id="（AT、TCC、Saga、XA）模式分析"><a href="#（AT、TCC、Saga、XA）模式分析" class="headerlink" title="（AT、TCC、Saga、XA）模式分析"></a><strong>（AT、TCC、Saga、XA）模式分析</strong></h3></li>
+<li><p>四种分布式事务模式，分别在不同的时间被提出，每种模式都有它的适用场景</p>
+</li>
+<li><ul>
+<li>AT 模式是无侵入的分布式事务解决方案，适用于不希望对业务进行改造的场景，几乎0学习成本。</li>
+<li>TCC 模式是高性能分布式事务解决方案，适用于核心系统等对性能有很高要求的场景。</li>
+<li>Saga 模式是长事务解决方案，适用于业务流程长且需要保证事务最终一致性的业务系统，Saga 模式一阶段就会提交本地事务，无锁，长流程情况下可以保证性能，多用于渠道层、集成层业务系统。事务参与者可能是其它公司的服务或者是遗留系统的服务，无法进行改造和提供 TCC 要求的接口，也可以使用 Saga 模式。</li>
+<li>XA模式是分布式强一致性的解决方案，但性能低而使用较少。</li>
+</ul>
+</li>
+<li><p>ref <a href="https://juejin.im/post/5d54effe6fb9a06aeb10b646">https://juejin.im/post/5d54effe</a></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>seata</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>权限分类</title>
+    <url>/2021/24B6ASX.html</url>
+    <content><![CDATA[<p>匿名权限（免登录权限）</p>
+<p>管理权限（所有权限）</p>
+<p>用户权限（按租户划分）</p>
+<p>应用权限（按应用菜单权限管理）</p>
+<h3 id="用户权限（按租户划分）"><a href="#用户权限（按租户划分）" class="headerlink" title="用户权限（按租户划分）"></a>用户权限（按租户划分）</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">用户--&gt;租户1</span><br><span class="line">用户--&gt;租户2</span><br><span class="line">租户1--&gt;应用1</span><br><span class="line">租户1--&gt;应用2</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="应用权限（按应用划分）"><a href="#应用权限（按应用划分）" class="headerlink" title="应用权限（按应用划分）"></a>应用权限（按应用划分）</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">应用--&gt;菜单--&gt;权限1</span><br><span class="line">菜单--&gt;权限2</span><br><span class="line">应用--&gt;权限3</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>架构</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>结构划分</title>
+    <url>/2021/2B6Y21P.html</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">平台--&gt;用户--&gt;租户--&gt;授权</span><br><span class="line">平台--&gt;对外接口--&gt;api管理</span><br><span class="line">平台--&gt;系统维护--&gt;浏览器</span><br><span class="line">平台--&gt;业务</span><br><span class="line">平台--&gt;公共模块--&gt;|类共享|访问接口</span><br><span class="line">业务--&gt;|公共模块|公共模块</span><br><span class="line">业务--&gt;|维护模块|系统维护</span><br><span class="line">业务--&gt;|抽象接口|对外接口</span><br><span class="line">业务--&gt;业务1</span><br><span class="line">业务--&gt;业务2</span><br><span class="line">业务1--&gt;客户端1(PC应用)</span><br><span class="line">业务1--&gt;客户端2(安卓应用)</span><br><span class="line">业务2--&gt;客户端3(小程序应用)</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>架构</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>单位联动</title>
+    <url>/2021/GEBKF.html</url>
+    <content><![CDATA[<p>单位联动操作：<br>1、基本概念<br>  ref=”crud” ，在本例引用中可以使用this.$refs.curd获取操作实例。若组件curd中还封装了其它组件且包含ref,例：ref=”tab”，则在本例引用使用this.$refs.curd.$ref.tab可以获取对应引用。<br>  传递参数引用与值(知道的可以跳过这个)：若设置参数data {data:{uid:id}},且id默认值为1，当我设置id=2时，data中值不变(变更的值，而非引用)。若设置值{data:da},且da默认值为{uid:1}，当我直接设置da={uid:2}时。data的值不变，da切换引用不影响data中引用的数据。当设置值da.uid=2时，data值会变更，因为da引用未修改，所以data会进行变更。<br>2、avue-curd源码解析：<br>   v-model对应form的表单引用<br>   :search.sync  对应 搜索栏值引用<br>   crud引用中，ref句柄headerSearch对应头部引用，dialogForm对应弹出框引用。<br>   headerSearch中，ref句柄form对应搜索中的表单结果（此处可以对搜索栏表单内容进行操作）<br>   dialogForm中，ref句柄tableFoem对应弹出表单中的操作表单(此处可以对弹出表单进行操作)<br>   对表单字典进行更新方法：updateDic,第一个参数为prop参数，第二个为对应的字典(若为空，则直接执行dicUrl语句)</p>
+<p>3、实际使用（单位联动）</p>
+<ul>
+<li><p>绑定form参数和serch参数到crud上</p>
+<p><img src="/2021/GEBKF/image-20210527134938209.png" alt="image-20210527134938209"></p>
+</li>
+<li><p>使用watch分别监听对应的单位修改，如paramsSearch.organId，使用this.$refs.crud.$refs.headerSearch.$refs.form.updateDic(‘lineId’)更新搜索栏的lineid字段。</p>
+<p><img src="/2021/GEBKF/image-20210527134954014.png" alt="image-20210527134954014"></p>
+<p><img src="/2021/GEBKF/image-20210527135001553.png" alt="image-20210527135001553"></p>
+</li>
+<li><p>如需变更单位id，需要在Option中自定义dicQuery 如dicQuery: dicQuery，并提供引用方式修改，如change: ({value, column}) =&gt; {dicQuery.organId = value},</p>
+</li>
+</ul>
+<p><img src="/2021/GEBKF/image-20210527135007144.png" alt="image-20210527135007144"></p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>js</category>
+        <category>avue</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+</search>

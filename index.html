@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-  
-  <title>mixley</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"mixley.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
   <meta name="description" content="全栈·架构设计·算法">
 <meta property="og:type" content="website">
 <meta property="og:title" content="mixley">
@@ -17,83 +30,238 @@
 <meta property="article:author" content="mixley">
 <meta property="article:tag" content="mixley,前端,后端,全栈,收集,java,人脸识别,架构设计,spring,aop,spring boot,spring cloud,深度学习,vue,杂七杂八">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="mixley" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<link rel="canonical" href="https://mixley.github.io/">
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">mixley</a>
-      </h1>
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>mixley</title>
+  
+
+
+  <script data-pjax>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c36eb18366b436984557126f16796f30";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">mixley</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">不可谓知类</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://mixley.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
   
-    <article id="post-杂项/文艺范" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/1XJ7S7J.html" class="article-date">
-  <time datetime="2021-06-28T13:29:34.892Z" itemprop="datePublished">2021-06-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/squalid/">杂项</a>
-  </div>
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/1XJ7S7J.html">
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/1XJ7S7J.html">文艺范</a>
-    </h1>
-  
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/1XJ7S7J.html" class="post-title-link" itemprop="url">文艺范</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-28 23:28:00 / 修改时间：20:13:54" itemprop="dateCreated datePublished" datetime="2021-06-28T23:28:00+08:00">2021-06-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/squalid/" itemprop="url" rel="index"><span itemprop="name">杂项</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/1XJ7S7J.html" class="post-meta-item leancloud_visitors" data-flag-title="文艺范" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>励志：</p>
+          <p>励志：</p>
 <p>求上得中，求中得下</p>
 <p>没有最好，只有更好</p>
 <p>咸鱼：</p>
@@ -101,85 +269,80 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/1XJ7S7J.html" data-id="ckqgo7gfn0003gwjm8ehscqr5" class="article-share-link">Share</a>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
-      
-    </footer>
-  </div>
   
-</article>
-
-
   
-    <article id="post-杂项/关于我" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/2FZF6S3.html" class="article-date">
-  <time datetime="2021-06-28T13:29:34.891Z" itemprop="datePublished">2021-06-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/squalid/">杂项</a>
-  </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/GA2E64.html">
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/2FZF6S3.html">关于我</a>
-    </h1>
-  
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/GA2E64.html" class="post-title-link" itemprop="url">代码接触史</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-28 23:28:00 / 修改时间：23:20:51" itemprop="dateCreated datePublished" datetime="2021-06-28T23:28:00+08:00">2021-06-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/squalid/" itemprop="url" rel="index"><span itemprop="name">杂项</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/GA2E64.html" class="post-meta-item leancloud_visitors" data-flag-title="代码接触史" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
       </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>95年程序猿，湖南师大计算机专业本科17年毕业。</p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/2FZF6S3.html" data-id="ckqgo7gfo0004gwjmckzz8p0v" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-杂项/代码接触史" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/GA2E64.html" class="article-date">
-  <time datetime="2021-06-28T13:29:34.889Z" itemprop="datePublished">2021-06-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/squalid/">杂项</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/GA2E64.html">代码接触史</a>
-    </h1>
-  
-
-      </header>
     
-    <div class="article-entry" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody">
+
       
-        <h1 id="代码接触史"><a href="#代码接触史" class="headerlink" title="代码接触史"></a>代码接触史</h1><h2 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h2><p>最开始接触的basic，大概是08年，使用的是visual basic 6.0 ，一开始正常的搞点正常的比如计算器、实现程序只启动一次、操作文件搞点批量、操作access数据库啥的。后面渐渐失控搞了很多乱七八糟的东西：点击答题，然后到了最后怎么都是关机；关闭按钮满屏幕乱跑，就是不让你鼠标点中……</p>
+          <h2 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h2><p>最开始接触的basic，大概是08年，使用的是visual basic 6.0 ，一开始正常的搞点正常的比如计算器、实现程序只启动一次、操作文件搞点批量、操作access数据库啥的。后面渐渐失控搞了很多乱七八糟的东西：点击答题，然后到了最后怎么都是关机；关闭按钮满屏幕乱跑，就是不让你鼠标点中……</p>
+<!---more--->
+
 <p>界面是拖动的，入门太简单，玩的很兴起，各种骚操作都弄出来。但是没多久，发现360在各个网吧都安装了，并且没有经过360认证的程序都跑不了，自己开发的都不行。。。</p>
 <p>后续，可能用excel写宏代码？或者说搞了一点小工具？大约14年的时候，还真有这样的操作。</p>
 <p><strong>家教中心（大学的一个勤工助学部门）的数据查询工具</strong></p>
@@ -218,46 +381,78 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/GA2E64.html" data-id="ckqgo7gfn0002gwjmdrtkeb9r" class="article-share-link">Share</a>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/face-recognition/" rel="tag">人脸识别</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/front-end/" rel="tag">前端</a></li></ul>
-
-    </footer>
-  </div>
   
-</article>
-
-
   
-    <article id="post-杂项/Adobe全家桶" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/R3Z4XC.html" class="article-date">
-  <time datetime="2021-06-28T13:29:34.888Z" itemprop="datePublished">2021-06-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/squalid/">杂项</a>
-  </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/R3Z4XC.html">
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/R3Z4XC.html">Adobe全家桶</a>
-    </h1>
-  
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/R3Z4XC.html" class="post-title-link" itemprop="url">Adobe全家桶</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-28 23:28:00 / 修改时间：20:13:54" itemprop="dateCreated datePublished" datetime="2021-06-28T23:28:00+08:00">2021-06-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/squalid/" itemprop="url" rel="index"><span itemprop="name">杂项</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/R3Z4XC.html" class="post-meta-item leancloud_visitors" data-flag-title="Adobe全家桶" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>PS</p>
+          <p>PS</p>
 <p>PR</p>
 <p>FLASH</p>
 <p>AE</p>
@@ -265,44 +460,88 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/R3Z4XC.html" data-id="ckqgo7gfl0001gwjmbkd12hoz" class="article-share-link">Share</a>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
-      
-    </footer>
-  </div>
   
-</article>
-
-
   
-    <article id="post-运维/win/隐藏盘符" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/35CC7A2.html" class="article-date">
-  <time datetime="2021-06-28T13:29:34.880Z" itemprop="datePublished">2021-06-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/operations/">运维</a>►<a class="article-category-link" href="/categories/operations/win/">win</a>
-  </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/35CC7A2.html">
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/35CC7A2.html">隐藏盘符</a>
-    </h1>
-  
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/35CC7A2.html" class="post-title-link" itemprop="url">隐藏盘符</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-06-28 23:28:00" itemprop="dateCreated datePublished" datetime="2021-06-28T23:28:00+08:00">2021-06-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-26 13:25:58" itemprop="dateModified" datetime="2021-06-26T13:25:58+08:00">2021-06-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/operations/" itemprop="url" rel="index"><span itemprop="name">运维</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/operations/win/" itemprop="url" rel="index"><span itemprop="name">win</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/35CC7A2.html" class="post-meta-item leancloud_visitors" data-flag-title="隐藏盘符" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p><a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/6d704a13ee963369da51ca03.html">https://jingyan.baidu.com/article/6d704a13ee963369da51ca03.html</a></p>
+          <p><a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/6d704a13ee963369da51ca03.html">https://jingyan.baidu.com/article/6d704a13ee963369da51ca03.html</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/wangshui898/article/details/107011608">https://blog.csdn.net/wangshui898/article/details/107011608</a></p>
 <p>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</p>
 <p>diskpart  #运行diskpart工具<br>lis dis #列出所有磁盘<br>sel dis 1  #选中需要隐藏盘符的硬盘<br>lis par  #列出所有分区<br>sel par 0  #选中efi分区（需要隐藏的分区）</p>
@@ -310,44 +549,82 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/35CC7A2.html" data-id="ckqgo7gfw000hgwjmd2ss4rwz" class="article-share-link">Share</a>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
-      
-    </footer>
-  </div>
   
-</article>
-
-
   
-    <article id="post-运维/win/如何右击新建MacDown" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/21437N4.html" class="article-date">
-  <time datetime="2021-06-28T13:29:34.878Z" itemprop="datePublished">2021-06-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/operations/">运维</a>►<a class="article-category-link" href="/categories/operations/win/">win</a>
-  </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/21437N4.html">
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/21437N4.html">如何右击新建MacDown</a>
-    </h1>
-  
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/21437N4.html" class="post-title-link" itemprop="url">如何右击新建MacDown</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-28 23:28:00 / 修改时间：20:13:54" itemprop="dateCreated datePublished" datetime="2021-06-28T23:28:00+08:00">2021-06-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/operations/" itemprop="url" rel="index"><span itemprop="name">运维</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/operations/win/" itemprop="url" rel="index"><span itemprop="name">win</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/21437N4.html" class="post-meta-item leancloud_visitors" data-flag-title="如何右击新建MacDown" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>1、注册右击创建macdown文件</p>
+          <p>1、注册右击创建macdown文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">;注册.md路径的文件，并指定编辑对象为Macdown.md</span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@=&quot;Macdown.md&quot;</span><br><span class="line">;创建Macdown.md对象 指定在右击文件夹中显示的名字和新增文件的显示名字</span><br><span class="line">[HKEY_CLASSES_ROOT\Macdown.md]</span><br><span class="line">@=&quot;Macdown&quot;</span><br><span class="line">&quot;FriendlyTypeName&quot;=&quot;Macdown&quot;</span><br><span class="line">;ShellNew中FileName指定模板文件</span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line">&quot;FileName&quot;=&quot;Macdown.md&quot;</span><br><span class="line">&quot;NullFile&quot;=&quot;&quot;</span><br></pre></td></tr></table></figure>
 
 <p>2、C:\Windows\SHELLNEW下新建Macdown.md模板</p>
@@ -356,44 +633,82 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/21437N4.html" data-id="ckqgo7gfw000ggwjmffjo3j28" class="article-share-link">Share</a>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
-      
-    </footer>
-  </div>
   
-</article>
-
-
   
-    <article id="post-运维/sql/索引" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/3FSMRFQ.html" class="article-date">
-  <time datetime="2021-06-28T13:29:34.874Z" itemprop="datePublished">2021-06-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/operations/">运维</a>►<a class="article-category-link" href="/categories/operations/sql/">sql</a>
-  </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/3FSMRFQ.html">
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/3FSMRFQ.html">索引</a>
-    </h1>
-  
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/3FSMRFQ.html" class="post-title-link" itemprop="url">索引</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-28 23:28:00 / 修改时间：20:13:54" itemprop="dateCreated datePublished" datetime="2021-06-28T23:28:00+08:00">2021-06-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/operations/" itemprop="url" rel="index"><span itemprop="name">运维</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/operations/sql/" itemprop="url" rel="index"><span itemprop="name">sql</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/3FSMRFQ.html" class="post-meta-item leancloud_visitors" data-flag-title="索引" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <h1 id="Sql-server"><a href="#Sql-server" class="headerlink" title="Sql server"></a>Sql server</h1><p>① 使用 “with INDEX(‘指定索引名称’)”</p>
+          <h1 id="Sql-server"><a href="#Sql-server" class="headerlink" title="Sql server"></a>Sql server</h1><p>① 使用 “with INDEX(‘指定索引名称’)”</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--指定使用PK_index</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="number">1</span>)</span><br><span class="line"><span class="keyword">from</span> table1 a <span class="keyword">with</span>(nolock)</span><br><span class="line"><span class="keyword">join</span> table2 b <span class="keyword">with</span>(nolock,INDEX( PK_table2 )) <span class="keyword">on</span> a.key_col<span class="operator">=</span>b.key_col</span><br><span class="line"><span class="keyword">where</span> b.some_col<span class="operator">=</span><span class="string">&#x27;aaa&#x27;</span> </span><br></pre></td></tr></table></figure>
 
 <p>② 使用”with FORCESEEK” 指定从哪个数据表里查找</p>
@@ -405,85 +720,161 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/3FSMRFQ.html" data-id="ckqgo7gfv000fgwjmfnb66a3h" class="article-share-link">Share</a>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
-      
-    </footer>
-  </div>
   
-</article>
-
-
   
-    <article id="post-运维/sql/isnull" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/JC8HKX.html" class="article-date">
-  <time datetime="2021-06-28T13:29:34.873Z" itemprop="datePublished">2021-06-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/operations/">运维</a>►<a class="article-category-link" href="/categories/operations/sql/">sql</a>
-  </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/JC8HKX.html">
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/JC8HKX.html">isnull</a>
-    </h1>
-  
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/JC8HKX.html" class="post-title-link" itemprop="url">isnull</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-28 23:28:00 / 修改时间：20:13:54" itemprop="dateCreated datePublished" datetime="2021-06-28T23:28:00+08:00">2021-06-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/operations/" itemprop="url" rel="index"><span itemprop="name">运维</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/operations/sql/" itemprop="url" rel="index"><span itemprop="name">sql</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/JC8HKX.html" class="post-meta-item leancloud_visitors" data-flag-title="isnull" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <h2 id="Sql-isnull"><a href="#Sql-isnull" class="headerlink" title="Sql isnull"></a>Sql isnull</h2><p>isnull会使用前面的字段长度替换后面的字段长度，造成截断。使用时，后面尽量使用常量或使用前注意字段长度保持一致</p>
+          <h2 id="Sql-isnull"><a href="#Sql-isnull" class="headerlink" title="Sql isnull"></a>Sql isnull</h2><p>isnull会使用前面的字段长度替换后面的字段长度，造成截断。使用时，后面尽量使用常量或使用前注意字段长度保持一致</p>
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/JC8HKX.html" data-id="ckqgo7gfv000egwjma99y4hk2" class="article-share-link">Share</a>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
-      
-    </footer>
-  </div>
   
-</article>
-
-
   
-    <article id="post-运维/linux/win开启linux" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/N609DF.html" class="article-date">
-  <time datetime="2021-06-28T13:29:34.869Z" itemprop="datePublished">2021-06-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/operations/">运维</a>►<a class="article-category-link" href="/categories/operations/linux/">linux</a>
-  </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/N609DF.html">
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/N609DF.html">win开启linux</a>
-    </h1>
-  
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/N609DF.html" class="post-title-link" itemprop="url">win开启linux</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-28 23:28:00 / 修改时间：20:17:39" itemprop="dateCreated datePublished" datetime="2021-06-28T23:28:00+08:00">2021-06-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/operations/" itemprop="url" rel="index"><span itemprop="name">运维</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/operations/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/N609DF.html" class="post-meta-item leancloud_visitors" data-flag-title="win开启linux" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>子系统开启：</p>
+          <p>子系统开启：</p>
 <p>启用“适用于 Linux 的 Windows 子系统”可选功能</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dism.exe /online /<span class="built_in">enable-feature</span> /featurename:Microsoft<span class="literal">-Windows</span><span class="literal">-Subsystem</span><span class="literal">-Linux</span> /all /norestart</span><br></pre></td></tr></table></figure>
 
@@ -498,178 +889,562 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/N609DF.html" data-id="ckqgo7gfu000dgwjm9nbj7wm2" class="article-share-link">Share</a>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
-      
-    </footer>
-  </div>
   
-</article>
-
-
   
-    <article id="post-深度/计算机视觉/格式标准" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/MYHZWP.html" class="article-date">
-  <time datetime="2021-06-28T13:29:34.828Z" itemprop="datePublished">2021-06-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/deep/">深度</a>►<a class="article-category-link" href="/categories/deep/computer-vision/">计算机视觉</a>
-  </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/MYHZWP.html">
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/MYHZWP.html">格式标准</a>
-    </h1>
-  
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/MYHZWP.html" class="post-title-link" itemprop="url">格式标准</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-28 23:28:00 / 修改时间：20:22:15" itemprop="dateCreated datePublished" datetime="2021-06-28T23:28:00+08:00">2021-06-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/deep/" itemprop="url" rel="index"><span itemprop="name">深度</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/deep/computer-vision/" itemprop="url" rel="index"><span itemprop="name">计算机视觉</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/MYHZWP.html" class="post-meta-item leancloud_visitors" data-flag-title="格式标准" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/gwind/p/8215771.html">https://www.cnblogs.com/gwind/p/8215771.html</a></p>
+          <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/gwind/p/8215771.html">https://www.cnblogs.com/gwind/p/8215771.html</a></p>
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/MYHZWP.html" data-id="ckqgo7gfy000lgwjm81zg3lxd" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
-
-  
-
-
-  <nav id="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/">下一页 &amp;raquo;</a>
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/1DC25F7.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/1DC25F7.html" class="post-title-link" itemprop="url">图片的由来与存储</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-28 23:28:00 / 修改时间：20:22:19" itemprop="dateCreated datePublished" datetime="2021-06-28T23:28:00+08:00">2021-06-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/deep/" itemprop="url" rel="index"><span itemprop="name">深度</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/deep/computer-vision/" itemprop="url" rel="index"><span itemprop="name">计算机视觉</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/1DC25F7.html" class="post-meta-item leancloud_visitors" data-flag-title="图片的由来与存储" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>我们知道，计算机中的数据都是0和1，但是展示在我们屏幕上的却是多姿多彩，文字、图片、视频和游戏等等，0和1怎么变成我们从屏幕看到的内容的？</p>
+<h2 id="黑白图片"><a href="#黑白图片" class="headerlink" title="黑白图片"></a>黑白图片</h2><p>假定，1=白色，0=黑色，我们现在就可以用0和1组合为一个黑白画面了</p>
+<p>我们使用ps新建一个只有0、1的位图</p>
+<p><img src="/2021/1DC25F7/1.png" alt="img"></p>
+<p>图片新建完成如下（放大后效果），附带附件</p>
+<p><img src="/2021/1DC25F7/2.png" alt="img"></p>
+<p>&lt;&lt;白黑.bmp&gt;&gt;</p>
+<p>假定我们直接按1表示白，0表示黑的方式排列，可以得到我们的存储结果</p>
+<p><img src="/2021/1DC25F7/3.png" alt="img"></p>
+<h2 id="图片存储格式"><a href="#图片存储格式" class="headerlink" title="图片存储格式"></a>图片存储格式</h2><p>我们按 OS/2 bmp 方式进行保存（win位图最初保存方式，且无压缩，这里面去除了ps自动生成的元信息）</p>
+<p><img src="/2021/1DC25F7/4.png" alt="img"></p>
+<p>OS/2 bmp：</p>
+<p>0x00-0x01: 2byte 424D表示BMP格式</p>
+<p>0x02-0x05: 4byte 此文件大小是0x0030bit(注意高低位，低位在前)</p>
+<p>0x06-0x09: 4byte 保留位</p>
+<p>0x0A-0x0D: 4byte 偏移量，数据开始起点，图中数据从0x0020开始 </p>
+<p>0x0E-0x11: 4byte BITMAPINFOHEADER结构体大小(以下为结构体定义)，图中大小为0x000C（OS/2：12 | Windows DIB 40）</p>
+<p>0x12-0x13: 2byte 图像宽 图中为4像素</p>
+<p>0x14-0x15: 2byte 图像高 图中为2像素 </p>
+<p>0x16-0x17: 2byte 图像平面数 图中为1</p>
+<p>0x18-0x19: 2byte 一个像素有多少bit 图中为1</p>
+<p>0x1A-0x1C: 3byte 0表示的颜色BGR格式，图中为0x000000黑色</p>
+<p>0x1D-0x1F: 3byte 1表示的颜色BGR格式，图中为0xFFFFFF白色</p>
+<p>由于Windows默认的扫描的最小单位是4byte，所以bmp默认每行对齐是4的倍数，我们可以得到第一行的长度为宽度4<em>1分辨率</em>1位(bit)=4bit,对齐为byte时最小单位4byte，所以需要占用4byte，但仅前4个bit填充的值有效。</p>
+<p>且bmp是从左下角开始扫码，从左到右，从下到上，二进制转换0101为5，1010为a</p>
+<p>最终对应的结果在不对齐的情况下为a5a5，在对齐后补0的情况如下所示：</p>
+<p>A0 00 00 00 50 00 00 00 A0 00 00 00 50 00 00 00</p>
+<p>但是ps等软件在生成时会有一些元信息，所以可能会出现对齐为4byte时不是补0的情况，在算法读取时会自动跳过，但是人眼进行查看时，会造成干扰，自己排除掉即可</p>
+<p><img src="/2021/1DC25F7/5.png" alt="img"></p>
+<p>上图中，6 7F、8 22 56 F3等数据都是干扰数据，可替换为0或者替换为其它内容。</p>
+<h2 id="图片放大"><a href="#图片放大" class="headerlink" title="图片放大"></a>图片放大</h2><p>图片放大是在图片使用中最常使用的功能，我们从图片放大这个角度看下黑白颜色后面该怎么处理，尝试放大下面这个长宽2x2的黑白图</p>
+<p><img src="/2021/1DC25F7/6.png" alt="img"></p>
+<p>我们存储在电脑中的数据可以抽象理解为，长宽2个像素的</p>
+<p><img src="/2021/1DC25F7/7.png" alt="img"></p>
+<p>当我们将这个放大为长宽4个像素很好处理</p>
+<p>![а о 11  е 011  11 ее  11 ее ](图片的由来与存储/8 .png)</p>
+<p>我们得到的图片还是这样的没什么变化</p>
+<p>但是当我们想将这个放大为长宽3像素呢？要知道，我们的图片放大缩小，从来都不是按倍数放大，动不动就直接放大2倍的，几乎没有。</p>
+<p>可能我们得到的理想结果是</p>
+<p>![e ø.5 1  ø.5 ø.5 ø.s ](图片的由来与存储/9 .png)</p>
+<p>但是我们的01世界中，不存在0.5这种数据，按四舍五入或者退1法，我们可以得到这样的结果</p>
+<p>![1 1 1 ](图片的由来与存储/10 .png)</p>
+<p><img src="/2021/1DC25F7/11.png" alt="img"></p>
+<p>但是这无疑是差距太大了，一个小的图片差距都如此大，更大一点的图片也会出现更大的偏差，无疑只使用黑白两个颜色是无法将图片的细节表述清楚的。</p>
+<p>那么我们现在拓展下：0b00表示黑色，0b11表示白色，0b01与0b10表示灰色。这样在放大的时候可以有灰色填充，某些细节可以达到完善的程度了。（这只是一个极端例子，不用深究,我要表达的是0与1黑白中间拓展更多的颜色表达，让图片内容更加丰富）</p>
+<h2 id="8位灰阶"><a href="#8位灰阶" class="headerlink" title="8位灰阶"></a>8位灰阶</h2><p>在计算机中，8位是1个字节，1byte=8bit，我们存储的最小单元几乎都是使用byte进行存储，8位灰阶就是将黑白颜色数据继续拓展，都是黑、灰、白色之间，有256个层次组成。</p>
+<p>或许五彩斑斓的黑无法实现，但是层次分明的灰是可以达成的。</p>
+<p><img src="/2021/1DC25F7/12.png" alt="img"></p>
+<h2 id><a href="#" class="headerlink" title></a></h2><h2 id="彩色图片"><a href="#彩色图片" class="headerlink" title="彩色图片"></a>彩色图片</h2><p>层次分明的灰再怎么分明，都无法表达我们看到的真实颜色，光学三原色与颜料三原色中红、绿、蓝可以组合出所有颜色，依据无色系黑白灰+彩色系红绿蓝可以组合出任何颜色的特性，我们继续拓展到0和1中的队伍来。</p>
+<p><img src="/2021/1DC25F7/13.jpeg" alt="img"></p>
+<p>首先 红+绿+蓝，在RGB光学三原色中可以组成白色，所有颜色都不存在，则可以变成黑色。</p>
+<p>按上图我们先简单扩展（自定义），3位表示3个颜色0b000表示白色 0b100 表示红色 0b010表示绿色，0b001表示蓝色，0b111是白色，对应的0b010+0b001=0b011，蓝+绿=青,0b110=红+绿=黄，0b101=红+蓝=紫。彩色出现了。</p>
+<p>那么现在我们已经有了最基本的颜色后，我们依然需要进行图片的放大</p>
+<p>看下面这个四像素的图片，我们依然希望放大</p>
+<p><img src="/2021/1DC25F7/14.png" alt="img"></p>
+<p><img src="/2021/1DC25F7/15.png" alt="е10 001  тео оое "></p>
+<p>图片的放大肯定不是相加，而是中间是一个过渡的颜色进行替换，我们现在使用最简单粗暴的替换颜色相加取中间值的方式处理。</p>
+<p>以红绿中间的填充色为例（0b010+0b100）/2,应该是靠近这两个颜色中的颜色，结果是2.5，我们不能用0b010绿色去填充，也不能用0b100红色去填充，如果使用0b110,黄色，更是相差太远，在一个大的照片的放大过程中，尽量的贴合两边的颜色的中间颜色，应该是棕褐色，既有绿的过渡也需要红的过渡。(下图的展示可能不是很明显，也不很合适，因为图片的放大，极少有长宽2像素放大为长宽3像素这种操作，颜色直接的过渡也不会这么夸张。)</p>
+<p><img src="/2021/1DC25F7/img.png" alt="img"></p>
+<p>对于我们棕褐色，在我们刚才的拓展中，是不存在的，正如灰色在01表示的黑白中不存在，所以我们依然需要一个拓展来表达更多的颜色。</p>
+<p>我们现在将颜色拓展为6个bit了，0b000000表示黑色，0b111111表示白色，其余的0b1100000是红，0b001100是绿，0b000011是蓝色。第0-2位的00-11中可以表达4种不同程度的红，黑（无红）、淡红、浅红、正红，其余的等同划分。</p>
+<p>现在，差不多可以将棕色表达出来了，虽然依然不够细致，虽然我们现在有2^6=64种颜色了。</p>
+<h2 id="高彩色"><a href="#高彩色" class="headerlink" title="高彩色"></a>高彩色</h2><p>15或16位彩色（高彩色）：电脑所用的三原色是红、绿和蓝。在15位彩色中，每种原色有2^5=32个层次，共32768种颜色；而在16位彩色中，绿色有2^6=64个，共有65536个颜色</p>
+<h2 id="真彩色"><a href="#真彩色" class="headerlink" title="真彩色"></a>真彩色</h2><p>24位彩色（真彩色）：每种原色都有256个层次，它们的组合便有256<em>256</em>256种颜色。</p>
+<h2 id="32位彩色"><a href="#32位彩色" class="headerlink" title="32位彩色"></a>32位彩色</h2><p>32位彩色：除了24位彩色的颜色外，额外的8位是储存重叠图层的图形资料(alpha频道)。</p>
+<p>另外有高动态范围影像(High Dynamic Range Image)，这种影像使用超过一般的256色阶来储存影像，通常来说每个像素会分配到32+32+32个bit来储存颜色资讯，也就是说对于每一个原色都使用一个32bit的浮点数来储存.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
-</section>
-        
-          <aside id="sidebar">
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/tool/">工具</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/tool/minio/">minio</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/blog/">博客</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/develop/">开发</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/">开发</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/">java</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/maven/">maven</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/seata/">seata</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/spring/">spring</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/framework/">架构</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/js/">js</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/develop/js/avue/">avue</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/squalid/">杂项</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/deep/">深度</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/deep/face-recognition/">人脸识别</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/deep/computer-vision/">计算机视觉</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/operations/">运维</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/operations/linux/">linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/operations/sql/">sql</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/operations/win/">win</a></li></ul></li></ul>
-    </div>
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
   </div>
 
+  <aside class="sidebar">
+    <div class="sidebar-inner">
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/aop/" rel="tag">aop</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mixley/" rel="tag">mixley</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring/" rel="tag">spring</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-boot/" rel="tag">spring boot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/face-recognition/" rel="tag">人脸识别</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stack/" rel="tag">全栈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/front-end/" rel="tag">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/back-end/" rel="tag">后端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/collect/" rel="tag">收集</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/aop/" style="font-size: 10px;">aop</a> <a href="/tags/java/" style="font-size: 17.5px;">java</a> <a href="/tags/mixley/" style="font-size: 10px;">mixley</a> <a href="/tags/spring/" style="font-size: 20px;">spring</a> <a href="/tags/spring-boot/" style="font-size: 15px;">spring boot</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/face-recognition/" style="font-size: 12.5px;">人脸识别</a> <a href="/tags/stack/" style="font-size: 10px;">全栈</a> <a href="/tags/front-end/" style="font-size: 12.5px;">前端</a> <a href="/tags/back-end/" style="font-size: 10px;">后端</a> <a href="/tags/collect/" style="font-size: 10px;">收集</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">六月 2021</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2021/1XJ7S7J.html">文艺范</a>
-          </li>
-        
-          <li>
-            <a href="/2021/2FZF6S3.html">关于我</a>
-          </li>
-        
-          <li>
-            <a href="/2021/GA2E64.html">代码接触史</a>
-          </li>
-        
-          <li>
-            <a href="/2021/R3Z4XC.html">Adobe全家桶</a>
-          </li>
-        
-          <li>
-            <a href="/2021/35CC7A2.html">隐藏盘符</a>
-          </li>
-        
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
       </ul>
-    </div>
-  </div>
 
-  
-</aside>
-        
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2021 mixley<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">mixley</p>
+  <div class="site-description" itemprop="description">全栈·架构设计·算法</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">43</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
     </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">mixley</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
-</footer>
+
+        
+
+
+
+
+
+
+<script data-pjax>
+  (function() {
+    function leancloudSelector(url) {
+      url = encodeURI(url);
+      return document.getElementById(url).querySelector('.leancloud-visitors-count');
+    }
+
+    function addCount(Counter) {
+      var visitors = document.querySelector('.leancloud_visitors');
+      var url = decodeURI(visitors.id);
+      var title = visitors.dataset.flagTitle;
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            var counter = results[0];
+            leancloudSelector(url).innerText = counter.time + 1;
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .catch(error => {
+                console.error('Failed to save visitor count', error);
+              });
+          } else {
+              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    function showTime(Counter) {
+      var visitors = document.querySelectorAll('.leancloud_visitors');
+      var entries = [...visitors].map(element => {
+        return decodeURI(element.id);
+      });
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          for (let url of entries) {
+            let target = results.find(item => item.url === url);
+            leancloudSelector(url).innerText = target ? target.time : 0;
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    let { app_id, app_key, server_url } = {"enable":true,"app_id":"nnjeytdOlNpvQt3d0BrJByH4-gzGzoHsz","app_key":"xgw1gQFUHaT8rgFpvrMTIhUR","server_url":null,"security":true};
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${api_server}/1.1${url}`, {
+          method,
+          headers: {
+            'X-LC-Id'     : app_id,
+            'X-LC-Key'    : app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        if (CONFIG.hostname !== location.hostname) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    }
+
+    let api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(response => response.json())
+        .then(({ api_server }) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
 </body>
 </html>

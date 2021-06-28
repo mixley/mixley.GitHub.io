@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-  
-  <title>mixley</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"mixley.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
   <meta name="description" content="全栈·架构设计·算法">
 <meta property="og:type" content="website">
 <meta property="og:title" content="mixley">
@@ -17,134 +30,242 @@
 <meta property="article:author" content="mixley">
 <meta property="article:tag" content="mixley,前端,后端,全栈,收集,java,人脸识别,架构设计,spring,aop,spring boot,spring cloud,深度学习,vue,杂七杂八">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="mixley" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<link rel="canonical" href="https://mixley.github.io/page/5/">
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">mixley</a>
-      </h1>
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>mixley</title>
+  
+
+
+  <script data-pjax>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c36eb18366b436984557126f16796f30";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">mixley</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">不可谓知类</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://mixley.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
   
-    <article id="post-工具/博客/关于管理与写博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/35XMGZW.html" class="article-date">
-  <time datetime="2021-06-28T13:29:34.548Z" itemprop="datePublished">2021-06-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/tool/">工具</a>►<a class="article-category-link" href="/categories/tool/blog/">博客</a>
-  </div>
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/3NPATC1.html">
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/35XMGZW.html">关于管理与写博客</a>
-    </h1>
-  
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/3NPATC1.html" class="post-title-link" itemprop="url">使用Hexo搭建博客</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-28 23:27:59 / 修改时间：22:13:35" itemprop="dateCreated datePublished" datetime="2021-06-28T23:27:59+08:00">2021-06-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tool/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tool/blog/" itemprop="url" rel="index"><span itemprop="name">博客</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/3NPATC1.html" class="post-meta-item leancloud_visitors" data-flag-title="使用Hexo搭建博客" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
       </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>说到博客，我想将博客编写的主要内容分为两个大的块。</p>
-<p>第一块：文章部分，我们可能随时的，随手的就编写很多心得或者笔记或者心情，创作应该是无打扰且不用考虑太多额外事情的。</p>
-<p>第二块：展示部分，界面到底怎么展示，文章标题内容图片怎么显示，个性化的界面需要进行一些什么样的调整。这个部分调整可能会频繁，可能会比较个性，可能会很繁琐，但是最好是不要参与到创作中影响效率的。</p>
-<p>所以由此我希望拥有一个简单的不受影响的创作环境，然后通过一些后期方式将文章展示到我定制的个性页面中是我最终的目的,下面我从现有结构和我的思路来讲一下我想怎么管理和写博客。</p>
-<h3 id="文章部分"><a href="#文章部分" class="headerlink" title="文章部分"></a>文章部分</h3><p>下面是我们常见的一个文档管理方式，不论doc也好，还是md也罢，我们都喜欢通过建立文件夹的方式进行分类然后梳理，下面的我通过建立文档同名的方式表示文档需要的文件。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">📦macdown</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂工具</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂minio</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂minio</span> <span class="comment"># 对应md文件的附件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜simplicity.gif</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜minio.md</span> <span class="comment">#md文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂博客</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂使用Hexo搭建博客</span>  <span class="comment">#对应md文件的附件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜image-20210623193347044.png</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜使用Hexo搭建博客.md</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜关于管理与写博客.md</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜常用工具.md</span> <span class="comment">#文章</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂开发</span> <span class="comment">#分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📂bat</span> <span class="comment">#更多分类与文章</span></span><br></pre></td></tr></table></figure>
-<p>上面这个目录结构，我相信不管是写博客还是仅仅做笔记或者整理资料的人，大部分过程应该都是这样的。我们以上面这个目录结构出发，来发布我们的程序。</p>
-<h3 id="推荐神器：Typora-万年bate版本，免费使用"><a href="#推荐神器：Typora-万年bate版本，免费使用" class="headerlink" title="推荐神器：Typora(万年bate版本，免费使用)"></a>推荐神器：Typora(万年bate版本，免费使用)</h3><h4 id="Typora文档管理功能"><a href="#Typora文档管理功能" class="headerlink" title="Typora文档管理功能"></a>Typora文档管理功能</h4><p><img src="/2021/35XMGZW/image-20210626111012923.png" alt="image-20210626111012923"></p>
-<h4 id="Typora图片设置"><a href="#Typora图片设置" class="headerlink" title="Typora图片设置"></a>Typora图片设置</h4><p><img src="/2021/35XMGZW/image-20210626110210201.png" alt="image-20210626110210201"></p>
-<p>其他建议的配置</p>
-<p><img src="/2021/35XMGZW/image-20210626132716924-1624685244750.png" alt="image-20210626132716924"></p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/35XMGZW.html" data-id="ckqgo7gfp0005gwjmarvi1rq9" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-工具/博客/使用Hexo搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/3NPATC1.html" class="article-date">
-  <time datetime="2021-06-28T13:29:34.547Z" itemprop="datePublished">2021-06-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/tool/">工具</a>►<a class="article-category-link" href="/categories/tool/blog/">博客</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/3NPATC1.html">使用Hexo搭建博客</a>
-    </h1>
-  
-
-      </header>
     
-    <div class="article-entry" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>快速、简洁且高效的博客框架</p>
+          <p>快速、简洁且高效的博客框架</p>
 <p>Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。</p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g #全局安装hexo</span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo init &lt;folder&gt;</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> &lt;folder&gt;</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install</span></span><br></pre></td></tr></table></figure>
 <p>安装后目录结构说明：</p>
@@ -162,61 +283,98 @@
 <p>上面这个目录结构，我相信不管是写博客还是仅仅做笔记或者整理资料的人，大部分过程应该都是这样的。</p>
 <h3 id="安装工具"><a href="#安装工具" class="headerlink" title="安装工具"></a>安装工具</h3><p>推荐神器：<a target="_blank" rel="noopener" href="https://typora.io/">Typora</a>  MacDown编辑神器 (万年bate版本，免费使用)</p>
 <h4 id="Typora文档管理功能"><a href="#Typora文档管理功能" class="headerlink" title="Typora文档管理功能"></a>Typora文档管理功能</h4><p><img src="/2021/3NPATC1/image-20210626111012923.png" alt="image-20210626111012923"></p>
-<h2 id="发布配置"><a href="#发布配置" class="headerlink" title="发布配置"></a>发布配置</h2><p>下面的自定义配置为使用git发布博客，首先需安装hexo-deployer-git插件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> git上传发布，一键部署时使用</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> hexo增强配置，可以不用处理</span></span><br><span class="line">npm install hexo-enhancer --save</span><br></pre></td></tr></table></figure>
+<h4 id="Typora图片设置"><a href="#Typora图片设置" class="headerlink" title="Typora图片设置"></a>Typora图片设置</h4><p><img src="/2021/3NPATC1/image-20210626110210201.png" alt="image-20210626110210201"></p>
+<h2 id="发布配置"><a href="#发布配置" class="headerlink" title="发布配置"></a>发布配置</h2><p>下面的自定义配置为使用git发布博客，首先需安装hexo-deployer-git 插件,其它插件为更方便使用</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> git上传发布，一键部署时使用</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> hexo增强配置，可以不用手动维护 front-matter，文章标题建议使用 20210628 标题.md</span></span><br><span class="line">npm install hexo-enhancer --save</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 处理图片路径转换问题，当开启post_asset_folder时，使用文件路径转换</span></span><br><span class="line">npm hexo-asset-image --save</span><br></pre></td></tr></table></figure>
 
 <p>自定义配置文件如下，可在hexo目录下建立<strong>custom.yml</strong>文件，自定义以下内容，不污染原始文件便于后期升级hexo</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 详情看附录中配置文件详细介绍</span></span><br><span class="line"><span class="comment"># Site 网站设置 基础设置</span></span><br><span class="line"><span class="comment"># 网站标题</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">mixley</span></span><br><span class="line"><span class="comment"># 网站副标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;呜啦啦&#x27;</span></span><br><span class="line"><span class="comment"># 网站描述，SEO优化时会扫描</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 网站关键字，SEO优化时会扫描，多个逗号分隔</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&#x27;技术栈A,技术栈B&#x27;</span></span><br><span class="line"><span class="comment"># 作者</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">mixley</span></span><br><span class="line"><span class="comment"># 语言，使用主题时支持的语言列表,主题文件中languages文件夹下查看</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="comment"># 时区，默认为电脑时区，中国大陆：Asia/Shanghai</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL 网址 基础设置,url如果发布到gitbub，请参考注册github.io建立免费页面</span></span><br><span class="line"><span class="comment"># 生成的地址中，会携带这个地址，博客根路径(怎么访问的就怎么填写)</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">&#x27;https://mixley.github.io&#x27;</span></span><br><span class="line"><span class="comment"># 文章访问编号 hexo-enhancer增强配置中提供</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:abbrlink.html</span></span><br><span class="line"><span class="comment"># 网站关键字，增强配置专用，其余tag会收集keywords中tags自动匹配</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">&#x27;关键字A,关键字B&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动 Asset 文件夹(推荐开启，会将同名目录一起打包，否则只打包md，也可以使用第三方图床解决)</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 把链接改为与根目录的相对位址</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Home page setting 首页文章设置</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="comment">#每页数量</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Category &amp; Tag   分类 &amp; 标签 中文标签可能存在编码问题，需转换，格式为 中文: 英文 多个记录直接换行</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="comment"># 分类对应值</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line">	<span class="string">工具:</span> <span class="string">tool</span></span><br><span class="line">	<span class="string">博客:</span> <span class="string">blog</span></span><br><span class="line">	<span class="string">开发:</span> <span class="string">develop</span></span><br><span class="line"><span class="comment"># 标签对应值</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br><span class="line">	<span class="string">基础:</span> <span class="string">base</span></span><br><span class="line">	<span class="attr">spring security:</span> <span class="string">spring_security</span></span><br><span class="line">	<span class="string">难点:</span> <span class="string">difficulty</span></span><br><span class="line">	</span><br><span class="line"><span class="comment"># Pagination 分页设置</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用主题，可以选择其它主题，这是默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 发布配置，若使用git，需要安装 npm install hexo-deployer-git --save</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line"><span class="comment">#多服务配置</span></span><br><span class="line"> <span class="attr">repository:</span></span><br><span class="line">   <span class="comment">#使用ssh的方式，配置ssh密钥可以免登录发布</span></span><br><span class="line">   <span class="attr">github:</span> <span class="string">git@github.com:mixley/mixley.GitHub.io.git</span></span><br><span class="line">   <span class="attr">gitee:</span> <span class="string">git@gitee.com:mixley/mixley.git</span></span><br><span class="line"> <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 详情看附录中配置文件详细介绍</span></span><br><span class="line"><span class="comment"># Site 网站设置 基础设置</span></span><br><span class="line"><span class="comment"># 网站标题</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">mixley</span></span><br><span class="line"><span class="comment"># 网站副标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;呜啦啦&#x27;</span></span><br><span class="line"><span class="comment"># 网站描述，SEO优化时会扫描</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 网站关键字，SEO优化时会扫描，多个逗号分隔</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&#x27;技术栈A,技术栈B&#x27;</span></span><br><span class="line"><span class="comment"># 作者</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">mixley</span></span><br><span class="line"><span class="comment"># 语言，使用主题时支持的语言列表,主题文件中languages文件夹下查看</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="comment"># 时区，默认为电脑时区，中国大陆：Asia/Shanghai</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL 网址 基础设置,url如果发布到gitbub，请参考注册github.io建立免费页面</span></span><br><span class="line"><span class="comment"># 生成的地址中，会携带这个地址，博客根路径(怎么访问的就怎么填写)</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">&#x27;https://mixley.github.io&#x27;</span></span><br><span class="line"><span class="comment"># 文章访问编号 hexo-enhancer增强配置中提供</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:abbrlink.html</span></span><br><span class="line"><span class="comment"># 网站关键字，增强配置专用，其余tag会收集keywords中tags自动匹配</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">&#x27;关键字A,关键字B&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动 Asset 文件夹(推荐开启，会将同名目录一起打包，否则只打包md，也可以使用第三方图床解决)</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 把链接改为与根目录的相对位址</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Home page setting 首页文章设置（可以不设置）</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="comment">#每页数量</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Category &amp; Tag   分类 &amp; 标签 中文标签可能存在编码问题，需转换，格式为 中文: 英文 多个记录直接换行</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="comment"># 分类对应值 后期建立文件夹，需要在这里增加英文映射</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line">	<span class="string">嘿嘿:</span> <span class="string">heihei</span></span><br><span class="line">	<span class="string">哈哈:</span> <span class="string">haha</span></span><br><span class="line"><span class="comment"># 标签对应值 keywords 关键字中文全部需要进行处理，tags中关键字同样需要处理</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br><span class="line">	<span class="string">技术栈A:</span> <span class="string">jA</span></span><br><span class="line">	<span class="string">技术栈B:</span> <span class="string">jB</span></span><br><span class="line">	</span><br><span class="line"><span class="comment"># Pagination 分页设置（可以不设置）</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用主题，可以选择其它主题，这是默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 发布配置，若使用git，需要安装 npm install hexo-deployer-git --save</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line"><span class="comment">#多服务配置</span></span><br><span class="line"> <span class="attr">repository:</span></span><br><span class="line">   <span class="comment">#使用ssh的方式，配置ssh密钥可以免登录发布</span></span><br><span class="line">   <span class="attr">github:</span> <span class="string">git@github.com:mixley/mixley.GitHub.io.git</span></span><br><span class="line">   <span class="attr">gitee:</span> <span class="string">git@gitee.com:mixley/mixley.git</span></span><br><span class="line"> <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="Hexo三连命令"><a href="#Hexo三连命令" class="headerlink" title="Hexo三连命令"></a>Hexo三连命令</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 清除</span></span><br><span class="line">hexo clean</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 指定配置文件生成</span></span><br><span class="line">hexo g --config custom.yml</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 发布</span></span><br><span class="line">hexo d --config custom.yml</span><br></pre></td></tr></table></figure>
 
 
 
-<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="配置文件详解"><a href="#配置文件详解" class="headerlink" title="配置文件详解"></a>配置文件详解</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Hexo Configuration</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/configuration.html</span></span><br><span class="line"><span class="comment">## Source: https://github.com/hexojs/hexo/</span></span><br><span class="line"><span class="comment">## 中文文档：https://hexo.io/zh-cn/docs/configuration</span></span><br><span class="line"><span class="comment"># Site 网站设置 基础设置</span></span><br><span class="line"><span class="comment"># 网站标题</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hexo</span></span><br><span class="line"><span class="comment"># 网站副标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 网站描述，SEO优化时会扫描</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;全栈的自我修养……&#x27;</span></span><br><span class="line"><span class="comment"># 网站关键字，SEO优化时会扫描，多个逗号分隔</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&#x27;java,C&#x27;</span></span><br><span class="line"><span class="comment"># 作者</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">John</span></span><br><span class="line"><span class="comment"># 语言，使用主题时支持的语言列表,主题文件中languages文件夹下查看</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="comment"># 时区，默认为电脑时区，中国大陆：Asia/Shanghai</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL 网址 基础设置,url如果发布到gitbub，请参考注册github.io建立免费</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="comment"># 生成的地址中，会携带这个地址，博客根路径(怎么访问的就怎么填写)</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">&#x27;http://example.com&#x27;</span></span><br><span class="line"><span class="comment"># 文章路径，title为中文在github发布无法显示</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span>	<span class="string">&#x27;&#x27;</span>					<span class="comment">#永久链接中各部分的默认值,如下</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">#permalink_defaults: </span></span><br><span class="line"><span class="comment"># year: 2021</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="comment"># 是否在永久链接中保留尾部的 index.html，设置为 false 时去除</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Directory 目录</span></span><br><span class="line"><span class="comment"># 资源文件夹，这个文件夹用来存放内容</span></span><br><span class="line"><span class="attr">source_dir:</span> <span class="string">source</span></span><br><span class="line"><span class="comment"># 公共文件夹，这个文件夹用于存放生成的站点文件</span></span><br><span class="line"><span class="attr">public_dir:</span> <span class="string">public</span></span><br><span class="line"><span class="comment"># 标签文件夹</span></span><br><span class="line"><span class="attr">tag_dir:</span> <span class="string">tags</span></span><br><span class="line"><span class="comment"># 归档文件夹</span></span><br><span class="line"><span class="attr">archive_dir:</span> <span class="string">archives</span></span><br><span class="line"><span class="comment"># 分类文件夹</span></span><br><span class="line"><span class="attr">category_dir:</span> <span class="string">categories</span></span><br><span class="line"><span class="comment"># Include code 文件夹，source_dir 下的子目录</span></span><br><span class="line"><span class="attr">code_dir:</span> <span class="string">downloads/code</span></span><br><span class="line"><span class="comment"># 国际化（i18n）文件夹</span></span><br><span class="line"><span class="attr">i18n_dir:</span> <span class="string">:lang</span></span><br><span class="line"><span class="comment"># 跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 public 目录中。您可使用 glob 表达式来匹配路径。如下</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">##skip_render: &quot;mypage/**/*&quot;</span></span><br><span class="line"><span class="comment"># 将会直接将 `source/mypage/index.html` 和 `source/mypage/code.js` 不做改动地输出到 &#x27;public&#x27; 目录</span></span><br><span class="line"><span class="comment"># 你也可以用这种方法来跳过对指定文章文件的渲染</span></span><br><span class="line"><span class="comment">#skip_render: &quot;_posts/test-post.md&quot;</span></span><br><span class="line"><span class="comment"># 这将会忽略对 &#x27;test-post.md&#x27; 的渲染</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">skip_render:</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Writing 文章 基本不用动，只有那个post_asset_folder用来设置图片路径</span></span><br><span class="line"><span class="comment"># 新文章的文件名称</span></span><br><span class="line"><span class="attr">new_post_name:</span> <span class="string">:title.md</span></span><br><span class="line"><span class="comment"># 预设布局，默认布局是文章</span></span><br><span class="line"><span class="attr">default_layout:</span> <span class="string">post</span></span><br><span class="line"><span class="comment"># 把标题转换为 title case</span></span><br><span class="line"><span class="attr">titlecase:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">external_link:</span></span><br><span class="line">  <span class="comment"># 在新标签中打开链接</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 对整个网站（site）生效或仅对文章（post）生效</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span></span><br><span class="line">  <span class="comment"># 需要排除的域名。主域名和子域名如 www 需分别配置[]</span></span><br><span class="line">  <span class="attr">exclude:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 把文件名称转换为 (1) 小写或 (2) 大写</span></span><br><span class="line"><span class="attr">filename_case:</span> <span class="number">0</span></span><br><span class="line"><span class="comment"># 显示草稿</span></span><br><span class="line"><span class="attr">render_drafts:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># 启动 Asset 文件夹(推荐开启)</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 把链接改为与根目录的相对位址</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># 显示未来的文章  ??</span></span><br><span class="line"><span class="attr">future:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 代码块的设置, 请参考 Highlight.js 进行设置</span></span><br><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">auto_detect:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">hljs:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># 代码块的设置, 请参考 PrismJS 进行设置</span></span><br><span class="line"><span class="attr">prismjs:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">preprocess:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Home page setting 首页文章设置</span></span><br><span class="line"><span class="comment"># path: Root path for your blogs index page. (default = &#x27;&#x27;)</span></span><br><span class="line"><span class="comment"># per_page: Posts displayed per page. (0 = disable pagination)</span></span><br><span class="line"><span class="comment"># order_by: Posts order. (Order by date descending by default)</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Category &amp; Tag   分类 &amp; 标签 !!需要映射为URLEncode</span></span><br><span class="line"><span class="comment"># uncategorized默认从属分类,%E6%9C%AA%E5%88%86%E7%B1%BB是未分类的URLEncode值</span></span><br><span class="line"><span class="comment"># default_category: uncategorized</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="comment"># 分类对应值</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line"><span class="comment"># 标签对应值</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Metadata elements</span></span><br><span class="line"><span class="comment">## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta</span></span><br><span class="line"><span class="comment"># Meta generator 标签。 值为 false 时 Hexo 不会在头部插入该标签</span></span><br><span class="line"><span class="attr">meta_generator:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Date / Time format</span></span><br><span class="line"><span class="comment">## Hexo uses Moment.js to parse and display date</span></span><br><span class="line"><span class="comment">## You can customize the date format as defined in</span></span><br><span class="line"><span class="comment">## http://momentjs.com/docs/#/displaying/format/</span></span><br><span class="line"><span class="attr">date_format:</span> <span class="string">YYYY-MM-DD</span></span><br><span class="line"><span class="attr">time_format:</span> <span class="string">HH:mm:ss</span></span><br><span class="line"><span class="comment">## updated_option supports &#x27;mtime&#x27;, &#x27;date&#x27;, &#x27;empty&#x27;</span></span><br><span class="line"><span class="attr">updated_option:</span> <span class="string">&#x27;mtime&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Pagination</span></span><br><span class="line"><span class="comment">## Set per_page to 0 to disable pagination</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Include / Exclude file(s)</span></span><br><span class="line"><span class="comment">## include:/exclude: options only apply to the &#x27;source/&#x27; folder</span></span><br><span class="line"><span class="comment"># Hexo 默认会忽略隐藏文件和文件夹（包括名称以下划线和 . 开头的文件和文件夹，Hexo 的 _posts 和 _data 等目录除外）。通过设置此字段将使 Hexo 处理他们并将它们复制到 source 目录下。</span></span><br><span class="line"><span class="attr">include:</span></span><br><span class="line"><span class="comment"># Hexo 会忽略这些文件和目录，项目文件忽略配置</span></span><br><span class="line"><span class="attr">exclude:</span></span><br><span class="line"><span class="comment"># Ignore files/folders,忽略包括themes/下文件与文件夹(所有上传忽略配置)</span></span><br><span class="line"><span class="attr">ignore:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment"># 使用主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="comment"># 发布配置，若使用git，需要安装 npm install hexo-deployer-git --save</span></span><br><span class="line"><span class="comment"># 安装</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">#deploy:</span></span><br><span class="line"><span class="comment">#  type: git</span></span><br><span class="line"><span class="comment"># 单服务配置</span></span><br><span class="line"><span class="comment">#  repo: &lt;repository url&gt; # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io</span></span><br><span class="line"><span class="comment"># 多服务配置</span></span><br><span class="line"><span class="comment">#  repository:</span></span><br><span class="line"><span class="comment">#    github: &lt;github url&gt;</span></span><br><span class="line"><span class="comment">#    gitee: &lt;gitee url&gt;</span></span><br><span class="line"><span class="comment">#  branch: [branch]</span></span><br><span class="line"><span class="comment">#  message: [message]</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="主题推荐：next"><a href="#主题推荐：next" class="headerlink" title="主题推荐：next"></a>主题推荐：<a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/getting-started.html">next</a></h3><h3 id="配置文件详解"><a href="#配置文件详解" class="headerlink" title="配置文件详解"></a>配置文件详解</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Hexo Configuration</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/configuration.html</span></span><br><span class="line"><span class="comment">## Source: https://github.com/hexojs/hexo/</span></span><br><span class="line"><span class="comment">## 中文文档：https://hexo.io/zh-cn/docs/configuration</span></span><br><span class="line"><span class="comment"># Site 网站设置 基础设置</span></span><br><span class="line"><span class="comment"># 网站标题</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hexo</span></span><br><span class="line"><span class="comment"># 网站副标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 网站描述，SEO优化时会扫描</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;全栈的自我修养……&#x27;</span></span><br><span class="line"><span class="comment"># 网站关键字，SEO优化时会扫描，多个逗号分隔</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&#x27;java,C&#x27;</span></span><br><span class="line"><span class="comment"># 作者</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">John</span></span><br><span class="line"><span class="comment"># 语言，使用主题时支持的语言列表,主题文件中languages文件夹下查看</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="comment"># 时区，默认为电脑时区，中国大陆：Asia/Shanghai</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL 网址 基础设置,url如果发布到gitbub，请参考注册github.io建立免费</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="comment"># 生成的地址中，会携带这个地址，博客根路径(怎么访问的就怎么填写)</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">&#x27;http://example.com&#x27;</span></span><br><span class="line"><span class="comment"># 文章路径，title为中文在github发布无法显示</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span>	<span class="string">&#x27;&#x27;</span>					<span class="comment">#永久链接中各部分的默认值,如下</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">#permalink_defaults: </span></span><br><span class="line"><span class="comment"># year: 2021</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="comment"># 是否在永久链接中保留尾部的 index.html，设置为 false 时去除</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Directory 目录</span></span><br><span class="line"><span class="comment"># 资源文件夹，这个文件夹用来存放内容</span></span><br><span class="line"><span class="attr">source_dir:</span> <span class="string">source</span></span><br><span class="line"><span class="comment"># 公共文件夹，这个文件夹用于存放生成的站点文件</span></span><br><span class="line"><span class="attr">public_dir:</span> <span class="string">public</span></span><br><span class="line"><span class="comment"># 标签文件夹</span></span><br><span class="line"><span class="attr">tag_dir:</span> <span class="string">tags</span></span><br><span class="line"><span class="comment"># 归档文件夹</span></span><br><span class="line"><span class="attr">archive_dir:</span> <span class="string">archives</span></span><br><span class="line"><span class="comment"># 分类文件夹</span></span><br><span class="line"><span class="attr">category_dir:</span> <span class="string">categories</span></span><br><span class="line"><span class="comment"># Include code 文件夹，source_dir 下的子目录</span></span><br><span class="line"><span class="attr">code_dir:</span> <span class="string">downloads/code</span></span><br><span class="line"><span class="comment"># 国际化（i18n）文件夹</span></span><br><span class="line"><span class="attr">i18n_dir:</span> <span class="string">:lang</span></span><br><span class="line"><span class="comment"># 跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 public 目录中。您可使用 glob 表达式来匹配路径。如下</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">##skip_render: &quot;mypage/**/*&quot;</span></span><br><span class="line"><span class="comment"># 将会直接将 `source/mypage/index.html` 和 `source/mypage/code.js` 不做改动地输出到 &#x27;public&#x27; 目录</span></span><br><span class="line"><span class="comment"># 你也可以用这种方法来跳过对指定文章文件的渲染</span></span><br><span class="line"><span class="comment">#skip_render: &quot;_posts/test-post.md&quot;</span></span><br><span class="line"><span class="comment"># 这将会忽略对 &#x27;test-post.md&#x27; 的渲染</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">skip_render:</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Writing 文章 基本不用动，只有那个post_asset_folder用来设置图片路径</span></span><br><span class="line"><span class="comment"># 新文章的文件名称</span></span><br><span class="line"><span class="attr">new_post_name:</span> <span class="string">:title.md</span></span><br><span class="line"><span class="comment"># 预设布局，默认布局是文章</span></span><br><span class="line"><span class="attr">default_layout:</span> <span class="string">post</span></span><br><span class="line"><span class="comment"># 把标题转换为 title case</span></span><br><span class="line"><span class="attr">titlecase:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">external_link:</span></span><br><span class="line">  <span class="comment"># 在新标签中打开链接</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 对整个网站（site）生效或仅对文章（post）生效</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span></span><br><span class="line">  <span class="comment"># 需要排除的域名。主域名和子域名如 www 需分别配置[]</span></span><br><span class="line">  <span class="attr">exclude:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 把文件名称转换为 (1) 小写或 (2) 大写</span></span><br><span class="line"><span class="attr">filename_case:</span> <span class="number">0</span></span><br><span class="line"><span class="comment"># 显示草稿</span></span><br><span class="line"><span class="attr">render_drafts:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># 启动 Asset 文件夹(推荐开启)</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 把链接改为与根目录的相对位址</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># 显示未来的文章  ??</span></span><br><span class="line"><span class="attr">future:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 代码块的设置, 请参考 Highlight.js 进行设置</span></span><br><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">auto_detect:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">hljs:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># 代码块的设置, 请参考 PrismJS 进行设置</span></span><br><span class="line"><span class="attr">prismjs:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">preprocess:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Home page setting 首页文章设置</span></span><br><span class="line"><span class="comment"># path: Root path for your blogs index page. (default = &#x27;&#x27;)</span></span><br><span class="line"><span class="comment"># per_page: Posts displayed per page. (0 = disable pagination)</span></span><br><span class="line"><span class="comment"># order_by: Posts order. (Order by date descending by default)</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Category &amp; Tag   分类 &amp; 标签 !!需要映射为URLEncode</span></span><br><span class="line"><span class="comment"># uncategorized默认从属分类,%E6%9C%AA%E5%88%86%E7%B1%BB是未分类的URLEncode值</span></span><br><span class="line"><span class="comment"># default_category: uncategorized</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="comment"># 分类对应值</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line"><span class="comment"># 标签对应值</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Metadata elements</span></span><br><span class="line"><span class="comment">## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta</span></span><br><span class="line"><span class="comment"># Meta generator 标签。 值为 false 时 Hexo 不会在头部插入该标签</span></span><br><span class="line"><span class="attr">meta_generator:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Date / Time format</span></span><br><span class="line"><span class="comment">## Hexo uses Moment.js to parse and display date</span></span><br><span class="line"><span class="comment">## You can customize the date format as defined in</span></span><br><span class="line"><span class="comment">## http://momentjs.com/docs/#/displaying/format/</span></span><br><span class="line"><span class="attr">date_format:</span> <span class="string">YYYY-MM-DD</span></span><br><span class="line"><span class="attr">time_format:</span> <span class="string">HH:mm:ss</span></span><br><span class="line"><span class="comment">## updated_option supports &#x27;mtime&#x27;, &#x27;date&#x27;, &#x27;empty&#x27;</span></span><br><span class="line"><span class="attr">updated_option:</span> <span class="string">&#x27;mtime&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Pagination</span></span><br><span class="line"><span class="comment">## Set per_page to 0 to disable pagination</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Include / Exclude file(s)</span></span><br><span class="line"><span class="comment">## include:/exclude: options only apply to the &#x27;source/&#x27; folder</span></span><br><span class="line"><span class="comment"># Hexo 默认会忽略隐藏文件和文件夹（包括名称以下划线和 . 开头的文件和文件夹，Hexo 的 _posts 和 _data 等目录除外）。通过设置此字段将使 Hexo 处理他们并将它们复制到 source 目录下。</span></span><br><span class="line"><span class="attr">include:</span></span><br><span class="line"><span class="comment"># Hexo 会忽略这些文件和目录，项目文件忽略配置</span></span><br><span class="line"><span class="attr">exclude:</span></span><br><span class="line"><span class="comment"># Ignore files/folders,忽略包括themes/下文件与文件夹(所有上传忽略配置)</span></span><br><span class="line"><span class="attr">ignore:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment"># 使用主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="comment"># 发布配置，若使用git，需要安装 npm install hexo-deployer-git --save</span></span><br><span class="line"><span class="comment"># 安装</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">#deploy:</span></span><br><span class="line"><span class="comment">#  type: git</span></span><br><span class="line"><span class="comment"># 单服务配置</span></span><br><span class="line"><span class="comment">#  repo: &lt;repository url&gt; # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io</span></span><br><span class="line"><span class="comment"># 多服务配置</span></span><br><span class="line"><span class="comment">#  repository:</span></span><br><span class="line"><span class="comment">#    github: &lt;github url&gt;</span></span><br><span class="line"><span class="comment">#    gitee: &lt;gitee url&gt;</span></span><br><span class="line"><span class="comment">#  branch: [branch]</span></span><br><span class="line"><span class="comment">#  message: [message]</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/3NPATC1.html" data-id="ckqgo7gfq0007gwjme7m9ctnu" class="article-share-link">Share</a>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mixley/" rel="tag">mixley</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring/" rel="tag">spring</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/stack/" rel="tag">全栈</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/collect/" rel="tag">收集</a></li></ul>
-
-    </footer>
-  </div>
   
-</article>
-
-
   
-    <article id="post-工具/minio/minio" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/35DBDK5.html" class="article-date">
-  <time datetime="2021-06-28T13:29:34.539Z" itemprop="datePublished">2021-06-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/tool/">工具</a>►<a class="article-category-link" href="/categories/tool/minio/">minio</a>
-  </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/35DBDK5.html">
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/35DBDK5.html">minio</a>
-    </h1>
-  
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/35DBDK5.html" class="post-title-link" itemprop="url">minio</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-28 23:27:59 / 修改时间：20:13:54" itemprop="dateCreated datePublished" datetime="2021-06-28T23:27:59+08:00">2021-06-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tool/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tool/minio/" itemprop="url" rel="index"><span itemprop="name">minio</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/35DBDK5.html" class="post-meta-item leancloud_visitors" data-flag-title="minio" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <h2 id="minio介绍"><a href="#minio介绍" class="headerlink" title="minio介绍"></a>minio介绍</h2><p>minio 是高性能、可扩展、云的原生支持、开源免费的企业级文件存储服务，与Amazon S3 兼容，配置极简。<br>minio中文网：<a target="_blank" rel="noopener" href="http://www.minio.org.cn/">http://www.minio.org.cn/</a><br>minio官网：<a target="_blank" rel="noopener" href="https://min.io/">https://min.io/</a></p>
+          <h2 id="minio介绍"><a href="#minio介绍" class="headerlink" title="minio介绍"></a>minio介绍</h2><p>minio 是高性能、可扩展、云的原生支持、开源免费的企业级文件存储服务，与Amazon S3 兼容，配置极简。<br>minio中文网：<a target="_blank" rel="noopener" href="http://www.minio.org.cn/">http://www.minio.org.cn/</a><br>minio官网：<a target="_blank" rel="noopener" href="https://min.io/">https://min.io/</a></p>
 <h3 id="linux下配置"><a href="#linux下配置" class="headerlink" title="linux下配置"></a>linux下配置</h3><p><img src="/2021/35DBDK5/simplicity.gif" alt="img"></p>
 <p>1、下载minio，建议下载到/usr/local/bin/ 目录下，可全局访问</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/bin/</span><br><span class="line">wget   http://dl.minio.org.cn/server/minio/release/linux-amd64/minio</span><br><span class="line">chmod +x minio</span><br></pre></td></tr></table></figure>
@@ -252,46 +410,78 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/35DBDK5.html" data-id="ckqgo7gfp0006gwjm2o2oeo0b" class="article-share-link">Share</a>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/front-end/" rel="tag">前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/back-end/" rel="tag">后端</a></li></ul>
-
-    </footer>
-  </div>
   
-</article>
-
-
   
-    <article id="post-工具/常用工具" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/1R51GPM.html" class="article-date">
-  <time datetime="2021-06-28T13:29:34.536Z" itemprop="datePublished">2021-06-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/tool/">工具</a>
-  </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/1R51GPM.html">
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/1R51GPM.html">常用工具</a>
-    </h1>
-  
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/1R51GPM.html" class="post-title-link" itemprop="url">常用工具</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-28 23:27:59 / 修改时间：20:37:42" itemprop="dateCreated datePublished" datetime="2021-06-28T23:27:59+08:00">2021-06-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tool/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/1R51GPM.html" class="post-meta-item leancloud_visitors" data-flag-title="常用工具" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>效率神器+操作技巧</p>
+          <p>效率神器+操作技巧</p>
 <h2 id="系统高效快捷键"><a href="#系统高效快捷键" class="headerlink" title="系统高效快捷键"></a>系统高效快捷键</h2><table>
 <thead>
 <tr>
@@ -411,137 +601,339 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://mixley.github.io/2021/1R51GPM.html" data-id="ckqgo7gfh0000gwjm6n40gt48" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
-
-  
-
-
-  <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/4/">&amp;laquo; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span>
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span>
   </nav>
 
-</section>
-        
-          <aside id="sidebar">
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/tool/">工具</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/tool/minio/">minio</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/blog/">博客</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/develop/">开发</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/">开发</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/">java</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/maven/">maven</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/seata/">seata</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/spring/">spring</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/framework/">架构</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/js/">js</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/develop/js/avue/">avue</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/squalid/">杂项</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/deep/">深度</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/deep/face-recognition/">人脸识别</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/deep/computer-vision/">计算机视觉</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/operations/">运维</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/operations/linux/">linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/operations/sql/">sql</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/operations/win/">win</a></li></ul></li></ul>
-    </div>
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
   </div>
 
+  <aside class="sidebar">
+    <div class="sidebar-inner">
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/aop/" rel="tag">aop</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mixley/" rel="tag">mixley</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring/" rel="tag">spring</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-boot/" rel="tag">spring boot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/face-recognition/" rel="tag">人脸识别</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stack/" rel="tag">全栈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/front-end/" rel="tag">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/back-end/" rel="tag">后端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/collect/" rel="tag">收集</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/aop/" style="font-size: 10px;">aop</a> <a href="/tags/java/" style="font-size: 17.5px;">java</a> <a href="/tags/mixley/" style="font-size: 10px;">mixley</a> <a href="/tags/spring/" style="font-size: 20px;">spring</a> <a href="/tags/spring-boot/" style="font-size: 15px;">spring boot</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/face-recognition/" style="font-size: 12.5px;">人脸识别</a> <a href="/tags/stack/" style="font-size: 10px;">全栈</a> <a href="/tags/front-end/" style="font-size: 12.5px;">前端</a> <a href="/tags/back-end/" style="font-size: 10px;">后端</a> <a href="/tags/collect/" style="font-size: 10px;">收集</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">六月 2021</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2021/1XJ7S7J.html">文艺范</a>
-          </li>
-        
-          <li>
-            <a href="/2021/2FZF6S3.html">关于我</a>
-          </li>
-        
-          <li>
-            <a href="/2021/GA2E64.html">代码接触史</a>
-          </li>
-        
-          <li>
-            <a href="/2021/R3Z4XC.html">Adobe全家桶</a>
-          </li>
-        
-          <li>
-            <a href="/2021/35CC7A2.html">隐藏盘符</a>
-          </li>
-        
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
       </ul>
-    </div>
-  </div>
 
-  
-</aside>
-        
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2021 mixley<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">mixley</p>
+  <div class="site-description" itemprop="description">全栈·架构设计·算法</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">43</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
     </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">mixley</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
-</footer>
+
+        
+
+
+
+
+
+
+<script data-pjax>
+  (function() {
+    function leancloudSelector(url) {
+      url = encodeURI(url);
+      return document.getElementById(url).querySelector('.leancloud-visitors-count');
+    }
+
+    function addCount(Counter) {
+      var visitors = document.querySelector('.leancloud_visitors');
+      var url = decodeURI(visitors.id);
+      var title = visitors.dataset.flagTitle;
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            var counter = results[0];
+            leancloudSelector(url).innerText = counter.time + 1;
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .catch(error => {
+                console.error('Failed to save visitor count', error);
+              });
+          } else {
+              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    function showTime(Counter) {
+      var visitors = document.querySelectorAll('.leancloud_visitors');
+      var entries = [...visitors].map(element => {
+        return decodeURI(element.id);
+      });
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          for (let url of entries) {
+            let target = results.find(item => item.url === url);
+            leancloudSelector(url).innerText = target ? target.time : 0;
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    let { app_id, app_key, server_url } = {"enable":true,"app_id":"nnjeytdOlNpvQt3d0BrJByH4-gzGzoHsz","app_key":"xgw1gQFUHaT8rgFpvrMTIhUR","server_url":null,"security":true};
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${api_server}/1.1${url}`, {
+          method,
+          headers: {
+            'X-LC-Id'     : app_id,
+            'X-LC-Key'    : app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        if (CONFIG.hostname !== location.hostname) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    }
+
+    let api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(response => response.json())
+        .then(({ api_server }) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
 </body>
 </html>
