@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>mixley</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="全栈·架构设计·算法">
+<meta property="og:type" content="website">
+<meta property="og:title" content="mixley">
+<meta property="og:url" content="https://mixley.github.io/page/7/index.html">
+<meta property="og:site_name" content="mixley">
+<meta property="og:description" content="全栈·架构设计·算法">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="mixley">
+<meta property="article:tag" content="mixley,前端,后端,全栈,收集,java,人脸识别,架构设计,spring,aop,spring boot,spring cloud,深度学习,vue,杂七杂八">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="mixley" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">mixley</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://mixley.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-工具/博客/关于管理与写博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/35XMGZW.html" class="article-date">
+  <time datetime="2021-06-27T15:48:37.558Z" itemprop="datePublished">2021-06-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/tool/">工具</a>►<a class="article-category-link" href="/categories/tool/blog/">博客</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/35XMGZW.html">关于管理与写博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>说到博客，我想将博客编写的主要内容分为两个大的块。</p>
+<p>第一块：文章部分，我们可能随时的，随手的就编写很多心得或者笔记或者心情，创作应该是无打扰且不用考虑太多额外事情的。</p>
+<p>第二块：展示部分，界面到底怎么展示，文章标题内容图片怎么显示，个性化的界面需要进行一些什么样的调整。这个部分调整可能会频繁，可能会比较个性，可能会很繁琐，但是最好是不要参与到创作中影响效率的。</p>
+<p>所以由此我希望拥有一个简单的不受影响的创作环境，然后通过一些后期方式将文章展示到我定制的个性页面中是我最终的目的,下面我从现有结构和我的思路来讲一下我想怎么管理和写博客。</p>
+<h3 id="文章部分"><a href="#文章部分" class="headerlink" title="文章部分"></a>文章部分</h3><p>下面是我们常见的一个文档管理方式，不论doc也好，还是md也罢，我们都喜欢通过建立文件夹的方式进行分类然后梳理，下面的我通过建立文档同名的方式表示文档需要的文件。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">📦macdown</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂工具</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂minio</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂minio</span> <span class="comment"># 对应md文件的附件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜simplicity.gif</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜minio.md</span> <span class="comment">#md文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂博客</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂使用Hexo搭建博客</span>  <span class="comment">#对应md文件的附件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜image-20210623193347044.png</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜使用Hexo搭建博客.md</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜关于管理与写博客.md</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜常用工具.md</span> <span class="comment">#文章</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂开发</span> <span class="comment">#分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📂bat</span> <span class="comment">#更多分类与文章</span></span><br></pre></td></tr></table></figure>
+<p>上面这个目录结构，我相信不管是写博客还是仅仅做笔记或者整理资料的人，大部分过程应该都是这样的。我们以上面这个目录结构出发，来发布我们的程序。</p>
+<h3 id="推荐神器：Typora-万年bate版本，免费使用"><a href="#推荐神器：Typora-万年bate版本，免费使用" class="headerlink" title="推荐神器：Typora(万年bate版本，免费使用)"></a>推荐神器：Typora(万年bate版本，免费使用)</h3><h4 id="Typora文档管理功能"><a href="#Typora文档管理功能" class="headerlink" title="Typora文档管理功能"></a>Typora文档管理功能</h4><p><img src="%E5%85%B3%E4%BA%8E%E7%AE%A1%E7%90%86%E4%B8%8E%E5%86%99%E5%8D%9A%E5%AE%A2/image-20210626111012923.png" alt="image-20210626111012923"></p>
+<h4 id="Typora图片设置"><a href="#Typora图片设置" class="headerlink" title="Typora图片设置"></a>Typora图片设置</h4><p><img src="%E5%85%B3%E4%BA%8E%E7%AE%A1%E7%90%86%E4%B8%8E%E5%86%99%E5%8D%9A%E5%AE%A2/image-20210626110210201.png" alt="image-20210626110210201"></p>
+<p>其他建议的配置</p>
+<p><img src="%E5%85%B3%E4%BA%8E%E7%AE%A1%E7%90%86%E4%B8%8E%E5%86%99%E5%8D%9A%E5%AE%A2/image-20210626132716924-1624685244750.png" alt="image-20210626132716924"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/35XMGZW.html" data-id="ckqglfo5200062sjmhugqg0eg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-工具/博客/使用Hexo搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/3NPATC1.html" class="article-date">
+  <time datetime="2021-06-27T15:48:37.556Z" itemprop="datePublished">2021-06-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/tool/">工具</a>►<a class="article-category-link" href="/categories/tool/blog/">博客</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/3NPATC1.html">使用Hexo搭建博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>快速、简洁且高效的博客框架</p>
+<p>Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g #全局安装hexo</span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo init &lt;folder&gt;</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> &lt;folder&gt;</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install</span></span><br></pre></td></tr></table></figure>
+<p>安装后目录结构说明：</p>
+<!-- vscode -> file-tree-generator -->
+
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">📦blog</span> <span class="comment">#博客·安装路径</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂scaffolds</span>	<span class="comment">#模板文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜draft.md</span>	<span class="comment">#草稿模板</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜page.md</span>	<span class="comment">#页面模板</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜post.md</span>	<span class="comment">#文章模板</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂source</span>	<span class="comment">#资源文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📂_posts</span>	<span class="comment">#文章路径</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜hello-world.md</span>	<span class="comment">#实际文章</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂themes</span>	<span class="comment">#主题</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜.gitkeep</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📜package.json</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📜_config.landscape.yml</span>	<span class="comment">#_config.[theme].yml 用于编辑主题配置</span></span><br><span class="line"> <span class="string">┗</span> <span class="string">📜_config.yml</span>	<span class="comment">#配置文件 ！重要！！</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 更多详细命令查看官网：https://hexo.io/zh-cn/docs/commands.html</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 启动</span></span><br><span class="line">hexo s</span><br><span class="line"><span class="meta">#</span><span class="bash"> 下面为指定配置文件</span></span><br><span class="line">hexo s --config custom.yml,custom2.json,custom3.yml</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 生成网页，默认生成到public</span></span><br><span class="line">hexo g</span><br><span class="line"><span class="meta">#</span><span class="bash"> 下面为指定配置文件</span></span><br><span class="line">hexo g --config custom.yml,custom2.json,custom3.yml</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 发布</span></span><br><span class="line">hexo d</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 清除</span></span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<p><img src="%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/image-20210623193347044.png" alt="image-20210623193347044"></p>
+<p>打开浏览器输入<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 出现hexo界面则表示启动成功了</p>
+<h2 id="发布配置"><a href="#发布配置" class="headerlink" title="发布配置"></a>发布配置</h2><p>下面的自定义配置为使用git发布博客，首先需安装hexo-deployer-git插件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> git上传发布，一键部署时使用</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>自定义配置文件如下，可在hexo目录下建立<strong>custom.yml</strong>文件，自定义以下内容，不污染原始文件便于后期升级hexo</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 详情看附录中配置文件详细介绍</span></span><br><span class="line"><span class="comment"># Site 网站设置 基础设置</span></span><br><span class="line"><span class="comment"># 网站标题</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">mixley</span></span><br><span class="line"><span class="comment"># 网站副标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;修仙全栈&#x27;</span></span><br><span class="line"><span class="comment"># 网站描述，SEO优化时会扫描</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;全栈·架构设计·算法&#x27;</span></span><br><span class="line"><span class="comment"># 网站关键字，SEO优化时会扫描，多个逗号分隔</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&#x27;mixley,前端,后端,全栈,收集,java,人脸识别,架构设计,spring,aop,spring boot,spring cloud,深度学习,vue,杂七杂八&#x27;</span></span><br><span class="line"><span class="comment"># 作者</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">mixley</span></span><br><span class="line"><span class="comment"># 语言，使用主题时支持的语言列表,主题文件中languages文件夹下查看</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="comment"># 时区，默认为电脑时区，中国大陆：Asia/Shanghai</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL 网址 基础设置,url如果发布到gitbub，请参考注册github.io建立免费页面</span></span><br><span class="line"><span class="comment"># 生成的地址中，会携带这个地址，博客根路径(怎么访问的就怎么填写)</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">&#x27;https://mixley.github.io&#x27;</span></span><br><span class="line"><span class="comment"># 文章访问编号</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动 Asset 文件夹(推荐开启 npm install hexo-asset-image --save)</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 把链接改为与根目录的相对位址</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Home page setting 首页文章设置</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="comment">#每页数量</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Category &amp; Tag   分类 &amp; 标签 中文标签可能存在编码问题，需转换，格式为 中文: 英文 多个记录直接换行</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="comment"># 分类对应值</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line">	<span class="string">工具:</span> <span class="string">tool</span></span><br><span class="line">	<span class="string">博客:</span> <span class="string">blog</span></span><br><span class="line">	<span class="string">开发:</span> <span class="string">develop</span></span><br><span class="line"><span class="comment"># 标签对应值</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br><span class="line">	<span class="string">基础:</span> <span class="string">base</span></span><br><span class="line">	<span class="attr">spring security:</span> <span class="string">spring_security</span></span><br><span class="line">	<span class="string">难点:</span> <span class="string">difficulty</span></span><br><span class="line">	</span><br><span class="line"><span class="comment"># Pagination 分页设置</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 发布配置，若使用git，需要安装 npm install hexo-deployer-git --save</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line"><span class="comment">#多服务配置</span></span><br><span class="line"> <span class="attr">repository:</span></span><br><span class="line">   <span class="comment">#使用ssh的方式，配置ssh密钥可以免登录发布</span></span><br><span class="line">   <span class="attr">github:</span> <span class="string">git@github.com:mixley/mixley.GitHub.io.git</span></span><br><span class="line">   <span class="attr">gitee:</span> <span class="string">git@gitee.com:mixley/mixley.git</span></span><br><span class="line"> <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="配置文件详解"><a href="#配置文件详解" class="headerlink" title="配置文件详解"></a>配置文件详解</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Hexo Configuration</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/configuration.html</span></span><br><span class="line"><span class="comment">## Source: https://github.com/hexojs/hexo/</span></span><br><span class="line"><span class="comment">## 中文文档：https://hexo.io/zh-cn/docs/configuration</span></span><br><span class="line"><span class="comment"># Site 网站设置 基础设置</span></span><br><span class="line"><span class="comment"># 网站标题</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hexo</span></span><br><span class="line"><span class="comment"># 网站副标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 网站描述，SEO优化时会扫描</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;全栈的自我修养……&#x27;</span></span><br><span class="line"><span class="comment"># 网站关键字，SEO优化时会扫描，多个逗号分隔</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&#x27;java,C&#x27;</span></span><br><span class="line"><span class="comment"># 作者</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">John</span></span><br><span class="line"><span class="comment"># 语言，使用主题时支持的语言列表,主题文件中languages文件夹下查看</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="comment"># 时区，默认为电脑时区，中国大陆：Asia/Shanghai</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL 网址 基础设置,url如果发布到gitbub，请参考注册github.io建立免费</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="comment"># 生成的地址中，会携带这个地址，博客根路径(怎么访问的就怎么填写)</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">&#x27;http://example.com&#x27;</span></span><br><span class="line"><span class="comment"># 文章路径，title为中文在github发布无法显示</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span>	<span class="string">&#x27;&#x27;</span>					<span class="comment">#永久链接中各部分的默认值,如下</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">#permalink_defaults: </span></span><br><span class="line"><span class="comment"># year: 2021</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="comment"># 是否在永久链接中保留尾部的 index.html，设置为 false 时去除</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Directory 目录</span></span><br><span class="line"><span class="comment"># 资源文件夹，这个文件夹用来存放内容</span></span><br><span class="line"><span class="attr">source_dir:</span> <span class="string">source</span></span><br><span class="line"><span class="comment"># 公共文件夹，这个文件夹用于存放生成的站点文件</span></span><br><span class="line"><span class="attr">public_dir:</span> <span class="string">public</span></span><br><span class="line"><span class="comment"># 标签文件夹</span></span><br><span class="line"><span class="attr">tag_dir:</span> <span class="string">tags</span></span><br><span class="line"><span class="comment"># 归档文件夹</span></span><br><span class="line"><span class="attr">archive_dir:</span> <span class="string">archives</span></span><br><span class="line"><span class="comment"># 分类文件夹</span></span><br><span class="line"><span class="attr">category_dir:</span> <span class="string">categories</span></span><br><span class="line"><span class="comment"># Include code 文件夹，source_dir 下的子目录</span></span><br><span class="line"><span class="attr">code_dir:</span> <span class="string">downloads/code</span></span><br><span class="line"><span class="comment"># 国际化（i18n）文件夹</span></span><br><span class="line"><span class="attr">i18n_dir:</span> <span class="string">:lang</span></span><br><span class="line"><span class="comment"># 跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 public 目录中。您可使用 glob 表达式来匹配路径。如下</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">##skip_render: &quot;mypage/**/*&quot;</span></span><br><span class="line"><span class="comment"># 将会直接将 `source/mypage/index.html` 和 `source/mypage/code.js` 不做改动地输出到 &#x27;public&#x27; 目录</span></span><br><span class="line"><span class="comment"># 你也可以用这种方法来跳过对指定文章文件的渲染</span></span><br><span class="line"><span class="comment">#skip_render: &quot;_posts/test-post.md&quot;</span></span><br><span class="line"><span class="comment"># 这将会忽略对 &#x27;test-post.md&#x27; 的渲染</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">skip_render:</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Writing 文章 基本不用动，只有那个post_asset_folder用来设置图片路径</span></span><br><span class="line"><span class="comment"># 新文章的文件名称</span></span><br><span class="line"><span class="attr">new_post_name:</span> <span class="string">:title.md</span></span><br><span class="line"><span class="comment"># 预设布局，默认布局是文章</span></span><br><span class="line"><span class="attr">default_layout:</span> <span class="string">post</span></span><br><span class="line"><span class="comment"># 把标题转换为 title case</span></span><br><span class="line"><span class="attr">titlecase:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">external_link:</span></span><br><span class="line">  <span class="comment"># 在新标签中打开链接</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 对整个网站（site）生效或仅对文章（post）生效</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span></span><br><span class="line">  <span class="comment"># 需要排除的域名。主域名和子域名如 www 需分别配置[]</span></span><br><span class="line">  <span class="attr">exclude:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 把文件名称转换为 (1) 小写或 (2) 大写</span></span><br><span class="line"><span class="attr">filename_case:</span> <span class="number">0</span></span><br><span class="line"><span class="comment"># 显示草稿</span></span><br><span class="line"><span class="attr">render_drafts:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># 启动 Asset 文件夹(推荐开启)</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 把链接改为与根目录的相对位址</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># 显示未来的文章  ??</span></span><br><span class="line"><span class="attr">future:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 代码块的设置, 请参考 Highlight.js 进行设置</span></span><br><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">auto_detect:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">hljs:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># 代码块的设置, 请参考 PrismJS 进行设置</span></span><br><span class="line"><span class="attr">prismjs:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">preprocess:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Home page setting 首页文章设置</span></span><br><span class="line"><span class="comment"># path: Root path for your blogs index page. (default = &#x27;&#x27;)</span></span><br><span class="line"><span class="comment"># per_page: Posts displayed per page. (0 = disable pagination)</span></span><br><span class="line"><span class="comment"># order_by: Posts order. (Order by date descending by default)</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Category &amp; Tag   分类 &amp; 标签 !!需要映射为URLEncode</span></span><br><span class="line"><span class="comment"># uncategorized默认从属分类,%E6%9C%AA%E5%88%86%E7%B1%BB是未分类的URLEncode值</span></span><br><span class="line"><span class="comment"># default_category: uncategorized</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="comment"># 分类对应值</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line"><span class="comment"># 标签对应值</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Metadata elements</span></span><br><span class="line"><span class="comment">## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta</span></span><br><span class="line"><span class="comment"># Meta generator 标签。 值为 false 时 Hexo 不会在头部插入该标签</span></span><br><span class="line"><span class="attr">meta_generator:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Date / Time format</span></span><br><span class="line"><span class="comment">## Hexo uses Moment.js to parse and display date</span></span><br><span class="line"><span class="comment">## You can customize the date format as defined in</span></span><br><span class="line"><span class="comment">## http://momentjs.com/docs/#/displaying/format/</span></span><br><span class="line"><span class="attr">date_format:</span> <span class="string">YYYY-MM-DD</span></span><br><span class="line"><span class="attr">time_format:</span> <span class="string">HH:mm:ss</span></span><br><span class="line"><span class="comment">## updated_option supports &#x27;mtime&#x27;, &#x27;date&#x27;, &#x27;empty&#x27;</span></span><br><span class="line"><span class="attr">updated_option:</span> <span class="string">&#x27;mtime&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Pagination</span></span><br><span class="line"><span class="comment">## Set per_page to 0 to disable pagination</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Include / Exclude file(s)</span></span><br><span class="line"><span class="comment">## include:/exclude: options only apply to the &#x27;source/&#x27; folder</span></span><br><span class="line"><span class="comment"># Hexo 默认会忽略隐藏文件和文件夹（包括名称以下划线和 . 开头的文件和文件夹，Hexo 的 _posts 和 _data 等目录除外）。通过设置此字段将使 Hexo 处理他们并将它们复制到 source 目录下。</span></span><br><span class="line"><span class="attr">include:</span></span><br><span class="line"><span class="comment"># Hexo 会忽略这些文件和目录，项目文件忽略配置</span></span><br><span class="line"><span class="attr">exclude:</span></span><br><span class="line"><span class="comment"># Ignore files/folders,忽略包括themes/下文件与文件夹(所有上传忽略配置)</span></span><br><span class="line"><span class="attr">ignore:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment"># 使用主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="comment"># 发布配置，若使用git，需要安装 npm install hexo-deployer-git --save</span></span><br><span class="line"><span class="comment"># 安装</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">#deploy:</span></span><br><span class="line"><span class="comment">#  type: git</span></span><br><span class="line"><span class="comment"># 单服务配置</span></span><br><span class="line"><span class="comment">#  repo: &lt;repository url&gt; # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io</span></span><br><span class="line"><span class="comment"># 多服务配置</span></span><br><span class="line"><span class="comment">#  repository:</span></span><br><span class="line"><span class="comment">#    github: &lt;github url&gt;</span></span><br><span class="line"><span class="comment">#    gitee: &lt;gitee url&gt;</span></span><br><span class="line"><span class="comment">#  branch: [branch]</span></span><br><span class="line"><span class="comment">#  message: [message]</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/3NPATC1.html" data-id="ckqglfo5200052sjmdo8z5k6m" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/aop/" rel="tag">aop</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mixley/" rel="tag">mixley</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring/" rel="tag">spring</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-boot/" rel="tag">spring boot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-cloud/" rel="tag">spring cloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/" rel="tag">人脸识别</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%85%A8%E6%A0%88/" rel="tag">全栈</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag">后端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/base/" rel="tag">基础</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%94%B6%E9%9B%86/" rel="tag">收集</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" rel="tag">杂七杂八</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/" rel="tag">架构设计</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" rel="tag">深度学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/difficulty/" rel="tag">难点</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-工具/minio/minio" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/35DBDK5.html" class="article-date">
+  <time datetime="2021-06-27T15:48:37.548Z" itemprop="datePublished">2021-06-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/tool/">工具</a>►<a class="article-category-link" href="/categories/tool/minio/">minio</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/35DBDK5.html">minio</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="minio介绍"><a href="#minio介绍" class="headerlink" title="minio介绍"></a>minio介绍</h2><p>minio 是高性能、可扩展、云的原生支持、开源免费的企业级文件存储服务，与Amazon S3 兼容，配置极简。<br>minio中文网：<a target="_blank" rel="noopener" href="http://www.minio.org.cn/">http://www.minio.org.cn/</a><br>minio官网：<a target="_blank" rel="noopener" href="https://min.io/">https://min.io/</a></p>
+<h3 id="linux下配置"><a href="#linux下配置" class="headerlink" title="linux下配置"></a>linux下配置</h3><p><img src="minio/simplicity.gif" alt="img"></p>
+<p>1、下载minio，建议下载到/usr/local/bin/ 目录下，可全局访问</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/bin/</span><br><span class="line">wget   http://dl.minio.org.cn/server/minio/release/linux-amd64/minio</span><br><span class="line">chmod +x minio</span><br></pre></td></tr></table></figure>
+
+<p>2、设置minio用户名密码到临时环境变量（重启后消失）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">export MINIO_ACCESS_KEY=admin</span><br><span class="line">export MINIO_SECRET_KEY=password</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">查看环境变量</span></span><br><span class="line">echo $MINIO_ACCESS_KEY</span><br><span class="line">echo $MINIO_SECRET_KEY</span><br></pre></td></tr></table></figure>
+
+<p>3、永久环境变量</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 修改系统配置</span></span><br><span class="line">vim /etc/profile</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">最后一行输入</span></span><br><span class="line">export MINIO_ACCESS_KEY=admin</span><br><span class="line">export MINIO_SECRET_KEY=password</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 设置立即生效</span></span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+
+<p>4、指定配置路径后启动 （建议修改默认端口）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">后端启动</span></span><br><span class="line">nohup minio server --address &#x27;:9000&#x27; --config-dir /root/.minio /data/minio &gt; /data/minio.log 2&gt;&amp;1 &amp;</span><br><span class="line"><span class="meta">#</span><span class="bash">确认是否启动</span></span><br><span class="line">ps -ef | grep minio | grep -v grep</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">前端启动</span></span><br><span class="line">minio server --address &#x27;:9000&#x27; --config-dir /root/.minio /data/minio</span><br></pre></td></tr></table></figure>
+
+<p>5、开机启动（方式很多，例举其一）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">修改系统配置</span></span><br><span class="line"></span><br><span class="line">vim /etc/profile</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">最后一行输入</span></span><br><span class="line">nohup minio server --address &#x27;:9000&#x27; --config-dir /root/.minio /data/minio &gt; /data/minio.log 2&gt;&amp;1 &amp;</span><br></pre></td></tr></table></figure>
+
+<h3 id="win配置"><a href="#win配置" class="headerlink" title="win配置"></a>win配置</h3><p>1、下载minio，下载到C:\WINDOWS可全局启动</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#powershell 命令直接下载，选定</span></span><br><span class="line">powershell (<span class="built_in">new-object</span> System.Net.WebClient).DownloadFile(<span class="string">&#x27;http://dl.minio.org.cn/server/minio/release/windows-amd64/minio.exe&#x27;</span>,<span class="string">&#x27;minio.exe&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">### 下载时建议下载到环境变量，或者建议设置path路径，使用minio即可访问最好。</span></span><br></pre></td></tr></table></figure>
+
+<p>2、设置minio用户名密码到临时环境变量（重启后消失）</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> MINIO_ACCESS_KEY=admin</span><br><span class="line"><span class="built_in">set</span> MINIO_SECRET_KEY=password</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看环境变量</span></span><br><span class="line"><span class="built_in">echo</span> %MINIO_ACCESS_KEY%</span><br><span class="line"><span class="built_in">echo</span> %MINIO_SECRET_KEY%</span><br></pre></td></tr></table></figure>
+
+<p>3、永久环境变量（手动设置也比较简单）</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#用户环境变量</span></span><br><span class="line">setx MINIO_ACCESS_KEY admin</span><br><span class="line">setx MINIO_SECRET_KEY password</span><br><span class="line"></span><br><span class="line"><span class="comment">#系统环境变量(需管理员，建议)</span></span><br><span class="line">setx MINIO_ACCESS_KEY admin /m</span><br><span class="line">setx MINIO_SECRET_KEY password /m</span><br><span class="line"></span><br><span class="line"><span class="comment">#以下指令保存为setMinio.bat后，自动获取管理员权限</span></span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">%<span class="number">1</span>  %<span class="number">2</span>  mshta  vbscript:createobject(<span class="string">&quot;shell.application&quot;</span>).shellexecute(<span class="string">&quot;%~s0&quot;</span>,<span class="string">&quot;goto  :runas&quot;</span>,<span class="string">&quot;&quot;</span>,<span class="string">&quot;runas&quot;</span>,<span class="number">1</span>)(window.close)&amp;<span class="keyword">exit</span> </span><br><span class="line">:runas setMinio.bat</span><br><span class="line">setx MINIO_ACCESS_KEY admin /m</span><br><span class="line">setx MINIO_SECRET_KEY password /m</span><br><span class="line"><span class="built_in">echo</span> MINIO_ACCESS_KEY=%MINIO_ACCESS_KEY%</span><br><span class="line"><span class="built_in">echo</span> MINIO_SECRET_KEY=%MINIO_SECRET_KEY%</span><br><span class="line">pause&amp;<span class="keyword">exit</span> </span><br></pre></td></tr></table></figure>
+
+<p>4、指定配置路径后启动 （建议修改默认端口）</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#静默启动(服务启动，以下命令设置服务为自动，开机后会自启动)</span></span><br><span class="line"><span class="built_in">set</span> confdir=<span class="string">&quot;D:\\data\\.minio&quot;</span></span><br><span class="line"><span class="built_in">set</span> datadir=<span class="string">&quot;D:\\data\\minio&quot;</span></span><br><span class="line"><span class="built_in">sc</span> create minio binpath=<span class="string">&quot;minio server --address &#x27;:9000&#x27; --config-dir %confdir% %datadir%&quot;</span> <span class="built_in">type</span>=own <span class="built_in">start</span>=auto displayname=minio</span><br><span class="line"><span class="comment">#启动服务 sc [start|stop|delete] server</span></span><br><span class="line"><span class="built_in">sc</span> <span class="built_in">start</span> minio</span><br><span class="line"><span class="comment">#查看服务状态</span></span><br><span class="line"><span class="built_in">sc</span> query minio</span><br><span class="line"></span><br><span class="line"><span class="comment">#cmd启动</span></span><br><span class="line">minio server -<span class="literal">-address</span> <span class="string">&#x27;:9000&#x27;</span> -<span class="literal">-config</span><span class="literal">-dir</span> D:\\data\\.minio D:\\data\\minio </span><br></pre></td></tr></table></figure>
+
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a><strong>注意事项</strong></h4><h5 id="使用cmd-minio-server无法启动解决办法"><a href="#使用cmd-minio-server无法启动解决办法" class="headerlink" title="使用cmd minio server无法启动解决办法"></a>使用cmd minio server无法启动解决办法</h5><p>1、若文件夹在本地，使用./minio server再重试</p>
+<p>2、环境变量中设置path，指定minio目录路径</p>
+<h5 id="执行命令时提示需要管理员权限"><a href="#执行命令时提示需要管理员权限" class="headerlink" title="执行命令时提示需要管理员权限"></a>执行命令时提示需要管理员权限</h5><p>方法1：可使用管理员命令窗口打开</p>
+<p>方法2：参考<strong>永久环境变量</strong>，设置一个cmd脚本自动提升管理员权限</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/35DBDK5.html" data-id="ckqglfo5300072sjm4dho1mpt" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag">后端</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-工具/常用工具" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/1R51GPM.html" class="article-date">
+  <time datetime="2021-06-27T15:48:37.543Z" itemprop="datePublished">2021-06-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/tool/">工具</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/1R51GPM.html">常用工具</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>效率神器+操作技巧</p>
+<h2 id="系统高效快捷键"><a href="#系统高效快捷键" class="headerlink" title="系统高效快捷键"></a>系统高效快捷键</h2><table>
+<thead>
+<tr>
+<th>Windows 部分高效快捷键</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>打开文件管理器</td>
+<td>Win键 + E</td>
+</tr>
+<tr>
+<td>剪贴板历史功能(还能固定某些选项)</td>
+<td>Win键 + V</td>
+</tr>
+<tr>
+<td>打开高级用户功能（等同右击开始）</td>
+<td>Win键 + X</td>
+</tr>
+<tr>
+<td>显示桌面</td>
+<td>Win键 + D</td>
+</tr>
+<tr>
+<td>Xbox游戏录制工具栏(虽然是游戏工具栏，但是提供录屏、截屏)</td>
+<td>Win键 + G</td>
+</tr>
+<tr>
+<td>截屏(推荐，可延迟截图，可编辑)</td>
+<td>Win键 + Shift + S</td>
+</tr>
+<tr>
+<td>录屏(推荐，录屏后可再Win+G中编辑导出)</td>
+<td>Win键 + Alt + R</td>
+</tr>
+<tr>
+<td>运行（可输入命令行）</td>
+<td>Win键 + R</td>
+</tr>
+<tr>
+<td>Windows搜索(开启搜索增强后，文件搜索更方便)</td>
+<td>Win键 + S</td>
+</tr>
+<tr>
+<td>任务管理器</td>
+<td>Ctrl+Shift+Esc</td>
+</tr>
+</tbody></table>
+<h2 id="装机必备"><a href="#装机必备" class="headerlink" title="装机必备"></a>装机必备</h2><h3 id="uTools-免费效率神器"><a href="#uTools-免费效率神器" class="headerlink" title="uTools  免费效率神器"></a><a target="_blank" rel="noopener" href="https://u.tools/">uTools</a>  免费效率神器</h3><p>对我而言，最常用的是搜索软件和翻译【大雾】，这种类似的效率神器还有<a target="_blank" rel="noopener" href="https://docs.microsoft.com/zh-cn/windows/powertoys/">PowerToys</a>微软家的（功能不多）、<a target="_blank" rel="noopener" href="https://getquicker.net/">Quicker</a>国产指尖工具集（这个可以与其它工具结合，设计感不强需要一段时间上手，但是很强大）、<a target="_blank" rel="noopener" href="https://github.com/Wox-launcher/Wox">Wox</a>开源win下<strong>Spotlight</strong>神器（和uTools功能重合）……当然，嫌弃麻烦的可能使用Win+S直接打开windows搜索功能完成一切，毕竟现在win的搜索功能也不差了，而mac下面有Spotlight了。</p>
+<p>快捷键 「Alt + Space」，功能：搜索软件、使用插件提供的场景功能</p>
+<p><img src="%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/utools-plugins.png" alt="img"></p>
+<h3 id="7-zip-开源压缩软件"><a href="#7-zip-开源压缩软件" class="headerlink" title="7-zip  开源压缩软件"></a><a target="_blank" rel="noopener" href="https://sparanoid.com/lab/7z/">7-zip</a>  开源压缩软件</h3><p>这里必须说一句，7z养活了一大票的国产软件，实际上按道理使用开源协议写的程序也应该开源的，但是实际国产某些X压不仅不开源，一开始还夹带私货让7z或者其它压缩软件无法兼容。后续，现在的国产压缩软件不再去搞什么“独家”压缩算法了，现在兼容性都不错。开源与不开源的争论不好说，如果现在都这样做：使用社区开源的产品做收费，不贡献代码去提升社区产品，甚至想把社区产品击垮。这样的行为真是，没法说。。</p>
+<p><img src="%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/image-20210627213154683.png" alt="image-20210627213154683"></p>
+<h3 id="QuickLook-开源空格键预览神器-仅Win-Mac本身有空格预览功能"><a href="#QuickLook-开源空格键预览神器-仅Win-Mac本身有空格预览功能" class="headerlink" title="QuickLook  开源空格键预览神器(仅Win,Mac本身有空格预览功能)"></a><a target="_blank" rel="noopener" href="https://pooi.moe/QuickLook/">QuickLook </a> 开源空格键预览神器(仅Win,Mac本身有空格预览功能)</h3><p>空格键可以预览声音、视频、macdown、doc、excel等等，无需下载安装对应的软件，只需要在对应文件上按下空格。</p>
+<p>office文档需要插件，<a target="_blank" rel="noopener" href="https://github.com/QL-Win/QuickLook/wiki/Available-Plugins%EF%BC%8C%E4%B8%8B%E8%BD%BD%E5%90%8E%E7%A9%BA%E6%A0%BC%E9%94%AE%E5%AE%89%E8%A3%85">https://github.com/QL-Win/QuickLook/wiki/Available-Plugins，下载后空格键安装</a></p>
+<h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><h3 id="VsCode-微软开源编辑器-VSCodium前者的开源编译版"><a href="#VsCode-微软开源编辑器-VSCodium前者的开源编译版" class="headerlink" title="VsCode 微软开源编辑器/VSCodium前者的开源编译版"></a><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VsCode </a>微软开源编辑器/<a target="_blank" rel="noopener" href="https://vscodium.com/">VSCodium</a>前者的开源编译版</h3><p>大名鼎鼎的VsCode，记事本超级替代工具，编码人员神器，超多插件。介意微软遥测等功能的，可以使用开源编译版本VSCodium，VSCodium已经是能找到的最”干净”的vscode了 。</p>
+<p>VsCode缺陷：正则替换大文件会卡顿</p>
+<p><img src="%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/image-20210627213520484.png" alt="image-20210627213520484"></p>
+<h3 id="Typora-MacDown编辑神器"><a href="#Typora-MacDown编辑神器" class="headerlink" title="Typora  MacDown编辑神器"></a><a target="_blank" rel="noopener" href="https://typora.io/">Typora</a>  MacDown编辑神器</h3><p>已经是bate版N多年的”免费”使用的MacDown编辑器，所见即所得。缺陷是非常长的文档编写时会卡顿，但是这个缺陷我从未碰到，因为没有写很长的文章，长到6k字以上的。</p>
+<p>在<a href="./%E5%8D%9A%E5%AE%A2/%E5%85%B3%E4%BA%8E%E7%AE%A1%E7%90%86%E4%B8%8E%E5%86%99%E5%8D%9A%E5%AE%A2.md">关于管理与写博客</a>中会详细描述如何使用Typora进行一些设置与编写博客</p>
+<h2 id="办公神器"><a href="#办公神器" class="headerlink" title="办公神器"></a>办公神器</h2><h3 id="scrcpy-开源投屏神器-QtScrcpy-基于前者二开的开源投屏神器-荐！"><a href="#scrcpy-开源投屏神器-QtScrcpy-基于前者二开的开源投屏神器-荐！" class="headerlink" title="scrcpy 开源投屏神器/QtScrcpy 基于前者二开的开源投屏神器(荐！)"></a><a target="_blank" rel="noopener" href="https://github.com/Genymobile/scrcpy">scrcpy</a> 开源投屏神器/<a target="_blank" rel="noopener" href="https://github.com/barry-ran/QtScrcpy">QtScrcpy</a> 基于前者二开的开源投屏神器(荐！)</h3><p>USB(或通过TCP/IP)连接Android设备，并进行显示和控制，不需要root权限，不需手机安装apk。电脑上可以直接点击操作手机哦！</p>
+<table>
+<thead>
+<tr>
+<th>关键点</th>
+<th>scrcpy</th>
+<th>QtScrcpy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>界面</td>
+<td>sdl</td>
+<td>qt</td>
+</tr>
+<tr>
+<td>视频解码</td>
+<td>ffmpeg</td>
+<td>ffmpeg</td>
+</tr>
+<tr>
+<td>视频渲染</td>
+<td>sdl</td>
+<td>opengl</td>
+</tr>
+<tr>
+<td>跨平台基础设施</td>
+<td>自己封装</td>
+<td>Qt提供</td>
+</tr>
+<tr>
+<td>编程语言</td>
+<td>C</td>
+<td>C++</td>
+</tr>
+<tr>
+<td>编程方式</td>
+<td>同步</td>
+<td>异步</td>
+</tr>
+<tr>
+<td>按键映射</td>
+<td>不支持自定义</td>
+<td>支持自定义按键映射</td>
+</tr>
+<tr>
+<td>编译方式</td>
+<td>meson+gradle</td>
+<td>Qt Creator</td>
+</tr>
+</tbody></table>
+<h2 id="程序员必备"><a href="#程序员必备" class="headerlink" title="程序员必备"></a>程序员必备</h2><h3 id="GitHub-Proxy-GitHub下载加速-在线"><a href="#GitHub-Proxy-GitHub下载加速-在线" class="headerlink" title="GitHub Proxy  GitHub下载加速(在线)"></a><a target="_blank" rel="noopener" href="https://ghproxy.com/">GitHub Proxy</a>  GitHub下载加速(在线)</h3><p>良心加速、速度稳定、快，可以去作者那里点点赞。</p>
+<p><img src="%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/image-20210627222205161.png" alt="image-20210627222205161"></p>
+<h3 id="dev-sidecar-开发者边车-开源开发者便利工具"><a href="#dev-sidecar-开发者边车-开源开发者便利工具" class="headerlink" title="dev-sidecar 开发者边车  开源开发者便利工具"></a><a target="_blank" rel="noopener" href="https://github.com/docmirror/dev-sidecar">dev-sidecar</a> 开发者边车  开源开发者便利工具</h3><p>这个车是个便车，实际上也包含了GitHub访问加速、下载加速等功能，梯子的话你可以慢慢从代码中周旋一下，大致步骤：<br>1、找到注释<br>2、URL解码注释内容<br>3、Base64解码2中内容<br>4、打开解码后网址<br>5、找到网址中的二维码并扫码界面二维码中的文字</p>
+<p><img src="%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/image-20210627222243502.png" alt="image-20210627222243502"></p>
+<h2 id="其它程序清单"><a href="#其它程序清单" class="headerlink" title="其它程序清单"></a>其它程序清单</h2><p><a target="_blank" rel="noopener" href="http://www.foobar2000.com.cn/interface/showimg.php?lang=cn&id=73">Foobox</a> 音乐发烧友专用,搜索功能有”点”东西</p>
+<p>FastStoneCapture 滚动窗口截图、屏幕录像一应俱全</p>
+<p>📦工具<br> ┣ 📜aardio.7z<br> ┣ 📜Adobe_Illustrator_2020_24.2.3.521_SP_20200801.rar<br> ┣ 📜Alibaba_Dragonwell8_Linux_x64_8.0-preview.tar.gz<br> ┣ 📜Alibaba_Dragonwell_8.2.2-Experimental_Windows_x64.zip<br> ┣ 📜apache-tomcat-7.0.103-windows-x86.zip<br> ┣ 📜AtomSetup-x64.exe<br> ┣ 📜BalsamiqMockups_6603.zip<br> ┣ 📜BvSshClient-Inst.exe<br> ┣ 📜deepin-boot-maker.exe<br> ┣ 📜deepin-desktop-community-1002-amd64.iso<br> ┣ 📜deepin-system-installer.exe<br> ┣ 📜dragonwell11-dragonwell-11.0.8.3_jdk-11.0.8-ga.zip<br> ┣ 📜Everything-1.4.1.969.x64-Setup.exe<br> ┣ 📜exe封包工具_v2.3.exe<br> ┣ 📜FastStoneCapturePortable.zip<br> ┣ 📜Feem_v4.3.0_beta_Windows_Installer.exe<br> ┣ 📜Fiddler 5.0.20194.41348汉化版.7z<br> ┣ 📜Fish-v3210.zip<br> ┣ 📜Foobox-6.1.5.3.zip<br> ┣ 📜GeePlayerSetup_app.exe<br> ┣ 📜GifCam.exe<br> ┣ 📜Git-2.24.0.2-64-bit.exe<br> ┣ 📜ideaIU-2019.3.1.exe<br> ┣ 📜Insomnia.Core-2020.4.1.exe<br> ┣ 📜jarrun.zip<br> ┣ 📜Kx80_UPD_8.0.1121_RC3c.zip<br> ┣ 📜LogView.zip<br> ┣ 📜MouseClick_Setup_1.0.24.0.exe<br> ┣ 📜mysql-connector-odbc-8.0.21-win32.msi<br> ┣ 📜mysql-connector-odbc-8.0.21-winx64.msi<br> ┣ 📜mysql-jjb.zip<br> ┣ 📜navicat150_premium_cs_x64.exe<br> ┣ 📜NewLandTestTool.exe<br> ┣ 📜nginx-1.16.1.tar.gz<br> ┣ 📜nginx-1.17.6.zip<br> ┣ 📜pencil-3.1.0.ga-x86_64.exe<br> ┣ 📜PowerToysSetup-0.16.1-x64.msi<br> ┣ 📜proguard6.2.0.zip<br> ┣ 📜pycharm-community-2020.1.2.exe<br> ┣ 📜python-3.8.3-amd64.exe<br> ┣ 📜qbittorrent_4.2.0_x64_setup.exe<br> ┣ 📜RedGiantTrapcodeSuite14.1.2WinX64.zip<br> ┣ 📜Redis-x64-3.2.100.zip<br> ┣ 📜scrcpy.zip<br> ┣ 📜ScrcpyGui-1.5.1.win64.exe<br> ┣ 📜Snipaste-2.2.4-Beta-x64.zip<br> ┣ 📜SoapUI-x32-5.5.0.exe<br> ┣ 📜ssr-win.zip<br> ┣ 📜SwitchHosts.exe<br> ┣ 📜taobao-tomcat-7.0.59.tgz<br> ┣ 📜TopazGigapixelAI-5.4.4-windows-x64-Full-Installer.exe<br> ┣ 📜topazGigapixelAI.reg<br> ┣ 📜TortoiseGit-2.9.0.0-64bit.msi<br> ┣ 📜TortoiseGit-LanguagePack-2.9.0.0-64bit-zh_CN.msi<br> ┣ 📜Windows10Manager.zip<br> ┣ 📜Writage-1.12.msi<br> ┣ 📜XMind_2020_v10.1.3_便携版_64位.exe<br> ┣ 📜转转大师PDF转换工具V4.9破解版.rar<br> ┗ 📜远程工具.rar</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/1R51GPM.html" data-id="ckqglfo4u00002sjm6x0df0gq" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/base/" rel="tag">基础</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-杂项/文艺范" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/1XJ7S7J.html" class="article-date">
+  <time datetime="2021-06-27T15:48:37.523Z" itemprop="datePublished">2021-06-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9D%82%E9%A1%B9/">杂项</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/1XJ7S7J.html">文艺范</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>励志：</p>
+<p>求上得中，求中得下</p>
+<p>没有最好，只有更好</p>
+<p>咸鱼：</p>
+<p>明天的事情，后天就知道了</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/1XJ7S7J.html" data-id="ckqglfo5100042sjm8i1nbanp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-杂项/关于我" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/2FZF6S3.html" class="article-date">
+  <time datetime="2021-06-27T15:48:37.521Z" itemprop="datePublished">2021-06-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9D%82%E9%A1%B9/">杂项</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/2FZF6S3.html">关于我</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>95年程序猿，湖南师大计算机专业本科17年毕业。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/2FZF6S3.html" data-id="ckqglfo5000022sjmbf3hb7hh" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-杂项/代码接触史" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/GA2E64.html" class="article-date">
+  <time datetime="2021-06-27T15:48:37.519Z" itemprop="datePublished">2021-06-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9D%82%E9%A1%B9/">杂项</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/GA2E64.html">代码接触史</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="代码接触史"><a href="#代码接触史" class="headerlink" title="代码接触史"></a>代码接触史</h1><h2 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h2><p>最开始接触的basic，大概是08年，使用的是visual basic 6.0 ，一开始正常的搞点正常的比如计算器、实现程序只启动一次、操作文件搞点批量、操作access数据库啥的。后面渐渐失控搞了很多乱七八糟的东西：点击答题，然后到了最后怎么都是关机；关闭按钮满屏幕乱跑，就是不让你鼠标点中……</p>
+<p>界面是拖动的，入门太简单，玩的很兴起，各种骚操作都弄出来。但是没多久，发现360在各个网吧都安装了，并且没有经过360认证的程序都跑不了，自己开发的都不行。。。</p>
+<p>后续，可能用excel写宏代码？或者说搞了一点小工具？大约14年的时候，还真有这样的操作。</p>
+<p><strong>家教中心（大学的一个勤工助学部门）的数据查询工具</strong></p>
+<p>简单的说，系统的查询不好用，自己搞了一个（系统不好用，重新做一个又是另外的一个故事了）。而且附带一个可以连接数据库的Excel文件，更加灵活。在家教中心的网络下面，只需要开启Excel宏功能的电脑打开这个Excel文件，点击查询按钮，就把平时要做的操作直接查询下来。</p>
+<p><strong>Java静默安装器</strong></p>
+<p>学习Java的时候，自己搞了个服务器放JDK安装包，程序上提示你选择安装JDK版本，然后静默安装，还把Path配置好了。</p>
+<p>嗯原理，大致就是利用Java安装的命令行，其实Java 本身就是有静默安装指令的。</p>
+<p><strong>字体转换</strong></p>
+<p>泡妞专用，妹子是搞语言文学的，有啥篆体字啥的。做了一个切换字体的软件。名字叫文字转换器，实际名称应该叫字体切换器。（P.s.最后，这玩意她都不搭理，且从未用过。确实，因为她们存了网站，找到软件打开和找到网页打开，实际是没差别的。）</p>
+<h2 id="C"><a href="#C" class="headerlink" title="C"></a>C</h2><p>大约09的样子，接触的C语言，并且刚好是360搞的不想看vb的那阵子。C语言的学习可以这样描述：枯燥且使人沉迷。</p>
+<p>要说C语言做过什么或者有什么成就？唯一的有一个吧，就是高中什么编程比赛未成年组还是啥的比赛拿到市一等奖（比赛名字都没映像），但是等我们收到奖的时候，省比赛已经结束了。可能也不是个什么大的比赛，只记得去了岳阳的什么学校，感觉比赛比较水，题目非常简单，难道参加的少儿组？</p>
+<p>玩C的时候，也就能搞搞算法才维持的了生活的样子（大雾）</p>
+<h2 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h2><p>13年的时候接触的C++。主要是有这个课程，进一步打好基础吧。对C++感觉更多是数据结构、输入输出等东西的学习。</p>
+<p>嗯，C++也没有搞事情。玩C++的时候，也就摸摸鱼才能维持的了快乐的样子。</p>
+<h2 id="C-2"><a href="#C-2" class="headerlink" title="C#"></a>C#</h2><p>啥时候用？没啥印象了，大概就是会了C/C++后，感觉C#就会了？作为C系列的编程语言，选择大概就是，学习C/C++进行入门，了解编程，学习编程，但是C相关的开发，我可能还是会选择C#。</p>
+<p>究其原因，总结两个字：封装。C#被微软封装的太精美，看不到细节，C与C++这种能做的东西更灵活没有太多封装的，反而在学习编程的时候，才是更容易打好基础。</p>
+<p>做了啥？基本也是工作上的代码维护而已。</p>
+<p><strong>结算系统（ASP）</strong></p>
+<p>大致就是一个维护客运汽车站、车辆、结算协议、结算规则的一个结算平台，是客运系统下的子系统。</p>
+<p>填填坑，补补BUG，也没啥好说的，优化主要是SQL的故事了。</p>
+<p><strong>结算系统客户端（C# .NET）</strong></p>
+<p>是结算系统的子系统，.NET 3.5的古老版本，得兼容XP。改了几个小bug，加了几个小的新功能而已。</p>
+<p><strong>自助售票机(C# .NET版)</strong></p>
+<p>老款自助机，你值得拥有，win系统的自助机，界面风格同样古老。做做改版，改改bug，也是缝缝补补的工作比较多。</p>
+<h2 id="汇编"><a href="#汇编" class="headerlink" title="汇编"></a>汇编</h2><p>略</p>
+<p>真的没啥想法，太高级，玩不转。大学学过，想搞点事情都看到脱壳加壳上去了，跳过。</p>
+<h2 id="单片机"><a href="#单片机" class="headerlink" title="单片机"></a>单片机</h2><p>嗯，怎么说，一直想玩这个，又没有付诸行动的东西。就只能搞个跑马灯一闪一闪亮晶晶。同样是大学，我玩的发指令跑马灯，隔壁家玩的机器人。都是杨博下的实验室，我们这个实验室搞的SSM、数据分析，隔壁实验室搞的树莓派做人脸识别，再隔壁实验室带太阳能的不知道啥玩意，印象中那个太阳能大锅属向日葵的，跟着太阳转。其它实验室的，不知道还有啥好玩的，反正电子班的都跑去机器人大赛了，也不知道比的啥啊。</p>
+<p>其实对硬件编程我还是挺想玩一玩的，但是只能口嗨一下，等咱年老了，再看还想玩不。指不定未来我遛的就是机器人小狗，这里得留<strong>点</strong>畅想，<strong>加粗</strong>为证。</p>
+<h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><p>有了点HTML基础，有了点编程基础（主要是C的基础吧），直接上手干了。学习的过程与项目的过程是一体的，现在觉得羞耻的是，这个PHP没有使用框架，代码还是写HTML里面的，粗糙。</p>
+<h3 id="师大家教网-点我打开"><a href="#师大家教网-点我打开" class="headerlink" title="师大家教网 点我打开"></a>师大家教网 <a target="_blank" rel="noopener" href="http://www.shidajiajiao.com/">点我打开</a></h3><p>大约在14年放寒假前调研，总共花了3、4个月左右，基本是我一个人。没有框架、没有做过web项目，这大概是我最疯魔的一段时间之一了。原因是之前的网站不好用，大概是我接手家教中心网宣部部长(部门是技术部门，管数据库和网站，也负责修电脑和网线。)做的我当时觉得最伟大，现在觉得很羞耻但是隐隐约约还有点小骄傲的事情。</p>
+<p>其实对界面是有遗憾的，当时用老魏想让他搞前端，但是我们开始的时候他出去旅游了，等他回来，我们已经搞完了。可以说他几乎全程完美避开所有事情了。还有一个小崔同学，让他做了前端的那个筛选表格。</p>
+<p>那个时候没版权意识哈，不知道那些插件是否是可用的，全部网上找的。现在维权估计也没法找我，只能找学校了。你们现在看到的这个丑不垃圾，不兼容手机的网站就是我干的了。其实给你们看到的都是没啥内容的东西，最重要的后台的管理变得很丰富了，可惜没法拿出来看。</p>
+<p>插一嘴，我们那个勤工俭学的家教中心，是企业化管理，推行狼文化与家文化。总共6、70多人，每个月有各种活动，还挺怀念的。我嘛是属于加入家教中心基本没做过正常家教的人，只教过几次老爷爷做视频，后来就是参加公益家教。当时每个月发160来着，当了主管好像是240块了，啧啧，阶级。</p>
+<h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a><strong>Java</strong></h2><p>Java的故事比较长，我得加粗，而且想分成几块来具体描述。</p>
+<h3 id="Android-初始Java"><a href="#Android-初始Java" class="headerlink" title="Android 初始Java"></a>Android 初始Java</h3><p>没错，我最开始认识Java来自与安卓，在我刚上高中时候，正是智能机火的时候。当我到了大学，发现选修居然有Android可以学？</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/GA2E64.html" data-id="ckqglfo5100032sjm6hac7hve" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/" rel="tag">人脸识别</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/base/" rel="tag">基础</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-杂项/Adobe全家桶" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/R3Z4XC.html" class="article-date">
+  <time datetime="2021-06-27T15:48:37.517Z" itemprop="datePublished">2021-06-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9D%82%E9%A1%B9/">杂项</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/R3Z4XC.html">Adobe全家桶</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>PS</p>
+<p>PR</p>
+<p>FLASH</p>
+<p>AE</p>
+<p>AU</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/R3Z4XC.html" data-id="ckqglfo4z00012sjmgj7ye2ei" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/6/">&amp;laquo; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/tool/">工具</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/tool/minio/">minio</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/blog/">博客</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/develop/">开发</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/">开发</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/">java</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/maven/">maven</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/seata/">seata</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/spring/">spring</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/%E6%9E%B6%E6%9E%84/">架构</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/js/">js</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/develop/js/avue/">avue</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%82%E9%A1%B9/">杂项</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B7%B1%E5%BA%A6/">深度</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B7%B1%E5%BA%A6/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/">人脸识别</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B7%B1%E5%BA%A6/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/">计算机视觉</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BF%90%E7%BB%B4/">运维</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BF%90%E7%BB%B4/linux/">linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BF%90%E7%BB%B4/sql/">sql</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BF%90%E7%BB%B4/win/">win</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/aop/" rel="tag">aop</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mixley/" rel="tag">mixley</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring/" rel="tag">spring</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-boot/" rel="tag">spring boot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-cloud/" rel="tag">spring cloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/" rel="tag">人脸识别</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%A8%E6%A0%88/" rel="tag">全栈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag">后端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/base/" rel="tag">基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%94%B6%E9%9B%86/" rel="tag">收集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" rel="tag">杂七杂八</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/" rel="tag">架构设计</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" rel="tag">深度学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/difficulty/" rel="tag">难点</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/aop/" style="font-size: 13.33px;">aop</a> <a href="/tags/java/" style="font-size: 18.33px;">java</a> <a href="/tags/mixley/" style="font-size: 10px;">mixley</a> <a href="/tags/spring/" style="font-size: 20px;">spring</a> <a href="/tags/spring-boot/" style="font-size: 16.67px;">spring boot</a> <a href="/tags/spring-cloud/" style="font-size: 10px;">spring cloud</a> <a href="/tags/vue/" style="font-size: 11.67px;">vue</a> <a href="/tags/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/" style="font-size: 15px;">人脸识别</a> <a href="/tags/%E5%85%A8%E6%A0%88/" style="font-size: 10px;">全栈</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 13.33px;">前端</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 11.67px;">后端</a> <a href="/tags/base/" style="font-size: 15px;">基础</a> <a href="/tags/%E6%94%B6%E9%9B%86/" style="font-size: 10px;">收集</a> <a href="/tags/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" style="font-size: 10px;">杂七杂八</a> <a href="/tags/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/" style="font-size: 10px;">架构设计</a> <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;">深度学习</a> <a href="/tags/difficulty/" style="font-size: 10px;">难点</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">六月 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/N609DF.html">win开启linux</a>
+          </li>
+        
+          <li>
+            <a href="/2021/MYHZWP.html">格式标准</a>
+          </li>
+        
+          <li>
+            <a href="/2021/1DC25F7.html">图片的由来与存储</a>
+          </li>
+        
+          <li>
+            <a href="/2021/400Q6V.html">图片的放大缩小旋转与裁剪</a>
+          </li>
+        
+          <li>
+            <a href="/2021/27HT6PR.html">什么是人脸识别</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021 mixley<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

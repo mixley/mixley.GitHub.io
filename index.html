@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>mixley</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="全栈·架构设计·算法">
+<meta property="og:type" content="website">
+<meta property="og:title" content="mixley">
+<meta property="og:url" content="https://mixley.github.io/index.html">
+<meta property="og:site_name" content="mixley">
+<meta property="og:description" content="全栈·架构设计·算法">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="mixley">
+<meta property="article:tag" content="mixley,前端,后端,全栈,收集,java,人脸识别,架构设计,spring,aop,spring boot,spring cloud,深度学习,vue,杂七杂八">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="mixley" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">mixley</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://mixley.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-运维/linux/win开启linux" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/N609DF.html" class="article-date">
+  <time datetime="2021-06-28T12:24:37.155Z" itemprop="datePublished">2021-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%BF%90%E7%BB%B4/">运维</a>►<a class="article-category-link" href="/categories/%E8%BF%90%E7%BB%B4/linux/">linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/N609DF.html">win开启linux</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>子系统开启：</p>
+<p>启用“适用于 Linux 的 Windows 子系统”可选功能</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dism.exe /online /<span class="built_in">enable-feature</span> /featurename:Microsoft<span class="literal">-Windows</span><span class="literal">-Subsystem</span><span class="literal">-Linux</span> /all /norestart</span><br></pre></td></tr></table></figure>
+
+<p>启用“虚拟机平台”可选功能。 以管理员身份打开 PowerShell 并运行：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dism.exe /online /<span class="built_in">enable-feature</span>/featurename:VirtualMachinePlatform /all /norestart</span><br></pre></td></tr></table></figure>
+
+<p>重新启动计算机，以完成 WSL 安装并更新到 WSL 2。</p>
+<p> 来自 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/224753478">https://zhuanlan.zhihu.com/p/224753478</a> </p>
+<p> su密码修改：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo passwd </span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/N609DF.html" data-id="ckqglfo5b000m2sjm2j7y6bu6" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-深度/计算机视觉/格式标准" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/MYHZWP.html" class="article-date">
+  <time datetime="2021-06-28T12:24:36.820Z" itemprop="datePublished">2021-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%B7%B1%E5%BA%A6/">深度</a>►<a class="article-category-link" href="/categories/%E6%B7%B1%E5%BA%A6/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/">计算机视觉</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/MYHZWP.html">格式标准</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/gwind/p/8215771.html">https://www.cnblogs.com/gwind/p/8215771.html</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/MYHZWP.html" data-id="ckqglfo5a000k2sjm1ajh7dcv" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-深度/计算机视觉/图片的由来与存储" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/1DC25F7.html" class="article-date">
+  <time datetime="2021-06-28T12:24:36.819Z" itemprop="datePublished">2021-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%B7%B1%E5%BA%A6/">深度</a>►<a class="article-category-link" href="/categories/%E6%B7%B1%E5%BA%A6/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/">计算机视觉</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/1DC25F7.html">图片的由来与存储</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>我们知道，计算机中的数据都是0和1，但是展示在我们屏幕上的却是多姿多彩，文字、图片、视频和游戏等等，0和1怎么变成我们从屏幕看到的内容的？</p>
+<h2 id="黑白图片"><a href="#黑白图片" class="headerlink" title="黑白图片"></a>黑白图片</h2><p>假定，1=白色，0=黑色，我们现在就可以用0和1组合为一个黑白画面了</p>
+<p>我们使用ps新建一个只有0、1的位图</p>
+<p><img src="%E5%9B%BE%E7%89%87%E7%9A%84%E7%94%B1%E6%9D%A5%E4%B8%8E%E5%AD%98%E5%82%A8/1.png" alt="img"></p>
+<p>图片新建完成如下（放大后效果），附带附件</p>
+<p><img src="%E5%9B%BE%E7%89%87%E7%9A%84%E7%94%B1%E6%9D%A5%E4%B8%8E%E5%AD%98%E5%82%A8/2.png" alt="img"></p>
+<p>&lt;&lt;白黑.bmp&gt;&gt;</p>
+<p>假定我们直接按1表示白，0表示黑的方式排列，可以得到我们的存储结果</p>
+<p><img src="%E5%9B%BE%E7%89%87%E7%9A%84%E7%94%B1%E6%9D%A5%E4%B8%8E%E5%AD%98%E5%82%A8/3.png" alt="img"></p>
+<h2 id="图片存储格式"><a href="#图片存储格式" class="headerlink" title="图片存储格式"></a>图片存储格式</h2><p>我们按 OS/2 bmp 方式进行保存（win位图最初保存方式，且无压缩，这里面去除了ps自动生成的元信息）</p>
+<p><img src="%E5%9B%BE%E7%89%87%E7%9A%84%E7%94%B1%E6%9D%A5%E4%B8%8E%E5%AD%98%E5%82%A8/4.png" alt="img"></p>
+<p>OS/2 bmp：</p>
+<p>0x00-0x01: 2byte 424D表示BMP格式</p>
+<p>0x02-0x05: 4byte 此文件大小是0x0030bit(注意高低位，低位在前)</p>
+<p>0x06-0x09: 4byte 保留位</p>
+<p>0x0A-0x0D: 4byte 偏移量，数据开始起点，图中数据从0x0020开始 </p>
+<p>0x0E-0x11: 4byte BITMAPINFOHEADER结构体大小(以下为结构体定义)，图中大小为0x000C（OS/2：12 | Windows DIB 40）</p>
+<p>0x12-0x13: 2byte 图像宽 图中为4像素</p>
+<p>0x14-0x15: 2byte 图像高 图中为2像素 </p>
+<p>0x16-0x17: 2byte 图像平面数 图中为1</p>
+<p>0x18-0x19: 2byte 一个像素有多少bit 图中为1</p>
+<p>0x1A-0x1C: 3byte 0表示的颜色BGR格式，图中为0x000000黑色</p>
+<p>0x1D-0x1F: 3byte 1表示的颜色BGR格式，图中为0xFFFFFF白色</p>
+<p>由于Windows默认的扫描的最小单位是4byte，所以bmp默认每行对齐是4的倍数，我们可以得到第一行的长度为宽度4<em>1分辨率</em>1位(bit)=4bit,对齐为byte时最小单位4byte，所以需要占用4byte，但仅前4个bit填充的值有效。</p>
+<p>且bmp是从左下角开始扫码，从左到右，从下到上，二进制转换0101为5，1010为a</p>
+<p>最终对应的结果在不对齐的情况下为a5a5，在对齐后补0的情况如下所示：</p>
+<p>A0 00 00 00 50 00 00 00 A0 00 00 00 50 00 00 00</p>
+<p>但是ps等软件在生成时会有一些元信息，所以可能会出现对齐为4byte时不是补0的情况，在算法读取时会自动跳过，但是人眼进行查看时，会造成干扰，自己排除掉即可</p>
+<p><img src="%E5%9B%BE%E7%89%87%E7%9A%84%E7%94%B1%E6%9D%A5%E4%B8%8E%E5%AD%98%E5%82%A8/5.png" alt="img"></p>
+<p>上图中，6 7F、8 22 56 F3等数据都是干扰数据，可替换为0或者替换为其它内容。</p>
+<h2 id="图片放大"><a href="#图片放大" class="headerlink" title="图片放大"></a>图片放大</h2><p>图片放大是在图片使用中最常使用的功能，我们从图片放大这个角度看下黑白颜色后面该怎么处理，尝试放大下面这个长宽2x2的黑白图</p>
+<p><img src="%E5%9B%BE%E7%89%87%E7%9A%84%E7%94%B1%E6%9D%A5%E4%B8%8E%E5%AD%98%E5%82%A8/6.png" alt="img"></p>
+<p>我们存储在电脑中的数据可以抽象理解为，长宽2个像素的</p>
+<p><img src="%E5%9B%BE%E7%89%87%E7%9A%84%E7%94%B1%E6%9D%A5%E4%B8%8E%E5%AD%98%E5%82%A8/7.png" alt="img"></p>
+<p>当我们将这个放大为长宽4个像素很好处理</p>
+<p>![а о 11  е 011  11 ее  11 ее ](图片的由来与存储/8 .png)</p>
+<p>我们得到的图片还是这样的没什么变化</p>
+<p>但是当我们想将这个放大为长宽3像素呢？要知道，我们的图片放大缩小，从来都不是按倍数放大，动不动就直接放大2倍的，几乎没有。</p>
+<p>可能我们得到的理想结果是</p>
+<p>![e ø.5 1  ø.5 ø.5 ø.s ](图片的由来与存储/9 .png)</p>
+<p>但是我们的01世界中，不存在0.5这种数据，按四舍五入或者退1法，我们可以得到这样的结果</p>
+<p>![1 1 1 ](图片的由来与存储/10 .png)</p>
+<p><img src="%E5%9B%BE%E7%89%87%E7%9A%84%E7%94%B1%E6%9D%A5%E4%B8%8E%E5%AD%98%E5%82%A8/11.png" alt="img"></p>
+<p>但是这无疑是差距太大了，一个小的图片差距都如此大，更大一点的图片也会出现更大的偏差，无疑只使用黑白两个颜色是无法将图片的细节表述清楚的。</p>
+<p>那么我们现在拓展下：0b00表示黑色，0b11表示白色，0b01与0b10表示灰色。这样在放大的时候可以有灰色填充，某些细节可以达到完善的程度了。（这只是一个极端例子，不用深究,我要表达的是0与1黑白中间拓展更多的颜色表达，让图片内容更加丰富）</p>
+<h2 id="8位灰阶"><a href="#8位灰阶" class="headerlink" title="8位灰阶"></a>8位灰阶</h2><p>在计算机中，8位是1个字节，1byte=8bit，我们存储的最小单元几乎都是使用byte进行存储，8位灰阶就是将黑白颜色数据继续拓展，都是黑、灰、白色之间，有256个层次组成。</p>
+<p>或许五彩斑斓的黑无法实现，但是层次分明的灰是可以达成的。</p>
+<p><img src="%E5%9B%BE%E7%89%87%E7%9A%84%E7%94%B1%E6%9D%A5%E4%B8%8E%E5%AD%98%E5%82%A8/12.png" alt="img"></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="彩色图片"><a href="#彩色图片" class="headerlink" title="彩色图片"></a>彩色图片</h2><p>层次分明的灰再怎么分明，都无法表达我们看到的真实颜色，光学三原色与颜料三原色中红、绿、蓝可以组合出所有颜色，依据无色系黑白灰+彩色系红绿蓝可以组合出任何颜色的特性，我们继续拓展到0和1中的队伍来。</p>
+<p><img src="%E5%9B%BE%E7%89%87%E7%9A%84%E7%94%B1%E6%9D%A5%E4%B8%8E%E5%AD%98%E5%82%A8/13.jpeg" alt="img"></p>
+<p>首先 红+绿+蓝，在RGB光学三原色中可以组成白色，所有颜色都不存在，则可以变成黑色。</p>
+<p>按上图我们先简单扩展（自定义），3位表示3个颜色0b000表示白色 0b100 表示红色 0b010表示绿色，0b001表示蓝色，0b111是白色，对应的0b010+0b001=0b011，蓝+绿=青,0b110=红+绿=黄，0b101=红+蓝=紫。彩色出现了。</p>
+<p>那么现在我们已经有了最基本的颜色后，我们依然需要进行图片的放大</p>
+<p>看下面这个四像素的图片，我们依然希望放大</p>
+<p><img src="%E5%9B%BE%E7%89%87%E7%9A%84%E7%94%B1%E6%9D%A5%E4%B8%8E%E5%AD%98%E5%82%A8/14.png" alt="img"></p>
+<p><img src="%E5%9B%BE%E7%89%87%E7%9A%84%E7%94%B1%E6%9D%A5%E4%B8%8E%E5%AD%98%E5%82%A8/15.png" alt="е10 001  тео оое "></p>
+<p>图片的放大肯定不是相加，而是中间是一个过渡的颜色进行替换，我们现在使用最简单粗暴的替换颜色相加取中间值的方式处理。</p>
+<p>以红绿中间的填充色为例（0b010+0b100）/2,应该是靠近这两个颜色中的颜色，结果是2.5，我们不能用0b010绿色去填充，也不能用0b100红色去填充，如果使用0b110,黄色，更是相差太远，在一个大的照片的放大过程中，尽量的贴合两边的颜色的中间颜色，应该是棕褐色，既有绿的过渡也需要红的过渡。(下图的展示可能不是很明显，也不很合适，因为图片的放大，极少有长宽2像素放大为长宽3像素这种操作，颜色直接的过渡也不会这么夸张。)</p>
+<p><img src="%E5%9B%BE%E7%89%87%E7%9A%84%E7%94%B1%E6%9D%A5%E4%B8%8E%E5%AD%98%E5%82%A8/img.png" alt="img"></p>
+<p>对于我们棕褐色，在我们刚才的拓展中，是不存在的，正如灰色在01表示的黑白中不存在，所以我们依然需要一个拓展来表达更多的颜色。</p>
+<p>我们现在将颜色拓展为6个bit了，0b000000表示黑色，0b111111表示白色，其余的0b1100000是红，0b001100是绿，0b000011是蓝色。第0-2位的00-11中可以表达4种不同程度的红，黑（无红）、淡红、浅红、正红，其余的等同划分。</p>
+<p>现在，差不多可以将棕色表达出来了，虽然依然不够细致，虽然我们现在有2^6=64种颜色了。</p>
+<h2 id="高彩色"><a href="#高彩色" class="headerlink" title="高彩色"></a>高彩色</h2><p>15或16位彩色（高彩色）：电脑所用的三原色是红、绿和蓝。在15位彩色中，每种原色有2^5=32个层次，共32768种颜色；而在16位彩色中，绿色有2^6=64个，共有65536个颜色</p>
+<h2 id="真彩色"><a href="#真彩色" class="headerlink" title="真彩色"></a>真彩色</h2><p>24位彩色（真彩色）：每种原色都有256个层次，它们的组合便有256<em>256</em>256种颜色。</p>
+<h2 id="32位彩色"><a href="#32位彩色" class="headerlink" title="32位彩色"></a>32位彩色</h2><p>32位彩色：除了24位彩色的颜色外，额外的8位是储存重叠图层的图形资料(alpha频道)。</p>
+<p>另外有高动态范围影像(High Dynamic Range Image)，这种影像使用超过一般的256色阶来储存影像，通常来说每个像素会分配到32+32+32个bit来储存颜色资讯，也就是说对于每一个原色都使用一个32bit的浮点数来储存.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/1DC25F7.html" data-id="ckqglfo5a000j2sjm5uar99uy" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-深度/计算机视觉/图片的放大缩小旋转与裁剪" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/400Q6V.html" class="article-date">
+  <time datetime="2021-06-28T12:24:36.817Z" itemprop="datePublished">2021-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%B7%B1%E5%BA%A6/">深度</a>►<a class="article-category-link" href="/categories/%E6%B7%B1%E5%BA%A6/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/">计算机视觉</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/400Q6V.html">图片的放大缩小旋转与裁剪</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/400Q6V.html" data-id="ckqglfo59000h2sjm9uuiekht" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-深度/人脸识别/什么是人脸识别" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/27HT6PR.html" class="article-date">
+  <time datetime="2021-06-28T12:24:36.812Z" itemprop="datePublished">2021-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%B7%B1%E5%BA%A6/">深度</a>►<a class="article-category-link" href="/categories/%E6%B7%B1%E5%BA%A6/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/">人脸识别</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/27HT6PR.html">什么是人脸识别</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>人脸识别</p>
+<p>严格定义上的人脸识别分为四个步骤：</p>
+<p>①人脸检测：从图片中准确定位到人脸 （mtcnn）</p>
+<p>②人脸矫正（对齐）： 检测到的人脸，可能角度不是很正，需要使其对齐（旋转、仿射变换、裁剪）</p>
+<p>③对矫正后的人脸进行特征提取（facenet）</p>
+<p>④对两张人脸图像的特征向量进行对比，计算相似度(欧式距离)</p>
+<p>图像处理：像素转换、归一化、旋转、裁剪</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/27HT6PR.html" data-id="ckqglfo57000e2sjm77yhecez" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/" rel="tag">人脸识别</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-开发/java/架构/结构划分" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/2B6Y21P.html" class="article-date">
+  <time datetime="2021-06-28T12:24:36.761Z" itemprop="datePublished">2021-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/develop/">开发</a>►<a class="article-category-link" href="/categories/develop/java/">java</a>►<a class="article-category-link" href="/categories/develop/java/%E6%9E%B6%E6%9E%84/">架构</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/2B6Y21P.html">结构划分</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">平台--&gt;用户--&gt;租户--&gt;授权</span><br><span class="line">平台--&gt;对外接口--&gt;api管理</span><br><span class="line">平台--&gt;系统维护--&gt;浏览器</span><br><span class="line">平台--&gt;业务</span><br><span class="line">平台--&gt;公共模块--&gt;|类共享|访问接口</span><br><span class="line">业务--&gt;|公共模块|公共模块</span><br><span class="line">业务--&gt;|维护模块|系统维护</span><br><span class="line">业务--&gt;|抽象接口|对外接口</span><br><span class="line">业务--&gt;业务1</span><br><span class="line">业务--&gt;业务2</span><br><span class="line">业务1--&gt;客户端1(PC应用)</span><br><span class="line">业务1--&gt;客户端2(安卓应用)</span><br><span class="line">业务2--&gt;客户端3(小程序应用)</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/2B6Y21P.html" data-id="ckqglfo5v001u2sjmct9792b0" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-开发/java/架构/权限分类" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/24B6ASX.html" class="article-date">
+  <time datetime="2021-06-28T12:24:36.759Z" itemprop="datePublished">2021-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/develop/">开发</a>►<a class="article-category-link" href="/categories/develop/java/">java</a>►<a class="article-category-link" href="/categories/develop/java/%E6%9E%B6%E6%9E%84/">架构</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/24B6ASX.html">权限分类</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>匿名权限（免登录权限）</p>
+<p>管理权限（所有权限）</p>
+<p>用户权限（按租户划分）</p>
+<p>应用权限（按应用菜单权限管理）</p>
+<h3 id="用户权限（按租户划分）"><a href="#用户权限（按租户划分）" class="headerlink" title="用户权限（按租户划分）"></a>用户权限（按租户划分）</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">用户--&gt;租户1</span><br><span class="line">用户--&gt;租户2</span><br><span class="line">租户1--&gt;应用1</span><br><span class="line">租户1--&gt;应用2</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="应用权限（按应用划分）"><a href="#应用权限（按应用划分）" class="headerlink" title="应用权限（按应用划分）"></a>应用权限（按应用划分）</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">应用--&gt;菜单--&gt;权限1</span><br><span class="line">菜单--&gt;权限2</span><br><span class="line">应用--&gt;权限3</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/24B6ASX.html" data-id="ckqglfo5u001t2sjmhewzh97f" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-开发/java/spring/配置" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/N188PJ.html" class="article-date">
+  <time datetime="2021-06-28T12:24:36.739Z" itemprop="datePublished">2021-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/develop/">开发</a>►<a class="article-category-link" href="/categories/develop/java/">java</a>►<a class="article-category-link" href="/categories/develop/java/spring/">spring</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/N188PJ.html">配置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>位置：</p>
+<p>读取</p>
+<p>1、属性添加 @Value(“${属性名}”)来加载配置文件中的属性值</p>
+<p>2、类上指定(get,set)：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ConfigurationProperties(prefix=&quot;blog&quot;)</span></span><br></pre></td></tr></table></figure>
+
+<p>需开启</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@EnableConfigurationProperties(&#123;ConfigBean.class&#125;)</span></span><br></pre></td></tr></table></figure>
+
+<p>3、指定自定义配置文件：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@PropertySource(&quot;classpath:test.properties&quot;)</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>互相引用</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">blog.wholeTitle</span>=<span class="string">$&#123;blog.name&#125;--$&#123;blog.title&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>环境配置：Profile</p>
+<p>WebMvcConfigurer (mvc配置接口)</p>
+<p>configurePathMatch 路径相关配置</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/N188PJ.html" data-id="ckqglfo5p001q2sjmdu3whit8" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-开发/java/spring/跨域" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/1CAVNZ9.html" class="article-date">
+  <time datetime="2021-06-28T12:24:36.737Z" itemprop="datePublished">2021-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/develop/">开发</a>►<a class="article-category-link" href="/categories/develop/java/">java</a>►<a class="article-category-link" href="/categories/develop/java/spring/">spring</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/1CAVNZ9.html">跨域</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>@CrossOrigin</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>含义</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>value</td>
+<td>指定所支持域的集合，<em><strong>表示所有域都支持，默认值为</strong></em>。这些值对应HTTP请求头中的<em>Access-Control-Allow-Origin</em></td>
+</tr>
+<tr>
+<td>origins</td>
+<td>同value</td>
+</tr>
+<tr>
+<td>allowedHeaders</td>
+<td>允许请求头中的header，默认都支持</td>
+</tr>
+<tr>
+<td>exposedHeaders</td>
+<td>响应头中允许访问的header，默认为空</td>
+</tr>
+<tr>
+<td>methods</td>
+<td>支持请求的方法，比如<em>GET</em>，<em>POST</em>，<em>PUT</em>等，默认和Controller中的方法上标注的一致。</td>
+</tr>
+<tr>
+<td>allowCredentials</td>
+<td>是否允许cookie随请求发送，使用时必须指定具体的域</td>
+</tr>
+<tr>
+<td>maxAge</td>
+<td>预请求的结果的有效期，默认30分钟</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/1CAVNZ9.html" data-id="ckqglfo5p001p2sjm2fg3gbry" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-开发/java/spring/表单校验" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/3MPFY6E.html" class="article-date">
+  <time datetime="2021-06-28T12:24:36.736Z" itemprop="datePublished">2021-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/develop/">开发</a>►<a class="article-category-link" href="/categories/develop/java/">java</a>►<a class="article-category-link" href="/categories/develop/java/spring/">spring</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/3MPFY6E.html">表单校验</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Spring Boot中结合Hibernate Validator可以实现优雅的参数校验</p>
+<p>自定义：@Constraint(validatedBy = MyConstraintValidator.class) – implements ConstraintValidator&lt;MyConstraint, Object&gt; </p>
+<table>
+<thead>
+<tr>
+<th>注解</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>@Null</td>
+<td>限制只能为null</td>
+</tr>
+<tr>
+<td>@NotNull</td>
+<td>限制必须不为null</td>
+</tr>
+<tr>
+<td>@AssertFalse</td>
+<td>限制必须为false</td>
+</tr>
+<tr>
+<td>@AssertTrue</td>
+<td>限制必须为true</td>
+</tr>
+<tr>
+<td>@DecimalMax(value)</td>
+<td>限制必须为一个不大于指定值的数字</td>
+</tr>
+<tr>
+<td>@DecimalMin(value)</td>
+<td>限制必须为一个不小于指定值的数字</td>
+</tr>
+<tr>
+<td>@Digits(integer,fraction)</td>
+<td>限制必须为一个小数，且整数部分的位数不能超过integer，  小数部分的位数不能超过fraction</td>
+</tr>
+<tr>
+<td>@Future</td>
+<td>限制必须是一个将来的日期</td>
+</tr>
+<tr>
+<td>@Past</td>
+<td>限制必须是一个过去的日期</td>
+</tr>
+<tr>
+<td>@Max(value)</td>
+<td>限制必须为一个不大于指定值的数字</td>
+</tr>
+<tr>
+<td>@Min(value)</td>
+<td>限制必须为一个不小于指定值的数字</td>
+</tr>
+<tr>
+<td>@Past</td>
+<td>限制必须是一个过去的日期</td>
+</tr>
+<tr>
+<td>@Pattern(value)</td>
+<td>限制必须符合指定的正则表达式</td>
+</tr>
+<tr>
+<td>@Size(max,min)</td>
+<td>限制字符长度必须在min到max之间</td>
+</tr>
+<tr>
+<td>@SafeHtml</td>
+<td>字符串是安全的html</td>
+</tr>
+<tr>
+<td>@URL</td>
+<td>字符串是合法的URL</td>
+</tr>
+<tr>
+<td>@NotBlank</td>
+<td>字符串必须有字符</td>
+</tr>
+<tr>
+<td>@NotEmpty</td>
+<td>字符串不为NULL，集合有字符</td>
+</tr>
+<tr>
+<td>@AssertFalse</td>
+<td>必须是false</td>
+</tr>
+<tr>
+<td>@AssertTrue</td>
+<td>必须是true</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mixley.github.io/2021/3MPFY6E.html" data-id="ckqglfo5p001o2sjm413fc1se" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring/" rel="tag">spring</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-boot/" rel="tag">spring boot</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/2/">下一页 &amp;raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/tool/">工具</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/tool/minio/">minio</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/blog/">博客</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/develop/">开发</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/">开发</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/">java</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/maven/">maven</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/seata/">seata</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/spring/">spring</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/java/%E6%9E%B6%E6%9E%84/">架构</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/develop/js/">js</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/develop/js/avue/">avue</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%82%E9%A1%B9/">杂项</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B7%B1%E5%BA%A6/">深度</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B7%B1%E5%BA%A6/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/">人脸识别</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B7%B1%E5%BA%A6/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/">计算机视觉</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BF%90%E7%BB%B4/">运维</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BF%90%E7%BB%B4/linux/">linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BF%90%E7%BB%B4/sql/">sql</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BF%90%E7%BB%B4/win/">win</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/aop/" rel="tag">aop</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mixley/" rel="tag">mixley</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring/" rel="tag">spring</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-boot/" rel="tag">spring boot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-cloud/" rel="tag">spring cloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/" rel="tag">人脸识别</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%A8%E6%A0%88/" rel="tag">全栈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag">后端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/base/" rel="tag">基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%94%B6%E9%9B%86/" rel="tag">收集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" rel="tag">杂七杂八</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/" rel="tag">架构设计</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" rel="tag">深度学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/difficulty/" rel="tag">难点</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/aop/" style="font-size: 13.33px;">aop</a> <a href="/tags/java/" style="font-size: 18.33px;">java</a> <a href="/tags/mixley/" style="font-size: 10px;">mixley</a> <a href="/tags/spring/" style="font-size: 20px;">spring</a> <a href="/tags/spring-boot/" style="font-size: 16.67px;">spring boot</a> <a href="/tags/spring-cloud/" style="font-size: 10px;">spring cloud</a> <a href="/tags/vue/" style="font-size: 11.67px;">vue</a> <a href="/tags/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/" style="font-size: 15px;">人脸识别</a> <a href="/tags/%E5%85%A8%E6%A0%88/" style="font-size: 10px;">全栈</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 13.33px;">前端</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 11.67px;">后端</a> <a href="/tags/base/" style="font-size: 15px;">基础</a> <a href="/tags/%E6%94%B6%E9%9B%86/" style="font-size: 10px;">收集</a> <a href="/tags/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" style="font-size: 10px;">杂七杂八</a> <a href="/tags/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/" style="font-size: 10px;">架构设计</a> <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;">深度学习</a> <a href="/tags/difficulty/" style="font-size: 10px;">难点</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">六月 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/N609DF.html">win开启linux</a>
+          </li>
+        
+          <li>
+            <a href="/2021/MYHZWP.html">格式标准</a>
+          </li>
+        
+          <li>
+            <a href="/2021/1DC25F7.html">图片的由来与存储</a>
+          </li>
+        
+          <li>
+            <a href="/2021/400Q6V.html">图片的放大缩小旋转与裁剪</a>
+          </li>
+        
+          <li>
+            <a href="/2021/27HT6PR.html">什么是人脸识别</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021 mixley<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
