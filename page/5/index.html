@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"mixley.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"mixley.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="全栈·架构设计·算法">
@@ -229,10 +229,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-06-28 23:27:59 / 修改时间：21:07:21" itemprop="dateCreated datePublished" datetime="2021-06-28T23:27:59+08:00">2021-06-28</time>
+              <time title="创建时间：2021-06-28 23:27:59" itemprop="dateCreated datePublished" datetime="2021-06-28T23:27:59+08:00">2021-06-28</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-01 00:25:16" itemprop="dateModified" datetime="2021-07-01T00:25:16+08:00">2021-07-01</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -269,11 +275,11 @@
 <p>git不用介绍了，git官方地址：<a target="_blank" rel="noopener" href="https://git-scm.com/%EF%BC%8C%E4%B8%8B%E8%BD%BDgit%E8%B7%AF%E5%BE%84%EF%BC%9Ahttps://git-scm.com/downloads">https://git-scm.com/，下载git路径：https://git-scm.com/downloads</a></p>
 <h2 id="设置全局用户名与邮箱"><a href="#设置全局用户名与邮箱" class="headerlink" title="设置全局用户名与邮箱"></a>设置全局用户名与邮箱</h2><p>安装完成后，下载<a target="_blank" rel="noopener" href="https://tortoisegit.org/download/">TortoiseGit</a>使用界面管理</p>
 <p>Git设置中完善名称与Emial信息，用户密码信息也可以使用命令行</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;</span><br><span class="line">git config --global user.email &quot;email@mail.com&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git config -<span class="literal">-global</span> user.name <span class="string">&quot;username&quot;</span></span><br><span class="line">git config -<span class="literal">-global</span> user.email <span class="string">&quot;email@mail.com&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p><img src="/2021/18RWRBW/image-20210628205042362.png" alt="image-20210628205042362"></p>
 <h3 id="设置SSH密钥"><a href="#设置SSH密钥" class="headerlink" title="设置SSH密钥"></a>设置SSH密钥</h3><p>可以使用命令行或者PuTTygen</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">命令行</span></span><br><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#命令行</span></span><br><span class="line">ssh<span class="literal">-keygen</span> <span class="literal">-t</span> rsa</span><br></pre></td></tr></table></figure>
 
 <p>打开PuTTygen，选择Generate后，鼠标狂动，直到进度条完成。</p>
 <p><img src="/2021/18RWRBW/image-20210628205817573.png" alt="image-20210628205817573"></p>
@@ -323,10 +329,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-06-28 23:27:59 / 修改时间：20:13:54" itemprop="dateCreated datePublished" datetime="2021-06-28T23:27:59+08:00">2021-06-28</time>
+              <time title="创建时间：2021-06-28 23:27:59" itemprop="dateCreated datePublished" datetime="2021-06-28T23:27:59+08:00">2021-06-28</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-01 00:25:16" itemprop="dateModified" datetime="2021-07-01T00:25:16+08:00">2021-07-01</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -362,19 +374,19 @@
           <h2 id="minio介绍"><a href="#minio介绍" class="headerlink" title="minio介绍"></a>minio介绍</h2><p>minio 是高性能、可扩展、云的原生支持、开源免费的企业级文件存储服务，与Amazon S3 兼容，配置极简。<br>minio中文网：<a target="_blank" rel="noopener" href="http://www.minio.org.cn/">http://www.minio.org.cn/</a><br>minio官网：<a target="_blank" rel="noopener" href="https://min.io/">https://min.io/</a></p>
 <h3 id="linux下配置"><a href="#linux下配置" class="headerlink" title="linux下配置"></a>linux下配置</h3><p><img src="/2021/35DBDK5/simplicity.gif" alt="img"></p>
 <p>1、下载minio，建议下载到/usr/local/bin/ 目录下，可全局访问</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /usr/local/bin/</span><br><span class="line">wget   http://dl.minio.org.cn/server/minio/release/linux-amd64/minio</span><br><span class="line">chmod +x minio</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr/local/bin/</span><br><span class="line"><span class="built_in">wget</span>   http://dl.minio.org.cn/server/minio/release/linux<span class="literal">-amd64</span>/minio</span><br><span class="line">chmod +x minio</span><br></pre></td></tr></table></figure>
 
 <p>2、设置minio用户名密码到临时环境变量（重启后消失）</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export MINIO_ACCESS_KEY=admin</span><br><span class="line">export MINIO_SECRET_KEY=password</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">查看环境变量</span></span><br><span class="line">echo $MINIO_ACCESS_KEY</span><br><span class="line">echo $MINIO_SECRET_KEY</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">export MINIO_ACCESS_KEY=admin</span><br><span class="line">export MINIO_SECRET_KEY=password</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看环境变量</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$MINIO_ACCESS_KEY</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$MINIO_SECRET_KEY</span></span><br></pre></td></tr></table></figure>
 
 <p>3、永久环境变量</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 修改系统配置</span></span><br><span class="line">vim /etc/profile</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">最后一行输入</span></span><br><span class="line">export MINIO_ACCESS_KEY=admin</span><br><span class="line">export MINIO_SECRET_KEY=password</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 设置立即生效</span></span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 修改系统配置</span></span><br><span class="line">vim /etc/profile</span><br><span class="line"></span><br><span class="line"><span class="comment">#最后一行输入</span></span><br><span class="line">export MINIO_ACCESS_KEY=admin</span><br><span class="line">export MINIO_SECRET_KEY=password</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置立即生效</span></span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
 
 <p>4、指定配置路径后启动 （建议修改默认端口）</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">后端启动</span></span><br><span class="line">nohup minio server --address &#x27;:9000&#x27; --config-dir /root/.minio /data/minio &gt; /data/minio.log 2&gt;&amp;1 &amp;</span><br><span class="line"><span class="meta">#</span><span class="bash">确认是否启动</span></span><br><span class="line">ps -ef | grep minio | grep -v grep</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">前端启动</span></span><br><span class="line">minio server --address &#x27;:9000&#x27; --config-dir /root/.minio /data/minio</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#后端启动</span></span><br><span class="line">nohup minio server -<span class="literal">-address</span> <span class="string">&#x27;:9000&#x27;</span> -<span class="literal">-config</span><span class="literal">-dir</span> /root/.minio /<span class="keyword">data</span>/minio &gt; /<span class="keyword">data</span>/minio.log <span class="number">2</span>&gt;&amp;<span class="number">1</span> &amp;</span><br><span class="line"><span class="comment">#确认是否启动</span></span><br><span class="line"><span class="built_in">ps</span> <span class="literal">-ef</span> | grep minio | grep <span class="literal">-v</span> grep</span><br><span class="line"></span><br><span class="line"><span class="comment">#前端启动</span></span><br><span class="line">minio server -<span class="literal">-address</span> <span class="string">&#x27;:9000&#x27;</span> -<span class="literal">-config</span><span class="literal">-dir</span> /root/.minio /<span class="keyword">data</span>/minio</span><br></pre></td></tr></table></figure>
 
 <p>5、开机启动（方式很多，例举其一）</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">修改系统配置</span></span><br><span class="line"></span><br><span class="line">vim /etc/profile</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">最后一行输入</span></span><br><span class="line">nohup minio server --address &#x27;:9000&#x27; --config-dir /root/.minio /data/minio &gt; /data/minio.log 2&gt;&amp;1 &amp;</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#修改系统配置</span></span><br><span class="line"></span><br><span class="line">vim /etc/profile</span><br><span class="line"></span><br><span class="line"><span class="comment">#最后一行输入</span></span><br><span class="line">nohup minio server -<span class="literal">-address</span> <span class="string">&#x27;:9000&#x27;</span> -<span class="literal">-config</span><span class="literal">-dir</span> /root/.minio /<span class="keyword">data</span>/minio &gt; /<span class="keyword">data</span>/minio.log <span class="number">2</span>&gt;&amp;<span class="number">1</span> &amp;</span><br></pre></td></tr></table></figure>
 
 <h3 id="win配置"><a href="#win配置" class="headerlink" title="win配置"></a>win配置</h3><p>1、下载minio，下载到C:\WINDOWS可全局启动</p>
 <figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#powershell 命令直接下载，选定</span></span><br><span class="line">powershell (<span class="built_in">new-object</span> System.Net.WebClient).DownloadFile(<span class="string">&#x27;http://dl.minio.org.cn/server/minio/release/windows-amd64/minio.exe&#x27;</span>,<span class="string">&#x27;minio.exe&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">### 下载时建议下载到环境变量，或者建议设置path路径，使用minio即可访问最好。</span></span><br></pre></td></tr></table></figure>

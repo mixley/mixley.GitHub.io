@@ -128,19 +128,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Adobe全家桶</title>
-    <url>/2021/R3Z4XC.html</url>
-    <content><![CDATA[<p>PS</p>
-<p>PR</p>
-<p>FLASH</p>
-<p>AE</p>
-<p>AU</p>
-]]></content>
-      <categories>
-        <category>杂项</category>
-      </categories>
-  </entry>
-  <entry>
     <title>代码接触史</title>
     <url>/2021/GA2E64.html</url>
     <content><![CDATA[<h2 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h2><p>最开始接触的basic，大概是08年，使用的是visual basic 6.0 ，一开始正常的搞点正常的比如计算器、实现程序只启动一次、操作文件搞点批量、操作access数据库啥的。后面渐渐失控搞了很多乱七八糟的东西：点击答题，然后到了最后怎么都是关机；关闭按钮满屏幕乱跑，就是不让你鼠标点中……</p>
@@ -192,6 +179,19 @@
       </tags>
   </entry>
   <entry>
+    <title>Adobe全家桶</title>
+    <url>/2021/R3Z4XC.html</url>
+    <content><![CDATA[<p>PS</p>
+<p>PR</p>
+<p>FLASH</p>
+<p>AE</p>
+<p>AU</p>
+]]></content>
+      <categories>
+        <category>杂项</category>
+      </categories>
+  </entry>
+  <entry>
     <title>文艺范</title>
     <url>/2021/1XJ7S7J.html</url>
     <content><![CDATA[<p>励志：</p>
@@ -210,19 +210,19 @@
     <content><![CDATA[<h2 id="minio介绍"><a href="#minio介绍" class="headerlink" title="minio介绍"></a>minio介绍</h2><p>minio 是高性能、可扩展、云的原生支持、开源免费的企业级文件存储服务，与Amazon S3 兼容，配置极简。<br>minio中文网：<a href="http://www.minio.org.cn/">http://www.minio.org.cn/</a><br>minio官网：<a href="https://min.io/">https://min.io/</a></p>
 <h3 id="linux下配置"><a href="#linux下配置" class="headerlink" title="linux下配置"></a>linux下配置</h3><p><img src="/2021/35DBDK5/simplicity.gif" alt="img"></p>
 <p>1、下载minio，建议下载到/usr/local/bin/ 目录下，可全局访问</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /usr/local/bin/</span><br><span class="line">wget   http://dl.minio.org.cn/server/minio/release/linux-amd64/minio</span><br><span class="line">chmod +x minio</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr/local/bin/</span><br><span class="line"><span class="built_in">wget</span>   http://dl.minio.org.cn/server/minio/release/linux<span class="literal">-amd64</span>/minio</span><br><span class="line">chmod +x minio</span><br></pre></td></tr></table></figure>
 
 <p>2、设置minio用户名密码到临时环境变量（重启后消失）</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export MINIO_ACCESS_KEY=admin</span><br><span class="line">export MINIO_SECRET_KEY=password</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">查看环境变量</span></span><br><span class="line">echo $MINIO_ACCESS_KEY</span><br><span class="line">echo $MINIO_SECRET_KEY</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">export MINIO_ACCESS_KEY=admin</span><br><span class="line">export MINIO_SECRET_KEY=password</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看环境变量</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$MINIO_ACCESS_KEY</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$MINIO_SECRET_KEY</span></span><br></pre></td></tr></table></figure>
 
 <p>3、永久环境变量</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 修改系统配置</span></span><br><span class="line">vim /etc/profile</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">最后一行输入</span></span><br><span class="line">export MINIO_ACCESS_KEY=admin</span><br><span class="line">export MINIO_SECRET_KEY=password</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 设置立即生效</span></span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 修改系统配置</span></span><br><span class="line">vim /etc/profile</span><br><span class="line"></span><br><span class="line"><span class="comment">#最后一行输入</span></span><br><span class="line">export MINIO_ACCESS_KEY=admin</span><br><span class="line">export MINIO_SECRET_KEY=password</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置立即生效</span></span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
 
 <p>4、指定配置路径后启动 （建议修改默认端口）</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">后端启动</span></span><br><span class="line">nohup minio server --address &#x27;:9000&#x27; --config-dir /root/.minio /data/minio &gt; /data/minio.log 2&gt;&amp;1 &amp;</span><br><span class="line"><span class="meta">#</span><span class="bash">确认是否启动</span></span><br><span class="line">ps -ef | grep minio | grep -v grep</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">前端启动</span></span><br><span class="line">minio server --address &#x27;:9000&#x27; --config-dir /root/.minio /data/minio</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#后端启动</span></span><br><span class="line">nohup minio server -<span class="literal">-address</span> <span class="string">&#x27;:9000&#x27;</span> -<span class="literal">-config</span><span class="literal">-dir</span> /root/.minio /<span class="keyword">data</span>/minio &gt; /<span class="keyword">data</span>/minio.log <span class="number">2</span>&gt;&amp;<span class="number">1</span> &amp;</span><br><span class="line"><span class="comment">#确认是否启动</span></span><br><span class="line"><span class="built_in">ps</span> <span class="literal">-ef</span> | grep minio | grep <span class="literal">-v</span> grep</span><br><span class="line"></span><br><span class="line"><span class="comment">#前端启动</span></span><br><span class="line">minio server -<span class="literal">-address</span> <span class="string">&#x27;:9000&#x27;</span> -<span class="literal">-config</span><span class="literal">-dir</span> /root/.minio /<span class="keyword">data</span>/minio</span><br></pre></td></tr></table></figure>
 
 <p>5、开机启动（方式很多，例举其一）</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">修改系统配置</span></span><br><span class="line"></span><br><span class="line">vim /etc/profile</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">最后一行输入</span></span><br><span class="line">nohup minio server --address &#x27;:9000&#x27; --config-dir /root/.minio /data/minio &gt; /data/minio.log 2&gt;&amp;1 &amp;</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#修改系统配置</span></span><br><span class="line"></span><br><span class="line">vim /etc/profile</span><br><span class="line"></span><br><span class="line"><span class="comment">#最后一行输入</span></span><br><span class="line">nohup minio server -<span class="literal">-address</span> <span class="string">&#x27;:9000&#x27;</span> -<span class="literal">-config</span><span class="literal">-dir</span> /root/.minio /<span class="keyword">data</span>/minio &gt; /<span class="keyword">data</span>/minio.log <span class="number">2</span>&gt;&amp;<span class="number">1</span> &amp;</span><br></pre></td></tr></table></figure>
 
 <h3 id="win配置"><a href="#win配置" class="headerlink" title="win配置"></a>win配置</h3><p>1、下载minio，下载到C:\WINDOWS可全局启动</p>
 <figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#powershell 命令直接下载，选定</span></span><br><span class="line">powershell (<span class="built_in">new-object</span> System.Net.WebClient).DownloadFile(<span class="string">&#x27;http://dl.minio.org.cn/server/minio/release/windows-amd64/minio.exe&#x27;</span>,<span class="string">&#x27;minio.exe&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">### 下载时建议下载到环境变量，或者建议设置path路径，使用minio即可访问最好。</span></span><br></pre></td></tr></table></figure>
@@ -255,13 +255,13 @@
     <url>/2021/3NPATC1.html</url>
     <content><![CDATA[<p> 快速、简洁且高效的博客框架</p>
 <p>Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">全局安装hexo</span></span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"><span class="meta">#</span><span class="bash">初始化hexo目录</span></span><br><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##全局安装hexo</span></span><br><span class="line">npm install hexo<span class="literal">-cli</span> <span class="literal">-g</span></span><br><span class="line"><span class="comment">#初始化hexo目录</span></span><br><span class="line">hexo init &lt;folder&gt;</span><br><span class="line"><span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 <p>安装后目录结构说明：</p>
 <!-- vscode -> file-tree-generator -->
 
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">📦blog</span> <span class="comment">#博客·安装路径</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂scaffolds</span>	<span class="comment">#模板文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜draft.md</span>	<span class="comment">#草稿模板</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜page.md</span>	<span class="comment">#页面模板</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜post.md</span>	<span class="comment">#文章模板</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂source</span>	<span class="comment">#资源文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📂_posts</span>	<span class="comment">#文章路径</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜hello-world.md</span>	<span class="comment">#实际文章</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂themes</span>	<span class="comment">#主题</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜.gitkeep</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📜package.json</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📜_config.landscape.yml</span>	<span class="comment">#_config.[theme].yml 用于编辑主题配置</span></span><br><span class="line"> <span class="string">┗</span> <span class="string">📜_config.yml</span>	<span class="comment">#配置文件 ！重要！！</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="运行命令"><a href="#运行命令" class="headerlink" title="运行命令"></a>运行命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">更多详细命令查看官网：https://hexo.io/zh-cn/docs/commands.html</span></span><br><span class="line"><span class="meta">#</span><span class="bash">启动</span></span><br><span class="line">hexo s</span><br><span class="line"><span class="meta">#</span><span class="bash">下面为指定配置文件</span></span><br><span class="line">hexo s --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
+<h2 id="运行命令"><a href="#运行命令" class="headerlink" title="运行命令"></a>运行命令</h2><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#更多详细命令查看官网：https://hexo.io/zh-cn/docs/commands.html</span></span><br><span class="line"><span class="comment">#启动</span></span><br><span class="line">hexo s</span><br><span class="line"><span class="comment">#下面为指定配置文件</span></span><br><span class="line">hexo s -<span class="literal">-config</span> custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
 
 <p><img src="/2021/3NPATC1/image-20210623193347044.png" alt="image-20210623193347044"></p>
 <p>打开浏览器输入<a href="http://localhost:4000/">http://localhost:4000/</a> 出现hexo界面则表示启动成功了</p>
@@ -273,15 +273,15 @@
 <h4 id="Typora文档管理功能"><a href="#Typora文档管理功能" class="headerlink" title="Typora文档管理功能"></a>Typora文档管理功能</h4><p><img src="/2021/3NPATC1/image-20210626111012923.png" alt="image-20210626111012923"></p>
 <h4 id="Typora图片设置"><a href="#Typora图片设置" class="headerlink" title="Typora图片设置"></a>Typora图片设置</h4><p><img src="/2021/3NPATC1/image-20210626110210201.png" alt="image-20210626110210201"></p>
 <h2 id="发布配置"><a href="#发布配置" class="headerlink" title="发布配置"></a>发布配置</h2><p>下面的自定义配置为使用git发布博客，首先需安装hexo-deployer-git 插件,其它插件为更方便使用</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">git上传发布，一键部署时使用</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">hexo增强配置，可以不用手动维护 front-matter，文章标题建议使用 20210628 标题.md</span></span><br><span class="line">npm install hexo-enhancer --save</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">处理图片路径转换问题，当开启post_asset_folder时，使用文件路径转换</span></span><br><span class="line">npm hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">## git上传发布，一键部署时使用</span></span><br><span class="line">npm install hexo<span class="literal">-deployer</span><span class="literal">-git</span> -<span class="literal">-save</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#hexo增强配置，可以不用手动维护 front-matter，文章标题建议使用 20210628 标题.md</span></span><br><span class="line">npm install hexo<span class="literal">-enhancer</span> -<span class="literal">-save</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#处理图片路径转换问题，当开启post_asset_folder时，使用文件路径转换</span></span><br><span class="line">npm hexo<span class="literal">-asset</span><span class="literal">-image</span> -<span class="literal">-save</span></span><br></pre></td></tr></table></figure>
 
 <p>自定义配置文件如下，可在hexo目录下建立<strong>custom.yml</strong>文件，自定义以下内容，不污染原始文件便于后期升级hexo</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#详情看附录中配置文件详细介绍</span></span><br><span class="line"><span class="comment">#Site 网站设置 基础设置</span></span><br><span class="line"><span class="comment">#网站标题</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">mixley</span></span><br><span class="line"><span class="comment">#网站副标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;呜啦啦&#x27;</span></span><br><span class="line"><span class="comment">#网站描述，SEO优化时会扫描</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment">#网站关键字，SEO优化时会扫描，多个逗号分隔</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&#x27;技术栈A,技术栈B&#x27;</span></span><br><span class="line"><span class="comment">#作者</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">mixley</span></span><br><span class="line"><span class="comment">#语言，使用主题时支持的语言列表,主题文件中languages文件夹下查看</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="comment">#时区，默认为电脑时区，中国大陆：Asia/Shanghai</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#URL 网址 基础设置,url如果发布到gitbub，请参考注册github.io建立免费页面</span></span><br><span class="line"><span class="comment">#生成的地址中，会携带这个地址，博客根路径(怎么访问的就怎么填写)</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">&#x27;https://mixley.github.io&#x27;</span></span><br><span class="line"><span class="comment">#文章访问编号 hexo-enhancer增强配置中提供</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:abbrlink.html</span></span><br><span class="line"><span class="comment">#网站关键字，增强配置专用，其余tag会收集keywords中tags自动匹配</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">&#x27;关键字A,关键字B&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#启动 Asset 文件夹(推荐开启，会将同名目录一起打包，否则只打包md，也可以使用第三方图床解决)</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment">#把链接改为与根目录的相对位址</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Home page setting 首页文章设置（可以不设置）</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="comment">#每页数量</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Category &amp; Tag   分类 &amp; 标签 中文标签可能存在编码问题，需转换，格式为 中文: 英文 多个记录直接换行</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="comment">#分类对应值 后期建立文件夹，需要在这里增加英文映射</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line">	<span class="string">嘿嘿:</span> <span class="string">heihei</span></span><br><span class="line">	<span class="string">哈哈:</span> <span class="string">haha</span></span><br><span class="line"><span class="comment">#标签对应值 keywords 关键字中文全部需要进行处理，tags中关键字同样需要处理</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br><span class="line">	<span class="string">技术栈A:</span> <span class="string">jA</span></span><br><span class="line">	<span class="string">技术栈B:</span> <span class="string">jB</span></span><br><span class="line">	</span><br><span class="line"><span class="comment">#Pagination 分页设置（可以不设置）</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#使用主题，可以选择其它主题，这是默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#发布配置，若使用git，需要安装 npm install hexo-deployer-git --save</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line"><span class="comment">#多服务配置</span></span><br><span class="line"> <span class="attr">repository:</span></span><br><span class="line">   <span class="comment">#使用ssh的方式，配置ssh密钥可以免登录发布</span></span><br><span class="line">   <span class="attr">github:</span> <span class="string">git@github.com:mixley/mixley.GitHub.io.git</span></span><br><span class="line">   <span class="attr">gitee:</span> <span class="string">git@gitee.com:mixley/mixley.git</span></span><br><span class="line"> <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="Hexo三连命令"><a href="#Hexo三连命令" class="headerlink" title="Hexo三连命令"></a>Hexo三连命令</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">清除</span></span><br><span class="line">hexo clean</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">指定配置文件生成</span></span><br><span class="line">hexo g --config custom.yml</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">发布</span></span><br><span class="line">hexo d --config custom.yml</span><br></pre></td></tr></table></figure>
+<h3 id="Hexo三连命令"><a href="#Hexo三连命令" class="headerlink" title="Hexo三连命令"></a>Hexo三连命令</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#清除</span></span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"><span class="comment">#指定配置文件生成</span></span><br><span class="line">hexo g -<span class="literal">-config</span> custom.yml</span><br><span class="line"></span><br><span class="line"><span class="comment">#发布</span></span><br><span class="line">hexo d -<span class="literal">-config</span> custom.yml</span><br></pre></td></tr></table></figure>
 
 <h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>快速生成日期，可以下载utool，安装自动化助手，自行配置生成自动化插件</p>
-<p><img src="/2021/3NPATC1/image-20210630134207770.png!%5Bimage-20210630230255222%5D(%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/image-20210630230255222.png" alt="image-20210630134207770"></p>
+<p><img src="/2021/3NPATC1/image-20210630230255222.png" alt="image-20210630230255222"></p>
 <p><img src="/2021/3NPATC1/image-20210630230332250.png" alt="image-20210630230332250"></p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//获取当前日期，格式YYYY-MM-DD</span></span><br><span class="line"><span class="keyword">let</span> getNowFormatDay = <span class="function"><span class="keyword">function</span>(<span class="params">nowDate</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> char = <span class="string">&quot;-&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span>(nowDate == <span class="literal">null</span>)&#123;</span><br><span class="line">        nowDate = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> day = nowDate.getDate();</span><br><span class="line">    <span class="keyword">let</span> month = nowDate.getMonth() + <span class="number">1</span>;<span class="comment">//注意月份需要+1</span></span><br><span class="line">    <span class="keyword">let</span> year = nowDate.getFullYear();</span><br><span class="line">    <span class="comment">//补全0，并拼接</span></span><br><span class="line">    <span class="keyword">return</span> year + char + completeDate(month) + char +completeDate(day);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//获取当前时间，格式YYYY-MM-DD HH:mm:ss</span></span><br><span class="line"><span class="keyword">let</span> getNowFormatTime = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> nowDate = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">let</span> colon = <span class="string">&quot;:&quot;</span>;</span><br><span class="line">    <span class="keyword">let</span> h = nowDate.getHours();</span><br><span class="line">    <span class="keyword">let</span> m = nowDate.getMinutes();</span><br><span class="line">    <span class="keyword">let</span> s = nowDate.getSeconds();</span><br><span class="line">    <span class="comment">//补全0，并拼接</span></span><br><span class="line">    <span class="keyword">return</span> getNowFormatDay(nowDate) + <span class="string">&quot; &quot;</span> + completeDate(h) + colon + completeDate(m) + colon + completeDate(s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//补全0</span></span><br><span class="line"><span class="keyword">let</span> completeDate =<span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> value &lt; <span class="number">10</span> ? <span class="string">&quot;0&quot;</span>+value:value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> date = getNowFormatTime();</span><br><span class="line"><span class="comment">//下面两行自动移动到MD头部增加日期，b</span></span><br><span class="line">utools.simulateKeyboardTap(<span class="string">&#x27;home&#x27;</span>, utools.isMacOs() ? <span class="string">&#x27;command&#x27;</span> : <span class="string">&#x27;ctrl&#x27;</span>)</span><br><span class="line">date=<span class="string">&quot;---\ndate: &quot;</span>+date+<span class="string">&quot;\n---\n &quot;</span></span><br><span class="line"></span><br><span class="line">utools.copyText(date)</span><br><span class="line">utools.simulateKeyboardTap(<span class="string">&#x27;v&#x27;</span>, utools.isMacOs() ? <span class="string">&#x27;command&#x27;</span> : <span class="string">&#x27;ctrl&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -300,6 +300,28 @@
         <tag>全栈</tag>
         <tag>收集</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>idea插件推荐</title>
+    <url>/2021/2PH6SP6.html</url>
+    <content><![CDATA[<p>1、IDE Eval Reset 如题<br>    Plugins手动添加 <a href="https://plugins.zhile.io/">https://plugins.zhile.io</a> 安装，效果。。。<br>2、Alibaba Java Coding Guidelines 阿里巴巴代码规范插件<br>    推荐新手使用，性能不好的电脑用着稍微有点卡<br>3、Easy Javadoc 注释工具，推荐<br>4、Lombok 简化代码神器，推荐<br>5、GenerateAllSetter 对实体对象生成set方法<br>6、Codota AI帮你写代码<br>7、Translation 英渣必备翻译</p>
+]]></content>
+      <categories>
+        <category>工具</category>
+        <category>开发</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>jdk</title>
+    <url>/2021/1GZ10CQ.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>工具</category>
+        <category>开发</category>
+      </categories>
   </entry>
   <entry>
     <title>关于管理与写博客</title>
@@ -328,11 +350,11 @@
 <p>git不用介绍了，git官方地址：<a href="https://git-scm.com/%EF%BC%8C%E4%B8%8B%E8%BD%BDgit%E8%B7%AF%E5%BE%84%EF%BC%9Ahttps://git-scm.com/downloads">https://git-scm.com/，下载git路径：https://git-scm.com/downloads</a></p>
 <h2 id="设置全局用户名与邮箱"><a href="#设置全局用户名与邮箱" class="headerlink" title="设置全局用户名与邮箱"></a>设置全局用户名与邮箱</h2><p>安装完成后，下载<a href="https://tortoisegit.org/download/">TortoiseGit</a>使用界面管理</p>
 <p>Git设置中完善名称与Emial信息，用户密码信息也可以使用命令行</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;</span><br><span class="line">git config --global user.email &quot;email@mail.com&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git config -<span class="literal">-global</span> user.name <span class="string">&quot;username&quot;</span></span><br><span class="line">git config -<span class="literal">-global</span> user.email <span class="string">&quot;email@mail.com&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p><img src="/2021/18RWRBW/image-20210628205042362.png" alt="image-20210628205042362"></p>
 <h3 id="设置SSH密钥"><a href="#设置SSH密钥" class="headerlink" title="设置SSH密钥"></a>设置SSH密钥</h3><p>可以使用命令行或者PuTTygen</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">命令行</span></span><br><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#命令行</span></span><br><span class="line">ssh<span class="literal">-keygen</span> <span class="literal">-t</span> rsa</span><br></pre></td></tr></table></figure>
 
 <p>打开PuTTygen，选择Generate后，鼠标狂动，直到进度条完成。</p>
 <p><img src="/2021/18RWRBW/image-20210628205817573.png" alt="image-20210628205817573"></p>
@@ -347,22 +369,12 @@
       </categories>
   </entry>
   <entry>
-    <title>idea插件推荐</title>
-    <url>/2021/2PH6SP6.html</url>
-    <content><![CDATA[<p>1、IDE Eval Reset 如题<br>    Plugins手动添加 <a href="https://plugins.zhile.io/">https://plugins.zhile.io</a> 安装，效果。。。<br>2、Alibaba Java Coding Guidelines 阿里巴巴代码规范插件<br>    推荐新手使用，性能不好的电脑用着稍微有点卡<br>3、Easy Javadoc 注释工具，推荐<br>4、Lombok 简化代码神器，推荐<br>5、GenerateAllSetter 对实体对象生成set方法<br>6、Codota AI帮你写代码<br>7、Translation 英渣必备翻译</p>
-]]></content>
-      <categories>
-        <category>工具</category>
-        <category>开发</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>jdk</title>
-    <url>/2021/1GZ10CQ.html</url>
-    <content><![CDATA[]]></content>
+    <title>node</title>
+    <url>/2021/22QZT25.html</url>
+    <content><![CDATA[<p>下载地址<br><a href="http://nodejs.cn/download/">http://nodejs.cn/download/</a></p>
+<p><a href="https://blog.csdn.net/jincheng_921/article/details/100109747">https://blog.csdn.net/jincheng_921/article/details/100109747</a></p>
+<p>1、设置NODE_PATH<br>2、设置path：%NODE_PATH%、%NODE_PATH%\node-global</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> cache <span class="string">&quot;D:\soft\node\node-cache&quot;</span></span><br><span class="line">npm config <span class="built_in">set</span> prefix <span class="string">&quot;D:\soft\node\node-global&quot;</span></span><br><span class="line">npm config <span class="built_in">set</span> registry http://registry.npm.taobao.org/</span><br><span class="line">npm install <span class="literal">-g</span> cnpm -<span class="literal">-registry</span>=https://registry.npm.taobao.org</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>工具</category>
         <category>开发</category>
@@ -376,18 +388,6 @@
 <p>仓库路径</p>
 <p>云仓库地址</p>
 ]]></content>
-      <categories>
-        <category>工具</category>
-        <category>开发</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>node</title>
-    <url>/2021/22QZT25.html</url>
-    <content><![CDATA[<p>下载地址<br><a href="http://nodejs.cn/download/">http://nodejs.cn/download/</a></p>
-<p><a href="https://blog.csdn.net/jincheng_921/article/details/100109747">https://blog.csdn.net/jincheng_921/article/details/100109747</a></p>
-<p>1、设置NODE_PATH<br>2、设置path：%NODE_PATH%、%NODE_PATH%\node-global</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm config set cache &quot;D:\soft\node\node-cache&quot;</span><br><span class="line">npm config set prefix &quot;D:\soft\node\node-global&quot;</span><br><span class="line">npm config set registry http://registry.npm.taobao.org/</span><br><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>工具</category>
         <category>开发</category>
@@ -507,6 +507,21 @@
       </categories>
   </entry>
   <entry>
+    <title>如何右击新建MacDown</title>
+    <url>/2021/21437N4.html</url>
+    <content><![CDATA[<p>1、注册右击创建macdown文件</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version <span class="number">5.00</span></span><br><span class="line">;注册.md路径的文件，并指定编辑对象为Macdown.md</span><br><span class="line">[<span class="type">HKEY_CLASSES_ROOT</span>\<span class="type">.md</span>]</span><br><span class="line"><span class="selector-tag">@</span>=<span class="string">&quot;Macdown.md&quot;</span></span><br><span class="line">;创建Macdown.md对象 指定在右击文件夹中显示的名字和新增文件的显示名字</span><br><span class="line">[<span class="type">HKEY_CLASSES_ROOT</span>\<span class="type">Macdown.md</span>]</span><br><span class="line"><span class="selector-tag">@</span>=<span class="string">&quot;Macdown&quot;</span></span><br><span class="line"><span class="string">&quot;FriendlyTypeName&quot;</span>=<span class="string">&quot;Macdown&quot;</span></span><br><span class="line">;ShellNew中FileName指定模板文件</span><br><span class="line">[<span class="type">HKEY_CLASSES_ROOT</span>\<span class="type">.md</span>\<span class="type">ShellNew</span>]</span><br><span class="line"><span class="string">&quot;FileName&quot;</span>=<span class="string">&quot;Macdown.md&quot;</span></span><br><span class="line"><span class="string">&quot;NullFile&quot;</span>=<span class="string">&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>2、C:\Windows\SHELLNEW下新建Macdown.md模板</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>运维</category>
+        <category>win</category>
+      </categories>
+  </entry>
+  <entry>
     <title>win开启linux</title>
     <url>/2021/N609DF.html</url>
     <content><![CDATA[<p>子系统开启：</p>
@@ -525,6 +540,23 @@
       <categories>
         <category>运维</category>
         <category>linux</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>隐藏盘符</title>
+    <url>/2021/35CC7A2.html</url>
+    <content><![CDATA[<p><a href="https://jingyan.baidu.com/article/6d704a13ee963369da51ca03.html">https://jingyan.baidu.com/article/6d704a13ee963369da51ca03.html</a></p>
+<p><a href="https://blog.csdn.net/wangshui898/article/details/107011608">https://blog.csdn.net/wangshui898/article/details/107011608</a></p>
+<p>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</p>
+<p>diskpart  #运行diskpart工具<br>lis dis #列出所有磁盘<br>sel dis 1  #选中需要隐藏盘符的硬盘<br>lis par  #列出所有分区<br>sel par 0  #选中efi分区（需要隐藏的分区）</p>
+<p>set id=D3BFE2DE-3DAF-11DF-BA40-E3A556D89593 #For GPT ,将分区设置为GPT,进行隐藏，#<a href="https://social.technet.microsoft.com/Forums/en-US/6f4842da-b992-43e6-bffe-f9c5dc4577a2/diskpart-set-id-command-not-working">https://social.technet.microsoft.com/Forums/en-US/6f4842da-b992-43e6-bffe-f9c5dc4577a2/diskpart-set-id-command-not-working</a></p>
+<p>EtFat</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">diskpart </span><br><span class="line">list disk</span><br><span class="line"><span class="built_in">select</span> disk <span class="number">2</span></span><br><span class="line">clean</span><br><span class="line">create partition primary</span><br><span class="line">active</span><br><span class="line"></span><br><span class="line"><span class="comment">#format fs=ntfs label=卷标 quick</span></span><br><span class="line"><span class="comment">#命令format **fs=ntfs** label=”卷标” quick：是将U盘格式化为**NTFS**格式；</span></span><br><span class="line"><span class="comment">#如果需要将U盘格式化为**FAT32**，则命令为：format **fs=FAT32** label=”卷标” quick；</span></span><br><span class="line"><span class="comment">#如果需要将U盘格式化为 **exFAT**，则命令为：format **fs=exFAT** label=”卷标” quick；</span></span><br><span class="line"></span><br><span class="line">format fs=exFAT quick</span><br><span class="line"></span><br><span class="line">assign</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>运维</category>
+        <category>win</category>
       </categories>
   </entry>
   <entry>
@@ -553,38 +585,6 @@
       <categories>
         <category>运维</category>
         <category>sql</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>如何右击新建MacDown</title>
-    <url>/2021/21437N4.html</url>
-    <content><![CDATA[<p>1、注册右击创建macdown文件</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">;注册.md路径的文件，并指定编辑对象为Macdown.md</span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@=&quot;Macdown.md&quot;</span><br><span class="line">;创建Macdown.md对象 指定在右击文件夹中显示的名字和新增文件的显示名字</span><br><span class="line">[HKEY_CLASSES_ROOT\Macdown.md]</span><br><span class="line">@=&quot;Macdown&quot;</span><br><span class="line">&quot;FriendlyTypeName&quot;=&quot;Macdown&quot;</span><br><span class="line">;ShellNew中FileName指定模板文件</span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line">&quot;FileName&quot;=&quot;Macdown.md&quot;</span><br><span class="line">&quot;NullFile&quot;=&quot;&quot;</span><br></pre></td></tr></table></figure>
-
-<p>2、C:\Windows\SHELLNEW下新建Macdown.md模板</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>运维</category>
-        <category>win</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>隐藏盘符</title>
-    <url>/2021/35CC7A2.html</url>
-    <content><![CDATA[<p><a href="https://jingyan.baidu.com/article/6d704a13ee963369da51ca03.html">https://jingyan.baidu.com/article/6d704a13ee963369da51ca03.html</a></p>
-<p><a href="https://blog.csdn.net/wangshui898/article/details/107011608">https://blog.csdn.net/wangshui898/article/details/107011608</a></p>
-<p>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</p>
-<p>diskpart  #运行diskpart工具<br>lis dis #列出所有磁盘<br>sel dis 1  #选中需要隐藏盘符的硬盘<br>lis par  #列出所有分区<br>sel par 0  #选中efi分区（需要隐藏的分区）</p>
-<p>set id=D3BFE2DE-3DAF-11DF-BA40-E3A556D89593 #For GPT ,将分区设置为GPT,进行隐藏，#<a href="https://social.technet.microsoft.com/Forums/en-US/6f4842da-b992-43e6-bffe-f9c5dc4577a2/diskpart-set-id-command-not-working">https://social.technet.microsoft.com/Forums/en-US/6f4842da-b992-43e6-bffe-f9c5dc4577a2/diskpart-set-id-command-not-working</a></p>
-<p>EtFat</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">diskpart </span><br><span class="line">list disk</span><br><span class="line"><span class="built_in">select</span> disk <span class="number">2</span></span><br><span class="line">clean</span><br><span class="line">create partition primary</span><br><span class="line">active</span><br><span class="line"></span><br><span class="line"><span class="comment">#format fs=ntfs label=卷标 quick</span></span><br><span class="line"><span class="comment">#命令format **fs=ntfs** label=”卷标” quick：是将U盘格式化为**NTFS**格式；</span></span><br><span class="line"><span class="comment">#如果需要将U盘格式化为**FAT32**，则命令为：format **fs=FAT32** label=”卷标” quick；</span></span><br><span class="line"><span class="comment">#如果需要将U盘格式化为 **exFAT**，则命令为：format **fs=exFAT** label=”卷标” quick；</span></span><br><span class="line"></span><br><span class="line">format fs=exFAT quick</span><br><span class="line"></span><br><span class="line">assign</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>运维</category>
-        <category>win</category>
       </categories>
   </entry>
   <entry>
@@ -657,6 +657,27 @@
       </tags>
   </entry>
   <entry>
+    <title>AOP</title>
+    <url>/2021/2996F6V.html</url>
+    <content><![CDATA[<p>aop依赖·spring-boot-starter-aop</p>
+<p>过滤器—依赖回调（Servlet）</p>
+<p>过滤器的配置比较简单，直接实现Filter 接口即可，也可以通过@WebFilter注解实现对特定URL拦截</p>
+<p><img src="/2021/2996F6V/aop.png" alt="img"></p>
+<p>拦截器—依赖反射（spring）</p>
+<p>拦截器它是链式调用，通过HandlerInterceptor</p>
+<p><img src="/2021/2996F6V/filter.png" alt="img"></p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+        <tag>aop</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>version版本自动写入文件</title>
     <url>/2021/19RCFHX.html</url>
     <content><![CDATA[<p>Maven项目Version版本自动写入文件（实际复制就可以了，基本不用修改）</p>
@@ -678,6 +699,460 @@
         <category>java</category>
         <category>maven</category>
       </categories>
+  </entry>
+  <entry>
+    <title>WebFlux编程</title>
+    <url>/2021/KM97CY.html</url>
+    <content><![CDATA[<p>异步Servlet,非阻塞式编程，异步Servlet</p>
+<p>仅支持：Reactive Mongo DB ，反应式数据库</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>banner</title>
+    <url>/2021/1QSVE77.html</url>
+    <content><![CDATA[<p>在src/main/resources目录下新建banner.txt</p>
+<p>文本转banner：<a href="http://www.network-science.de/ascii/">http://www.network-science.de/ascii/</a></p>
+<p>图片转banner：<a href="https://www.degraeve.com/img2txt.php">https://www.degraeve.com/img2txt.php</a></p>
+<p>SpringApplication::setBannerMode(Mode.OFF) 关闭banner</p>
+<p>设置banner编码</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">banner:</span></span><br><span class="line"> <span class="attr">charset:</span> <span class="string">UTF-8</span></span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>内容协商</title>
+    <url>/2021/19H39GS.html</url>
+    <content><![CDATA[<p><a href="https://mrbird.cc/Spring-Boot-Diy-Resolver.html">https://mrbird.cc/Spring-Boot-Diy-Resolver.html</a></p>
+<p>内容协商机制是指客户端和服务器端就响应的资源内容进行交涉，然后提供给客户端最为适合的资源。内容协商会以响应资源的语言、字符集、编码方式等作为判断的基准。HTTP请求头中Content-Type，Accept等内容就是内容协商判断的标准。在Spring Boot中，一个完整的内容协商过程如下图所示：</p>
+<p><img src="/2021/19H39GS/askfljasdfneiw.png" alt="askfljasdfneiw.png"></p>
+<table>
+<thead>
+<tr>
+<th><strong>组件</strong></th>
+<th><strong>名称</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ContentNegotiationManager</td>
+<td>内容协商管理器</td>
+<td>ContentNegotiationStrategy  控制策略</td>
+</tr>
+<tr>
+<td>MediaType</td>
+<td>媒体类型</td>
+<td>HTTP  消息媒体类型，如 text/html</td>
+</tr>
+<tr>
+<td>@RequestMapping#consumes</td>
+<td>消费媒体类型</td>
+<td>请求头  Content-Type 媒体类型映射</td>
+</tr>
+<tr>
+<td>@RequestMapping#produces</td>
+<td>生产媒体类型</td>
+<td>响应头  Content-Type 媒体类型映射</td>
+</tr>
+<tr>
+<td>HttpMessageConverter</td>
+<td>HTTP消息转换器接口</td>
+<td>HTTP  消息转换器，用于反序列化 HTTP 请求或序列化响应</td>
+</tr>
+<tr>
+<td>WebMvcConfigurer</td>
+<td>Web MVC  配置器</td>
+<td>配置 REST  相关的组件</td>
+</tr>
+<tr>
+<td>HandlerMethod</td>
+<td>处理方法</td>
+<td>@RequestMapping  标注的方法</td>
+</tr>
+<tr>
+<td>HandlerMethodArgumentResolver</td>
+<td>处理方法参数解析器</td>
+<td>用于 HTTP  请求中解析 HandlerMethod 参数内容</td>
+</tr>
+<tr>
+<td>HandlerMethodReturnValueHandler</td>
+<td>处理方法返回值解析器</td>
+<td>用于  HandlerMethod 返回值解析为 HTTP 响应内容</td>
+</tr>
+</tbody></table>
+<p>自定义：HttpMessageConverter</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+        <tag>spring boot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>单元测试</title>
+    <url>/2021/37FJFQ3.html</url>
+    <content><![CDATA[<ul>
+<li>JUnit，标准的单元测试Java应用程序；</li>
+<li>Spring Test &amp; Spring Boot      Test，对Spring Boot应用程序的单元测试提供支持；</li>
+<li>Mockito, Java      mocking框架，用于模拟任何Spring管理的Bean，比如在单元测试中模拟一个第三方系统Service接口返回的数据，而不会去真正调用第三方系统；</li>
+<li>AssertJ，一个流畅的assertion库，同时也提供了更多的期望值与测试返回值的比较方式；</li>
+<li>Hamcrest，库的匹配对象（也称为约束或谓词）；</li>
+<li>JsonPath，提供类似XPath那样的符号来获取JSON数据片段；</li>
+<li>JSONassert，对JSON对象或者JSON字符串断言的库。</li>
+</ul>
+<ul>
+<li>mock框架使用，测试应得值</li>
+</ul>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>spring</tag>
+        <tag>spring boot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安全</title>
+    <url>/2021/2CXV9JB.html</url>
+    <content><![CDATA[<p>使用Jsoup防御XSS攻击</p>
+<p>druid防止sql注入</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>开始</title>
+    <url>/2021/3XJ06KH.html</url>
+    <content><![CDATA[<p>快速开始：<a href="https://start.aliyun.com/">https://start.aliyun.com/</a></p>
+<p><img src="/2021/3XJ06KH/image-20210525105828827.png" alt="image-20210525105828827"></p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>异常处理</title>
+    <url>/2021/18GXXZ.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>模板引擎</title>
+    <url>/2021/FEX6EK.html</url>
+    <content><![CDATA[<p>FreeMarker、Groovy、Thymeleaf和Mustache</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>异步调用</title>
+    <url>/2021/2W8PYN.html</url>
+    <content><![CDATA[<p>入口类：@EnableAsync 开启异步方法支持</p>
+<p>方法： @Async，其余方法异步执行</p>
+<p>指定线程池：</p>
+<p>1、创建bean：ThreadPoolTaskExecutor</p>
+<p>2、指定bean名称 @Async(“asyncThreadPoolTaskExecutor”)</p>
+<p>@Configuration</p>
+<p>@EnableAsync</p>
+<p>public class AsyncTaskConfiguration implements AsyncConfigurer {</p>
+<p>  //注册执行器</p>
+<p>  @Override</p>
+<p>  public Executor getAsyncExecutor() {</p>
+<p>​    ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();</p>
+<p>​    taskExecutor.setCorePoolSize(10);</p>
+<p>​    taskExecutor.setMaxPoolSize(80);</p>
+<p>​    taskExecutor.setQueueCapacity(100);</p>
+<p>​    taskExecutor.initialize();//如果不初始化，导致找到不到执行器</p>
+<p>​    return taskExecutor;</p>
+<p>  }</p>
+<p>  // 用于捕获异步异常</p>
+<p>  @Override</p>
+<p>  public AsyncUncaughtExceptionHandler getAsyncUncaughtExceptionHandler() {</p>
+<p>​    return null;</p>
+<p>  }</p>
+<p>}</p>
+<p>回调：</p>
+<p>返回Future<String>，Future.get为阻塞方法，可指定超时时间</String></p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>数据库</title>
+    <url>/2021/AEMVFQ.html</url>
+    <content><![CDATA[<p>Mybatis:<a href="http://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/">http://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/</a></p>
+<p>Druid:<a href="https://github.com/alibaba/druid">https://github.com/alibaba/druid</a></p>
+<p>Mybatis-Plus:<a href="https://mybatis.plus/">https://mybatis.plus/</a></p>
+<p>sqllocalDB</p>
+<p>这里我们创建一个新的来完整的测试一遍。</p>
+<p>1、创建一个新的实例名 </p>
+<p>sqllocaldb c MyLocaldb</p>
+<p>2、启动这个实例名</p>
+<p>sqllocaldb s MyLocaldb</p>
+<p>3、 查看实例名详情</p>
+<p>sqllocaldb i MyLocaldb</p>
+<p>4、停止这个实例名</p>
+<p>sqllocaldb p MyLocaldb</p>
+<p>5、删除这个实例名 </p>
+<p>sqllocaldb d MyLocaldb</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>监控</title>
+    <url>/2021/1CQ8DE5.html</url>
+    <content><![CDATA[<h1 id="actuator"><a href="#actuator" class="headerlink" title="actuator"></a>actuator</h1><p><a href="https://mrbird.cc/Acutator-Spring-Boot.html">https://mrbird.cc/Acutator-Spring-Boot.html</a></p>
+<p>actuator还可以切换日志级别，方便必要时候进行调试</p>
+<p><a href="https://mrbird.cc/Spring-Boot-Admin.html">https://mrbird.cc/Spring-Boot-Admin.html</a></p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>缓存</title>
+    <url>/2021/251BTJZ.html</url>
+    <content><![CDATA[<p>开启缓存(入口类）：@EnableCaching</p>
+<p> 切换缓存：@Configuration – extends CachingConfigurerSupport</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>表单校验</title>
+    <url>/2021/3MPFY6E.html</url>
+    <content><![CDATA[<p>Spring Boot中结合Hibernate Validator可以实现优雅的参数校验</p>
+<p>自定义：@Constraint(validatedBy = MyConstraintValidator.class) – implements ConstraintValidator&lt;MyConstraint, Object&gt; </p>
+<table>
+<thead>
+<tr>
+<th>注解</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>@Null</td>
+<td>限制只能为null</td>
+</tr>
+<tr>
+<td>@NotNull</td>
+<td>限制必须不为null</td>
+</tr>
+<tr>
+<td>@AssertFalse</td>
+<td>限制必须为false</td>
+</tr>
+<tr>
+<td>@AssertTrue</td>
+<td>限制必须为true</td>
+</tr>
+<tr>
+<td>@DecimalMax(value)</td>
+<td>限制必须为一个不大于指定值的数字</td>
+</tr>
+<tr>
+<td>@DecimalMin(value)</td>
+<td>限制必须为一个不小于指定值的数字</td>
+</tr>
+<tr>
+<td>@Digits(integer,fraction)</td>
+<td>限制必须为一个小数，且整数部分的位数不能超过integer，  小数部分的位数不能超过fraction</td>
+</tr>
+<tr>
+<td>@Future</td>
+<td>限制必须是一个将来的日期</td>
+</tr>
+<tr>
+<td>@Past</td>
+<td>限制必须是一个过去的日期</td>
+</tr>
+<tr>
+<td>@Max(value)</td>
+<td>限制必须为一个不大于指定值的数字</td>
+</tr>
+<tr>
+<td>@Min(value)</td>
+<td>限制必须为一个不小于指定值的数字</td>
+</tr>
+<tr>
+<td>@Past</td>
+<td>限制必须是一个过去的日期</td>
+</tr>
+<tr>
+<td>@Pattern(value)</td>
+<td>限制必须符合指定的正则表达式</td>
+</tr>
+<tr>
+<td>@Size(max,min)</td>
+<td>限制字符长度必须在min到max之间</td>
+</tr>
+<tr>
+<td>@SafeHtml</td>
+<td>字符串是安全的html</td>
+</tr>
+<tr>
+<td>@URL</td>
+<td>字符串是合法的URL</td>
+</tr>
+<tr>
+<td>@NotBlank</td>
+<td>字符串必须有字符</td>
+</tr>
+<tr>
+<td>@NotEmpty</td>
+<td>字符串不为NULL，集合有字符</td>
+</tr>
+<tr>
+<td>@AssertFalse</td>
+<td>必须是false</td>
+</tr>
+<tr>
+<td>@AssertTrue</td>
+<td>必须是true</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+        <tag>spring boot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>跨域</title>
+    <url>/2021/1CAVNZ9.html</url>
+    <content><![CDATA[<p>@CrossOrigin</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>含义</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>value</td>
+<td>指定所支持域的集合，<em><strong>表示所有域都支持，默认值为</strong></em>。这些值对应HTTP请求头中的<em>Access-Control-Allow-Origin</em></td>
+</tr>
+<tr>
+<td>origins</td>
+<td>同value</td>
+</tr>
+<tr>
+<td>allowedHeaders</td>
+<td>允许请求头中的header，默认都支持</td>
+</tr>
+<tr>
+<td>exposedHeaders</td>
+<td>响应头中允许访问的header，默认为空</td>
+</tr>
+<tr>
+<td>methods</td>
+<td>支持请求的方法，比如<em>GET</em>，<em>POST</em>，<em>PUT</em>等，默认和Controller中的方法上标注的一致。</td>
+</tr>
+<tr>
+<td>allowCredentials</td>
+<td>是否允许cookie随请求发送，使用时必须指定具体的域</td>
+</tr>
+<tr>
+<td>maxAge</td>
+<td>预请求的结果的有效期，默认30分钟</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>配置</title>
+    <url>/2021/N188PJ.html</url>
+    <content><![CDATA[<p>位置：</p>
+<p>读取</p>
+<p>1、属性添加 @Value(“${属性名}”)来加载配置文件中的属性值</p>
+<p>2、类上指定(get,set)：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@ConfigurationProperties(prefix=&quot;blog&quot;)</span></span><br></pre></td></tr></table></figure>
+
+<p>需开启</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@EnableConfigurationProperties(&#123;ConfigBean.class&#125;)</span></span><br></pre></td></tr></table></figure>
+
+<p>3、指定自定义配置文件：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@PropertySource(&quot;classpath:test.properties&quot;)</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>互相引用</p>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="meta">blog.wholeTitle</span>=<span class="string">$&#123;blog.name&#125;--$&#123;blog.title&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>环境配置：Profile</p>
+<p>WebMvcConfigurer (mvc配置接口)</p>
+<p>configurePathMatch 路径相关配置</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>java</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
   </entry>
   <entry>
     <title>分布式事务</title>
@@ -908,481 +1383,6 @@
       </categories>
       <tags>
         <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WebFlux编程</title>
-    <url>/2021/KM97CY.html</url>
-    <content><![CDATA[<p>异步Servlet,非阻塞式编程，异步Servlet</p>
-<p>仅支持：Reactive Mongo DB ，反应式数据库</p>
-]]></content>
-      <categories>
-        <category>开发</category>
-        <category>java</category>
-        <category>spring</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>banner</title>
-    <url>/2021/1QSVE77.html</url>
-    <content><![CDATA[<p>在src/main/resources目录下新建banner.txt</p>
-<p>文本转banner：<a href="http://www.network-science.de/ascii/">http://www.network-science.de/ascii/</a></p>
-<p>图片转banner：<a href="https://www.degraeve.com/img2txt.php">https://www.degraeve.com/img2txt.php</a></p>
-<p>SpringApplication::setBannerMode(Mode.OFF) 关闭banner</p>
-<p>设置banner编码</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">banner:</span></span><br><span class="line"> <span class="attr">charset:</span> <span class="string">UTF-8</span></span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
-      <categories>
-        <category>开发</category>
-        <category>java</category>
-        <category>spring</category>
-      </categories>
-      <tags>
-        <tag>spring</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>内容协商</title>
-    <url>/2021/19H39GS.html</url>
-    <content><![CDATA[<p><a href="https://mrbird.cc/Spring-Boot-Diy-Resolver.html">https://mrbird.cc/Spring-Boot-Diy-Resolver.html</a></p>
-<p>内容协商机制是指客户端和服务器端就响应的资源内容进行交涉，然后提供给客户端最为适合的资源。内容协商会以响应资源的语言、字符集、编码方式等作为判断的基准。HTTP请求头中Content-Type，Accept等内容就是内容协商判断的标准。在Spring Boot中，一个完整的内容协商过程如下图所示：</p>
-<p><img src="/2021/19H39GS/askfljasdfneiw.png" alt="askfljasdfneiw.png"></p>
-<table>
-<thead>
-<tr>
-<th><strong>组件</strong></th>
-<th><strong>名称</strong></th>
-<th><strong>说明</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>ContentNegotiationManager</td>
-<td>内容协商管理器</td>
-<td>ContentNegotiationStrategy  控制策略</td>
-</tr>
-<tr>
-<td>MediaType</td>
-<td>媒体类型</td>
-<td>HTTP  消息媒体类型，如 text/html</td>
-</tr>
-<tr>
-<td>@RequestMapping#consumes</td>
-<td>消费媒体类型</td>
-<td>请求头  Content-Type 媒体类型映射</td>
-</tr>
-<tr>
-<td>@RequestMapping#produces</td>
-<td>生产媒体类型</td>
-<td>响应头  Content-Type 媒体类型映射</td>
-</tr>
-<tr>
-<td>HttpMessageConverter</td>
-<td>HTTP消息转换器接口</td>
-<td>HTTP  消息转换器，用于反序列化 HTTP 请求或序列化响应</td>
-</tr>
-<tr>
-<td>WebMvcConfigurer</td>
-<td>Web MVC  配置器</td>
-<td>配置 REST  相关的组件</td>
-</tr>
-<tr>
-<td>HandlerMethod</td>
-<td>处理方法</td>
-<td>@RequestMapping  标注的方法</td>
-</tr>
-<tr>
-<td>HandlerMethodArgumentResolver</td>
-<td>处理方法参数解析器</td>
-<td>用于 HTTP  请求中解析 HandlerMethod 参数内容</td>
-</tr>
-<tr>
-<td>HandlerMethodReturnValueHandler</td>
-<td>处理方法返回值解析器</td>
-<td>用于  HandlerMethod 返回值解析为 HTTP 响应内容</td>
-</tr>
-</tbody></table>
-<p>自定义：HttpMessageConverter</p>
-]]></content>
-      <categories>
-        <category>开发</category>
-        <category>java</category>
-        <category>spring</category>
-      </categories>
-      <tags>
-        <tag>spring</tag>
-        <tag>spring boot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AOP</title>
-    <url>/2021/2996F6V.html</url>
-    <content><![CDATA[<p>aop依赖·spring-boot-starter-aop</p>
-<p>过滤器—依赖回调（Servlet）</p>
-<p>过滤器的配置比较简单，直接实现Filter 接口即可，也可以通过@WebFilter注解实现对特定URL拦截</p>
-<p><img src="/2021/2996F6V/aop.png" alt="img"></p>
-<p>拦截器—依赖反射（spring）</p>
-<p>拦截器它是链式调用，通过HandlerInterceptor</p>
-<p><img src="/2021/2996F6V/filter.png" alt="img"></p>
-]]></content>
-      <categories>
-        <category>开发</category>
-        <category>java</category>
-        <category>spring</category>
-      </categories>
-      <tags>
-        <tag>spring</tag>
-        <tag>aop</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>单元测试</title>
-    <url>/2021/37FJFQ3.html</url>
-    <content><![CDATA[<ul>
-<li>JUnit，标准的单元测试Java应用程序；</li>
-<li>Spring Test &amp; Spring Boot      Test，对Spring Boot应用程序的单元测试提供支持；</li>
-<li>Mockito, Java      mocking框架，用于模拟任何Spring管理的Bean，比如在单元测试中模拟一个第三方系统Service接口返回的数据，而不会去真正调用第三方系统；</li>
-<li>AssertJ，一个流畅的assertion库，同时也提供了更多的期望值与测试返回值的比较方式；</li>
-<li>Hamcrest，库的匹配对象（也称为约束或谓词）；</li>
-<li>JsonPath，提供类似XPath那样的符号来获取JSON数据片段；</li>
-<li>JSONassert，对JSON对象或者JSON字符串断言的库。</li>
-</ul>
-<ul>
-<li>mock框架使用，测试应得值</li>
-</ul>
-]]></content>
-      <categories>
-        <category>开发</category>
-        <category>java</category>
-        <category>spring</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>spring</tag>
-        <tag>spring boot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>安全</title>
-    <url>/2021/2CXV9JB.html</url>
-    <content><![CDATA[<p>使用Jsoup防御XSS攻击</p>
-<p>druid防止sql注入</p>
-]]></content>
-      <categories>
-        <category>开发</category>
-        <category>java</category>
-        <category>spring</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>异常处理</title>
-    <url>/2021/18GXXZ.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>开发</category>
-        <category>java</category>
-        <category>spring</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>开始</title>
-    <url>/2021/3XJ06KH.html</url>
-    <content><![CDATA[<p>快速开始：<a href="https://start.aliyun.com/">https://start.aliyun.com/</a></p>
-<p><img src="/2021/3XJ06KH/image-20210525105828827.png" alt="image-20210525105828827"></p>
-]]></content>
-      <categories>
-        <category>开发</category>
-        <category>java</category>
-        <category>spring</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>异步调用</title>
-    <url>/2021/2W8PYN.html</url>
-    <content><![CDATA[<p>入口类：@EnableAsync 开启异步方法支持</p>
-<p>方法： @Async，其余方法异步执行</p>
-<p>指定线程池：</p>
-<p>1、创建bean：ThreadPoolTaskExecutor</p>
-<p>2、指定bean名称 @Async(“asyncThreadPoolTaskExecutor”)</p>
-<p>@Configuration</p>
-<p>@EnableAsync</p>
-<p>public class AsyncTaskConfiguration implements AsyncConfigurer {</p>
-<p>  //注册执行器</p>
-<p>  @Override</p>
-<p>  public Executor getAsyncExecutor() {</p>
-<p>​    ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();</p>
-<p>​    taskExecutor.setCorePoolSize(10);</p>
-<p>​    taskExecutor.setMaxPoolSize(80);</p>
-<p>​    taskExecutor.setQueueCapacity(100);</p>
-<p>​    taskExecutor.initialize();//如果不初始化，导致找到不到执行器</p>
-<p>​    return taskExecutor;</p>
-<p>  }</p>
-<p>  // 用于捕获异步异常</p>
-<p>  @Override</p>
-<p>  public AsyncUncaughtExceptionHandler getAsyncUncaughtExceptionHandler() {</p>
-<p>​    return null;</p>
-<p>  }</p>
-<p>}</p>
-<p>回调：</p>
-<p>返回Future<String>，Future.get为阻塞方法，可指定超时时间</String></p>
-]]></content>
-      <categories>
-        <category>开发</category>
-        <category>java</category>
-        <category>spring</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>数据库</title>
-    <url>/2021/AEMVFQ.html</url>
-    <content><![CDATA[<p>Mybatis:<a href="http://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/">http://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/</a></p>
-<p>Druid:<a href="https://github.com/alibaba/druid">https://github.com/alibaba/druid</a></p>
-<p>Mybatis-Plus:<a href="https://mybatis.plus/">https://mybatis.plus/</a></p>
-<p>sqllocalDB</p>
-<p>这里我们创建一个新的来完整的测试一遍。</p>
-<p>1、创建一个新的实例名 </p>
-<p>sqllocaldb c MyLocaldb</p>
-<p>2、启动这个实例名</p>
-<p>sqllocaldb s MyLocaldb</p>
-<p>3、 查看实例名详情</p>
-<p>sqllocaldb i MyLocaldb</p>
-<p>4、停止这个实例名</p>
-<p>sqllocaldb p MyLocaldb</p>
-<p>5、删除这个实例名 </p>
-<p>sqllocaldb d MyLocaldb</p>
-]]></content>
-      <categories>
-        <category>开发</category>
-        <category>java</category>
-        <category>spring</category>
-      </categories>
-      <tags>
-        <tag>spring</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>模板引擎</title>
-    <url>/2021/FEX6EK.html</url>
-    <content><![CDATA[<p>FreeMarker、Groovy、Thymeleaf和Mustache</p>
-]]></content>
-      <categories>
-        <category>开发</category>
-        <category>java</category>
-        <category>spring</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>缓存</title>
-    <url>/2021/251BTJZ.html</url>
-    <content><![CDATA[<p>开启缓存(入口类）：@EnableCaching</p>
-<p> 切换缓存：@Configuration – extends CachingConfigurerSupport</p>
-]]></content>
-      <categories>
-        <category>开发</category>
-        <category>java</category>
-        <category>spring</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>表单校验</title>
-    <url>/2021/3MPFY6E.html</url>
-    <content><![CDATA[<p>Spring Boot中结合Hibernate Validator可以实现优雅的参数校验</p>
-<p>自定义：@Constraint(validatedBy = MyConstraintValidator.class) – implements ConstraintValidator&lt;MyConstraint, Object&gt; </p>
-<table>
-<thead>
-<tr>
-<th>注解</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>@Null</td>
-<td>限制只能为null</td>
-</tr>
-<tr>
-<td>@NotNull</td>
-<td>限制必须不为null</td>
-</tr>
-<tr>
-<td>@AssertFalse</td>
-<td>限制必须为false</td>
-</tr>
-<tr>
-<td>@AssertTrue</td>
-<td>限制必须为true</td>
-</tr>
-<tr>
-<td>@DecimalMax(value)</td>
-<td>限制必须为一个不大于指定值的数字</td>
-</tr>
-<tr>
-<td>@DecimalMin(value)</td>
-<td>限制必须为一个不小于指定值的数字</td>
-</tr>
-<tr>
-<td>@Digits(integer,fraction)</td>
-<td>限制必须为一个小数，且整数部分的位数不能超过integer，  小数部分的位数不能超过fraction</td>
-</tr>
-<tr>
-<td>@Future</td>
-<td>限制必须是一个将来的日期</td>
-</tr>
-<tr>
-<td>@Past</td>
-<td>限制必须是一个过去的日期</td>
-</tr>
-<tr>
-<td>@Max(value)</td>
-<td>限制必须为一个不大于指定值的数字</td>
-</tr>
-<tr>
-<td>@Min(value)</td>
-<td>限制必须为一个不小于指定值的数字</td>
-</tr>
-<tr>
-<td>@Past</td>
-<td>限制必须是一个过去的日期</td>
-</tr>
-<tr>
-<td>@Pattern(value)</td>
-<td>限制必须符合指定的正则表达式</td>
-</tr>
-<tr>
-<td>@Size(max,min)</td>
-<td>限制字符长度必须在min到max之间</td>
-</tr>
-<tr>
-<td>@SafeHtml</td>
-<td>字符串是安全的html</td>
-</tr>
-<tr>
-<td>@URL</td>
-<td>字符串是合法的URL</td>
-</tr>
-<tr>
-<td>@NotBlank</td>
-<td>字符串必须有字符</td>
-</tr>
-<tr>
-<td>@NotEmpty</td>
-<td>字符串不为NULL，集合有字符</td>
-</tr>
-<tr>
-<td>@AssertFalse</td>
-<td>必须是false</td>
-</tr>
-<tr>
-<td>@AssertTrue</td>
-<td>必须是true</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>开发</category>
-        <category>java</category>
-        <category>spring</category>
-      </categories>
-      <tags>
-        <tag>spring</tag>
-        <tag>spring boot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>跨域</title>
-    <url>/2021/1CAVNZ9.html</url>
-    <content><![CDATA[<p>@CrossOrigin</p>
-<table>
-<thead>
-<tr>
-<th><strong>属性</strong></th>
-<th><strong>含义</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>value</td>
-<td>指定所支持域的集合，<em><strong>表示所有域都支持，默认值为</strong></em>。这些值对应HTTP请求头中的<em>Access-Control-Allow-Origin</em></td>
-</tr>
-<tr>
-<td>origins</td>
-<td>同value</td>
-</tr>
-<tr>
-<td>allowedHeaders</td>
-<td>允许请求头中的header，默认都支持</td>
-</tr>
-<tr>
-<td>exposedHeaders</td>
-<td>响应头中允许访问的header，默认为空</td>
-</tr>
-<tr>
-<td>methods</td>
-<td>支持请求的方法，比如<em>GET</em>，<em>POST</em>，<em>PUT</em>等，默认和Controller中的方法上标注的一致。</td>
-</tr>
-<tr>
-<td>allowCredentials</td>
-<td>是否允许cookie随请求发送，使用时必须指定具体的域</td>
-</tr>
-<tr>
-<td>maxAge</td>
-<td>预请求的结果的有效期，默认30分钟</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>开发</category>
-        <category>java</category>
-        <category>spring</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>配置</title>
-    <url>/2021/N188PJ.html</url>
-    <content><![CDATA[<p>位置：</p>
-<p>读取</p>
-<p>1、属性添加 @Value(“${属性名}”)来加载配置文件中的属性值</p>
-<p>2、类上指定(get,set)：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@ConfigurationProperties(prefix=&quot;blog&quot;)</span></span><br></pre></td></tr></table></figure>
-
-<p>需开启</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@EnableConfigurationProperties(&#123;ConfigBean.class&#125;)</span></span><br></pre></td></tr></table></figure>
-
-<p>3、指定自定义配置文件：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@PropertySource(&quot;classpath:test.properties&quot;)</span></span><br></pre></td></tr></table></figure>
-
-
-
-<p>互相引用</p>
-<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="meta">blog.wholeTitle</span>=<span class="string">$&#123;blog.name&#125;--$&#123;blog.title&#125;</span></span><br></pre></td></tr></table></figure>
-
-<p>环境配置：Profile</p>
-<p>WebMvcConfigurer (mvc配置接口)</p>
-<p>configurePathMatch 路径相关配置</p>
-]]></content>
-      <categories>
-        <category>开发</category>
-        <category>java</category>
-        <category>spring</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>监控</title>
-    <url>/2021/1CQ8DE5.html</url>
-    <content><![CDATA[<h1 id="actuator"><a href="#actuator" class="headerlink" title="actuator"></a>actuator</h1><p><a href="https://mrbird.cc/Acutator-Spring-Boot.html">https://mrbird.cc/Acutator-Spring-Boot.html</a></p>
-<p>actuator还可以切换日志级别，方便必要时候进行调试</p>
-<p><a href="https://mrbird.cc/Spring-Boot-Admin.html">https://mrbird.cc/Spring-Boot-Admin.html</a></p>
-]]></content>
-      <categories>
-        <category>开发</category>
-        <category>java</category>
-        <category>spring</category>
-      </categories>
-      <tags>
-        <tag>spring</tag>
       </tags>
   </entry>
   <entry>
