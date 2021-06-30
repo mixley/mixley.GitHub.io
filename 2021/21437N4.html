@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"mixley.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="1、注册右击创建macdown文件 123456789101112Windows Registry Editor Version 5.00;注册.md路径的文件，并指定编辑对象为Macdown.md[HKEY_CLASSES_ROOT\.md]@&#x3D;&quot;Macdown.md&quot;;创建Macdown.md对象 指定在右击文件夹中显示的名字和新增文件的显示名字[HKEY_CLASSES_">
+  <meta name="description" content="1、注册右击创建macdown文件 Windows Registry Editor Version 5.00;注册.md路径的文件，并指定编辑对象为Macdown.md[HKEY_CLASSES_ROOT\.md]@&#x3D;&quot;Macdown.md&quot;;创建Macdown.md对象 指定在右击文件夹中显示的名字和新增文件的显示名字[HKEY_CLASSES_ROOT\Macdown.md">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何右击新建MacDown">
 <meta property="og:url" content="https://mixley.github.io/2021/21437N4.html">
 <meta property="og:site_name" content="mixley">
-<meta property="og:description" content="1、注册右击创建macdown文件 123456789101112Windows Registry Editor Version 5.00;注册.md路径的文件，并指定编辑对象为Macdown.md[HKEY_CLASSES_ROOT\.md]@&#x3D;&quot;Macdown.md&quot;;创建Macdown.md对象 指定在右击文件夹中显示的名字和新增文件的显示名字[HKEY_CLASSES_">
+<meta property="og:description" content="1、注册右击创建macdown文件 Windows Registry Editor Version 5.00;注册.md路径的文件，并指定编辑对象为Macdown.md[HKEY_CLASSES_ROOT\.md]@&#x3D;&quot;Macdown.md&quot;;创建Macdown.md对象 指定在右击文件夹中显示的名字和新增文件的显示名字[HKEY_CLASSES_ROOT\Macdown.md">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-06-28T15:28:00.075Z">
 <meta property="article:modified_time" content="2021-06-28T12:13:54.000Z">
@@ -275,10 +275,10 @@
 
       
         <p>1、注册右击创建macdown文件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs shell">Windows Registry Editor Version 5.00<br>;注册.md路径的文件，并指定编辑对象为Macdown.md<br>[HKEY_CLASSES_ROOT\.md]<br>@=&quot;Macdown.md&quot;<br>;创建Macdown.md对象 指定在右击文件夹中显示的名字和新增文件的显示名字<br>[HKEY_CLASSES_ROOT\Macdown.md]<br>@=&quot;Macdown&quot;<br>&quot;FriendlyTypeName&quot;=&quot;Macdown&quot;<br>;ShellNew中FileName指定模板文件<br>[HKEY_CLASSES_ROOT\.md\ShellNew]<br>&quot;FileName&quot;=&quot;Macdown.md&quot;<br>&quot;NullFile&quot;=&quot;&quot;<br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">;注册.md路径的文件，并指定编辑对象为Macdown.md</span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@=&quot;Macdown.md&quot;</span><br><span class="line">;创建Macdown.md对象 指定在右击文件夹中显示的名字和新增文件的显示名字</span><br><span class="line">[HKEY_CLASSES_ROOT\Macdown.md]</span><br><span class="line">@=&quot;Macdown&quot;</span><br><span class="line">&quot;FriendlyTypeName&quot;=&quot;Macdown&quot;</span><br><span class="line">;ShellNew中FileName指定模板文件</span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line">&quot;FileName&quot;=&quot;Macdown.md&quot;</span><br><span class="line">&quot;NullFile&quot;=&quot;&quot;</span><br></pre></td></tr></table></figure>
 
 <p>2、C:\Windows\SHELLNEW下新建Macdown.md模板</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><br><br></code></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
     </div>

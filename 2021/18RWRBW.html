@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"mixley.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Git下载安装什么？现在还有不用git的吗？是村里没有通网吗🤣【大雾】。 git不用介绍了，git官方地址：https:&#x2F;&#x2F;git-scm.com&#x2F;，下载git路径：https:&#x2F;&#x2F;git-scm.com&#x2F;downloads 设置全局用户名与邮箱安装完成后，下载TortoiseGit使用界面管理 Git设置中完善名称与Emial信息，用户密码信息也可以使用命令行 12git config --g">
+  <meta name="description" content="Git下载安装什么？现在还有不用git的吗？是村里没有通网吗🤣【大雾】。 git不用介绍了，git官方地址：https:&#x2F;&#x2F;git-scm.com&#x2F;，下载git路径：https:&#x2F;&#x2F;git-scm.com&#x2F;downloads 设置全局用户名与邮箱安装完成后，下载TortoiseGit使用界面管理 Git设置中完善名称与Emial信息，用户密码信息也可以使用命令行 git config --glo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git">
 <meta property="og:url" content="https://mixley.github.io/2021/18RWRBW.html">
 <meta property="og:site_name" content="mixley">
-<meta property="og:description" content="Git下载安装什么？现在还有不用git的吗？是村里没有通网吗🤣【大雾】。 git不用介绍了，git官方地址：https:&#x2F;&#x2F;git-scm.com&#x2F;，下载git路径：https:&#x2F;&#x2F;git-scm.com&#x2F;downloads 设置全局用户名与邮箱安装完成后，下载TortoiseGit使用界面管理 Git设置中完善名称与Emial信息，用户密码信息也可以使用命令行 12git config --g">
+<meta property="og:description" content="Git下载安装什么？现在还有不用git的吗？是村里没有通网吗🤣【大雾】。 git不用介绍了，git官方地址：https:&#x2F;&#x2F;git-scm.com&#x2F;，下载git路径：https:&#x2F;&#x2F;git-scm.com&#x2F;downloads 设置全局用户名与邮箱安装完成后，下载TortoiseGit使用界面管理 Git设置中完善名称与Emial信息，用户密码信息也可以使用命令行 git config --glo">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://mixley.github.io/2021/18RWRBW/image-20210628205042362.png">
 <meta property="og:image" content="https://mixley.github.io/2021/18RWRBW/image-20210628205817573.png">
@@ -283,11 +283,11 @@
 <p>git不用介绍了，git官方地址：<a target="_blank" rel="noopener" href="https://git-scm.com/%EF%BC%8C%E4%B8%8B%E8%BD%BDgit%E8%B7%AF%E5%BE%84%EF%BC%9Ahttps://git-scm.com/downloads">https://git-scm.com/，下载git路径：https://git-scm.com/downloads</a></p>
 <h2 id="设置全局用户名与邮箱"><a href="#设置全局用户名与邮箱" class="headerlink" title="设置全局用户名与邮箱"></a>设置全局用户名与邮箱</h2><p>安装完成后，下载<a target="_blank" rel="noopener" href="https://tortoisegit.org/download/">TortoiseGit</a>使用界面管理</p>
 <p>Git设置中完善名称与Emial信息，用户密码信息也可以使用命令行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">git config --global user.name &quot;username&quot;<br>git config --global user.email &quot;email@mail.com&quot;<br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;</span><br><span class="line">git config --global user.email &quot;email@mail.com&quot;</span><br></pre></td></tr></table></figure>
 
 <p><img src="/2021/18RWRBW/image-20210628205042362.png" alt="image-20210628205042362"></p>
 <h3 id="设置SSH密钥"><a href="#设置SSH密钥" class="headerlink" title="设置SSH密钥"></a>设置SSH密钥</h3><p>可以使用命令行或者PuTTygen</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta">#</span><span class="bash">命令行</span><br>ssh-keygen -t rsa<br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">命令行</span></span><br><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
 
 <p>打开PuTTygen，选择Generate后，鼠标狂动，直到进度条完成。</p>
 <p><img src="/2021/18RWRBW/image-20210628205817573.png" alt="image-20210628205817573"></p>
