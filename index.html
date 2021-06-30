@@ -206,6 +206,208 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/35XMGZW.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/35XMGZW.html" class="post-title-link" itemprop="url">关于管理与写博客</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-30 23:05:31 / 修改时间：23:05:55" itemprop="dateCreated datePublished" datetime="2021-06-30T23:05:31+08:00">2021-06-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tool/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tool/blog/" itemprop="url" rel="index"><span itemprop="name">博客</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/35XMGZW.html" class="post-meta-item leancloud_visitors" data-flag-title="关于管理与写博客" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p> 说到博客，我想将博客编写的主要内容分为两个大的块。</p>
+<p>第一块：文章部分，我们可能随时的，随手的就编写很多心得或者笔记或者心情，创作应该是无打扰且不用考虑太多额外事情的。</p>
+<p>第二块：展示部分，界面到底怎么展示，文章标题内容图片怎么显示，个性化的界面需要进行一些什么样的调整。这个部分调整可能会频繁，可能会比较个性，可能会很繁琐，但是最好是不要参与到创作中影响效率的。</p>
+<p>所以由此我希望拥有一个简单的不受影响的创作环境，然后通过一些后期方式将文章展示到我定制的个性页面中是我最终的目的,下面我从现有结构和我的思路来讲一下我想怎么管理和写博客。</p>
+<h3 id="文章部分"><a href="#文章部分" class="headerlink" title="文章部分"></a>文章部分</h3><p>下面是我们常见的一个文档管理方式，不论doc也好，还是md也罢，我们都喜欢通过建立文件夹的方式进行分类然后梳理，下面的我通过建立文档同名的方式表示文档需要的文件。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">📦macdown</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂工具</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂minio</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂minio</span> <span class="comment"># 对应md文件的附件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜simplicity.gif</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜minio.md</span> <span class="comment">#md文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂博客</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂使用Hexo搭建博客</span>  <span class="comment">#对应md文件的附件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜image-20210623193347044.png</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜使用Hexo搭建博客.md</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜关于管理与写博客.md</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜常用工具.md</span> <span class="comment">#文章</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂开发</span> <span class="comment">#分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📂bat</span> <span class="comment">#更多分类与文章</span></span><br></pre></td></tr></table></figure>
+<p>上面这个目录结构，我相信不管是写博客还是仅仅做笔记或者整理资料的人，大部分过程应该都是这样的。我们以上面这个目录结构出发，来发布我们的程序。</p>
+<h3 id="推荐神器：Typora-万年bate版本，免费使用"><a href="#推荐神器：Typora-万年bate版本，免费使用" class="headerlink" title="推荐神器：Typora(万年bate版本，免费使用)"></a>推荐神器：Typora(万年bate版本，免费使用)</h3><h4 id="Typora文档管理功能"><a href="#Typora文档管理功能" class="headerlink" title="Typora文档管理功能"></a>Typora文档管理功能</h4><p><img src="/2021/35XMGZW/image-20210626111012923.png" alt="image-20210626111012923"></p>
+<h4 id="Typora图片设置"><a href="#Typora图片设置" class="headerlink" title="Typora图片设置"></a>Typora图片设置</h4><p><img src="/2021/35XMGZW/image-20210626110210201.png" alt="image-20210626110210201"></p>
+<p>其他建议的配置</p>
+<p><img src="/2021/35XMGZW/image-20210626132716924-1624685244750.png" alt="image-20210626132716924"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/3NPATC1.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/3NPATC1.html" class="post-title-link" itemprop="url">使用Hexo搭建博客</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-06-30 23:05:15" itemprop="dateCreated datePublished" datetime="2021-06-30T23:05:15+08:00">2021-06-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tool/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tool/blog/" itemprop="url" rel="index"><span itemprop="name">博客</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/3NPATC1.html" class="post-meta-item leancloud_visitors" data-flag-title="使用Hexo搭建博客" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p> 快速、简洁且高效的博客框架</p>
+<p>Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g #全局安装hexo</span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo init &lt;folder&gt;</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> &lt;folder&gt;</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install</span></span><br></pre></td></tr></table></figure>
+<p>安装后目录结构说明：</p>
+<!-- vscode -> file-tree-generator -->
+
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">📦blog</span> <span class="comment">#博客·安装路径</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂scaffolds</span>	<span class="comment">#模板文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜draft.md</span>	<span class="comment">#草稿模板</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜page.md</span>	<span class="comment">#页面模板</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜post.md</span>	<span class="comment">#文章模板</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂source</span>	<span class="comment">#资源文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📂_posts</span>	<span class="comment">#文章路径</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜hello-world.md</span>	<span class="comment">#实际文章</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂themes</span>	<span class="comment">#主题</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜.gitkeep</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📜package.json</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📜_config.landscape.yml</span>	<span class="comment">#_config.[theme].yml 用于编辑主题配置</span></span><br><span class="line"> <span class="string">┗</span> <span class="string">📜_config.yml</span>	<span class="comment">#配置文件 ！重要！！</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="运行命令"><a href="#运行命令" class="headerlink" title="运行命令"></a>运行命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 更多详细命令查看官网：https://hexo.io/zh-cn/docs/commands.html</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 启动</span></span><br><span class="line">hexo s</span><br><span class="line"><span class="meta">#</span><span class="bash"> 下面为指定配置文件</span></span><br><span class="line">hexo s --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/3NPATC1/image-20210623193347044.png" alt="image-20210623193347044"></p>
+<p>打开浏览器输入<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 出现hexo界面则表示启动成功了</p>
+<h2 id="管理与编写博客"><a href="#管理与编写博客" class="headerlink" title="管理与编写博客"></a>管理与编写博客</h2><h3 id="文档管理结构"><a href="#文档管理结构" class="headerlink" title="文档管理结构"></a>文档管理结构</h3><p>下面是我们常见的一个文档管理方式，不论doc也好，还是md也罢，我们都喜欢通过建立文件夹的方式进行分类然后梳理，下面的我通过建立文档同名的方式表示文档需要的文件。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">📦macdown</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂工具</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂minio</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂minio</span> <span class="comment"># 对应md文件的附件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜simplicity.gif</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜minio.md</span> <span class="comment">#md文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂博客</span> <span class="comment"># 分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂使用Hexo搭建博客</span>  <span class="comment">#对应md文件的附件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜image-20210623193347044.png</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜使用Hexo搭建博客.md</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜关于管理与写博客.md</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜常用工具.md</span> <span class="comment">#文章</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂开发</span> <span class="comment">#分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📂bat</span> <span class="comment">#更多分类与文章</span></span><br></pre></td></tr></table></figure>
+
+<p>上面这个目录结构，我相信不管是写博客还是仅仅做笔记或者整理资料的人，大部分过程应该都是这样的。</p>
+<h3 id="安装工具"><a href="#安装工具" class="headerlink" title="安装工具"></a>安装工具</h3><p>推荐神器：<a target="_blank" rel="noopener" href="https://typora.io/">Typora</a>  MacDown编辑神器 (万年bate版本，免费使用)</p>
+<h4 id="Typora文档管理功能"><a href="#Typora文档管理功能" class="headerlink" title="Typora文档管理功能"></a>Typora文档管理功能</h4><p><img src="/2021/3NPATC1/image-20210626111012923.png" alt="image-20210626111012923"></p>
+<h4 id="Typora图片设置"><a href="#Typora图片设置" class="headerlink" title="Typora图片设置"></a>Typora图片设置</h4><p><img src="/2021/3NPATC1/image-20210626110210201.png" alt="image-20210626110210201"></p>
+<h2 id="发布配置"><a href="#发布配置" class="headerlink" title="发布配置"></a>发布配置</h2><p>下面的自定义配置为使用git发布博客，首先需安装hexo-deployer-git 插件,其它插件为更方便使用</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> git上传发布，一键部署时使用</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> hexo增强配置，可以不用手动维护 front-matter，文章标题建议使用 20210628 标题.md</span></span><br><span class="line">npm install hexo-enhancer --save</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 处理图片路径转换问题，当开启post_asset_folder时，使用文件路径转换</span></span><br><span class="line">npm hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+
+<p>自定义配置文件如下，可在hexo目录下建立<strong>custom.yml</strong>文件，自定义以下内容，不污染原始文件便于后期升级hexo</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 详情看附录中配置文件详细介绍</span></span><br><span class="line"><span class="comment"># Site 网站设置 基础设置</span></span><br><span class="line"><span class="comment"># 网站标题</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">mixley</span></span><br><span class="line"><span class="comment"># 网站副标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;呜啦啦&#x27;</span></span><br><span class="line"><span class="comment"># 网站描述，SEO优化时会扫描</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 网站关键字，SEO优化时会扫描，多个逗号分隔</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&#x27;技术栈A,技术栈B&#x27;</span></span><br><span class="line"><span class="comment"># 作者</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">mixley</span></span><br><span class="line"><span class="comment"># 语言，使用主题时支持的语言列表,主题文件中languages文件夹下查看</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="comment"># 时区，默认为电脑时区，中国大陆：Asia/Shanghai</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL 网址 基础设置,url如果发布到gitbub，请参考注册github.io建立免费页面</span></span><br><span class="line"><span class="comment"># 生成的地址中，会携带这个地址，博客根路径(怎么访问的就怎么填写)</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">&#x27;https://mixley.github.io&#x27;</span></span><br><span class="line"><span class="comment"># 文章访问编号 hexo-enhancer增强配置中提供</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:abbrlink.html</span></span><br><span class="line"><span class="comment"># 网站关键字，增强配置专用，其余tag会收集keywords中tags自动匹配</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">&#x27;关键字A,关键字B&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动 Asset 文件夹(推荐开启，会将同名目录一起打包，否则只打包md，也可以使用第三方图床解决)</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 把链接改为与根目录的相对位址</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Home page setting 首页文章设置（可以不设置）</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="comment">#每页数量</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Category &amp; Tag   分类 &amp; 标签 中文标签可能存在编码问题，需转换，格式为 中文: 英文 多个记录直接换行</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="comment"># 分类对应值 后期建立文件夹，需要在这里增加英文映射</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line">	<span class="string">嘿嘿:</span> <span class="string">heihei</span></span><br><span class="line">	<span class="string">哈哈:</span> <span class="string">haha</span></span><br><span class="line"><span class="comment"># 标签对应值 keywords 关键字中文全部需要进行处理，tags中关键字同样需要处理</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br><span class="line">	<span class="string">技术栈A:</span> <span class="string">jA</span></span><br><span class="line">	<span class="string">技术栈B:</span> <span class="string">jB</span></span><br><span class="line">	</span><br><span class="line"><span class="comment"># Pagination 分页设置（可以不设置）</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用主题，可以选择其它主题，这是默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 发布配置，若使用git，需要安装 npm install hexo-deployer-git --save</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line"><span class="comment">#多服务配置</span></span><br><span class="line"> <span class="attr">repository:</span></span><br><span class="line">   <span class="comment">#使用ssh的方式，配置ssh密钥可以免登录发布</span></span><br><span class="line">   <span class="attr">github:</span> <span class="string">git@github.com:mixley/mixley.GitHub.io.git</span></span><br><span class="line">   <span class="attr">gitee:</span> <span class="string">git@gitee.com:mixley/mixley.git</span></span><br><span class="line"> <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Hexo三连命令"><a href="#Hexo三连命令" class="headerlink" title="Hexo三连命令"></a>Hexo三连命令</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 清除</span></span><br><span class="line">hexo clean</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 指定配置文件生成</span></span><br><span class="line">hexo g --config custom.yml</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 发布</span></span><br><span class="line">hexo d --config custom.yml</span><br></pre></td></tr></table></figure>
+
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>快速生成日期，可以下载utool，安装自动化助手，自行配置生成自动化插件</p>
+<p><img src="/2021/3NPATC1/image-20210630134207770.png!%5Bimage-20210630230255222%5D(%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/image-20210630230255222.png" alt="image-20210630134207770"></p>
+<p><img src="/2021/3NPATC1/image-20210630230332250.png" alt="image-20210630230332250"></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取当前日期，格式YYYY-MM-DD</span></span><br><span class="line"><span class="keyword">let</span> getNowFormatDay = <span class="function"><span class="keyword">function</span>(<span class="params">nowDate</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> char = <span class="string">&quot;-&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span>(nowDate == <span class="literal">null</span>)&#123;</span><br><span class="line">        nowDate = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> day = nowDate.getDate();</span><br><span class="line">    <span class="keyword">let</span> month = nowDate.getMonth() + <span class="number">1</span>;<span class="comment">//注意月份需要+1</span></span><br><span class="line">    <span class="keyword">let</span> year = nowDate.getFullYear();</span><br><span class="line">    <span class="comment">//补全0，并拼接</span></span><br><span class="line">    <span class="keyword">return</span> year + char + completeDate(month) + char +completeDate(day);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//获取当前时间，格式YYYY-MM-DD HH:mm:ss</span></span><br><span class="line"><span class="keyword">let</span> getNowFormatTime = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> nowDate = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">let</span> colon = <span class="string">&quot;:&quot;</span>;</span><br><span class="line">    <span class="keyword">let</span> h = nowDate.getHours();</span><br><span class="line">    <span class="keyword">let</span> m = nowDate.getMinutes();</span><br><span class="line">    <span class="keyword">let</span> s = nowDate.getSeconds();</span><br><span class="line">    <span class="comment">//补全0，并拼接</span></span><br><span class="line">    <span class="keyword">return</span> getNowFormatDay(nowDate) + <span class="string">&quot; &quot;</span> + completeDate(h) + colon + completeDate(m) + colon + completeDate(s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//补全0</span></span><br><span class="line"><span class="keyword">let</span> completeDate =<span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> value &lt; <span class="number">10</span> ? <span class="string">&quot;0&quot;</span>+value:value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> date = getNowFormatTime();</span><br><span class="line"><span class="comment">//下面两行自动移动到MD头部增加日期，b</span></span><br><span class="line">utools.simulateKeyboardTap(<span class="string">&#x27;home&#x27;</span>, utools.isMacOs() ? <span class="string">&#x27;command&#x27;</span> : <span class="string">&#x27;ctrl&#x27;</span>)</span><br><span class="line">date=<span class="string">&quot;---\ndate: &quot;</span>+date+<span class="string">&quot;\n---\n &quot;</span></span><br><span class="line"></span><br><span class="line">utools.copyText(date)</span><br><span class="line">utools.simulateKeyboardTap(<span class="string">&#x27;v&#x27;</span>, utools.isMacOs() ? <span class="string">&#x27;command&#x27;</span> : <span class="string">&#x27;ctrl&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="主题推荐：next"><a href="#主题推荐：next" class="headerlink" title="主题推荐：next"></a>主题推荐：<a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/getting-started.html">next</a></h3><h3 id="配置文件详解"><a href="#配置文件详解" class="headerlink" title="配置文件详解"></a>配置文件详解</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Hexo Configuration</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/configuration.html</span></span><br><span class="line"><span class="comment">## Source: https://github.com/hexojs/hexo/</span></span><br><span class="line"><span class="comment">## 中文文档：https://hexo.io/zh-cn/docs/configuration</span></span><br><span class="line"><span class="comment"># Site 网站设置 基础设置</span></span><br><span class="line"><span class="comment"># 网站标题</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hexo</span></span><br><span class="line"><span class="comment"># 网站副标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 网站描述，SEO优化时会扫描</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;全栈的自我修养……&#x27;</span></span><br><span class="line"><span class="comment"># 网站关键字，SEO优化时会扫描，多个逗号分隔</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&#x27;java,C&#x27;</span></span><br><span class="line"><span class="comment"># 作者</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">John</span></span><br><span class="line"><span class="comment"># 语言，使用主题时支持的语言列表,主题文件中languages文件夹下查看</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="comment"># 时区，默认为电脑时区，中国大陆：Asia/Shanghai</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL 网址 基础设置,url如果发布到gitbub，请参考注册github.io建立免费</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="comment"># 生成的地址中，会携带这个地址，博客根路径(怎么访问的就怎么填写)</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">&#x27;http://example.com&#x27;</span></span><br><span class="line"><span class="comment"># 文章路径，title为中文在github发布无法显示</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span>	<span class="string">&#x27;&#x27;</span>					<span class="comment">#永久链接中各部分的默认值,如下</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">#permalink_defaults: </span></span><br><span class="line"><span class="comment"># year: 2021</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="comment"># 是否在永久链接中保留尾部的 index.html，设置为 false 时去除</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Directory 目录</span></span><br><span class="line"><span class="comment"># 资源文件夹，这个文件夹用来存放内容</span></span><br><span class="line"><span class="attr">source_dir:</span> <span class="string">source</span></span><br><span class="line"><span class="comment"># 公共文件夹，这个文件夹用于存放生成的站点文件</span></span><br><span class="line"><span class="attr">public_dir:</span> <span class="string">public</span></span><br><span class="line"><span class="comment"># 标签文件夹</span></span><br><span class="line"><span class="attr">tag_dir:</span> <span class="string">tags</span></span><br><span class="line"><span class="comment"># 归档文件夹</span></span><br><span class="line"><span class="attr">archive_dir:</span> <span class="string">archives</span></span><br><span class="line"><span class="comment"># 分类文件夹</span></span><br><span class="line"><span class="attr">category_dir:</span> <span class="string">categories</span></span><br><span class="line"><span class="comment"># Include code 文件夹，source_dir 下的子目录</span></span><br><span class="line"><span class="attr">code_dir:</span> <span class="string">downloads/code</span></span><br><span class="line"><span class="comment"># 国际化（i18n）文件夹</span></span><br><span class="line"><span class="attr">i18n_dir:</span> <span class="string">:lang</span></span><br><span class="line"><span class="comment"># 跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 public 目录中。您可使用 glob 表达式来匹配路径。如下</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">##skip_render: &quot;mypage/**/*&quot;</span></span><br><span class="line"><span class="comment"># 将会直接将 `source/mypage/index.html` 和 `source/mypage/code.js` 不做改动地输出到 &#x27;public&#x27; 目录</span></span><br><span class="line"><span class="comment"># 你也可以用这种方法来跳过对指定文章文件的渲染</span></span><br><span class="line"><span class="comment">#skip_render: &quot;_posts/test-post.md&quot;</span></span><br><span class="line"><span class="comment"># 这将会忽略对 &#x27;test-post.md&#x27; 的渲染</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">skip_render:</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Writing 文章 基本不用动，只有那个post_asset_folder用来设置图片路径</span></span><br><span class="line"><span class="comment"># 新文章的文件名称</span></span><br><span class="line"><span class="attr">new_post_name:</span> <span class="string">:title.md</span></span><br><span class="line"><span class="comment"># 预设布局，默认布局是文章</span></span><br><span class="line"><span class="attr">default_layout:</span> <span class="string">post</span></span><br><span class="line"><span class="comment"># 把标题转换为 title case</span></span><br><span class="line"><span class="attr">titlecase:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">external_link:</span></span><br><span class="line">  <span class="comment"># 在新标签中打开链接</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 对整个网站（site）生效或仅对文章（post）生效</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span></span><br><span class="line">  <span class="comment"># 需要排除的域名。主域名和子域名如 www 需分别配置[]</span></span><br><span class="line">  <span class="attr">exclude:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 把文件名称转换为 (1) 小写或 (2) 大写</span></span><br><span class="line"><span class="attr">filename_case:</span> <span class="number">0</span></span><br><span class="line"><span class="comment"># 显示草稿</span></span><br><span class="line"><span class="attr">render_drafts:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># 启动 Asset 文件夹(推荐开启)</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 把链接改为与根目录的相对位址</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># 显示未来的文章  ??</span></span><br><span class="line"><span class="attr">future:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 代码块的设置, 请参考 Highlight.js 进行设置</span></span><br><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">auto_detect:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">hljs:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># 代码块的设置, 请参考 PrismJS 进行设置</span></span><br><span class="line"><span class="attr">prismjs:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">preprocess:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Home page setting 首页文章设置</span></span><br><span class="line"><span class="comment"># path: Root path for your blogs index page. (default = &#x27;&#x27;)</span></span><br><span class="line"><span class="comment"># per_page: Posts displayed per page. (0 = disable pagination)</span></span><br><span class="line"><span class="comment"># order_by: Posts order. (Order by date descending by default)</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Category &amp; Tag   分类 &amp; 标签 !!需要映射为URLEncode</span></span><br><span class="line"><span class="comment"># uncategorized默认从属分类,%E6%9C%AA%E5%88%86%E7%B1%BB是未分类的URLEncode值</span></span><br><span class="line"><span class="comment"># default_category: uncategorized</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="comment"># 分类对应值</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line"><span class="comment"># 标签对应值</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Metadata elements</span></span><br><span class="line"><span class="comment">## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta</span></span><br><span class="line"><span class="comment"># Meta generator 标签。 值为 false 时 Hexo 不会在头部插入该标签</span></span><br><span class="line"><span class="attr">meta_generator:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Date / Time format</span></span><br><span class="line"><span class="comment">## Hexo uses Moment.js to parse and display date</span></span><br><span class="line"><span class="comment">## You can customize the date format as defined in</span></span><br><span class="line"><span class="comment">## http://momentjs.com/docs/#/displaying/format/</span></span><br><span class="line"><span class="attr">date_format:</span> <span class="string">YYYY-MM-DD</span></span><br><span class="line"><span class="attr">time_format:</span> <span class="string">HH:mm:ss</span></span><br><span class="line"><span class="comment">## updated_option supports &#x27;mtime&#x27;, &#x27;date&#x27;, &#x27;empty&#x27;</span></span><br><span class="line"><span class="attr">updated_option:</span> <span class="string">&#x27;mtime&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Pagination</span></span><br><span class="line"><span class="comment">## Set per_page to 0 to disable pagination</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Include / Exclude file(s)</span></span><br><span class="line"><span class="comment">## include:/exclude: options only apply to the &#x27;source/&#x27; folder</span></span><br><span class="line"><span class="comment"># Hexo 默认会忽略隐藏文件和文件夹（包括名称以下划线和 . 开头的文件和文件夹，Hexo 的 _posts 和 _data 等目录除外）。通过设置此字段将使 Hexo 处理他们并将它们复制到 source 目录下。</span></span><br><span class="line"><span class="attr">include:</span></span><br><span class="line"><span class="comment"># Hexo 会忽略这些文件和目录，项目文件忽略配置</span></span><br><span class="line"><span class="attr">exclude:</span></span><br><span class="line"><span class="comment"># Ignore files/folders,忽略包括themes/下文件与文件夹(所有上传忽略配置)</span></span><br><span class="line"><span class="attr">ignore:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment"># 使用主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="comment"># 发布配置，若使用git，需要安装 npm install hexo-deployer-git --save</span></span><br><span class="line"><span class="comment"># 安装</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">#deploy:</span></span><br><span class="line"><span class="comment">#  type: git</span></span><br><span class="line"><span class="comment"># 单服务配置</span></span><br><span class="line"><span class="comment">#  repo: &lt;repository url&gt; # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io</span></span><br><span class="line"><span class="comment"># 多服务配置</span></span><br><span class="line"><span class="comment">#  repository:</span></span><br><span class="line"><span class="comment">#    github: &lt;github url&gt;</span></span><br><span class="line"><span class="comment">#    gitee: &lt;gitee url&gt;</span></span><br><span class="line"><span class="comment">#  branch: [branch]</span></span><br><span class="line"><span class="comment">#  message: [message]</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/1XJ7S7J.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -507,7 +709,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-26 13:25:58" itemprop="dateModified" datetime="2021-06-26T13:25:58+08:00">2021-06-26</time>
+                <time title="修改时间：2021-06-29 22:42:12" itemprop="dateModified" datetime="2021-06-29T22:42:12+08:00">2021-06-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -546,6 +748,9 @@
 <p>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</p>
 <p>diskpart  #运行diskpart工具<br>lis dis #列出所有磁盘<br>sel dis 1  #选中需要隐藏盘符的硬盘<br>lis par  #列出所有分区<br>sel par 0  #选中efi分区（需要隐藏的分区）</p>
 <p>set id=D3BFE2DE-3DAF-11DF-BA40-E3A556D89593 #For GPT ,将分区设置为GPT,进行隐藏，#<a target="_blank" rel="noopener" href="https://social.technet.microsoft.com/Forums/en-US/6f4842da-b992-43e6-bffe-f9c5dc4577a2/diskpart-set-id-command-not-working">https://social.technet.microsoft.com/Forums/en-US/6f4842da-b992-43e6-bffe-f9c5dc4577a2/diskpart-set-id-command-not-working</a></p>
+<p>EtFat</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">diskpart </span><br><span class="line">list disk</span><br><span class="line"><span class="built_in">select</span> disk <span class="number">2</span></span><br><span class="line">clean</span><br><span class="line">create partition primary</span><br><span class="line">active</span><br><span class="line"></span><br><span class="line"><span class="comment">#format fs=ntfs label=卷标 quick</span></span><br><span class="line"><span class="comment">#命令format **fs=ntfs** label=”卷标” quick：是将U盘格式化为**NTFS**格式；</span></span><br><span class="line"><span class="comment">#如果需要将U盘格式化为**FAT32**，则命令为：format **fs=FAT32** label=”卷标” quick；</span></span><br><span class="line"><span class="comment">#如果需要将U盘格式化为 **exFAT**，则命令为：format **fs=exFAT** label=”卷标” quick；</span></span><br><span class="line"></span><br><span class="line">format fs=exFAT quick</span><br><span class="line"></span><br><span class="line">assign</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -886,229 +1091,6 @@
 <p> su密码修改：</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo passwd </span><br></pre></td></tr></table></figure>
 
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/MYHZWP.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="mixley">
-      <meta itemprop="description" content="全栈·架构设计·算法">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="mixley">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/MYHZWP.html" class="post-title-link" itemprop="url">格式标准</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-06-28 23:28:00 / 修改时间：20:22:15" itemprop="dateCreated datePublished" datetime="2021-06-28T23:28:00+08:00">2021-06-28</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/deep/" itemprop="url" rel="index"><span itemprop="name">深度</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/deep/computer-vision/" itemprop="url" rel="index"><span itemprop="name">计算机视觉</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2021/MYHZWP.html" class="post-meta-item leancloud_visitors" data-flag-title="格式标准" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/gwind/p/8215771.html">https://www.cnblogs.com/gwind/p/8215771.html</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/1DC25F7.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="mixley">
-      <meta itemprop="description" content="全栈·架构设计·算法">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="mixley">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/1DC25F7.html" class="post-title-link" itemprop="url">图片的由来与存储</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-06-28 23:28:00 / 修改时间：20:22:19" itemprop="dateCreated datePublished" datetime="2021-06-28T23:28:00+08:00">2021-06-28</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/deep/" itemprop="url" rel="index"><span itemprop="name">深度</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/deep/computer-vision/" itemprop="url" rel="index"><span itemprop="name">计算机视觉</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2021/1DC25F7.html" class="post-meta-item leancloud_visitors" data-flag-title="图片的由来与存储" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>我们知道，计算机中的数据都是0和1，但是展示在我们屏幕上的却是多姿多彩，文字、图片、视频和游戏等等，0和1怎么变成我们从屏幕看到的内容的？</p>
-<h2 id="黑白图片"><a href="#黑白图片" class="headerlink" title="黑白图片"></a>黑白图片</h2><p>假定，1=白色，0=黑色，我们现在就可以用0和1组合为一个黑白画面了</p>
-<p>我们使用ps新建一个只有0、1的位图</p>
-<p><img src="/2021/1DC25F7/1.png" alt="img"></p>
-<p>图片新建完成如下（放大后效果），附带附件</p>
-<p><img src="/2021/1DC25F7/2.png" alt="img"></p>
-<p>&lt;&lt;白黑.bmp&gt;&gt;</p>
-<p>假定我们直接按1表示白，0表示黑的方式排列，可以得到我们的存储结果</p>
-<p><img src="/2021/1DC25F7/3.png" alt="img"></p>
-<h2 id="图片存储格式"><a href="#图片存储格式" class="headerlink" title="图片存储格式"></a>图片存储格式</h2><p>我们按 OS/2 bmp 方式进行保存（win位图最初保存方式，且无压缩，这里面去除了ps自动生成的元信息）</p>
-<p><img src="/2021/1DC25F7/4.png" alt="img"></p>
-<p>OS/2 bmp：</p>
-<p>0x00-0x01: 2byte 424D表示BMP格式</p>
-<p>0x02-0x05: 4byte 此文件大小是0x0030bit(注意高低位，低位在前)</p>
-<p>0x06-0x09: 4byte 保留位</p>
-<p>0x0A-0x0D: 4byte 偏移量，数据开始起点，图中数据从0x0020开始 </p>
-<p>0x0E-0x11: 4byte BITMAPINFOHEADER结构体大小(以下为结构体定义)，图中大小为0x000C（OS/2：12 | Windows DIB 40）</p>
-<p>0x12-0x13: 2byte 图像宽 图中为4像素</p>
-<p>0x14-0x15: 2byte 图像高 图中为2像素 </p>
-<p>0x16-0x17: 2byte 图像平面数 图中为1</p>
-<p>0x18-0x19: 2byte 一个像素有多少bit 图中为1</p>
-<p>0x1A-0x1C: 3byte 0表示的颜色BGR格式，图中为0x000000黑色</p>
-<p>0x1D-0x1F: 3byte 1表示的颜色BGR格式，图中为0xFFFFFF白色</p>
-<p>由于Windows默认的扫描的最小单位是4byte，所以bmp默认每行对齐是4的倍数，我们可以得到第一行的长度为宽度4<em>1分辨率</em>1位(bit)=4bit,对齐为byte时最小单位4byte，所以需要占用4byte，但仅前4个bit填充的值有效。</p>
-<p>且bmp是从左下角开始扫码，从左到右，从下到上，二进制转换0101为5，1010为a</p>
-<p>最终对应的结果在不对齐的情况下为a5a5，在对齐后补0的情况如下所示：</p>
-<p>A0 00 00 00 50 00 00 00 A0 00 00 00 50 00 00 00</p>
-<p>但是ps等软件在生成时会有一些元信息，所以可能会出现对齐为4byte时不是补0的情况，在算法读取时会自动跳过，但是人眼进行查看时，会造成干扰，自己排除掉即可</p>
-<p><img src="/2021/1DC25F7/5.png" alt="img"></p>
-<p>上图中，6 7F、8 22 56 F3等数据都是干扰数据，可替换为0或者替换为其它内容。</p>
-<h2 id="图片放大"><a href="#图片放大" class="headerlink" title="图片放大"></a>图片放大</h2><p>图片放大是在图片使用中最常使用的功能，我们从图片放大这个角度看下黑白颜色后面该怎么处理，尝试放大下面这个长宽2x2的黑白图</p>
-<p><img src="/2021/1DC25F7/6.png" alt="img"></p>
-<p>我们存储在电脑中的数据可以抽象理解为，长宽2个像素的</p>
-<p><img src="/2021/1DC25F7/7.png" alt="img"></p>
-<p>当我们将这个放大为长宽4个像素很好处理</p>
-<p>![а о 11  е 011  11 ее  11 ее ](图片的由来与存储/8 .png)</p>
-<p>我们得到的图片还是这样的没什么变化</p>
-<p>但是当我们想将这个放大为长宽3像素呢？要知道，我们的图片放大缩小，从来都不是按倍数放大，动不动就直接放大2倍的，几乎没有。</p>
-<p>可能我们得到的理想结果是</p>
-<p>![e ø.5 1  ø.5 ø.5 ø.s ](图片的由来与存储/9 .png)</p>
-<p>但是我们的01世界中，不存在0.5这种数据，按四舍五入或者退1法，我们可以得到这样的结果</p>
-<p>![1 1 1 ](图片的由来与存储/10 .png)</p>
-<p><img src="/2021/1DC25F7/11.png" alt="img"></p>
-<p>但是这无疑是差距太大了，一个小的图片差距都如此大，更大一点的图片也会出现更大的偏差，无疑只使用黑白两个颜色是无法将图片的细节表述清楚的。</p>
-<p>那么我们现在拓展下：0b00表示黑色，0b11表示白色，0b01与0b10表示灰色。这样在放大的时候可以有灰色填充，某些细节可以达到完善的程度了。（这只是一个极端例子，不用深究,我要表达的是0与1黑白中间拓展更多的颜色表达，让图片内容更加丰富）</p>
-<h2 id="8位灰阶"><a href="#8位灰阶" class="headerlink" title="8位灰阶"></a>8位灰阶</h2><p>在计算机中，8位是1个字节，1byte=8bit，我们存储的最小单元几乎都是使用byte进行存储，8位灰阶就是将黑白颜色数据继续拓展，都是黑、灰、白色之间，有256个层次组成。</p>
-<p>或许五彩斑斓的黑无法实现，但是层次分明的灰是可以达成的。</p>
-<p><img src="/2021/1DC25F7/12.png" alt="img"></p>
-<h2 id><a href="#" class="headerlink" title></a></h2><h2 id="彩色图片"><a href="#彩色图片" class="headerlink" title="彩色图片"></a>彩色图片</h2><p>层次分明的灰再怎么分明，都无法表达我们看到的真实颜色，光学三原色与颜料三原色中红、绿、蓝可以组合出所有颜色，依据无色系黑白灰+彩色系红绿蓝可以组合出任何颜色的特性，我们继续拓展到0和1中的队伍来。</p>
-<p><img src="/2021/1DC25F7/13.jpeg" alt="img"></p>
-<p>首先 红+绿+蓝，在RGB光学三原色中可以组成白色，所有颜色都不存在，则可以变成黑色。</p>
-<p>按上图我们先简单扩展（自定义），3位表示3个颜色0b000表示白色 0b100 表示红色 0b010表示绿色，0b001表示蓝色，0b111是白色，对应的0b010+0b001=0b011，蓝+绿=青,0b110=红+绿=黄，0b101=红+蓝=紫。彩色出现了。</p>
-<p>那么现在我们已经有了最基本的颜色后，我们依然需要进行图片的放大</p>
-<p>看下面这个四像素的图片，我们依然希望放大</p>
-<p><img src="/2021/1DC25F7/14.png" alt="img"></p>
-<p><img src="/2021/1DC25F7/15.png" alt="е10 001  тео оое "></p>
-<p>图片的放大肯定不是相加，而是中间是一个过渡的颜色进行替换，我们现在使用最简单粗暴的替换颜色相加取中间值的方式处理。</p>
-<p>以红绿中间的填充色为例（0b010+0b100）/2,应该是靠近这两个颜色中的颜色，结果是2.5，我们不能用0b010绿色去填充，也不能用0b100红色去填充，如果使用0b110,黄色，更是相差太远，在一个大的照片的放大过程中，尽量的贴合两边的颜色的中间颜色，应该是棕褐色，既有绿的过渡也需要红的过渡。(下图的展示可能不是很明显，也不很合适，因为图片的放大，极少有长宽2像素放大为长宽3像素这种操作，颜色直接的过渡也不会这么夸张。)</p>
-<p><img src="/2021/1DC25F7/img.png" alt="img"></p>
-<p>对于我们棕褐色，在我们刚才的拓展中，是不存在的，正如灰色在01表示的黑白中不存在，所以我们依然需要一个拓展来表达更多的颜色。</p>
-<p>我们现在将颜色拓展为6个bit了，0b000000表示黑色，0b111111表示白色，其余的0b1100000是红，0b001100是绿，0b000011是蓝色。第0-2位的00-11中可以表达4种不同程度的红，黑（无红）、淡红、浅红、正红，其余的等同划分。</p>
-<p>现在，差不多可以将棕色表达出来了，虽然依然不够细致，虽然我们现在有2^6=64种颜色了。</p>
-<h2 id="高彩色"><a href="#高彩色" class="headerlink" title="高彩色"></a>高彩色</h2><p>15或16位彩色（高彩色）：电脑所用的三原色是红、绿和蓝。在15位彩色中，每种原色有2^5=32个层次，共32768种颜色；而在16位彩色中，绿色有2^6=64个，共有65536个颜色</p>
-<h2 id="真彩色"><a href="#真彩色" class="headerlink" title="真彩色"></a>真彩色</h2><p>24位彩色（真彩色）：每种原色都有256个层次，它们的组合便有256<em>256</em>256种颜色。</p>
-<h2 id="32位彩色"><a href="#32位彩色" class="headerlink" title="32位彩色"></a>32位彩色</h2><p>32位彩色：除了24位彩色的颜色外，额外的8位是储存重叠图层的图形资料(alpha频道)。</p>
-<p>另外有高动态范围影像(High Dynamic Range Image)，这种影像使用超过一般的256色阶来储存影像，通常来说每个像素会分配到32+32+32个bit来储存颜色资讯，也就是说对于每一个原色都使用一个32bit的浮点数来储存.</p>
 
       
     </div>
