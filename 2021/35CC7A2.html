@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"mixley.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"mixley.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="https:&#x2F;&#x2F;jingyan.baidu.com&#x2F;article&#x2F;6d704a13ee963369da51ca03.html https:&#x2F;&#x2F;blog.csdn.net&#x2F;wangshui898&#x2F;article&#x2F;details&#x2F;107011608 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explore">
@@ -263,6 +263,13 @@
               <span class="post-meta-item-text">阅读次数：</span>
               <span class="leancloud-visitors-count"></span>
             </span>
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
 
         </div>
       </header>
@@ -279,7 +286,7 @@
 <p>diskpart  #运行diskpart工具<br>lis dis #列出所有磁盘<br>sel dis 1  #选中需要隐藏盘符的硬盘<br>lis par  #列出所有分区<br>sel par 0  #选中efi分区（需要隐藏的分区）</p>
 <p>set id=D3BFE2DE-3DAF-11DF-BA40-E3A556D89593 #For GPT ,将分区设置为GPT,进行隐藏，#<a target="_blank" rel="noopener" href="https://social.technet.microsoft.com/Forums/en-US/6f4842da-b992-43e6-bffe-f9c5dc4577a2/diskpart-set-id-command-not-working">https://social.technet.microsoft.com/Forums/en-US/6f4842da-b992-43e6-bffe-f9c5dc4577a2/diskpart-set-id-command-not-working</a></p>
 <p>EtFat</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">diskpart </span><br><span class="line">list disk</span><br><span class="line"><span class="built_in">select</span> disk <span class="number">2</span></span><br><span class="line">clean</span><br><span class="line">create partition primary</span><br><span class="line">active</span><br><span class="line"></span><br><span class="line"><span class="comment">#format fs=ntfs label=卷标 quick</span></span><br><span class="line"><span class="comment">#命令format **fs=ntfs** label=”卷标” quick：是将U盘格式化为**NTFS**格式；</span></span><br><span class="line"><span class="comment">#如果需要将U盘格式化为**FAT32**，则命令为：format **fs=FAT32** label=”卷标” quick；</span></span><br><span class="line"><span class="comment">#如果需要将U盘格式化为 **exFAT**，则命令为：format **fs=exFAT** label=”卷标” quick；</span></span><br><span class="line"></span><br><span class="line">format fs=exFAT quick</span><br><span class="line"></span><br><span class="line">assign</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs powershell">diskpart <br>list disk<br><span class="hljs-built_in">select</span> disk <span class="hljs-number">2</span><br>clean<br>create partition primary<br>active<br><br><span class="hljs-comment">#format fs=ntfs label=卷标 quick</span><br><span class="hljs-comment">#命令format **fs=ntfs** label=”卷标” quick：是将U盘格式化为**NTFS**格式；</span><br><span class="hljs-comment">#如果需要将U盘格式化为**FAT32**，则命令为：format **fs=FAT32** label=”卷标” quick；</span><br><span class="hljs-comment">#如果需要将U盘格式化为 **exFAT**，则命令为：format **fs=exFAT** label=”卷标” quick；</span><br><br>format fs=exFAT quick<br><br>assign<br></code></pre></td></tr></table></figure>
 
 
     </div>
@@ -425,6 +432,26 @@
   </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 

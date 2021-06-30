@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"mixley.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"mixley.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="Sql server① 使用 “with INDEX(‘指定索引名称’)” 12345--指定使用PK_indexselect count(1)from table1 a with(nolock)join table2 b with(nolock,INDEX( PK_table2 )) on a.key_col&#x3D;b.key_colwhere b.some_col&#x3D;&amp;#x27;aaa&amp;#x27;">
@@ -257,6 +257,13 @@
               <span class="post-meta-item-text">阅读次数：</span>
               <span class="leancloud-visitors-count"></span>
             </span>
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
 
         </div>
       </header>
@@ -268,13 +275,13 @@
 
       
         <h1 id="Sql-server"><a href="#Sql-server" class="headerlink" title="Sql server"></a>Sql server</h1><p>① 使用 “with INDEX(‘指定索引名称’)”</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--指定使用PK_index</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="number">1</span>)</span><br><span class="line"><span class="keyword">from</span> table1 a <span class="keyword">with</span>(nolock)</span><br><span class="line"><span class="keyword">join</span> table2 b <span class="keyword">with</span>(nolock,INDEX( PK_table2 )) <span class="keyword">on</span> a.key_col<span class="operator">=</span>b.key_col</span><br><span class="line"><span class="keyword">where</span> b.some_col<span class="operator">=</span><span class="string">&#x27;aaa&#x27;</span> </span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-comment">--指定使用PK_index</span><br><span class="hljs-keyword">select</span> <span class="hljs-built_in">count</span>(<span class="hljs-number">1</span>)<br><span class="hljs-keyword">from</span> table1 a <span class="hljs-keyword">with</span>(nolock)<br><span class="hljs-keyword">join</span> table2 b <span class="hljs-keyword">with</span>(nolock,INDEX( PK_table2 )) <span class="hljs-keyword">on</span> a.key_col<span class="hljs-operator">=</span>b.key_col<br><span class="hljs-keyword">where</span> b.some_col<span class="hljs-operator">=</span><span class="hljs-string">&#x27;aaa&#x27;</span> <br></code></pre></td></tr></table></figure>
 
 <p>② 使用”with FORCESEEK” 指定从哪个数据表里查找</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="number">1</span>)</span><br><span class="line"><span class="keyword">from</span> table1 a <span class="keyword">with</span>(nolock)</span><br><span class="line"><span class="keyword">join</span> table2 b <span class="keyword">with</span>(FORCESEEK) <span class="keyword">on</span> a.key_col<span class="operator">=</span>b.key_col</span><br><span class="line"><span class="keyword">where</span> b.some_col<span class="operator">=</span><span class="string">&#x27;aaa&#x27;</span></span><br><span class="line"> <span class="comment">--系统自动选用IX_index</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="number">1</span>)</span><br><span class="line"><span class="keyword">from</span> table1 a <span class="keyword">with</span>(nolock)</span><br><span class="line"><span class="keyword">join</span> table2 b <span class="keyword">with</span>(nolock) <span class="keyword">on</span> a.key_col<span class="operator">=</span>b.key_col</span><br><span class="line"><span class="keyword">where</span> b.some_col<span class="operator">=</span> <span class="string">&#x27;aaa&#x27;</span> </span><br><span class="line"><span class="comment">--系统自动选用PK_index</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="number">1</span>)</span><br><span class="line"><span class="keyword">from</span> table1 a <span class="keyword">with</span>(nolock)</span><br><span class="line"><span class="keyword">join</span> table2 b <span class="keyword">with</span>(nolock) <span class="keyword">on</span> a.key_col<span class="operator">=</span>b.key_col</span><br><span class="line"><span class="keyword">where</span> b.some_col<span class="operator">=</span> <span class="string">&#x27;bbb&#x27;</span> </span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">select</span> <span class="hljs-built_in">count</span>(<span class="hljs-number">1</span>)<br><span class="hljs-keyword">from</span> table1 a <span class="hljs-keyword">with</span>(nolock)<br><span class="hljs-keyword">join</span> table2 b <span class="hljs-keyword">with</span>(FORCESEEK) <span class="hljs-keyword">on</span> a.key_col<span class="hljs-operator">=</span>b.key_col<br><span class="hljs-keyword">where</span> b.some_col<span class="hljs-operator">=</span><span class="hljs-string">&#x27;aaa&#x27;</span><br> <span class="hljs-comment">--系统自动选用IX_index</span><br><span class="hljs-keyword">select</span> <span class="hljs-built_in">count</span>(<span class="hljs-number">1</span>)<br><span class="hljs-keyword">from</span> table1 a <span class="hljs-keyword">with</span>(nolock)<br><span class="hljs-keyword">join</span> table2 b <span class="hljs-keyword">with</span>(nolock) <span class="hljs-keyword">on</span> a.key_col<span class="hljs-operator">=</span>b.key_col<br><span class="hljs-keyword">where</span> b.some_col<span class="hljs-operator">=</span> <span class="hljs-string">&#x27;aaa&#x27;</span> <br><span class="hljs-comment">--系统自动选用PK_index</span><br><span class="hljs-keyword">select</span> <span class="hljs-built_in">count</span>(<span class="hljs-number">1</span>)<br><span class="hljs-keyword">from</span> table1 a <span class="hljs-keyword">with</span>(nolock)<br><span class="hljs-keyword">join</span> table2 b <span class="hljs-keyword">with</span>(nolock) <span class="hljs-keyword">on</span> a.key_col<span class="hljs-operator">=</span>b.key_col<br><span class="hljs-keyword">where</span> b.some_col<span class="hljs-operator">=</span> <span class="hljs-string">&#x27;bbb&#x27;</span> <br></code></pre></td></tr></table></figure>
 
 <h1 id="mysql强制指定索引查询"><a href="#mysql强制指定索引查询" class="headerlink" title="mysql强制指定索引查询"></a>mysql强制指定索引查询</h1><p>使用 关键字 <strong>force</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#########mysql强制使用指定索引查询</span><br><span class="line">SELECT * FROM `yrd_pay_flow` FORCE INDEX(`idx_trxn_date`) </span><br><span class="line">WHERE trxn_date &gt; &#x27;2017-08-12 59:59:59&#x27; AND trxn_date &lt; &#x27;2016-06-23 00:00:00&#x27;; </span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs mysql">#########mysql强制使用指定索引查询<br>SELECT * FROM `yrd_pay_flow` FORCE INDEX(`idx_trxn_date`) <br>WHERE trxn_date &gt; &#x27;2017-08-12 59:59:59&#x27; AND trxn_date &lt; &#x27;2016-06-23 00:00:00&#x27;; <br></code></pre></td></tr></table></figure>
 
 
     </div>
@@ -421,6 +428,26 @@
   </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
