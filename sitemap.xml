@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://mixley.github.io/about/index.html</loc>
+    <loc>https://mixley.github.io/2021/3NPATC1.html</loc>
     
-    <lastmod>2021-07-01</lastmod>
+    <lastmod>2021-07-03</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mixley.github.io/2021/3NPATC1.html</loc>
+    <loc>https://mixley.github.io/about/index.html</loc>
     
-    <lastmod>2021-06-30</lastmod>
+    <lastmod>2021-07-03</lastmod>
     
   </url>
   
@@ -32,7 +32,7 @@
 
   <url>
     <loc>https://mixley.github.io/</loc>
-    <lastmod>2021-07-01</lastmod>
+    <lastmod>2021-07-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -40,28 +40,28 @@
   
   <url>
     <loc>https://mixley.github.io/tags/mixley/</loc>
-    <lastmod>2021-07-01</lastmod>
+    <lastmod>2021-07-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://mixley.github.io/tags/stack/</loc>
-    <lastmod>2021-07-01</lastmod>
+    <lastmod>2021-07-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://mixley.github.io/tags/collect/</loc>
-    <lastmod>2021-07-01</lastmod>
+    <lastmod>2021-07-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://mixley.github.io/tags/java/</loc>
-    <lastmod>2021-07-01</lastmod>
+    <lastmod>2021-07-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -70,7 +70,7 @@
   
   <url>
     <loc>https://mixley.github.io/categories/tool/</loc>
-    <lastmod>2021-07-01</lastmod>
+    <lastmod>2021-07-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
