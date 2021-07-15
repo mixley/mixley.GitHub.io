@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"mixley.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="全栈·架构设计·算法">
+<meta property="og:type" content="website">
+<meta property="og:title" content="mixley">
+<meta property="og:url" content="https://mixley.github.io/page/3/index.html">
+<meta property="og:site_name" content="mixley">
+<meta property="og:description" content="全栈·架构设计·算法">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="mixley">
+<meta property="article:tag" content="mixley,前端,后端,全栈,收集,java,人脸识别,架构设计,spring,aop,spring boot,spring cloud,深度学习,vue,杂七杂八">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://mixley.github.io/page/3/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>mixley</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c36eb18366b436984557126f16796f30";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">mixley</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">求上者得中·求中者得下</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/1PN15P4.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/1PN15P4.html" class="post-title-link" itemprop="url">使用PicGo搭建图床</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-07-07 21:23:03 / 修改时间：22:51:20" itemprop="dateCreated datePublished" datetime="2021-07-07T21:23:03+08:00">2021-07-07</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tool/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2021/1PN15P4.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://mixley.github.io/2021/1PN15P4.html" class="cy_cmt_count" data-xid="2021/1PN15P4.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>我需要能帮助我管理图片的工具，让我的博客能在网络获取图片，我将使用OneDrive作为免费的图床。</p>
+<blockquote>
+<p><strong>PicGo: 一个用于快速上传图片并获取图片 URL 链接的工具</strong></p>
+</blockquote>
+<h2 id="调研"><a href="#调研" class="headerlink" title="调研"></a>调研</h2><p>经过了调研，PicGo实际并不提供存储，而是一个可以与博客工具配合的本地软件，他本身支持的格式能满足大部分，还可以支持插件。很赞的是，我发现了他有个Amazon S3插件，能支持Amazon S3格式，搜索S3就能得到它。</p>
+<p><img src="https://mixley.stdcdn.com/2021/07/4ea848da27772395ab80ea6fb496dc6a.png" alt="PicGo插件中搜索S3插件"></p>
+<p>Amazon S3 是一个产品，也是一个标准，我们使用的主流的存储产品，比如阿里云OSS、华为OSS、minio等都是支持S3标准的。这意味着，当我拥有这个替代我存储的工具，我将来的文件迁移是0成本的。</p>
+<h3 id="为什么使用S3"><a href="#为什么使用S3" class="headerlink" title="为什么使用S3"></a>为什么使用S3</h3><blockquote>
+<p>引用自：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112057573">一文读懂 AWS S3</a></p>
+<p>AWS S3 全名是 Simple Storage Service，简便的存储服务。为什么这么起名啊？它：</p>
+<ol>
+<li>提供了统一的接口 REST/SOAP 来统一访问任何数据</li>
+<li>对 S3 来说，存在里面的数据就是对象名（键），和数据（值）</li>
+<li>不限量，单个文件最高可达 5TB</li>
+<li>高速。每个 bucket 下每秒可达 3500 PUT/COPY/POST/DELETE 或 5500 GET/HEAD 请求</li>
+<li>具备版本，权限控制能力</li>
+<li>具备数据生命周期管理能力</li>
+</ol>
+</blockquote>
+<p>简单的说，S3更多是一个标准，使用S3后我们能无缝切换其它S3协议的服务，而目前大部分存储服务都是支持S3的！</p>
+<h3 id="如何搭建s3存储服务"><a href="#如何搭建s3存储服务" class="headerlink" title="如何搭建s3存储服务"></a>如何搭建s3存储服务</h3><blockquote>
+<p>引用自：<a target="_blank" rel="noopener" href="http://www.minio.org.cn/">minio</a></p>
+<p>构建高性能的云原生数据<br>机器学习，大数据分析，海量存储的基础架构<br>MinIO支持各种应用程序数据工作负载<br>在中国：阿里巴巴、腾讯、百度、中国联通、华为、中国移动等等9000多家企业也都在使用MinIO产品</p>
+</blockquote>
+<p>你可以使用minio搭建高性能的存储服务。</p>
+<h2 id="安装PicGo"><a href="#安装PicGo" class="headerlink" title="安装PicGo"></a>安装PicGo</h2><p><a target="_blank" rel="noopener" href="https://picgo.github.io/PicGo-Doc/zh/">PicGo</a>是开源产品，你可以在GitHub找到它，点击此处下载 <a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo/releases">应用</a>。</p>
+<p>这是一个应用，直接安装完成点击打开就可以运行了，它为Win、Linux、MacOS都提供了程序。</p>
+<h2 id="配置PoweredBy-Cloud"><a href="#配置PoweredBy-Cloud" class="headerlink" title="配置PoweredBy.Cloud"></a>配置PoweredBy.Cloud</h2><p>PicGo是S3插件，需要一个支持S3的服务，当我们不想额外花费时，可以使用免费的方式，比如使用OneDrive提供的存储。PoweredBy.Cloud可以提供我们需要的服务。</p>
+<h3 id="注册PoweredBy-Cloud"><a href="#注册PoweredBy-Cloud" class="headerlink" title="注册PoweredBy.Cloud"></a>注册PoweredBy.Cloud</h3><blockquote>
+<p>引用自：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/376414195">免费把你的 GoogleDrive 和 OneDrive 变成图床</a></p>
+<p>1、打开 PoweredBy.Cloud 并注册。注册非常简单，只需要提供一个可收邮件的邮箱，登录地址会发送到你的邮箱。<br>2、在邮箱里找到登录地址，并点击登录地址登录到 PoweredBy.Cloud。<br>3、在 PoweredBy.Cloud 的控制台里添加一个 site，例如 <a target="_blank" rel="noopener" href="http://demo.stdcdn.com,选择/">http://demo.stdcdn.com，选择</a> GoogleDrive 或者 OneDrive 作为存储空间。PoweredBy.Cloud 会在你的网盘里创建一个 <a target="_blank" rel="noopener" href="http://demo.stdcdn.com/">http://demo.stdcdn.com</a> 的文件夹。</p>
+</blockquote>
+<p>注册site截图如下，Site Name将在后面使用</p>
+<p><img src="https://mixley.stdcdn.com/2021/07/5328e699c03243c4c8abff5f4c172f1d.png" alt="在PoweredBy.Cloud中创建你的站点名称"></p>
+<h3 id="创建Developer密钥-S3"><a href="#创建Developer密钥-S3" class="headerlink" title="创建Developer密钥(S3)"></a>创建Developer密钥(S3)</h3><p>点击Developer选项-&gt;点击 Create Access Key 按钮-&gt;输入任意key名称(仅做备注)</p>
+<p><img src="https://mixley.stdcdn.com/2021/07/0f88e1fa24fef8197afb6ec55d8ca7a2.png" alt="image-20210707222843012"></p>
+<h3 id="配置PicGo的S3"><a href="#配置PicGo的S3" class="headerlink" title="配置PicGo的S3"></a>配置PicGo的S3</h3><p>配置S3的关键参数在创建密钥后，access_key、secret_access_key都已经出现，剩下的还有两个关键值</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//下面是两个关键参数</span></span><br><span class="line"><span class="comment">//固定值,endpoint 自定义节点</span></span><br><span class="line">endpoint_url=<span class="string">&#x27;https://stdcdn.com&#x27;</span></span><br><span class="line"><span class="comment">//桶,bucketName 这就是你的SiteName。</span></span><br><span class="line">bucket=<span class="string">&quot;mixley&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://mixley.stdcdn.com/2021/07/c4243fe369515cc8acd8084d8c18c29e.png" alt="配置S3"></p>
+<h3 id="测试图片上传效果"><a href="#测试图片上传效果" class="headerlink" title="测试图片上传效果"></a>测试图片上传效果</h3><p>我们使用PicGo测试上传效果，最终会在我们的OneDrive中出现。</p>
+<p><img src="https://mixley.stdcdn.com/2021/07/fd3283b3a953c78e88540cf9e3fc20f6.png" alt="配置完成后测试上传的图片位置"></p>
+<h2 id="Typora中使用PicGo"><a href="#Typora中使用PicGo" class="headerlink" title="Typora中使用PicGo"></a>Typora中使用PicGo</h2><p>Typora中，可以在图像中配置上传图片，并且上传可以进行验证图片上传选项操作。</p>
+<p><img src="https://mixley.stdcdn.com/2021/07/1d10d4fb89ddeaaa2771a0f7494a962e.png" alt="image-20210707224953978"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/1TBZ6GQ.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/1TBZ6GQ.html" class="post-title-link" itemprop="url">明史·海瑞传</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-07-05 23:36:37 / 修改时间：23:46:29" itemprop="dateCreated datePublished" datetime="2021-07-05T23:36:37+08:00">2021-07-05</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/cww/" itemprop="url" rel="index"><span itemprop="name">语文老师</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2021/1TBZ6GQ.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://mixley.github.io/2021/1TBZ6GQ.html" class="cy_cmt_count" data-xid="2021/1TBZ6GQ.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="明史·海瑞传"><a href="#明史·海瑞传" class="headerlink" title="明史·海瑞传"></a>明史·海瑞传</h2><h3 id="来源声明"><a href="#来源声明" class="headerlink" title="来源声明"></a>来源声明</h3><p>2022届高三一轮复习之文言文整体阅读题目</p>
+<p>试卷问题网络位置：<a target="_blank" rel="noopener" href="http://cooco.net.cn/question/11748.html">可圈可点(微信收费)</a>、<a target="_blank" rel="noopener" href="https://baijiahao.baidu.com/s?id=1694794526031280061">百度百家号</a>，非原创，联系侵删。</p>
+<h3 id="原文"><a href="#原文" class="headerlink" title="原文"></a>原文</h3><p>海瑞，字汝贤，琼山人。举乡试。署南平教谕，迁淳安知县。布袍脱粟，令老仆艺蔬自给。<strong>总督胡宗宪尝语人曰昨闻海令为母寿市肉二斤矣都御史鄢懋卿行部过供具甚薄抗言邑小不足容车马懋卿恚甚然素闻瑞名为敛威去</strong>久之，陆光祖为文选，擢瑞户部主事。时世宗享国日久，不视朝，深居西苑，专意斋醮。督抚大吏争上符瑞，礼官辄表贺，瑞独上疏。帝得疏，大怒，抵之地，顾左右曰：“趣执之，无使得遁！”宦官黄锦在侧曰：“此人素有痴名。闻其上疏时，自知触忤当死，市一棺，诀妻子，待罪于朝，僮仆亦奔散无留者，是不遁也。”帝默然。少顷复取读之，日再三，为感动太息，留中者数月。</p>
+<p>遂逮瑞下诏狱，究主使者。帝初崩，外庭多未知。提牢主事闻状，以瑞且见用，设酒馔款之。瑞自疑当赴西市，恣饮啖，不顾。主事因附耳语：“宫车适晏驾，先生今即出大用矣。”即大恸，陨绝于地。既释，复故官。帝屡欲召用瑞，执政阴沮之，乃以为南京右都御史。<strong>诸司素偷惰，瑞以身矫之。有御史偶陈戏乐，欲遵太祖法予之杖。</strong>百司惴恐，多患苦之。提学御史房寰恐见纠擿，欲先发，给事中钟宇淳复怂恿，寰再上疏丑诋。瑞亦屡疏乞休，慰留不允。十五年，卒官。瑞无子。卒时，佥都御史王用汲入视，葛帏敝籯，有寒士所不堪者。因泣下，醵金为敛。<strong>小民罢市。丧出江上，白衣冠送者夹岸，酹而哭者百里不绝。</strong>瑞生平为学，以刚为主，因自号刚峰，天下称刚峰先生。故所至力行清丈，颁一条鞭法。意主于利民，而行事不能无偏云。</p>
+<p>（节选自《明史·海瑞传》）</p>
+<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>10．下列对文中画波浪线部分的断句，正确的一项是（ ）</p>
+<p>A．总督胡宗宪尝语人曰/昨闻海令为母寿/市肉二斤矣/都御史鄢懋卿行部过/供具甚薄/抗言邑小不足容车马/懋卿恚甚/然素闻瑞名/为敛威去/</p>
+<p>B．总督胡宗宪尝语人曰/昨闻海令为母寿/市肉二斤矣/都御史鄢懋卿行部过/供具甚薄/抗言邑小不足容车马/懋卿恚甚然/素闻瑞名/为敛威去/</p>
+<p>C．总督胡宗宪尝语人曰/昨闻海令/为母寿市肉二斤矣/都御史鄢懋卿行部过/供具甚薄/抗言邑小不足容车马/懋卿恚甚/然素闻瑞名/为敛威去/</p>
+<p>D．总督胡宗宪尝语人曰/昨闻海令/为母寿市肉二斤矣/都御史鄢懋卿行部过/供具甚薄/抗言邑小不足容车马/懋卿恚甚然/素闻瑞名/为敛威去/</p>
+<p>11．下列对文中加点词语的相关内容的解说，不正确的一项是（ ）</p>
+<p>A．乡试是中国古代科举考试之一，由各地州、府主持，考生来自全国各地。</p>
+<p>B．宦官也称太监，是古代宫中侍奉皇帝及其家属的人员，由阉割后的男子充任。</p>
+<p>C．晏驾是帝王死去的委婉说法，“晏”义为晚，晏驾指帝王车驾未能按时发出。</p>
+<p>D．执政指掌管国家政事，又指执掌国家大权的重臣，还可作为高级官员的通称。</p>
+<p>12．下列对原文有关内容的概括和分析，不正确的一项是（ ）</p>
+<p>A．海瑞生活俭朴，时时关心国事。他担任淳安知县时，布衣粗食，老仆种菜；任职户部时，见皇上深居西苑，不亲理朝政，又独自上奏劝谏。</p>
+<p>B．海瑞劝谏皇上，不惧以死报国。皇上得疏大怒，命令火速捉拿，不要让他逃遁，但得知海瑞待罪于朝不会逃跑后，又细读疏文，并感动叹息。</p>
+<p>C．海瑞严厉执法，受到小人诋毁。他任南京右都御史时，因要求严明，部下怨恨，部属房寰惧遭揭发，又受怂恿，上疏诋毁，致使海瑞被迫退休。</p>
+<p>D．海瑞为人刚直，身后穷困窘迫。他生平以刚为主，虽然一心为民，但行事却有偏颇；他一生清廉自律，家境贫寒，死后竟至靠人凑钱殓葬。</p>
+<p>13．把文中画横线的句子翻译成现代汉语。</p>
+<p>（1）诸司素偷惰，瑞以身矫之。有御史偶陈戏乐，欲遵太祖法予之杖。</p>
+<p>（2）小民罢市。丧出江上，白衣冠送者夹岸，酹而哭者百里不绝。</p>
+<p>14．海瑞在向明世宗上疏前，为什么要事先“市一棺，诀妻子”？请简要说明。</p>
+<h3 id="阅读答案"><a href="#阅读答案" class="headerlink" title="阅读答案"></a>阅读答案</h3><h4 id="【答案】"><a href="#【答案】" class="headerlink" title="【答案】"></a>【答案】</h4><p>10．A</p>
+<p>11．A</p>
+<p>12．C</p>
+<p>13．（1）众多官吏一向偷安怠惰，海瑞以自己的行动加以纠正。有御史偶尔演戏奏乐，海瑞将要遵照太祖法规对他杖责。</p>
+<p>（2）市民停业悼念。灵柩经过江面，民众穿戴白衣帽两岸送行，洒酒祭奠而哭的人百里不绝。</p>
+<p>14．①自知触怒皇帝将死；②抱定必死的决心。</p>
+<h4 id="【分析】"><a href="#【分析】" class="headerlink" title="【分析】"></a>【分析】</h4><p>10．本题考查文言文断句能力。</p>
+<p>解答本题注意各选项间不同之处。“昨闻海令为母寿”，是一个完整的句子，中间不宜断开，排除C项、D项；“然”表转折，与后文关系密切，所以应在它之前断开，排除B项。</p>
+<p>画波浪线部分句意为：总督胡宗宪曾经告诉别人说：“昨天我听说海县令为母亲祝寿，只买了二斤肉。”都御史（官职名）鄢懋卿从淳安县经过，海瑞对他们的招待都很简陋，说淳安县地方太小容不下车马。鄢懋卿非常愤恨。但是一直都听说过海瑞的名声，只好收敛威风离开了。</p>
+<p>故选A。</p>
+<p>11．本题考查文化常识。</p>
+<p>A项，“考生来自全国各地”错误，考生为本地人。故选A。</p>
+<p>12．</p>
+<p>本题考查筛选并整合文中信息，归纳内容要点、概括中心意思的能力。</p>
+<p>C项，“致使海瑞被迫退休”说法错误，原文为“瑞亦屡疏乞休，慰留不允”，皇上劝慰他，不让他辞官，并未“被迫退休”。</p>
+<p>故选C。</p>
+<p>13．本题考查理解并翻译文中的句子的能力。</p>
+<p>（1）中“素”，一向；“矫”，矫正，纠正；“杖”，名词用作动词，杖责。</p>
+<p>（2）中“罢市”，停业；“丧”，灵柩；“白衣冠”，名词用作动词，穿白衣戴白帽；“酹”，洒酒祭奠。</p>
+<p>14．本题考查筛选并整合文章信息。</p>
+<p>由“自知触忤当死”可知他自知触怒皇帝将死，所以买了一口棺材，诀别妻子儿女；</p>
+<p>由“待罪于朝，僮仆亦奔散无留者，是不遁也”可知他抱定了必死的决心，并不打算逃走，而是遣散童仆，等待皇上降罪。</p>
+<h3 id="译文"><a href="#译文" class="headerlink" title="译文"></a>译文</h3><p>海瑞，字汝贤，琼山人。乡试中举。（海瑞）代理南平县教谕，升任淳安县知县，在任上穿布衣，吃粗米，让家中老仆种菜自给。总督胡宗宪曾经告诉别人说：“昨天我听说海县令为母亲祝寿，只买了二斤肉。”都御史（官职名）鄢懋卿从淳安县经过，海瑞对他们的招待都很简陋，说淳安县地方太小容不下车马。鄢懋卿非常愤恨。但是一直都听说过海瑞的名声，只好收敛威风离开了。过了一段时间，陆光祖任吏部文选清吏司郎中，他提拔海瑞为户部主事。当时世宗在位时日已久，不再上朝听政，深居皇宫西苑，专心一意斋戒祀神。总督巡抚大臣争相进献各种祥瑞征兆，礼部官员往往就此上表祝贺，唯独海瑞一人上疏。世宗皇帝看了奏章大怒，把它扔到地下，回头对身边的宦官说：“赶紧把他抓起来，别让他跑了。”宦官黄锦在一旁说：“此人一向有痴名。听说他上疏时，自己知道冒犯皇上难免一死，就买了一口棺材，诀别妻子儿女，在朝廷待罪，家中僮仆也都是打发走了没有留一个，这表明他并不打算逃走。”世宗皇帝沉默不语。</p>
+<p>过了一会儿，皇帝又拿出奏章来看，（就这样）一天之中看了两三次，被感动而叹息，将它留在宫中数月。于是命令逮捕海瑞，关进诏狱，追究主使他上疏的人。世宗刚去世时，外界多不知道。而监狱主事听到消息，估计海瑞将会受到任用，因此办了酒菜款待海瑞。海瑞怀疑以为要赴西市刑场斩首，于是就恣意饮食，没有顾及其它。提牢主事这时贴着海瑞耳语：“皇上适才已经驾崩，您马上就要出狱，受到重用了。”海瑞随即十分哀恸，晕倒在地。海瑞获释后，恢复了原来的官职。神宗数次想召用海瑞，但被执政的大臣暗地里阻止了，只当了南京右都御史。众多官吏一向偷安怠惰，海瑞以自己的行动加以纠正。有御史偶尔演戏奏乐，海瑞将要遵照太祖法规对他杖责。</p>
+<p>官员们惶恐不安，多对此叫苦不迭。提学御史房寰，担心被检举揭露，想先下手发难，给事中钟宇淳又从中怂恿，房寰便二次上疏诬蔑海瑞。海瑞也屡次上疏要求告老回家，皇上劝慰他，不让他辞官。万历十五年，海瑞死于南京任上。海瑞没有儿子。去世之时，佥都御史王用汲前来探视，见他房中只有葛布做的帐子和空箱笼，过着一般寒士都不能忍受的生活。因而感动得流了泪，出面凑钱作为敛棺之用。市民停业悼念。灵柩经过江面，民众穿戴白衣帽两岸送行，洒酒祭奠而哭的人百里不绝。海瑞平生治学，以刚为主，因此自号为刚峰，天下人称他为刚峰先生。所以所到之处均致力于清丈土地，颁行一条鞭法。他的思想主要在于利民，而行事很难避免会出现一些偏差。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/338AHRP.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/338AHRP.html" class="post-title-link" itemprop="url">基本概念</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-07-04 22:53:03 / 修改时间：23:20:24" itemprop="dateCreated datePublished" datetime="2021-07-04T22:53:03+08:00">2021-07-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/%E6%9E%B6%E6%9E%84%E5%B8%88%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">架构师之路</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2021/338AHRP.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://mixley.github.io/2021/338AHRP.html" class="cy_cmt_count" data-xid="2021/338AHRP.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>系统·子系统</p>
+<p>系统：由多个”部件”关联，使用某些”规则”去完成独立组件无法完成的”工作”。</p>
+<p>部件：可以是子系统、模块、组件、框架等个体。</p>
+<p>规则：是部件协作的规则</p>
+<p>工作：指最终完成的事件</p>
+<p>(工作   -&gt;部件1，部件2，规则连接)</p>
+<p>子系统：是系统的组成部分，本身也是一个系统，子系统依然可以包含子系统(套娃)。</p>
+<p>如：售票系统，有产品、票价、订单、登录等相关子系统和模块组成，产品子系统还有更多的架构设计，登录模块可以直接在售票系统中集成。</p>
+<p>模块·组件</p>
+<p>模块：逻辑划分功能，如：登录注册模块。</p>
+<p>组件：物理划分功能，如：鉴权组件(可复用，组件化编程)</p>
+<p>我们可以将一个或多个模块的全部或一部分封装为组件，提供单元复用。</p>
+<p>框架·架构</p>
+<p>如Spring MVC框架，属于MVC架构。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/3AWFMG8.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/3AWFMG8.html" class="post-title-link" itemprop="url">常用工具·第一弹</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-07-03 23:15:10 / 修改时间：23:38:25" itemprop="dateCreated datePublished" datetime="2021-07-03T23:15:10+08:00">2021-07-03</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tool/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tool/common-tools/" itemprop="url" rel="index"><span itemprop="name">常用工具</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2021/3AWFMG8.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://mixley.github.io/2021/3AWFMG8.html" class="cy_cmt_count" data-xid="2021/3AWFMG8.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="系统高效快捷键"><a href="#系统高效快捷键" class="headerlink" title="系统高效快捷键"></a>系统高效快捷键</h2><table>
+<thead>
+<tr>
+<th>Windows 部分高效快捷键</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>打开文件管理器</td>
+<td>Win键 + E</td>
+</tr>
+<tr>
+<td>剪贴板历史功能(还能固定某些选项)</td>
+<td>Win键 + V</td>
+</tr>
+<tr>
+<td>打开高级用户功能（等同右击开始）</td>
+<td>Win键 + X</td>
+</tr>
+<tr>
+<td>显示桌面</td>
+<td>Win键 + D</td>
+</tr>
+<tr>
+<td>Xbox游戏录制工具栏(虽然是游戏工具栏，但是提供录屏、截屏)</td>
+<td>Win键 + G</td>
+</tr>
+<tr>
+<td>截屏(推荐，可延迟截图，可编辑)</td>
+<td>Win键 + Shift + S</td>
+</tr>
+<tr>
+<td>录屏(推荐，录屏后可再Win+G中编辑导出)</td>
+<td>Win键 + Alt + R</td>
+</tr>
+<tr>
+<td>运行（可输入命令行）</td>
+<td>Win键 + R</td>
+</tr>
+<tr>
+<td>Windows搜索(开启搜索增强后，文件搜索更方便)</td>
+<td>Win键 + S</td>
+</tr>
+<tr>
+<td>任务管理器</td>
+<td>Ctrl+Shift+Esc</td>
+</tr>
+</tbody></table>
+<h2 id="装机必备"><a href="#装机必备" class="headerlink" title="装机必备"></a>装机必备</h2><h3 id="uTools-免费效率神器"><a href="#uTools-免费效率神器" class="headerlink" title="uTools  免费效率神器"></a><a target="_blank" rel="noopener" href="https://u.tools/">uTools</a>  免费效率神器</h3><p>对我而言，最常用的是搜索软件和翻译【大雾】，这种类似的效率神器还有<a target="_blank" rel="noopener" href="https://docs.microsoft.com/zh-cn/windows/powertoys/">PowerToys</a>微软家的（功能不多）、<a target="_blank" rel="noopener" href="https://getquicker.net/">Quicker</a>国产指尖工具集（这个可以与其它工具结合，设计感不强需要一段时间上手，但是很强大）、<a target="_blank" rel="noopener" href="https://github.com/Wox-launcher/Wox">Wox</a>开源win下<strong>Spotlight</strong>神器（和uTools功能重合）……当然，嫌弃麻烦的可能使用Win+S直接打开windows搜索功能完成一切，毕竟现在win的搜索功能也不差了，而mac下面有Spotlight了。</p>
+<p>快捷键 「Alt + Space」，功能：搜索软件、使用插件提供的场景功能</p>
+<h3 id="7-zip-开源压缩软件"><a href="#7-zip-开源压缩软件" class="headerlink" title="7-zip  开源压缩软件"></a><a target="_blank" rel="noopener" href="https://sparanoid.com/lab/7z/">7-zip</a>  开源压缩软件</h3><p>这里必须说一句，7z养活了一大票的国产软件，实际上按道理使用开源协议写的程序也应该开源的，但是实际国产某些X压不仅不开源，一开始还夹带私货让7z或者其它压缩软件无法兼容。后续，现在的国产压缩软件不再去搞什么“独家”压缩算法了，现在兼容性都不错。开源与不开源的争论不好说，如果现在都这样做：使用社区开源的产品做收费，不贡献代码去提升社区产品，甚至想把社区产品击垮。这样的行为真是，没法说。。</p>
+<h3 id="QuickLook-开源空格键预览神器-仅Win-Mac本身有空格预览功能"><a href="#QuickLook-开源空格键预览神器-仅Win-Mac本身有空格预览功能" class="headerlink" title="QuickLook  开源空格键预览神器(仅Win,Mac本身有空格预览功能)"></a><a target="_blank" rel="noopener" href="https://pooi.moe/QuickLook/">QuickLook </a> 开源空格键预览神器(仅Win,Mac本身有空格预览功能)</h3><p>空格键可以预览声音、视频、macdown、doc、excel等等，无需下载安装对应的软件，只需要在对应文件上按下空格。</p>
+<p>office文档需要插件，<a target="_blank" rel="noopener" href="https://github.com/QL-Win/QuickLook/wiki/Available-Plugins%EF%BC%8C%E4%B8%8B%E8%BD%BD%E5%90%8E%E7%A9%BA%E6%A0%BC%E9%94%AE%E5%AE%89%E8%A3%85">https://github.com/QL-Win/QuickLook/wiki/Available-Plugins，下载后空格键安装</a></p>
+<h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><h3 id="VsCode-微软开源编辑器-VSCodium前者的开源编译版"><a href="#VsCode-微软开源编辑器-VSCodium前者的开源编译版" class="headerlink" title="VsCode 微软开源编辑器/VSCodium前者的开源编译版"></a><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VsCode </a>微软开源编辑器/<a target="_blank" rel="noopener" href="https://vscodium.com/">VSCodium</a>前者的开源编译版</h3><p>大名鼎鼎的VsCode，记事本超级替代工具，编码人员神器，超多插件。介意微软遥测等功能的，可以使用开源编译版本VSCodium，VSCodium已经是能找到的最”干净”的vscode了 。</p>
+<p>VsCode缺陷：正则替换大文件会卡顿</p>
+<h3 id="Typora-MacDown编辑神器"><a href="#Typora-MacDown编辑神器" class="headerlink" title="Typora  MacDown编辑神器"></a><a target="_blank" rel="noopener" href="https://typora.io/">Typora</a>  MacDown编辑神器</h3><p>已经是bate版N多年的”免费”使用的MacDown编辑器，所见即所得。缺陷是非常长的文档编写时会卡顿，但是这个缺陷我从未碰到，因为没有写很长的文章，长到6k字以上的。</p>
+<h2 id="办公神器"><a href="#办公神器" class="headerlink" title="办公神器"></a>办公神器</h2><h3 id="scrcpy-开源投屏神器-QtScrcpy-基于前者二开的开源投屏神器-荐！"><a href="#scrcpy-开源投屏神器-QtScrcpy-基于前者二开的开源投屏神器-荐！" class="headerlink" title="scrcpy 开源投屏神器/QtScrcpy 基于前者二开的开源投屏神器(荐！)"></a><a target="_blank" rel="noopener" href="https://github.com/Genymobile/scrcpy">scrcpy</a> 开源投屏神器/<a target="_blank" rel="noopener" href="https://github.com/barry-ran/QtScrcpy">QtScrcpy</a> 基于前者二开的开源投屏神器(荐！)</h3><p>USB(或通过TCP/IP)连接Android设备，并进行显示和控制，不需要root权限，不需手机安装apk。电脑上可以直接点击操作手机哦！</p>
+<table>
+<thead>
+<tr>
+<th>关键点</th>
+<th>scrcpy</th>
+<th>QtScrcpy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>界面</td>
+<td>sdl</td>
+<td>qt</td>
+</tr>
+<tr>
+<td>视频解码</td>
+<td>ffmpeg</td>
+<td>ffmpeg</td>
+</tr>
+<tr>
+<td>视频渲染</td>
+<td>sdl</td>
+<td>opengl</td>
+</tr>
+<tr>
+<td>跨平台基础设施</td>
+<td>自己封装</td>
+<td>Qt提供</td>
+</tr>
+<tr>
+<td>编程语言</td>
+<td>C</td>
+<td>C++</td>
+</tr>
+<tr>
+<td>编程方式</td>
+<td>同步</td>
+<td>异步</td>
+</tr>
+<tr>
+<td>按键映射</td>
+<td>不支持自定义</td>
+<td>支持自定义按键映射</td>
+</tr>
+<tr>
+<td>编译方式</td>
+<td>meson+gradle</td>
+<td>Qt Creator</td>
+</tr>
+</tbody></table>
+<h2 id="程序员必备"><a href="#程序员必备" class="headerlink" title="程序员必备"></a>程序员必备</h2><h3 id="GitHub-Proxy-GitHub下载加速-在线"><a href="#GitHub-Proxy-GitHub下载加速-在线" class="headerlink" title="GitHub Proxy  GitHub下载加速(在线)"></a><a target="_blank" rel="noopener" href="https://ghproxy.com/">GitHub Proxy</a>  GitHub下载加速(在线)</h3><p>良心加速、速度稳定、快，可以去作者那里点点赞。</p>
+<h3 id="dev-sidecar-开发者边车-开源开发者便利工具"><a href="#dev-sidecar-开发者边车-开源开发者便利工具" class="headerlink" title="dev-sidecar 开发者边车  开源开发者便利工具"></a><a target="_blank" rel="noopener" href="https://github.com/docmirror/dev-sidecar">dev-sidecar</a> 开发者边车  开源开发者便利工具</h3><p>这个车是个便车，实际上也包含了GitHub访问加速、下载加速等功能，梯子的话你可以慢慢从代码中周旋一下，大致步骤：<br>1、找到注释<br>2、URL解码注释内容<br>3、Base64解码2中内容<br>4、打开解码后网址<br>5、找到网址中的二维码并扫码界面二维码中的文字</p>
+<h3 id="glogg-大日志查看-klogg-大日志查看forked-from-glogg"><a href="#glogg-大日志查看-klogg-大日志查看forked-from-glogg" class="headerlink" title="glogg 大日志查看 / klogg 大日志查看forked from glogg"></a><a target="_blank" rel="noopener" href="http://glogg.bonnefon.org/download.html">glogg</a> 大日志查看 / <a target="_blank" rel="noopener" href="https://github.com/variar/klogg">klogg</a> 大日志查看forked from glogg</h3><p>klogg有便携版，其余区别没太大。</p>
+<h3 id="LargeFileSplitter-大文件分割-仅win"><a href="#LargeFileSplitter-大文件分割-仅win" class="headerlink" title="LargeFileSplitter 大文件分割(仅win)"></a><a target="_blank" rel="noopener" href="https://github.com/philoushka/LargeFileSplitter">LargeFileSplitter</a> 大文件分割(仅win)</h3><p>11kb，操作简单</p>
+<h2 id="其它程序清单"><a href="#其它程序清单" class="headerlink" title="其它程序清单"></a>其它程序清单</h2><p><a target="_blank" rel="noopener" href="http://www.foobar2000.com.cn/interface/showimg.php?lang=cn&id=73">Foobox</a> 音乐发烧友专用,搜索功能有”点”东西</p>
+<p><a target="_blank" rel="noopener" href="https://www.faststone.org/FSCaptureDownload.htm">FastStoneCapture</a> 滚动窗口截图、屏幕录像一应俱全，神秘代码F12注释 <!--注册名：microsoft 注册码：WYZQU-RCMZR-KETRH-PKZGN--></p>
+<p><a target="_blank" rel="noopener" href="https://zh-cn.emeditor.com/download/">EmEditor</a> 大文本编辑器，神秘代码F12注释<!--DMAZM-WHY52-AX222-ZQJXN-79JXH--></p>
+<p><a target="_blank" rel="noopener" href="https://md.openwrite.cn/">OpenWrite</a> (在线) MD转公众号编辑，另外，极力推荐OpenWrite</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/3NPATC1.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/3NPATC1.html" class="post-title-link" itemprop="url">使用Hexo搭建博客</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-06-30 23:05:15" itemprop="dateCreated datePublished" datetime="2021-06-30T23:05:15+08:00">2021-06-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-07 22:02:03" itemprop="dateModified" datetime="2021-07-07T22:02:03+08:00">2021-07-07</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tool/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2021/3NPATC1.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://mixley.github.io/2021/3NPATC1.html" class="cy_cmt_count" data-xid="2021/3NPATC1.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>我需要的快速、简洁且高效的博客框架-&gt;Hexo</p>
+<blockquote>
+<p>Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。</p>
+</blockquote>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##全局安装hexo</span></span><br><span class="line">npm install hexo<span class="literal">-cli</span> <span class="literal">-g</span></span><br><span class="line"><span class="comment">#初始化hexo目录</span></span><br><span class="line">hexo init &lt;folder&gt;</span><br><span class="line"><span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>安装后目录结构说明：</p>
+<!-- vscode -> file-tree-generator -->
+
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">📦blog</span> <span class="comment">#博客·安装路径</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂scaffolds</span>	<span class="comment">#模板文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜draft.md</span>	<span class="comment">#草稿模板</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜page.md</span>	<span class="comment">#页面模板</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜post.md</span>	<span class="comment">#文章模板</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂source</span>	<span class="comment">#资源文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📂_posts</span>	<span class="comment">#文章路径</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜hello-world.md</span>	<span class="comment">#实际文章</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂themes</span>	<span class="comment">#主题</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜.gitkeep</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📜package.json</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📜_config.landscape.yml</span>	<span class="comment">#_config.[theme].yml 用于编辑主题配置</span></span><br><span class="line"> <span class="string">┗</span> <span class="string">📜_config.yml</span>	<span class="comment">#配置文件 ！重要！！</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="启动命令"><a href="#启动命令" class="headerlink" title="启动命令"></a>启动命令</h2><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#更多详细命令查看官网：https://hexo.io/zh-cn/docs/commands.html</span></span><br><span class="line"><span class="comment">#启动</span></span><br><span class="line">hexo s</span><br><span class="line"><span class="comment">#下面为指定配置文件</span></span><br><span class="line">hexo s -<span class="literal">-config</span> custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
+
+<p>打开浏览器输入<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 出现hexo界面则表示启动成功了</p>
+<h2 id="管理与编写博客"><a href="#管理与编写博客" class="headerlink" title="管理与编写博客"></a>管理与编写博客</h2><h3 id="文档管理结构"><a href="#文档管理结构" class="headerlink" title="文档管理结构"></a>文档管理结构</h3><p>下面是我们常见的一个文档管理方式，不论doc也好，还是md也罢，我们都喜欢通过建立文件夹的方式进行分类然后梳理，下面的我通过建立文档同名的方式(或者图床)表示文档需要的文件。</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">📦macdown</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂工具</span> <span class="comment">#分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂minio</span> <span class="comment">#分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂minio</span> <span class="comment">#对应md文件的附件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜simplicity.gif</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜minio.md</span> <span class="comment">#md文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂博客</span> <span class="comment">#分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂使用Hexo搭建博客</span>  <span class="comment">#对应md文件的附件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜image-20210623193347044.png</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜使用Hexo搭建博客.md</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜关于管理与写博客.md</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜常用工具.md</span> <span class="comment">#文章</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂开发</span> <span class="comment">#分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📂bat</span> <span class="comment">#更多分类与文章</span></span><br></pre></td></tr></table></figure>
+
+<p>上面这个目录结构，我相信不管是写博客还是仅仅做笔记或者整理资料的人，大部分过程应该都是这样的，我习惯将这个结构放在OneDrive中，OneDrive可以通过邀请增加容量，嫌麻烦某宝有售(1.5¥,10G(最大10G,写文章够用),5分钟到)。</p>
+<h3 id="推荐工具"><a href="#推荐工具" class="headerlink" title="推荐工具"></a>推荐工具</h3><p>编辑神器：<a target="_blank" rel="noopener" href="https://typora.io/">Typora</a>  MacDown编辑神器 (万年bate版本，免费使用)</p>
+<p>生产力工具：<a target="_blank" rel="noopener" href="https://u.tools/">uTools</a> -&gt;安装自动化助手 辅助编辑更加方便（免费使用）</p>
+<h2 id="发布配置"><a href="#发布配置" class="headerlink" title="发布配置"></a>发布配置</h2><h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><p>下面的自定义配置为使用git发布博客，首先需安装hexo-deployer-git 插件,其它插件为更方便使用</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">## git上传发布，一键部署时使用</span></span><br><span class="line">npm install hexo<span class="literal">-deployer</span><span class="literal">-git</span> -<span class="literal">-save</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#hexo增强配置，可以不用手动维护 front-matter，文章标题建议使用 20210628 标题.md</span></span><br><span class="line">npm install hexo<span class="literal">-enhancer</span> -<span class="literal">-save</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#处理图片路径转换问题，当开启post_asset_folder时，使用文件路径转换</span></span><br><span class="line">npm hexo<span class="literal">-asset</span><span class="literal">-image</span> -<span class="literal">-save</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="自定义配置文件"><a href="#自定义配置文件" class="headerlink" title="自定义配置文件"></a>自定义配置文件</h3><p>自定义配置文件如下，可在hexo目录下建立<strong>custom.yml</strong>文件，自定义以下内容，不污染原始文件便于后期升级hexo</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#详情看附录中配置文件详细介绍</span></span><br><span class="line"><span class="comment">#Site 网站设置 基础设置</span></span><br><span class="line"><span class="comment">#网站标题</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">mixley</span></span><br><span class="line"><span class="comment">#网站副标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;呜啦啦&#x27;</span></span><br><span class="line"><span class="comment">#网站描述，SEO优化时会扫描</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment">#网站关键字，SEO优化时会扫描，多个逗号分隔</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&#x27;技术栈A,技术栈B&#x27;</span></span><br><span class="line"><span class="comment">#作者</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">mixley</span></span><br><span class="line"><span class="comment">#语言，使用主题时支持的语言列表,主题文件中languages文件夹下查看</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="comment">#时区，默认为电脑时区，中国大陆：Asia/Shanghai</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#URL 网址 基础设置,url如果发布到gitbub，请参考注册github.io建立免费页面</span></span><br><span class="line"><span class="comment">#生成的地址中，会携带这个地址，博客根路径(怎么访问的就怎么填写)</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">&#x27;https://mixley.github.io&#x27;</span></span><br><span class="line"><span class="comment">#文章访问编号 hexo-enhancer增强配置中提供</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:abbrlink.html</span></span><br><span class="line"><span class="comment">#网站关键字，增强配置专用，其余tag会收集keywords中tags自动匹配</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">&#x27;关键字A,关键字B&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#启动 Asset 文件夹(推荐开启，会将同名目录一起打包，否则只打包md，也可以使用第三方图床解决)</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment">#把链接改为与根目录的相对位址</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Home page setting 首页文章设置（可以不设置）</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="comment">#每页数量</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Category &amp; Tag   分类 &amp; 标签 中文标签可能存在编码问题，需转换，格式为 中文: 英文 多个记录直接换行</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="comment">#分类对应值 后期建立文件夹，需要在这里增加英文映射</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line">	<span class="string">嘿嘿:</span> <span class="string">heihei</span></span><br><span class="line">	<span class="string">哈哈:</span> <span class="string">haha</span></span><br><span class="line"><span class="comment">#标签对应值 keywords 关键字中文全部需要进行处理，tags中关键字同样需要处理</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br><span class="line">	<span class="string">技术栈A:</span> <span class="string">jA</span></span><br><span class="line">	<span class="string">技术栈B:</span> <span class="string">jB</span></span><br><span class="line">	</span><br><span class="line"><span class="comment">#Pagination 分页设置（可以不设置）</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#使用主题，可以选择其它主题，这是默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#发布配置，若使用git，需要安装 npm install hexo-deployer-git --save</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line"><span class="comment">#多服务配置</span></span><br><span class="line"> <span class="attr">repository:</span></span><br><span class="line">   <span class="comment">#使用ssh的方式，配置ssh密钥可以免登录发布</span></span><br><span class="line">   <span class="attr">github:</span> <span class="string">git@github.com:mixley/mixley.GitHub.io.git</span></span><br><span class="line">   <span class="attr">gitee:</span> <span class="string">git@gitee.com:mixley/mixley.git</span></span><br><span class="line"> <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Hexo三连命令"><a href="#Hexo三连命令" class="headerlink" title="Hexo三连命令"></a>Hexo三连命令</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#清除</span></span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"><span class="comment">#指定配置文件生成</span></span><br><span class="line">hexo g -<span class="literal">-config</span> custom.yml</span><br><span class="line"></span><br><span class="line"><span class="comment">#发布</span></span><br><span class="line">hexo d -<span class="literal">-config</span> custom.yml</span><br><span class="line"></span><br><span class="line"><span class="comment">#指定配置文件生成并发布，可以使用下面命令</span></span><br><span class="line"><span class="comment">#hexo g -d --config custom.yml</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><h3 id="三连命令操作文件"><a href="#三连命令操作文件" class="headerlink" title="三连命令操作文件"></a>三连命令操作文件</h3><p>手动创建文件push.cmd(任意调整)，针对文章放在OneDrive或其它同步文件夹，不习惯使用hexo目录的，可以使用此cmd进行发布。cmd设置好后，可以放开始菜单快速调用或者使用uTools等效率工具快速呼出 。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">chcp  65001 &gt; nul 2&gt;&amp;1</span><br><span class="line"></span><br><span class="line">@REM 此处设定安装的hexo文件夹路径</span><br><span class="line"><span class="built_in">set</span> dir=E:\work\js\hexo</span><br><span class="line">@REM 此处设定文章目录路径</span><br><span class="line"><span class="built_in">set</span> blog=.</span><br><span class="line"></span><br><span class="line">@REM 备份文件夹路径</span><br><span class="line"><span class="built_in">set</span> backDir=%dir%\back\%DATE%</span><br><span class="line"><span class="built_in">set</span> _postsDir=%dir%\<span class="built_in">source</span>\_posts</span><br><span class="line"><span class="built_in">set</span> aboutDir=%dir%\<span class="built_in">source</span>\about</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> 清理文件</span><br><span class="line">IF EXIST <span class="string">&quot;%backDir%&quot;</span> RD /Q/S <span class="string">&quot;%backDir%&quot;</span> &gt; nul 2&gt;&amp;1</span><br><span class="line">IF NOT EXIST <span class="string">&quot;%backDir%&quot;</span> md <span class="string">&quot;%backDir%&quot;</span> &gt; nul 2&gt;&amp;1</span><br><span class="line"><span class="built_in">echo</span> 备份文件夹（若发现备份异常，请将 关于我.md 中文修改为英文，如 about.md ，系统原因）</span><br><span class="line">IF EXIST <span class="string">&quot;%aboutDir%\index.md&quot;</span> move <span class="string">&quot;%aboutDir%\index.md&quot;</span> <span class="string">&quot;%_postsDir%\关于我.md&quot;</span></span><br><span class="line">move  <span class="string">&quot;%_postsDir%&quot;</span> <span class="string">&quot;%backDir%&quot;</span></span><br><span class="line"><span class="built_in">echo</span> 备份成功，创建文件夹</span><br><span class="line">IF NOT EXIST <span class="string">&quot;%_postsDir%&quot;</span> md <span class="string">&quot;%_postsDir%&quot;</span></span><br><span class="line"><span class="built_in">echo</span> 复制文件夹 </span><br><span class="line">Xcopy <span class="string">&quot;%blog%&quot;</span> <span class="string">&quot;%_postsDir%&quot;</span> /Y/E/C/I &gt; nul 2&gt;&amp;1</span><br><span class="line">move <span class="string">&quot;%_postsDir%\关于我.md&quot;</span> <span class="string">&quot;%aboutDir%\index.md&quot;</span> </span><br><span class="line"></span><br><span class="line">@REM 切换文件夹到hexo路径下执行命令</span><br><span class="line"><span class="built_in">pushd</span> %dir%</span><br><span class="line"><span class="built_in">echo</span> 复制成功，清理中。</span><br><span class="line">call hexo clean &gt; nul 2&gt;&amp;1</span><br><span class="line"><span class="built_in">echo</span> 清理完成，生成发布文章中</span><br><span class="line">call hexo g -d --config custom.yml &gt; nul 2&gt;&amp;1</span><br><span class="line"><span class="built_in">echo</span> 发布文件成功</span><br><span class="line">@REM 切换到当前目录</span><br><span class="line"><span class="built_in">popd</span></span><br><span class="line"><span class="built_in">echo</span> 执行结束</span><br><span class="line"></span><br><span class="line">pause</span><br><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="uTools自动化助手脚本"><a href="#uTools自动化助手脚本" class="headerlink" title="uTools自动化助手脚本"></a>uTools自动化助手脚本</h3><p>uTools，自动化助手脚本，快速生成<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter.html">Front Matter</a> （PS，开启文本无匹配功能，任意位置可以使用此脚本。另，超级面板输入脚本名称，按中键可以呼出执行脚本）</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//自动化助手，Fornt Matter Date Gennerate</span></span><br><span class="line"><span class="comment">//获取当前日期，格式YYYY-MM-DD</span></span><br><span class="line"><span class="keyword">let</span> getNowFormatDay = <span class="function"><span class="keyword">function</span>(<span class="params">nowDate</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> char = <span class="string">&quot;-&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span>(nowDate == <span class="literal">null</span>)&#123;</span><br><span class="line">        nowDate = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> day = nowDate.getDate();</span><br><span class="line">    <span class="keyword">let</span> month = nowDate.getMonth() + <span class="number">1</span>;<span class="comment">//注意月份需要+1</span></span><br><span class="line">    <span class="keyword">let</span> year = nowDate.getFullYear();</span><br><span class="line">    <span class="comment">//补全0，并拼接</span></span><br><span class="line">    <span class="keyword">return</span> year + char + completeDate(month) + char +completeDate(day);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//获取当前时间，格式YYYY-MM-DD HH:mm:ss</span></span><br><span class="line"><span class="keyword">let</span> getNowFormatTime = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> nowDate = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">let</span> colon = <span class="string">&quot;:&quot;</span>;</span><br><span class="line">    <span class="keyword">let</span> h = nowDate.getHours();</span><br><span class="line">    <span class="keyword">let</span> m = nowDate.getMinutes();</span><br><span class="line">    <span class="keyword">let</span> s = nowDate.getSeconds();</span><br><span class="line">    <span class="comment">//补全0，并拼接</span></span><br><span class="line">    <span class="keyword">return</span> getNowFormatDay(nowDate) + <span class="string">&quot; &quot;</span> + completeDate(h) + colon + completeDate(m) + colon + completeDate(s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//补全0</span></span><br><span class="line"><span class="keyword">let</span> completeDate =<span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> value &lt; <span class="number">10</span> ? <span class="string">&quot;0&quot;</span>+value:value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> date = getNowFormatTime();</span><br><span class="line"><span class="comment">//下面两行自动移动到MD头部增加日期，b</span></span><br><span class="line">utools.simulateKeyboardTap(<span class="string">&#x27;home&#x27;</span>, utools.isMacOs() ? <span class="string">&#x27;command&#x27;</span> : <span class="string">&#x27;ctrl&#x27;</span>)</span><br><span class="line">date=<span class="string">&quot;---\ndate: &quot;</span>+date+<span class="string">&quot;\n---\n &quot;</span></span><br><span class="line"></span><br><span class="line">utools.copyText(date)</span><br><span class="line">utools.simulateKeyboardTap(<span class="string">&#x27;v&#x27;</span>, utools.isMacOs() ? <span class="string">&#x27;command&#x27;</span> : <span class="string">&#x27;ctrl&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="主题推荐：next"><a href="#主题推荐：next" class="headerlink" title="主题推荐：next"></a>主题推荐：<a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/getting-started.html">next</a></h3><h3 id="配置文件详解"><a href="#配置文件详解" class="headerlink" title="配置文件详解"></a>配置文件详解</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#Hexo Configuration</span></span><br><span class="line"><span class="comment">##Docs: https://hexo.io/docs/configuration.html</span></span><br><span class="line"><span class="comment">##Source: https://github.com/hexojs/hexo/</span></span><br><span class="line"><span class="comment">##中文文档：https://hexo.io/zh-cn/docs/configuration</span></span><br><span class="line"><span class="comment">#Site 网站设置 基础设置</span></span><br><span class="line"><span class="comment">#网站标题</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hexo</span></span><br><span class="line"><span class="comment">#网站副标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment">#网站描述，SEO优化时会扫描</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;全栈的自我修养……&#x27;</span></span><br><span class="line"><span class="comment">#网站关键字，SEO优化时会扫描，多个逗号分隔</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&#x27;java,C&#x27;</span></span><br><span class="line"><span class="comment">#作者</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">John</span></span><br><span class="line"><span class="comment">#语言，使用主题时支持的语言列表,主题文件中languages文件夹下查看</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="comment">#时区，默认为电脑时区，中国大陆：Asia/Shanghai</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#URL 网址 基础设置,url如果发布到gitbub，请参考注册github.io建立免费</span></span><br><span class="line"><span class="comment">##Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="comment">#生成的地址中，会携带这个地址，博客根路径(怎么访问的就怎么填写)</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">&#x27;http://example.com&#x27;</span></span><br><span class="line"><span class="comment">#文章路径，title为中文在github发布无法显示</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span>	<span class="string">&#x27;&#x27;</span>					<span class="comment">#永久链接中各部分的默认值,如下</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">#permalink_defaults: </span></span><br><span class="line"><span class="comment">#year: 2021</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="comment">#是否在永久链接中保留尾部的 index.html，设置为 false 时去除</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment">#是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#Directory 目录</span></span><br><span class="line"><span class="comment">#资源文件夹，这个文件夹用来存放内容</span></span><br><span class="line"><span class="attr">source_dir:</span> <span class="string">source</span></span><br><span class="line"><span class="comment">#公共文件夹，这个文件夹用于存放生成的站点文件</span></span><br><span class="line"><span class="attr">public_dir:</span> <span class="string">public</span></span><br><span class="line"><span class="comment">#标签文件夹</span></span><br><span class="line"><span class="attr">tag_dir:</span> <span class="string">tags</span></span><br><span class="line"><span class="comment">#归档文件夹</span></span><br><span class="line"><span class="attr">archive_dir:</span> <span class="string">archives</span></span><br><span class="line"><span class="comment">#分类文件夹</span></span><br><span class="line"><span class="attr">category_dir:</span> <span class="string">categories</span></span><br><span class="line"><span class="comment">#Include code 文件夹，source_dir 下的子目录</span></span><br><span class="line"><span class="attr">code_dir:</span> <span class="string">downloads/code</span></span><br><span class="line"><span class="comment">#国际化（i18n）文件夹</span></span><br><span class="line"><span class="attr">i18n_dir:</span> <span class="string">:lang</span></span><br><span class="line"><span class="comment">#跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 public 目录中。您可使用 glob 表达式来匹配路径。如下</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">##skip_render: &quot;mypage/**/*&quot;</span></span><br><span class="line"><span class="comment">#将会直接将 `source/mypage/index.html` 和 `source/mypage/code.js` 不做改动地输出到 &#x27;public&#x27; 目录</span></span><br><span class="line"><span class="comment">#你也可以用这种方法来跳过对指定文章文件的渲染</span></span><br><span class="line"><span class="comment">#skip_render: &quot;_posts/test-post.md&quot;</span></span><br><span class="line"><span class="comment">#这将会忽略对 &#x27;test-post.md&#x27; 的渲染</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">skip_render:</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#Writing 文章 基本不用动，只有那个post_asset_folder用来设置图片路径</span></span><br><span class="line"><span class="comment">#新文章的文件名称</span></span><br><span class="line"><span class="attr">new_post_name:</span> <span class="string">:title.md</span></span><br><span class="line"><span class="comment">#预设布局，默认布局是文章</span></span><br><span class="line"><span class="attr">default_layout:</span> <span class="string">post</span></span><br><span class="line"><span class="comment">#把标题转换为 title case</span></span><br><span class="line"><span class="attr">titlecase:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">external_link:</span></span><br><span class="line">  <span class="comment">#在新标签中打开链接</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment">#对整个网站（site）生效或仅对文章（post）生效</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span></span><br><span class="line">  <span class="comment">#需要排除的域名。主域名和子域名如 www 需分别配置[]</span></span><br><span class="line">  <span class="attr">exclude:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment">#把文件名称转换为 (1) 小写或 (2) 大写</span></span><br><span class="line"><span class="attr">filename_case:</span> <span class="number">0</span></span><br><span class="line"><span class="comment">#显示草稿</span></span><br><span class="line"><span class="attr">render_drafts:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment">#启动 Asset 文件夹(推荐开启)</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment">#把链接改为与根目录的相对位址</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment">#显示未来的文章  ??</span></span><br><span class="line"><span class="attr">future:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment">#代码块的设置, 请参考 Highlight.js 进行设置</span></span><br><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">auto_detect:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">hljs:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment">#代码块的设置, 请参考 PrismJS 进行设置</span></span><br><span class="line"><span class="attr">prismjs:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">preprocess:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Home page setting 首页文章设置</span></span><br><span class="line"><span class="comment">#path: Root path for your blogs index page. (default = &#x27;&#x27;)</span></span><br><span class="line"><span class="comment">#per_page: Posts displayed per page. (0 = disable pagination)</span></span><br><span class="line"><span class="comment">#order_by: Posts order. (Order by date descending by default)</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Category &amp; Tag   分类 &amp; 标签 !!需要映射为URLEncode</span></span><br><span class="line"><span class="comment">#uncategorized默认从属分类,%E6%9C%AA%E5%88%86%E7%B1%BB是未分类的URLEncode值</span></span><br><span class="line"><span class="comment">#default_category: uncategorized</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="comment">#分类对应值</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line"><span class="comment">#标签对应值</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Metadata elements</span></span><br><span class="line"><span class="comment">##https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta</span></span><br><span class="line"><span class="comment">#Meta generator 标签。 值为 false 时 Hexo 不会在头部插入该标签</span></span><br><span class="line"><span class="attr">meta_generator:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Date / Time format</span></span><br><span class="line"><span class="comment">##Hexo uses Moment.js to parse and display date</span></span><br><span class="line"><span class="comment">##You can customize the date format as defined in</span></span><br><span class="line"><span class="comment">##http://momentjs.com/docs/#/displaying/format/</span></span><br><span class="line"><span class="attr">date_format:</span> <span class="string">YYYY-MM-DD</span></span><br><span class="line"><span class="attr">time_format:</span> <span class="string">HH:mm:ss</span></span><br><span class="line"><span class="comment">##updated_option supports &#x27;mtime&#x27;, &#x27;date&#x27;, &#x27;empty&#x27;</span></span><br><span class="line"><span class="attr">updated_option:</span> <span class="string">&#x27;mtime&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Pagination</span></span><br><span class="line"><span class="comment">##Set per_page to 0 to disable pagination</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Include / Exclude file(s)</span></span><br><span class="line"><span class="comment">##include:/exclude: options only apply to the &#x27;source/&#x27; folder</span></span><br><span class="line"><span class="comment">#Hexo 默认会忽略隐藏文件和文件夹（包括名称以下划线和 . 开头的文件和文件夹，Hexo 的 _posts 和 _data 等目录除外）。通过设置此字段将使 Hexo 处理他们并将它们复制到 source 目录下。</span></span><br><span class="line"><span class="attr">include:</span></span><br><span class="line"><span class="comment">#Hexo 会忽略这些文件和目录，项目文件忽略配置</span></span><br><span class="line"><span class="attr">exclude:</span></span><br><span class="line"><span class="comment">#Ignore files/folders,忽略包括themes/下文件与文件夹(所有上传忽略配置)</span></span><br><span class="line"><span class="attr">ignore:</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Extensions</span></span><br><span class="line"><span class="comment">##Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">##Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment">#使用主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Deployment</span></span><br><span class="line"><span class="comment">##Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="comment">#发布配置，若使用git，需要安装 npm install hexo-deployer-git --save</span></span><br><span class="line"><span class="comment">#安装</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">#deploy:</span></span><br><span class="line"><span class="comment"># type: git</span></span><br><span class="line"><span class="comment">#单服务配置</span></span><br><span class="line"><span class="comment"># repo: &lt;repository url&gt; #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io</span></span><br><span class="line"><span class="comment">#多服务配置</span></span><br><span class="line"><span class="comment"># repository:</span></span><br><span class="line"><span class="comment">#   github: &lt;github url&gt;</span></span><br><span class="line"><span class="comment">#   gitee: &lt;gitee url&gt;</span></span><br><span class="line"><span class="comment"># branch: [branch]</span></span><br><span class="line"><span class="comment"># message: [message]</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">mixley</p>
+  <div class="site-description" itemprop="description">全栈·架构设计·算法</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">mixley</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyvxnSprz"></script>
+
+
+</body>
+</html>
