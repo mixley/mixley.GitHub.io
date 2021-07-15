@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mixley.github.io/2021/254DB2D.html</loc>
+    
+    <lastmod>2021-07-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mixley.github.io/2021/1XRQBRM.html</loc>
     
     <lastmod>2021-07-15</lastmod>
@@ -65,30 +72,9 @@
   </url>
   
   <url>
-    <loc>https://mixley.github.io/2021/3TN7K1Q.html</loc>
-    
-    <lastmod>2021-07-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mixley.github.io/2021/254DB2D.html</loc>
-    
-    <lastmod>2021-07-14</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://mixley.github.io/2021/2YMFT5G.html</loc>
     
     <lastmod>2021-07-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mixley.github.io/2021/3JX2FPG.html</loc>
-    
-    <lastmod>2021-07-13</lastmod>
     
   </url>
   
@@ -101,13 +87,6 @@
   
   <url>
     <loc>https://mixley.github.io/2021/16AJ8BB.html</loc>
-    
-    <lastmod>2021-07-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mixley.github.io/2021/3PWHJ43.html</loc>
     
     <lastmod>2021-07-12</lastmod>
     
@@ -286,13 +265,6 @@
   </url>
   
   <url>
-    <loc>https://mixley.github.io/categories/essays/</loc>
-    <lastmod>2021-07-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://mixley.github.io/categories/operations/</loc>
     <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
@@ -321,13 +293,6 @@
   </url>
   
   <url>
-    <loc>https://mixley.github.io/categories/tool/common-tools/</loc>
-    <lastmod>2021-07-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://mixley.github.io/categories/operations/linux/</loc>
     <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
@@ -343,6 +308,13 @@
   
   <url>
     <loc>https://mixley.github.io/categories/operations/win/</loc>
+    <lastmod>2021-07-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mixley.github.io/categories/tool/common-tools/</loc>
     <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
