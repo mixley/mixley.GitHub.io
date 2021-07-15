@@ -214,14 +214,14 @@
   </url>
   
   <url>
-    <loc>https://mixley.github.io/tags/spring/</loc>
+    <loc>https://mixley.github.io/tags/back-end/</loc>
     <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://mixley.github.io/tags/back-end/</loc>
+    <loc>https://mixley.github.io/tags/spring/</loc>
     <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -235,6 +235,13 @@
   </url>
   
 
+  
+  <url>
+    <loc>https://mixley.github.io/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2021-07-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
   <url>
     <loc>https://mixley.github.io/categories/tool/</loc>
@@ -251,14 +258,14 @@
   </url>
   
   <url>
-    <loc>https://mixley.github.io/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <loc>https://mixley.github.io/categories/operations/</loc>
     <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://mixley.github.io/categories/operations/</loc>
+    <loc>https://mixley.github.io/categories/tool/common-tools/</loc>
     <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -280,13 +287,6 @@
   
   <url>
     <loc>https://mixley.github.io/categories/learn/cww/</loc>
-    <lastmod>2021-07-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://mixley.github.io/categories/tool/common-tools/</loc>
     <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
