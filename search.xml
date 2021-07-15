@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>vscodium使用vscode扩展</title>
-    <url>/2021/16VX7F1.html</url>
-    <content><![CDATA[<p> 发现vscodium插件较少时，可以修改插件下载位置，使用微软的插件库 </p>
-<p><a href="https://zhuanlan.zhihu.com/p/276000982">https://zhuanlan.zhihu.com/p/276000982</a></p>
-<p>vscodium默认使用的扩展源是<code>open-vsx.org</code>，部分扩展没有加入此扩展源，需要使用微软官方扩展源才能直接安装和自动更新。</p>
-<p>修改<code>安装根目录/resources/app/product.json</code>文件中的<code>extensionsGallery</code>键对应的值如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&quot;extensionsGallery&quot;: &#123;</span><br><span class="line">    &quot;serviceUrl&quot;: &quot;https://marketplace.visualstudio.com/_apis/public/gallery&quot;,</span><br><span class="line">    &quot;itemUrl&quot;: &quot;https://marketplace.visualstudio.com/items&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>重启vscodium。扩展里就可以搜索安装微软官方扩展源里的扩展。</p>
-<p><img src="https://mixley.stdcdn.com/2021/07/f73850c3c4002c0fab6a47804978b736.png" alt="image-20210713200101052"></p>
-]]></content>
-      <categories>
-        <category>小技巧</category>
-      </categories>
-      <tags>
-        <tag>mixley</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>学习交流(持续更新)</title>
     <url>/2021/11VPC9D.html</url>
     <content><![CDATA[<h2 id="软件下载专区"><a href="#软件下载专区" class="headerlink" title="软件下载专区"></a>软件下载专区</h2><p><a href="https://mixley.stdcdn.com/tools.html">常用工具/精品软件</a></p>
@@ -113,16 +94,6 @@
       <tags>
         <tag>mixley</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>卸载edge</title>
-    <url>/2021/254DB2D.html</url>
-    <content><![CDATA[<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\setup.exe -<span class="literal">-uninstall</span> -<span class="literal">-system</span><span class="literal">-level</span> -<span class="literal">-verbose</span><span class="literal">-logging</span> -<span class="literal">-force</span><span class="literal">-uninstall</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>小技巧</category>
-      </categories>
   </entry>
   <entry>
     <title>使用Hexo搭建博客</title>
@@ -287,31 +258,33 @@
       </tags>
   </entry>
   <entry>
-    <title>基本概念</title>
-    <url>/2021/338AHRP.html</url>
-    <content><![CDATA[<p>系统·子系统</p>
-<p>系统：由多个”部件”关联，使用某些”规则”去完成独立组件无法完成的”工作”。</p>
-<p>部件：可以是子系统、模块、组件、框架等个体。</p>
-<p>规则：是部件协作的规则</p>
-<p>工作：指最终完成的事件</p>
-<p>(工作   -&gt;部件1，部件2，规则连接)</p>
-<p>子系统：是系统的组成部分，本身也是一个系统，子系统依然可以包含子系统(套娃)。</p>
-<p>如：售票系统，有产品、票价、订单、登录等相关子系统和模块组成，产品子系统还有更多的架构设计，登录模块可以直接在售票系统中集成。</p>
-<p>模块·组件</p>
-<p>模块：逻辑划分功能，如：登录注册模块。</p>
-<p>组件：物理划分功能，如：鉴权组件(可复用，组件化编程)</p>
-<p>我们可以将一个或多个模块的全部或一部分封装为组件，提供单元复用。</p>
-<p>框架·架构</p>
-<p>如Spring MVC框架，属于MVC架构。</p>
+    <title>vscodium使用vscode扩展</title>
+    <url>/2021/16VX7F1.html</url>
+    <content><![CDATA[<p> 发现vscodium插件较少时，可以修改插件下载位置，使用微软的插件库 </p>
+<p><a href="https://zhuanlan.zhihu.com/p/276000982">https://zhuanlan.zhihu.com/p/276000982</a></p>
+<p>vscodium默认使用的扩展源是<code>open-vsx.org</code>，部分扩展没有加入此扩展源，需要使用微软官方扩展源才能直接安装和自动更新。</p>
+<p>修改<code>安装根目录/resources/app/product.json</code>文件中的<code>extensionsGallery</code>键对应的值如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&quot;extensionsGallery&quot;: &#123;</span><br><span class="line">    &quot;serviceUrl&quot;: &quot;https://marketplace.visualstudio.com/_apis/public/gallery&quot;,</span><br><span class="line">    &quot;itemUrl&quot;: &quot;https://marketplace.visualstudio.com/items&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>重启vscodium。扩展里就可以搜索安装微软官方扩展源里的扩展。</p>
+<p><img src="https://mixley.stdcdn.com/2021/07/f73850c3c4002c0fab6a47804978b736.png" alt="image-20210713200101052"></p>
 ]]></content>
       <categories>
-        <category>学习</category>
-        <category>架构师之路</category>
+        <category>小技巧</category>
       </categories>
       <tags>
-        <tag>spring</tag>
-        <tag>架构设计</tag>
+        <tag>mixley</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>卸载edge</title>
+    <url>/2021/254DB2D.html</url>
+    <content><![CDATA[<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\setup.exe -<span class="literal">-uninstall</span> -<span class="literal">-system</span><span class="literal">-level</span> -<span class="literal">-verbose</span><span class="literal">-logging</span> -<span class="literal">-force</span><span class="literal">-uninstall</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>小技巧</category>
+      </categories>
   </entry>
   <entry>
     <title>图片的由来与存储</title>
@@ -380,6 +353,33 @@
       </categories>
       <tags>
         <tag>mixley</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基本概念</title>
+    <url>/2021/338AHRP.html</url>
+    <content><![CDATA[<p>系统·子系统</p>
+<p>系统：由多个”部件”关联，使用某些”规则”去完成独立组件无法完成的”工作”。</p>
+<p>部件：可以是子系统、模块、组件、框架等个体。</p>
+<p>规则：是部件协作的规则</p>
+<p>工作：指最终完成的事件</p>
+<p>(工作   -&gt;部件1，部件2，规则连接)</p>
+<p>子系统：是系统的组成部分，本身也是一个系统，子系统依然可以包含子系统(套娃)。</p>
+<p>如：售票系统，有产品、票价、订单、登录等相关子系统和模块组成，产品子系统还有更多的架构设计，登录模块可以直接在售票系统中集成。</p>
+<p>模块·组件</p>
+<p>模块：逻辑划分功能，如：登录注册模块。</p>
+<p>组件：物理划分功能，如：鉴权组件(可复用，组件化编程)</p>
+<p>我们可以将一个或多个模块的全部或一部分封装为组件，提供单元复用。</p>
+<p>框架·架构</p>
+<p>如Spring MVC框架，属于MVC架构。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>架构师之路</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+        <tag>架构设计</tag>
       </tags>
   </entry>
   <entry>
@@ -553,14 +553,12 @@
 <h3 id="dev-sidecar-开发者边车-开源开发者便利工具"><a href="#dev-sidecar-开发者边车-开源开发者便利工具" class="headerlink" title="dev-sidecar 开发者边车  开源开发者便利工具"></a><a href="https://github.com/docmirror/dev-sidecar">dev-sidecar</a> 开发者边车  开源开发者便利工具</h3><p>这个车是个便车，实际上也包含了GitHub访问加速、下载加速等功能，梯子的话你可以慢慢从代码中周旋一下，大致步骤：<br>1、找到注释<br>2、URL解码注释内容<br>3、Base64解码2中内容<br>4、打开解码后网址<br>5、找到网址中的二维码并扫码界面二维码中的文字</p>
 <h3 id="glogg-大日志查看-klogg-大日志查看forked-from-glogg"><a href="#glogg-大日志查看-klogg-大日志查看forked-from-glogg" class="headerlink" title="glogg 大日志查看 / klogg 大日志查看forked from glogg"></a><a href="http://glogg.bonnefon.org/download.html">glogg</a> 大日志查看 / <a href="https://github.com/variar/klogg">klogg</a> 大日志查看forked from glogg</h3><p>klogg有便携版，其余区别没太大。</p>
 <h3 id="LargeFileSplitter-大文件分割-仅win"><a href="#LargeFileSplitter-大文件分割-仅win" class="headerlink" title="LargeFileSplitter 大文件分割(仅win)"></a><a href="https://github.com/philoushka/LargeFileSplitter">LargeFileSplitter</a> 大文件分割(仅win)</h3><p>11kb，操作简单</p>
-<h2 id="设计师必备"><a href="#设计师必备" class="headerlink" title="设计师必备"></a>设计师必备</h2><p><a href="https://www.adobe.com/cn/">adobe全家桶</a> 设计师绕不开的神话，神秘代码F12</p>
- <!--
+<h2 id="设计师必备"><a href="#设计师必备" class="headerlink" title="设计师必备"></a>设计师必备</h2><p><a href="https://www.adobe.com/cn/">adobe全家桶</a> 设计师绕不开的神话，神秘代码F12 <!--
 2021 SP版和大师版实时更新。
 天翼：[*O*网页链接](http://t.cn/A6f0W16M) 访问码：0aaw
 百度：[*O*网页链接](http://t.cn/A6fMrOmc) 提取码:gvm5
 默认密码为[@vposy](https://weibo.com/n/vposy?from=feed&loc=at)
--->
-
+--></p>
 <h2 id="其它程序清单"><a href="#其它程序清单" class="headerlink" title="其它程序清单"></a>其它程序清单</h2><p><a href="http://www.foobar2000.com.cn/interface/showimg.php?lang=cn&id=73">Foobox</a> 音乐发烧友专用,搜索功能有”点”东西</p>
 <p><a href="https://www.faststone.org/FSCaptureDownload.htm">FastStoneCapture</a> 滚动窗口截图、屏幕录像一应俱全，神秘代码F12注释 <!--注册名：microsoft 注册码：WYZQU-RCMZR-KETRH-PKZGN--></p>
 <p><a href="https://zh-cn.emeditor.com/download/">EmEditor</a> 大文本编辑器，神秘代码F12注释<!--DMAZM-WHY52-AX222-ZQJXN-79JXH--></p>
@@ -835,15 +833,13 @@
       </tags>
   </entry>
   <entry>
-    <title>安装redis</title>
-    <url>/2021/2ARWSSS.html</url>
-    <content><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">redis</span></span><br><span class="line">yum install redis -y</span><br></pre></td></tr></table></figure>
+    <title>安装mysql</title>
+    <url>/2021/1XRQBRM.html</url>
+    <content><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">查看是否安装</span></span><br><span class="line">yum list installed | grep mysql</span><br><span class="line"><span class="meta">#</span><span class="bash">卸载</span></span><br><span class="line">yum -y remove mysql-libs.x86_64</span><br><span class="line"><span class="meta">#</span><span class="bash">查看版本库信息</span> </span><br><span class="line">yum list | grep mysql</span><br><span class="line"><span class="meta">#</span><span class="bash"> 或 查看版本库信息</span></span><br><span class="line">yum -y list mysql*</span><br><span class="line"><span class="meta">#</span><span class="bash">安装mysql客户端</span></span><br><span class="line">yum install mysql -y</span><br><span class="line"><span class="meta">#</span><span class="bash">安装mysql服务端</span></span><br><span class="line">yum install mysql-server -y</span><br><span class="line"><span class="meta">#</span><span class="bash">选装mysql开发库</span></span><br><span class="line">yum install mysql-devel -y</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">或者使用下列命令安装</span></span><br><span class="line">yum -y install mysql-server mysql mysql-devel</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">启动redis服务</span></span><br><span class="line">systemctl start redis</span><br><span class="line"><span class="meta">#</span><span class="bash">查看redis状态</span></span><br><span class="line">systemctl status redis</span><br><span class="line"><span class="meta">#</span><span class="bash">停止服务</span></span><br><span class="line">systemctl stop redis </span><br><span class="line"><span class="meta">#</span><span class="bash">重启服务</span></span><br><span class="line">systemctl restart redis</span><br><span class="line"><span class="meta">#</span><span class="bash">开机自动重启</span></span><br><span class="line">systemctl enable redis</span><br></pre></td></tr></table></figure>
+<h2 id="启动命令"><a href="#启动命令" class="headerlink" title="启动命令"></a>启动命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">启动mysql</span></span><br><span class="line">service mysqld start</span><br><span class="line"><span class="meta">#</span><span class="bash">关闭mysql</span></span><br><span class="line">service mysqld stop</span><br><span class="line"><span class="meta">#</span><span class="bash">数据库端口是否开启</span></span><br><span class="line">lsof -i:3306</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">指定用户登录</span></span><br><span class="line">mysqld --user=[username]</span><br></pre></td></tr></table></figure>
 
-<h2 id="其它命令"><a href="#其它命令" class="headerlink" title="其它命令"></a>其它命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">连接redis</span></span><br><span class="line">redis-cli -h 127.0.0.1 -p 6379</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">获取当前的db数</span> </span><br><span class="line">config get databases</span><br><span class="line"><span class="meta">#</span><span class="bash">切换指定db (可为0-15)</span></span><br><span class="line">select 1</span><br></pre></td></tr></table></figure>
-
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">redis配置</span></span><br><span class="line">vim /etc/redis.conf</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#将下面注释，并设置protected-mode为no</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="built_in">bind</span> 127.0.0.1</span></span><br><span class="line"><span class="meta">#</span><span class="bash">保护模式</span></span><br><span class="line">protected-mode no</span><br><span class="line"><span class="meta">#</span><span class="bash">默认端口</span></span><br><span class="line">port 6379</span><br><span class="line"><span class="meta">#</span><span class="bash">设置密码</span></span><br><span class="line">requirepass 1111</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">需要重启</span></span><br><span class="line">systemctl restart redis</span><br></pre></td></tr></table></figure>
+<h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">解决root用户无法运行</span></span><br><span class="line">vim /etc/my.cnf</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
@@ -884,28 +880,15 @@
       </tags>
   </entry>
   <entry>
-    <title>安装mysql</title>
-    <url>/2021/1XRQBRM.html</url>
-    <content><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">查看是否安装</span></span><br><span class="line">yum list installed | grep mysql</span><br><span class="line"><span class="meta">#</span><span class="bash">卸载</span></span><br><span class="line">yum -y remove mysql-libs.x86_64</span><br><span class="line"><span class="meta">#</span><span class="bash">查看版本库信息</span> </span><br><span class="line">yum list | grep mysql</span><br><span class="line"><span class="meta">#</span><span class="bash"> 或 查看版本库信息</span></span><br><span class="line">yum -y list mysql*</span><br><span class="line"><span class="meta">#</span><span class="bash">安装mysql客户端</span></span><br><span class="line">yum install mysql -y</span><br><span class="line"><span class="meta">#</span><span class="bash">安装mysql服务端</span></span><br><span class="line">yum install mysql-server -y</span><br><span class="line"><span class="meta">#</span><span class="bash">选装mysql开发库</span></span><br><span class="line">yum install mysql-devel -y</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">或者使用下列命令安装</span></span><br><span class="line">yum -y install mysql-server mysql mysql-devel</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+    <title>安装redis</title>
+    <url>/2021/2ARWSSS.html</url>
+    <content><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">redis</span></span><br><span class="line">yum install redis -y</span><br></pre></td></tr></table></figure>
 
-<h2 id="启动命令"><a href="#启动命令" class="headerlink" title="启动命令"></a>启动命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">启动mysql</span></span><br><span class="line">service mysqld start</span><br><span class="line"><span class="meta">#</span><span class="bash">关闭mysql</span></span><br><span class="line">service mysqld stop</span><br><span class="line"><span class="meta">#</span><span class="bash">数据库端口是否开启</span></span><br><span class="line">lsof -i:3306</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">指定用户登录</span></span><br><span class="line">mysqld --user=[username]</span><br></pre></td></tr></table></figure>
+<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">启动redis服务</span></span><br><span class="line">systemctl start redis</span><br><span class="line"><span class="meta">#</span><span class="bash">查看redis状态</span></span><br><span class="line">systemctl status redis</span><br><span class="line"><span class="meta">#</span><span class="bash">停止服务</span></span><br><span class="line">systemctl stop redis </span><br><span class="line"><span class="meta">#</span><span class="bash">重启服务</span></span><br><span class="line">systemctl restart redis</span><br><span class="line"><span class="meta">#</span><span class="bash">开机自动重启</span></span><br><span class="line">systemctl enable redis</span><br></pre></td></tr></table></figure>
 
-<h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">解决root用户无法运行</span></span><br><span class="line">vim /etc/my.cnf</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="其它命令"><a href="#其它命令" class="headerlink" title="其它命令"></a>其它命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">连接redis</span></span><br><span class="line">redis-cli -h 127.0.0.1 -p 6379</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">获取当前的db数</span> </span><br><span class="line">config get databases</span><br><span class="line"><span class="meta">#</span><span class="bash">切换指定db (可为0-15)</span></span><br><span class="line">select 1</span><br></pre></td></tr></table></figure>
 
-]]></content>
-      <categories>
-        <category>运维</category>
-        <category>linux</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>安装nginx</title>
-    <url>/2021/15DR29D.html</url>
-    <content><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#若在安装jdk时已经配置阿里的yum源，可以跳过下面的步骤，直接到 yum install -y  nginx</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">nginx的源</span></span><br><span class="line">rpm -ivh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">安装nginx</span></span><br><span class="line">yum install -y  nginx</span><br><span class="line"><span class="meta">#</span><span class="bash">获取nginx目录</span></span><br><span class="line">whereis nginx</span><br></pre></td></tr></table></figure>
-
-<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">启动</span></span><br><span class="line">nginx</span><br><span class="line"><span class="meta">#</span><span class="bash">测试Nginx配置是否正确</span></span><br><span class="line">nginx -t</span><br><span class="line"><span class="meta">#</span><span class="bash">优雅重启</span></span><br><span class="line">nginx -s reload</span><br><span class="line"><span class="meta">#</span><span class="bash">查看服务是否启动</span></span><br><span class="line">ps -ef | grep nginx | grep -v grep</span><br><span class="line"></span><br><span class="line">防火</span><br></pre></td></tr></table></figure>
-
-<h2 id="配置路径"><a href="#配置路径" class="headerlink" title="配置路径"></a>配置路径</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">推荐vim去编辑，vi不提供高亮，yum install vim -y</span></span><br><span class="line">vim /etc/nginx/nginx.conf</span><br></pre></td></tr></table></figure>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">redis配置</span></span><br><span class="line">vim /etc/redis.conf</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#将下面注释，并设置protected-mode为no</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="built_in">bind</span> 127.0.0.1</span></span><br><span class="line"><span class="meta">#</span><span class="bash">保护模式</span></span><br><span class="line">protected-mode no</span><br><span class="line"><span class="meta">#</span><span class="bash">默认端口</span></span><br><span class="line">port 6379</span><br><span class="line"><span class="meta">#</span><span class="bash">设置密码</span></span><br><span class="line">requirepass 1111</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">需要重启</span></span><br><span class="line">systemctl restart redis</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
@@ -925,6 +908,21 @@
 <h3 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">开放端口</span></span><br><span class="line">firewall-cmd --zone=public --add-port=6379/tcp --permanent</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">重启防火墙</span></span><br><span class="line">systemctl restart firewalld</span><br></pre></td></tr></table></figure>
 
 <h3 id="启动命令"><a href="#启动命令" class="headerlink" title="启动命令"></a>启动命令</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#systemctl操作</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">启动redis服务</span></span><br><span class="line">systemctl start redis</span><br><span class="line"><span class="meta">#</span><span class="bash">查看redis状态</span></span><br><span class="line">systemctl status redis</span><br><span class="line"><span class="meta">#</span><span class="bash">停止服务</span></span><br><span class="line">systemctl stop redis </span><br><span class="line"><span class="meta">#</span><span class="bash">重启服务</span></span><br><span class="line">systemctl restart redis</span><br><span class="line"><span class="meta">#</span><span class="bash">开机自动重启</span></span><br><span class="line">systemctl enable redis</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#service操作</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">启动mysql</span></span><br><span class="line">service mysqld start</span><br><span class="line"><span class="meta">#</span><span class="bash">关闭mysql</span></span><br><span class="line">service mysqld stop</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>运维</category>
+        <category>linux</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>安装nginx</title>
+    <url>/2021/15DR29D.html</url>
+    <content><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#若在安装jdk时已经配置阿里的yum源，可以跳过下面的步骤，直接到 yum install -y  nginx</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">nginx的源</span></span><br><span class="line">rpm -ivh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">安装nginx</span></span><br><span class="line">yum install -y  nginx</span><br><span class="line"><span class="meta">#</span><span class="bash">获取nginx目录</span></span><br><span class="line">whereis nginx</span><br></pre></td></tr></table></figure>
+
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">启动</span></span><br><span class="line">nginx</span><br><span class="line"><span class="meta">#</span><span class="bash">测试Nginx配置是否正确</span></span><br><span class="line">nginx -t</span><br><span class="line"><span class="meta">#</span><span class="bash">优雅重启</span></span><br><span class="line">nginx -s reload</span><br><span class="line"><span class="meta">#</span><span class="bash">查看服务是否启动</span></span><br><span class="line">ps -ef | grep nginx | grep -v grep</span><br><span class="line"></span><br><span class="line">防火</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置路径"><a href="#配置路径" class="headerlink" title="配置路径"></a>配置路径</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">推荐vim去编辑，vi不提供高亮，yum install vim -y</span></span><br><span class="line">vim /etc/nginx/nginx.conf</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
