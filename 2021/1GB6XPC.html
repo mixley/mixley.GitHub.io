@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://mixley.stdcdn.com/2021/07/4af3675d787d672cf6bc725351405524.gif">
 <meta property="og:image" content="https://mixley.stdcdn.com/2021/07/08727c087384727021d598511ea00803.png">
 <meta property="article:published_time" content="2021-07-07T14:54:10.000Z">
-<meta property="article:modified_time" content="2021-07-07T15:06:26.816Z">
+<meta property="article:modified_time" content="2022-04-20T10:02:49.000Z">
 <meta property="article:author" content="mixley">
 <meta property="article:tag" content="mixley">
 <meta property="article:tag" content="前端">
@@ -236,10 +236,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-07-07 22:54:10 / 修改时间：23:06:26" itemprop="dateCreated datePublished" datetime="2021-07-07T22:54:10+08:00">2021-07-07</time>
+              <time title="创建时间：2021-07-07 22:54:10" itemprop="dateCreated datePublished" datetime="2021-07-07T22:54:10+08:00">2021-07-07</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-04-20 18:02:49" itemprop="dateModified" datetime="2022-04-20T18:02:49+08:00">2022-04-20</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -290,7 +296,7 @@
 <p>minio中文网：<a target="_blank" rel="noopener" href="http://www.minio.org.cn/">http://www.minio.org.cn/</a><br>minio官网：<a target="_blank" rel="noopener" href="https://min.io/">https://min.io/</a></p>
 <h3 id="linux下配置"><a href="#linux下配置" class="headerlink" title="linux下配置"></a>linux下配置</h3><p><img src="https://mixley.stdcdn.com/2021/07/4af3675d787d672cf6bc725351405524.gif" alt="img"></p>
 <p>1、下载minio，建议下载到/usr/local/bin/ 目录下，可全局访问</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /usr/local/bin/</span><br><span class="line">wget   http://dl.minio.org.cn/server/minio/release/linux-amd64/minio</span><br><span class="line">chmod +x minio</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /usr/local/bin/</span><br><span class="line">wget   http://dl.minio.org.cn/server/minio/release/linux-amd64/minio</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#连不上，使用下面的：wget   https://dl.minio.io/server/minio/release/linux-amd64/minio</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#还不行，试试：wget https://dl.min.io/server/minio/release/linux-amd64/minio</span></span></span><br><span class="line">chmod +x minio</span><br></pre></td></tr></table></figure>
 
 <p>2、设置minio用户名密码到临时环境变量（重启后消失）</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">旧版使用 MINIO_ACCESS_KEY MINIO_SECRET_KEY，作废时间：Deprecated since version RELEASE.2021-04-22T15-44-28Z.</span></span><br><span class="line"><span class="meta">#</span><span class="bash">新版 配置用户名密码</span></span><br><span class="line">export MINIO_ROOT_USER=admin</span><br><span class="line">export MINIO_ROOT_PASSWORD=password</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">查看环境变量</span></span><br><span class="line">echo $MINIO_ROOT_USER</span><br><span class="line">echo $MINIO_ROOT_PASSWORD</span><br></pre></td></tr></table></figure>
@@ -299,7 +305,7 @@
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 修改系统配置</span></span><br><span class="line">vim /etc/profile</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">最后一行输入(新版)</span> </span><br><span class="line">export MINIO_ROOT_USER=admin</span><br><span class="line">export MINIO_ROOT_PASSWORD=password</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 设置立即生效</span></span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
 
 <p>4、指定配置路径后启动 （建议修改默认端口）</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">后端启动</span></span><br><span class="line">nohup minio server --address &#x27;:9000&#x27; --config-dir /root/.minio /data/minio &gt; /data/minio.log 2&gt;&amp;1 &amp;</span><br><span class="line"><span class="meta">#</span><span class="bash">确认是否启动</span></span><br><span class="line">ps -ef | grep minio | grep -v grep</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">前端启动</span></span><br><span class="line">minio server --address &#x27;:9000&#x27; --config-dir /root/.minio /data/minio</span><br><span class="line"><span class="meta">#</span><span class="bash">查看端口占用lsof -i:d</span></span><br><span class="line">lsof -i:9000</span><br><span class="line"></span><br><span class="line">docker run -p 9000:9000 minio server /data/minio</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">后端启动</span></span><br><span class="line">nohup minio server --address &#x27;:9000&#x27; --console-address &#x27;:9001&#x27; --config-dir /root/.minio /data/minio &gt; /data/minio.log 2&gt;&amp;1 &amp;</span><br><span class="line"><span class="meta">#</span><span class="bash">确认是否启动</span></span><br><span class="line">ps -ef | grep minio | grep -v grep</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">前端启动</span></span><br><span class="line">minio server --address &#x27;:9000&#x27; --console-address &#x27;:9001&#x27; --config-dir /root/.minio /data/minio</span><br><span class="line"><span class="meta">#</span><span class="bash">查看端口占用lsof -i:d</span></span><br><span class="line">lsof -i:9000</span><br><span class="line"></span><br><span class="line">docker run -p 9000:9000 minio server /data/minio</span><br><span class="line"></span><br><span class="line">docker run -p 29235:29235 -p 29236:29236  \</span><br><span class="line">  --name minio1 \</span><br><span class="line">  -e &quot;MINIO_ROOT_USER=minioUser&quot; \</span><br><span class="line">  -e &quot;MINIO_ROOT_PASSWORD=minioPassword&quot; \</span><br><span class="line">  -e &quot;MINIO_KMS_SECRET_KEY=my-minio-encryption-key:17Ej+Y0pA/BTjoTDom6W4ymEDIMNeDoB8ss83CtZVbE=&quot; \</span><br><span class="line">  -v /data/minio/dir:/data \</span><br><span class="line">  -v /data/minio/config:/root/.minio \</span><br><span class="line">  minio/minio server --address &#x27;:29235&#x27; --console-address &#x27;:29236&#x27; /data </span><br></pre></td></tr></table></figure>
 
 <p>5、开机启动（方式很多，例举其一）</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">修改系统配置</span></span><br><span class="line">vim /etc/rc.d/rc.local</span><br><span class="line">chmod +x /etc/rc.d/rc.local</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">每次登录 vim /etc/profile</span></span><br><span class="line"><span class="meta">#</span><span class="bash">最后一行输入</span></span><br><span class="line">nohup minio server --address &#x27;:9000&#x27; --config-dir /root/.minio /data/minio &gt; /data/minio.log 2&gt;&amp;1 &amp;</span><br></pre></td></tr></table></figure>
@@ -428,20 +434,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">51</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">20</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -468,7 +474,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

@@ -206,7 +206,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2021/3NPATC1.html">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2022/2W88D9Q.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -220,7 +220,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/3NPATC1.html" class="post-title-link" itemprop="url">使用Hexo搭建博客</a>
+            <a href="/2022/2W88D9Q.html" class="post-title-link" itemprop="url">批量插入</a>
         </h2>
 
         <div class="post-meta">
@@ -230,14 +230,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-06-30 23:05:15" itemprop="dateCreated datePublished" datetime="2021-06-30T23:05:15+08:00">2021-06-30</time>
+              <time title="创建时间：2022-06-10 22:24:42" itemprop="dateCreated datePublished" datetime="2022-06-10T22:24:42+08:00">2022-06-10</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-07 22:02:03" itemprop="dateModified" datetime="2021-07-07T22:02:03+08:00">2021-07-07</time>
+                <time title="修改时间：2021-10-20 14:21:51" itemprop="dateModified" datetime="2021-10-20T14:21:51+08:00">2021-10-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -245,7 +245,11 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/tool/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+                  <a href="/categories/learn/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index"><span itemprop="name">数据库</span></a>
                 </span>
             </span>
 
@@ -259,8 +263,8 @@
       <span class="post-meta-item-text">Changyan：</span>
     
     
-      <a title="changyan" href="/2021/3NPATC1.html#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://mixley.github.io/2021/3NPATC1.html" class="cy_cmt_count" data-xid="2021/3NPATC1.html" itemprop="commentCount"></span>
+      <a title="changyan" href="/2022/2W88D9Q.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://mixley.github.io/2022/2W88D9Q.html" class="cy_cmt_count" data-xid="2022/2W88D9Q.html" itemprop="commentCount"></span>
       </a>
     
   </span>
@@ -276,45 +280,1187 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>我需要的快速、简洁且高效的博客框架-&gt;Hexo</p>
+          <p>批量方式插入数据库</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">SqlSession batchSqlSession = <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment">// 获取批量方式的sqlsession</span></span><br><span class="line">    batchSqlSession = sessionFactory.openSession(ExecutorType.BATCH, <span class="keyword">false</span>);</span><br><span class="line">    <span class="keyword">for</span> (Ticket ticket : tickets) &#123;</span><br><span class="line">        batchSqlSession.insert(<span class="string">&quot;com.newland.mapper.TicketMapper.insert&quot;</span>,ticket);</span><br><span class="line">    &#125;</span><br><span class="line">    batchSqlSession.commit();</span><br><span class="line">&#125;<span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">    batchSqlSession.rollback();</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">    <span class="keyword">throw</span> e;</span><br><span class="line">&#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">    batchSqlSession.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2022/29G4ED9.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/29G4ED9.html" class="post-title-link" itemprop="url">nrm</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-06-10 22:24:42" itemprop="dateCreated datePublished" datetime="2022-06-10T22:24:42+08:00">2022-06-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-11-09 21:43:46" itemprop="dateModified" datetime="2021-11-09T21:43:46+08:00">2021-11-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/node/" itemprop="url" rel="index"><span itemprop="name">node</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2022/29G4ED9.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://mixley.github.io/2022/29G4ED9.html" class="cy_cmt_count" data-xid="2022/29G4ED9.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>npm install -g nrm</p>
+<p>nrm ls   //查看镜像源, *表示正在使用的</p>
+<pre><code>* npm -------- https://registry.npmjs.org/       
+  yarn ------- https://registry.yarnpkg.com/     
+  cnpm ------- http://r.cnpmjs.org/
+  taobao ----- https://registry.npm.taobao.org/  
+  nj --------- https://registry.nodejitsu.com/   
+  npmMirror -- https://skimdb.npmjs.com/registry/
+  edunpm ----- http://registry.enpmjs.org/       
+</code></pre>
+<p>nrm use taobao //切换</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2022/JGXQTS.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/JGXQTS.html" class="post-title-link" itemprop="url">npmrc与scope</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-06-10 22:24:42" itemprop="dateCreated datePublished" datetime="2022-06-10T22:24:42+08:00">2022-06-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-04-29 11:04:34" itemprop="dateModified" datetime="2022-04-29T11:04:34+08:00">2022-04-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/node/" itemprop="url" rel="index"><span itemprop="name">node</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2022/JGXQTS.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://mixley.github.io/2022/JGXQTS.html" class="cy_cmt_count" data-xid="2022/JGXQTS.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="npmrc简介"><a href="#npmrc简介" class="headerlink" title="npmrc简介"></a>npmrc简介</h2><p>我们经常会设置镜像源，用于加速，实际设置镜像源最终是保存在npm的配置文件中的，对应的配置文件叫.npmrc</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">npm config <span class="built_in">set</span> key value</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">下面是设置淘宝镜像的指令</span></span><br><span class="line">npm config set registry https://registry.npm.taobao.org</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">下面是全局设置，带了-g</span></span><br><span class="line"><span class="meta">#</span><span class="bash">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org -g</span></span><br></pre></td></tr></table></figure>
+
+<p>对应的.npmrc文件会出现用户目录或npm的安装目录(全局情况下)，并会有一个记录值</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">registry</span>=https://registry.npm.taobao.org/</span><br></pre></td></tr></table></figure>
+
+<p>优先级：<strong>项目配置&gt;用户配置&gt;全局配置</strong>，在项目根目录建立的.npmrc优先级别最高。仅支持单个地址。</p>
+<h2 id="scope简介"><a href="#scope简介" class="headerlink" title="scope简介"></a>scope简介</h2><p>scope是作用域包的意思。使用@开头，到斜杠之间，整个包名带上域可以按”域”处理。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@scope/project-name</span><br></pre></td></tr></table></figure>
+
+<p>域的作用更多是私服时使用，在发布时指定name=@scope/project-name，使用时，同样使用@scope/project-name。</p>
+<p>在使用npm时可能会遇见私服A、私服B、私服C镜像的问题。但是按.npmrc文件的配置，我们也肯定知道，只能选择其中一个作为镜像地址。普遍的办法就是自己再搭建一个私服，引用A、B、C私服的包。还有一个更简单的办法是，指定域的服务地址。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">设置@scope开头的包从test.npm下载</span></span><br><span class="line">npm config set @scope:registry https://test.npm.com</span><br><span class="line"><span class="meta">#</span><span class="bash">设置@testScope1开头的包从服务1.2.3.4下载</span></span><br><span class="line">npm config set @testScope1:registry http://1.2.3.4/npm-test/</span><br></pre></td></tr></table></figure>
+
+<p>最后保留的.npmrc文件里面对应的是</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line">@scope:<span class="attr">registry</span>=https://test.npm.com</span><br><span class="line">@testScope1:<span class="attr">registry</span>=http://<span class="number">1.2</span>.<span class="number">3.4</span>/npm-test/</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>简单的处理方式：手动建立一个.npmrc直接丢<strong>项目</strong>里面啦<strong>（优先级最高）</strong>，记得文件要<strong>和package.json同级</strong>，根目录哦。打开项目就是npm install，私包和公共包全下载了。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2022/QWNFBS.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/QWNFBS.html" class="post-title-link" itemprop="url">install</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-06-10 22:24:42" itemprop="dateCreated datePublished" datetime="2022-06-10T22:24:42+08:00">2022-06-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-02-22 17:07:09" itemprop="dateModified" datetime="2022-02-22T17:07:09+08:00">2022-02-22</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/node/" itemprop="url" rel="index"><span itemprop="name">node</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2022/QWNFBS.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://mixley.github.io/2022/QWNFBS.html" class="cy_cmt_count" data-xid="2022/QWNFBS.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">指定windows-build-tools版本，4.0好安装一点</span></span><br><span class="line"><span class="meta">#</span><span class="bash">搞不定可以c</span></span><br><span class="line">npm install --global --production windows-build-tools@4.0.0</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2022/C64GPN.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/C64GPN.html" class="post-title-link" itemprop="url">MQ</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-06-10 22:24:42" itemprop="dateCreated datePublished" datetime="2022-06-10T22:24:42+08:00">2022-06-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-10-14 10:55:30" itemprop="dateModified" datetime="2021-10-14T10:55:30+08:00">2021-10-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/MQ/" itemprop="url" rel="index"><span itemprop="name">MQ</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2022/C64GPN.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://mixley.github.io/2022/C64GPN.html" class="cy_cmt_count" data-xid="2022/C64GPN.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="/2022/C64GPN/1355489-20180823155405420-191105903.png" alt="img"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2022/S3R6PQ.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/S3R6PQ.html" class="post-title-link" itemprop="url">MAVEN使用</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-06-10 22:24:37 / 修改时间：13:55:20" itemprop="dateCreated datePublished" datetime="2022-06-10T22:24:37+08:00">2022-06-10</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/java/maven/" itemprop="url" rel="index"><span itemprop="name">maven</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2022/S3R6PQ.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://mixley.github.io/2022/S3R6PQ.html" class="cy_cmt_count" data-xid="2022/S3R6PQ.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Maven生命周期及生命周期绑定"><a href="#Maven生命周期及生命周期绑定" class="headerlink" title="Maven生命周期及生命周期绑定"></a>Maven生命周期及生命周期绑定</h2><h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3><p><strong>package</strong> <strong>即将本地编译好的文件打包为war 或者jar</strong> </p>
+<p><strong>install</strong> <strong>将打包的代码存放到本地maven仓库，可供本地其它项目依赖使用</strong> </p>
+<p><strong>deploy</strong> <strong>将打包在本地仓库中的项目发到服务器，供他人依赖使用</strong> </p>
+<p><img src="https://mixley.stdcdn.com/2021/07/maven/clip_image002.png" alt="img"></p>
+<h3 id="Plugins绑定maven生命周期"><a href="#Plugins绑定maven生命周期" class="headerlink" title="Plugins绑定maven生命周期"></a>Plugins绑定maven生命周期</h3><p>新建一个plugin工具后，通过**<executions><phase><strong>绑定生命周期，maven-</strong>-plugin的groupId为org.apache.maven.plugins一般都有<strong>默认的生命周期</strong>。如maven-jar-plugin</phase></executions></p>
+<p><img src="https://mixley.stdcdn.com/2021/07/maven/clip_image004.jpg" alt="img"></p>
+<h2 id="无法在maven中引用的lib包处理"><a href="#无法在maven中引用的lib包处理" class="headerlink" title="无法在maven中引用的lib包处理"></a>无法在maven中引用的lib包处理</h2><h3 id="Idea使用时报错处理"><a href="#Idea使用时报错处理" class="headerlink" title="Idea使用时报错处理"></a>Idea使用时报错处理</h3><p><img src="https://mixley.stdcdn.com/2021/07/maven/clip_image006.jpg" alt="img"></p>
+<h3 id="Maven编译打包报错时处理"><a href="#Maven编译打包报错时处理" class="headerlink" title="Maven编译打包报错时处理"></a>Maven编译打包报错时处理</h3><p><img src="https://mixley.stdcdn.com/2021/07/maven/clip_image008.jpg" alt="img"></p>
+<h2 id="Maven项目Version版本自动写入文件"><a href="#Maven项目Version版本自动写入文件" class="headerlink" title="Maven项目Version版本自动写入文件"></a>Maven项目Version版本自动写入文件</h2><h3 id="resources目录下-新增文件version"><a href="#resources目录下-新增文件version" class="headerlink" title="resources目录下 新增文件version"></a>resources目录下 新增文件version</h3><p>内容复制为：</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">#$&#123;project.artifactId&#125;#$&#123;project.version&#125;#$&#123;project.packaging&#125;#$&#123;project.timestamp&#125;#</span><br></pre></td></tr></table></figure>
+
+<p>截图示例：（下面的是目录结构及version中包含的内容）</p>
+<p><img src="https://mixley.stdcdn.com/2021/07/maven/clip_image010.jpg" alt="img"></p>
+<h3 id="Properties配置"><a href="#Properties配置" class="headerlink" title="Properties配置"></a>Properties配置</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 日期显示格式 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">maven.build.timestamp.format</span>&gt;</span>yyyy-MM-dd HH:mm:ss<span class="tag">&lt;/<span class="name">maven.build.timestamp.format</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 对应version里面显示的project.timestamp --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">project.timestamp</span>&gt;</span>$&#123;maven.build.timestamp&#125;<span class="tag">&lt;/<span class="name">project.timestamp</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 文件拷贝时的编码 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.build.sourceEncoding</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">project.reporting.outputEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.reporting.outputEncoding</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 编译时的编码 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">maven.compiler.encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">maven.compiler.encoding</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- maven方式跳过maven test, 等同$ mvn package -Dmaven.test.skip=true --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">maven.test.skip</span>&gt;</span>true<span class="tag">&lt;/<span class="name">maven.test.skip</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Build配置"><a href="#Build配置" class="headerlink" title="Build配置"></a>Build配置</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">finalName</span>&gt;</span>$&#123;artifactId&#125;<span class="tag">&lt;/<span class="name">finalName</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 编译配置，source源码版本target编译器版本1.7表示jdk7 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.6.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">encoding</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">source</span>&gt;</span>1.7<span class="tag">&lt;/<span class="name">source</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">target</span>&gt;</span>1.7<span class="tag">&lt;/<span class="name">target</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 编译帮助工具，这里用作时区转换工具 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.codehaus.mojo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>build-helper-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 执行这个命令timestamp-property --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">goal</span>&gt;</span>timestamp-property<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">          <span class="comment">&lt;!-- 生命周期 validate时执行--&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">phase</span>&gt;</span>validate<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 替换project.timestamp的值(没有这里时区是UTC)--&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>project.timestamp<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">pattern</span>&gt;</span>$&#123;maven.build.timestamp.format&#125;<span class="tag">&lt;/<span class="name">pattern</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">timeZone</span>&gt;</span>GMT+8<span class="tag">&lt;/<span class="name">timeZone</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 处理资源文件 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-resources-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">          <span class="comment">&lt;!-- 生命周期 validate时执行--&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">phase</span>&gt;</span>validate<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">goal</span>&gt;</span>copy-resources<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">outputDirectory</span>&gt;</span>$&#123;project.build.directory&#125;/$&#123;project.build.finalName&#125;<span class="tag">&lt;/<span class="name">outputDirectory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/resources<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>true<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                  <span class="comment">&lt;!-- 选择文件--&gt;</span></span><br><span class="line">                  <span class="tag">&lt;<span class="name">include</span>&gt;</span>version<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Maven常用工具"><a href="#Maven常用工具" class="headerlink" title="Maven常用工具"></a>Maven常用工具</h2><h3 id="jar包打包（需依赖外部lib）maven-jar-plugin"><a href="#jar包打包（需依赖外部lib）maven-jar-plugin" class="headerlink" title="jar包打包（需依赖外部lib）maven-jar-plugin"></a>jar包打包（需依赖外部lib）maven-jar-plugin</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-jar-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">archive</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">manifest</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">addClasspath</span>&gt;</span>true<span class="tag">&lt;/<span class="name">addClasspath</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">classpathPrefix</span>&gt;</span>lib/<span class="tag">&lt;/<span class="name">classpathPrefix</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mainClass</span>&gt;</span>com.newland.buscontrol.message.MainServer<span class="tag">&lt;/<span class="name">mainClass</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">manifest</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">archive</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">outputDirectory</span>&gt;</span>../deploy/release<span class="tag">&lt;/<span class="name">outputDirectory</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Jar单文件打包（无需依赖）maven-assembly-plugin"><a href="#Jar单文件打包（无需依赖）maven-assembly-plugin" class="headerlink" title="Jar单文件打包（无需依赖）maven-assembly-plugin"></a>Jar单文件打包（无需依赖）maven-assembly-plugin</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-assembly-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">phase</span>&gt;</span>package<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">goal</span>&gt;</span>assembly<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">archive</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">manifest</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mainClass</span>&gt;</span>$&#123;mainClass&#125;<span class="tag">&lt;/<span class="name">mainClass</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">manifest</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">archive</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">appendAssemblyId</span>&gt;</span>false<span class="tag">&lt;/<span class="name">appendAssemblyId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">descriptorRefs</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">descriptorRef</span>&gt;</span>jar-with-dependencies<span class="tag">&lt;/<span class="name">descriptorRef</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">descriptorRefs</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">outputDirectory</span>&gt;</span>../deploy/release<span class="tag">&lt;/<span class="name">outputDirectory</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="配置清理及不清理的文件maven-clean-plugin"><a href="#配置清理及不清理的文件maven-clean-plugin" class="headerlink" title="配置清理及不清理的文件maven-clean-plugin"></a>配置清理及不清理的文件maven-clean-plugin</h3><p>**(<strong>与绑定生命周期一起用时，可以在package时清理一些指定文件)</strong></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-clean-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filesets</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">fileset</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">directory</span>&gt;</span>deploy/release<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">excludes</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>BusControl.properties<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>排除文件.jar<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">excludes</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">fileset</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">filesets</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="多模块项目（重复工作放在一个模块下）"><a href="#多模块项目（重复工作放在一个模块下）" class="headerlink" title="多模块项目（重复工作放在一个模块下）"></a>多模块项目（重复工作放在一个模块下）</h2><h3 id="多模块展示及创建方法（主模块右击新建模块）"><a href="#多模块展示及创建方法（主模块右击新建模块）" class="headerlink" title="多模块展示及创建方法（主模块右击新建模块）"></a>多模块展示及创建方法<strong>（主模块右击新建模块）</strong></h3><p><img src="https://mixley.stdcdn.com/2021/07/maven/clip_image012.jpg" alt="img"><img src="https://mixley.stdcdn.com/2021/07/maven/clip_image014.jpg" alt="img"></p>
+<h3 id="指定项目中公有的模块"><a href="#指定项目中公有的模块" class="headerlink" title="指定项目中公有的模块"></a>指定项目中公有的模块</h3><p><strong>父pom指定公用模块</strong></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--指定项目中公有的模块--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependencyManagement</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.newland<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>Utils<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;project.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencyManagement</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>子模块使用(可以不用指定版本号)</strong></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.newland<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>Utils<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="指定项目公共插件及插件公共配置"><a href="#指定项目公共插件及插件公共配置" class="headerlink" title="指定项目公共插件及插件公共配置"></a>指定项目公共插件及插件公共配置</h3><p><strong>父pom指定公共插件</strong></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-assembly-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">phase</span>&gt;</span>package<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">goal</span>&gt;</span>assembly<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">appendAssemblyId</span>&gt;</span>false<span class="tag">&lt;/<span class="name">appendAssemblyId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">descriptorRefs</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">descriptorRef</span>&gt;</span>jar-with-dependencies<span class="tag">&lt;/<span class="name">descriptorRef</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">descriptorRefs</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">outputDirectory</span>&gt;</span>../deploy/release<span class="tag">&lt;/<span class="name">outputDirectory</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>子模块使用（不需版本号与其它公共配置）</strong></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-assembly-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">archive</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">manifest</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mainClass</span>&gt;</span>$&#123;mainClass&#125;<span class="tag">&lt;/<span class="name">mainClass</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">manifest</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">archive</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Maven模块引用配置"><a href="#Maven模块引用配置" class="headerlink" title="Maven模块引用配置"></a><strong>Maven</strong>模块引用配置</h2><h3 id="环境选择classifier（json-lib）"><a href="#环境选择classifier（json-lib）" class="headerlink" title="环境选择classifier（json-lib）"></a>环境选择classifier（json-lib）</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>net.sf.json-lib<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>json-lib<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">classifier</span>&gt;</span>jdk15<span class="tag">&lt;/<span class="name">classifier</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Jar包冲突之运行环境冲突-使用provided"><a href="#Jar包冲突之运行环境冲突-使用provided" class="headerlink" title="Jar包冲突之运行环境冲突**(**使用provided)"></a><strong>Jar</strong>包冲突之运行环境冲突**(**使用<scope>provided</scope>)</h3><p>在运行环境中存在（tomcat中）且项目中需要直接使用的包，如果直接加maven引用会导致jar冲突。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>javax.servlet<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>javax.servlet-api<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.0.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">scope</span>&gt;</span>provided<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>javax.servlet.jsp<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jsp-api<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">scope</span>&gt;</span>provided<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Maven-引用的jar包导致的冲突（dependencies工具）"><a href="#Maven-引用的jar包导致的冲突（dependencies工具）" class="headerlink" title="**Maven ** 引用的jar包导致的冲突（dependencies工具）"></a>**Maven ** 引用的jar包导致的冲突（dependencies工具）</h3><p>可以直接用exclusions排除，或者使用show dependencies查看冲突关系</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.struts<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>struts-core<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.3.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">exclusions</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">exclusion</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>org.apache.commons<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>commons-lang3<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">exclusion</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">exclusions</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://mixley.stdcdn.com/2021/07/maven/clip_image016.jpg" alt="img"></p>
+<p><img src="https://mixley.stdcdn.com/2021/07/maven/clip_image018.jpg" alt="img"></p>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><h3 id="maven指令"><a href="#maven指令" class="headerlink" title="maven指令"></a>maven指令</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">打包指定项目，并同时打包项目相关依赖</span></span><br><span class="line">mvn package -pl xxx -am</span><br></pre></td></tr></table></figure>
+
+<h3 id="ant插件执行打包单个项目的配置"><a href="#ant插件执行打包单个项目的配置" class="headerlink" title="ant插件执行打包单个项目的配置"></a>ant插件执行打包单个项目的配置</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 父组件里面使用这个--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-antrun-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tasks</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">condition</span> <span class="attr">property</span>=<span class="string">&quot;osFamily&quot;</span> <span class="attr">value</span>=<span class="string">&quot;windows&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">os</span> <span class="attr">family</span>=<span class="string">&quot;windows&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">condition</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">condition</span> <span class="attr">property</span>=<span class="string">&quot;osFamily&quot;</span> <span class="attr">value</span>=<span class="string">&quot;unix&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">os</span> <span class="attr">family</span>=<span class="string">&quot;unix&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">condition</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">exec</span> <span class="attr">dir</span>=<span class="string">&quot;../&quot;</span> <span class="attr">executable</span>=<span class="string">&quot;C:\\Windows\\System32\\cmd.exe&quot;</span> <span class="attr">osfamily</span>=<span class="string">&quot;windows&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">arg</span> <span class="attr">line</span>=<span class="string">&quot;/c &quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">arg</span> <span class="attr">line</span>=<span class="string">&quot;echo &#x27;chcp 65001 <span class="symbol">&amp;amp;</span> mvn package -pl $&#123;artifactId&#125; -am -Dfile.encoding=UTF-8&#x27; <span class="symbol">&amp;amp;</span>&quot;</span>/&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 这里防止输出乱码的 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">arg</span> <span class="attr">line</span>=<span class="string">&quot;set MAVEN_OPTS=-Dfile.encoding=UTF-8 <span class="symbol">&amp;amp;</span>&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">arg</span> <span class="attr">line</span>=<span class="string">&quot;chcp 65001 <span class="symbol">&amp;amp;</span> mvn package -pl $&#123;artifactId&#125; -am -Dfile.encoding=UTF-8&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">exec</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">exec</span> <span class="attr">dir</span>=<span class="string">&quot;../&quot;</span> <span class="attr">executable</span>=<span class="string">&quot;/bin/bash&quot;</span> <span class="attr">osfamily</span>=<span class="string">&quot;unix&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">arg</span> <span class="attr">line</span>=<span class="string">&quot;-c mvn package -pl $&#123;artifactId&#125; -am -Dfile.encoding=UTF-8&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">exec</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tasks</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2022/22ZWC5R.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/22ZWC5R.html" class="post-title-link" itemprop="url">配置优先级</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-06-10 22:24:37" itemprop="dateCreated datePublished" datetime="2022-06-10T22:24:37+08:00">2022-06-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-11-03 22:12:01" itemprop="dateModified" datetime="2021-11-03T22:12:01+08:00">2021-11-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2022/22ZWC5R.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://mixley.github.io/2022/22ZWC5R.html" class="cy_cmt_count" data-xid="2022/22ZWC5R.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>前言<br>本文介绍SpringBoot常用外部化配置方法，其中优先级数值越高，优先级越大，会覆盖优先级底的配置</p>
+<p>配置文件方式（优先级3）<br>boostrap.yml内指定spring.cloud.nacos.config.server-addr参数参考如下：</p>
+<p>spring:<br>  application:<br>    name: service-a<br>  cloud:<br>    nacos:<br>      config:<br>        server-addr: 127.0.0.1:8848<br>        file-extension: yml<br>      discovery:<br>        server-addr: 127.0.0.1:8848<br>项目打包</p>
+<p>target/service-a-0.0.1-SNAPSHOT.jar</p>
+<p>Java系统属性方式（优先级6）<br>java -jar target/service-a-0.0.1-SNAPSHOT.jar -Dspring.cloud.nacos.config.server-addr=127.0.0.2:8848<br>命令行参数方式（优先级11）<br>java -jar target/service-a-0.0.1-SNAPSHOT.jar –spring.cloud.nacos.config.server-addr=127.0.0.3:8848<br>系统环境变量参数方式（优先级5）<br>export SPRING_CLOUD_NACOS_CONFIG_SERVERADDR=127.0.0.4:8848<br>java -jar target/service-a-0.0.1-SNAPSHOT.jar<br>注意：环境变量同意采用大写字母，不允许使用.-符号，采用下划线“_”取代点“.”  减号“-”直接删除。</p>
+<p>说明：系统环境变量方式自由度高，可配合k8s部署脚本，动态切换到各运行环境</p>
+<p>参考如下：</p>
+<p>kind: Deployment<br>apiVersion: apps/v1<br>metadata:<br>  name: service-a<br>spec:<br>  template:<br>    spec:<br>      containers:<br>        - name: service-a<br>          env:<br>            - name: SPRING_PROFILES_ACTIVE<br>              value: prod<br>            - name: JAVA_OPTIONS<br>              value: ‘-XX:MaxRAMFraction=2’<br>            - name: SPRING_CLOUD_NACOS_CONFIG_SERVERADDR<br>              value: ‘10.0.0.2:8848’<br>            - name: SPRING_CLOUD_NACOS_DISCOVERY_SERVERADDR<br>              value: ‘10.0.0.2:8848’</p>
+<p>加载顺序、优先级参考<br>Spring Boot uses a very particular PropertySource order that is designed to allow sensible<br>overriding of values. Properties are considered in the following order (with values from lower<br>items overriding earlier ones):</p>
+<ol>
+<li>Default properties (specified by setting SpringApplication.setDefaultProperties).</li>
+<li>@PropertySource annotations on your @Configuration classes. Please note that such property<br>sources are not added to the Environment until the application context is being refreshed. This is<br>too late to configure certain properties such as logging.* and spring.main.* which are read<br>before refresh begins.</li>
+<li>Config data (such as application.properties files)</li>
+<li>A RandomValuePropertySource that has properties only in random.*.</li>
+<li>OS environment variables.</li>
+<li>Java System properties (System.getProperties()).</li>
+<li>JNDI attributes from java:comp/env.</li>
+<li>ServletContext init parameters.</li>
+<li>ServletConfig init parameters.</li>
+<li>Properties from SPRING_APPLICATION_JSON (inline JSON embedded in an environment variable or<br>system property).</li>
+<li>Command line arguments.</li>
+<li>properties attribute on your tests. Available on @SpringBootTest and the test annotations for<br>54testing a particular slice of your application.</li>
+<li>@TestPropertySource annotations on your tests.</li>
+<li>Devtools global settings properties in the $HOME/.config/spring-boot directory when devtools is<br>active.</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2022/7PXA8K.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/7PXA8K.html" class="post-title-link" itemprop="url">Spring Cloud注册中心</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-06-10 22:24:37" itemprop="dateCreated datePublished" datetime="2022-06-10T22:24:37+08:00">2022-06-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-11-03 22:01:45" itemprop="dateModified" datetime="2021-11-03T22:01:45+08:00">2021-11-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2022/7PXA8K.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://mixley.github.io/2022/7PXA8K.html" class="cy_cmt_count" data-xid="2022/7PXA8K.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/bc2587ec4e56">https://www.jianshu.com/p/bc2587ec4e56</a></p>
+<h3 id="1、-什么是注册中心"><a href="#1、-什么是注册中心" class="headerlink" title="1、 什么是注册中心"></a>1、 什么是注册中心</h3><p>注册中心可以说是微服务架构中的”通讯录“，它记录了服务和服务地址的映射关系。在分布式架构中，服务会注册到这里，当服务需要调用其它服务时，就到这里找到服务的地址，进行调用。<br> 服务提供者provider: 启动的时候向注册中心上报自己的网络信息。<br> 服务消费者consumer: 启动的时候向注册中心上报自己的网络信息，拉取provider的相关网络信息。</p>
+<h3 id="2-、为什么需要注册中心"><a href="#2-、为什么需要注册中心" class="headerlink" title="2 、为什么需要注册中心"></a>2 、为什么需要注册中心</h3><p>微服务应用和机器越来越多，调用方需要知道接口的网络地址，如果靠配置文件的方式去控制网络地址，对于动态新增机器，维护带来很大问题。</p>
+<ul>
+<li>主流的注册中心：zookeeper、Eureka、consul、etcd 等</li>
+</ul>
+<h3 id="3、分布式应用知识CAP定理"><a href="#3、分布式应用知识CAP定理" class="headerlink" title="3、分布式应用知识CAP定理"></a>3、分布式应用知识CAP定理</h3><p>CAP定理：指的是在一个分布式系统中，Consistency（一致性）、 Availability（可用性）、Partition tolerance（分区容错性）,三者不可同时获得。</p>
+<ul>
+<li>一致性（C）：在分布式系统中的所有数据备份，在同一时刻是否同样的值。（所有节点在同一时间的数据完全一致，越多节点，数据同步越耗时）。</li>
+<li>可用性（A）：负载过大后，集群整体是否还能响应客户端的读写请求。（服务一直可用，而且是正常响应时间）。</li>
+<li>分区容错性（P）：分区容忍性，就是高可用性，一个节点崩了，并不影响其它的节点（100个节点，挂了几个，不影响服务，越多机器越好）。</li>
+</ul>
+<h3 id="4、分布式系统CAP注册中心选择"><a href="#4、分布式系统CAP注册中心选择" class="headerlink" title="4、分布式系统CAP注册中心选择"></a>4、分布式系统CAP注册中心选择</h3><p>CAP三者不可同时获得的原因：</p>
+<ol>
+<li>C A 满足的情况下，P不能满足的原因：<br> 数据同步(C)需要时间，也要正常的时间内响应(A)，那么机器数量就要少，所以P就不满足。</li>
+<li>CP 满足的情况下，A不能满足的原因：<br> 数据同步(C)需要时间, 机器数量也多(P)，但是同步数据需要时间，所以不能再正常时间内响应，所以A就不满足。</li>
+<li>AP 满足的情况下，C不能满足的原因：<br> 机器数量也多(P)，正常的时间内响应(A)，那么数据就不能及时同步到其他节点，所以C不满足。</li>
+</ol>
+<h6 id="注册中心选择："><a href="#注册中心选择：" class="headerlink" title="注册中心选择："></a>注册中心选择：</h6><ul>
+<li><p>Zookeeper：CP设计，保证了一致性，集群搭建的时候，某个节点失效，则会进行选举行的leader，或者半数以上节点不可用，则无法提供服务，因此可用性没法满足</p>
+</li>
+<li><p>Eureka：AP原则，无主从节点，一个节点挂了，自动切换其他节点可以使用，去中心化<br> 结论：没有最好的选择，最好是根据业务场景来进行架构设计</p>
+<p>注册中心对比图：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/16750801-6939c67bd9713238.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp" alt="img"></p>
+<p>注册中心对比图</p>
+</li>
+</ul>
+<h3 id="5、注册中心搭建-使用IDEA"><a href="#5、注册中心搭建-使用IDEA" class="headerlink" title="5、注册中心搭建(使用IDEA)"></a>5、注册中心搭建(使用IDEA)</h3><p>File –&gt; New –&gt;Project</p>
+<ul>
+<li><p>拉取项目</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/16750801-b170be204585485a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp" alt="img"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/16750801-3252793a85e5e2cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp" alt="img"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/16750801-9d74d4f2f2e3e735.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp" alt="img"></p>
+</li>
+<li><p>打开项目在启动类添加注解@EnableEurekaServer</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="meta">@EnableEurekaServer</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">EurekaServerApplication</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(EurekaServerApplication.class, args);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>增加配置application.yml<br> (配置文件默认是application.properties格式，如需修改为yml直接重命名即可)</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">server:</span><br><span class="line">  port: 8761</span><br><span class="line"></span><br><span class="line">eureka:</span><br><span class="line">  instance:</span><br><span class="line">    hostname: localhost</span><br><span class="line">  client:</span><br><span class="line">  <span class="comment">#声明自己是个服务端</span></span><br><span class="line">    registerWithEureka: <span class="literal">false</span></span><br><span class="line">    fetchRegistry: <span class="literal">false</span></span><br><span class="line">    serviceUrl:</span><br><span class="line">      defaultZone: http://<span class="variable">$&#123;eureka.instance.hostname&#125;</span>:<span class="variable">$&#123;server.port&#125;</span>/eureka/</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>启动项目 访问注册中心页面<br> http:// localhost:8761</li>
+</ul>
+<h3 id="6、创建服务提供者向注册中心上报"><a href="#6、创建服务提供者向注册中心上报" class="headerlink" title="6、创建服务提供者向注册中心上报"></a>6、创建服务提供者向注册中心上报</h3><ul>
+<li><p>如上所示创建注册中心一样创建项目，不同的是选择依赖如下:</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/16750801-7d25bbaf0be5406e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp" alt="img"></p>
+</li>
+<li><p>开发接口</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/16750801-e284a51d7b3ae84d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp" alt="img"></p>
+</li>
+<li><p>增加配置application.yml</p>
+</li>
+</ul>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">server:</span><br><span class="line">  port: <span class="number">8771</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#服务的名称</span></span><br><span class="line">spring:</span><br><span class="line">  application:</span><br><span class="line">    name: product-service</span><br><span class="line"></span><br><span class="line"><span class="meta">#指定注册中心地址</span></span><br><span class="line">eureka:</span><br><span class="line">  client:</span><br><span class="line">    service-url:</span><br><span class="line">      defaultZone: http:<span class="comment">//localhost:8761/eureka/</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>启动服务</p>
+<p>此时访问注册中心地址：http:// localhost:8761 就可以看到如下注册的服务了</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/16750801-ead6dfe3cad3ef26.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp" alt="img"></p>
+</li>
+</ul>
+<h3 id="7、Eureka服务注册中心配置控制台问题"><a href="#7、Eureka服务注册中心配置控制台问题" class="headerlink" title="7、Eureka服务注册中心配置控制台问题"></a>7、Eureka服务注册中心配置控制台问题</h3><ol>
+<li><p>eureka管理后台出现一串红色字体：是警告，说明有服务上线率低                 </p>
+<p><img src="https://upload-images.jianshu.io/upload_images/16750801-2947d933608a24ef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp" alt="img"></p>
+<p>由于自我保护模式默认是开启状态<br> 关闭检查方法：eureka服务端配置文件加入</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">server:</span><br><span class="line">  enable-self-preservation: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<p>注意:不建议关闭，因为关闭会导致如若因为网络问题没上报至注册中心的服务也会被认为挂掉而清除掉了此服务。</p>
+<ol>
+<li><p>为什么只加一个注册中心地址，就可以注册，而且很多资料显示启动类加注解@EnableEurekaClient</p>
+<p>查阅官网，给出解释如下：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/16750801-ce9478fd6ad5ab9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp" alt="img"></p>
+<p>官方文档：</p>
+<p><a target="_blank" rel="noopener" href="http://cloud.spring.io/spring-cloud-netflix/single/spring-cloud-netflix.html#spring-cloud-eureka-server">http://cloud.spring.io/spring-cloud-netflix/single/spring-cloud-netflix.html#spring-cloud-eureka-server</a></p>
+</li>
+</ol>
+<p>作者：二圈儿<br>链接：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/bc2587ec4e56">https://www.jianshu.com/p/bc2587ec4e56</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2022/3FH16VE.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/3FH16VE.html" class="post-title-link" itemprop="url">Undertow</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-06-10 22:24:37" itemprop="dateCreated datePublished" datetime="2022-06-10T22:24:37+08:00">2022-06-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-04-22 15:31:52" itemprop="dateModified" datetime="2022-04-22T15:31:52+08:00">2022-04-22</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2022/3FH16VE.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://mixley.github.io/2022/3FH16VE.html" class="cy_cmt_count" data-xid="2022/3FH16VE.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/javastack/p/13552577.html">https://www.cnblogs.com/javastack/p/13552577.html</a></p>
+<h1 id="吊打-Tomcat-，Undertow-性能很炸！！"><a href="#吊打-Tomcat-，Undertow-性能很炸！！" class="headerlink" title="吊打 Tomcat ，Undertow 性能很炸！！ "></a><a target="_blank" rel="noopener" href="https://www.cnblogs.com/javastack/p/13552577.html">吊打 Tomcat ，Undertow 性能很炸！！ </a></h1><p>在 Java Web 容器的世界里，Tomcat 和 Jetty 是大名鼎鼎的、用的最多的开源项目，也是大众熟知的。</p>
+<p>今天再介绍另外一款能和 Tomcat 媲美的神器：Undertow，据说性能方面还要吊打 Tomcat，如果你还不知道它，那你就 OUT 了。</p>
+<p>我们来看下 Spring Boot 默认支持的三种 Servlet 容器：</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Servlet Version</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Tomcat 9.0</td>
+<td>4.0</td>
+</tr>
+<tr>
+<td>Jetty 9.4</td>
+<td>3.1</td>
+</tr>
+<tr>
+<td>Undertow 2.0</td>
+<td>4.0</td>
+</tr>
+</tbody></table>
+<p>以上来源于 Spring Boot 2.3.2 官方文档，更多信息请点击<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/YfPFl1_l2sp9YirTppzRow">这里</a>参考这篇文章。</p>
+<p>Undertow 它能成为 Spring Boot 默认集成的三大容器之一，就凭这点，我想就足以说明它的地位。</p>
+<h2 id="Undertow-什么鬼？"><a href="#Undertow-什么鬼？" class="headerlink" title="Undertow 什么鬼？"></a>Undertow 什么鬼？</h2><p>Undertow 是 RedHat(红帽公司)的开源产品，采用 Java 开发，是一款灵活、高性能的 Web 服务器，提供了基于 NIO 的阻塞/非阻塞 APIs，也是 Wildfly 的默认 Web 容器。</p>
+<p>搜索 Undertow：</p>
+<p><img src="/2022/3FH16VE/1218593-20200824105305699-195814623.png" alt="img"></p>
+<p>页面显示的是 JBoss Community，因为 2006 年 RedHat 收购了 JBoss，那也就不足为怪了。</p>
+<p>Undertow 它是一个基于组合的体系结构，可以通过组合一系列小型处理器来构建一个 Web 服务器。这就让我们可以灵活的在 Java EE servlet 4.0 容器和底层非阻塞处理器或者其他更多之间进行选择。</p>
+<p>Undertow 被设计成完全可嵌入式的，所以也叫嵌入式容器，具有易于使用的流畅构建 API，另外，Undertow 的生命周期也完全由所嵌入的应用程序所控制。</p>
+<p>这也是为什么 Spring Boot 可以直接嵌入 Undertow 的原因，Undertow 它就是为了嵌入而发烧的。Spring Boot 基础知识就不介绍了，关注公众号Java技术栈在后台回复boot获取我写的系列教程。</p>
+<p>官方网站：</p>
 <blockquote>
-<p>Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。</p>
+<p><a target="_blank" rel="noopener" href="https://undertow.io/">https://undertow.io/</a></p>
 </blockquote>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">##全局安装hexo</span></span><br><span class="line">npm install hexo<span class="literal">-cli</span> <span class="literal">-g</span></span><br><span class="line"><span class="comment">#初始化hexo目录</span></span><br><span class="line">hexo init &lt;folder&gt;</span><br><span class="line"><span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<p>安装后目录结构说明：</p>
-<!-- vscode -> file-tree-generator -->
+<p>源码托管在 Github：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/undertow-io/undertow">https://github.com/undertow-io/undertow</a></p>
+</blockquote>
+<h2 id="Undertow-有啥特性？"><a href="#Undertow-有啥特性？" class="headerlink" title="Undertow 有啥特性？"></a>Undertow 有啥特性？</h2><p><strong>1）HTTP/2 Support</strong></p>
+<p>Undertow 支持 HTTP/2 开箱即用，不需要重写引导类路径。</p>
+<p><strong>2）支持 HTTP 升级</strong></p>
+<p>支持 HTTP 升级，允许多个协议通过 HTTP 端口上进行复用。</p>
+<p><strong>3）支持 Web Socket</strong></p>
+<p>Undertow 提供对 Web 套接字的全面支持，包括对 JSR-356 的支持。</p>
+<p><strong>4）支持 Servlet 4.0</strong></p>
+<p>Undertow 提供了对 Servlet 4.0 的支持，包括对嵌入式 Servlet 的支持，还可以混合部署 Servlet 和原生 Undertow 非阻塞处理程序。</p>
+<p><strong>5）可嵌入式</strong></p>
+<p>Undertow 可以嵌入到应用程序中，也可以通过几行代码独立运行。</p>
+<p><strong>6）高灵活性</strong></p>
+<p>一个 Undertow 服务器是通过链式处理器来配置的，可以根据需要添加功能，因此可以避免添加没有必要的功能。</p>
+<h2 id="Undertow-性能如何？"><a href="#Undertow-性能如何？" class="headerlink" title="Undertow 性能如何？"></a>Undertow 性能如何？</h2><p>国外有篇帖子做了 Tomcat vs. Jetty vs. Undertow 三者的性能比较：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://examples.javacodegeeks.com/enterprise-java/spring/tomcat-vs-jetty-vs-undertow-comparison-of-spring-boot-embedded-servlet-containers/">https://examples.javacodegeeks.com/enterprise-java/spring/tomcat-vs-jetty-vs-undertow-comparison-of-spring-boot-embedded-servlet-containers/</a></p>
+</blockquote>
+<p><img src="/2022/3FH16VE/1218593-20200824105306098-1526118676.png" alt="img"></p>
+<p>从测试结果看，这三个 Servlet 容器都具有不错的性能，但 Undertow 性能更好，Tomcat 和 Jetty 紧随其后。</p>
+<p>Jetty 在启动时的内存占用最大，为：311 MB, Tomcat 和 Undertow 的初始内存占用都很低，大约为：120 MB，而 Undertow 的初始内存占用最低，为：114 MB。</p>
+<p>最后，关键的区别在于，Undertow 响应头参数默认包含 HTTP 持久连接信息，这个头参数在支持持久连接的客户端时，可以通过重用连接来优化性能。</p>
+<h2 id="Show-me-the-code"><a href="#Show-me-the-code" class="headerlink" title="Show me the code"></a>Show me the code</h2><p>Undertow 目前有两个主要版本：</p>
+<ul>
+<li>2.1：当前支持 Servlet 4.0, JDK8+ 的稳定版本；</li>
+<li>1.4：当前支持 Servlet 3.1, JDK7 的稳定版本；</li>
+</ul>
+<p>独立使用 Undertow 需要添加以下依赖：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.undertow<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>undertow-core<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1.0.Final<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.undertow<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>undertow-servlet<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1.0.Final<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.undertow<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>undertow-websockets-jsr<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1.0.Final<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">📦blog</span> <span class="comment">#博客·安装路径</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂scaffolds</span>	<span class="comment">#模板文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜draft.md</span>	<span class="comment">#草稿模板</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜page.md</span>	<span class="comment">#页面模板</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜post.md</span>	<span class="comment">#文章模板</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂source</span>	<span class="comment">#资源文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📂_posts</span>	<span class="comment">#文章路径</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜hello-world.md</span>	<span class="comment">#实际文章</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂themes</span>	<span class="comment">#主题</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜.gitkeep</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📜package.json</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📜_config.landscape.yml</span>	<span class="comment">#_config.[theme].yml 用于编辑主题配置</span></span><br><span class="line"> <span class="string">┗</span> <span class="string">📜_config.yml</span>	<span class="comment">#配置文件 ！重要！！</span></span><br></pre></td></tr></table></figure>
+<p>以下示例来源官网：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorldServer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(<span class="keyword">final</span> String[] args)</span> </span>&#123;</span><br><span class="line">        Undertow server = Undertow.builder()</span><br><span class="line">                .addHttpListener(<span class="number">8080</span>, <span class="string">&quot;localhost&quot;</span>)</span><br><span class="line">                .setHandler(<span class="keyword">new</span> HttpHandler() &#123;</span><br><span class="line">                    <span class="meta">@Override</span></span><br><span class="line">                    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">handleRequest</span><span class="params">(<span class="keyword">final</span> HttpServerExchange exchange)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">                        exchange.getResponseHeaders().put(Headers.CONTENT_TYPE, <span class="string">&quot;text/plain&quot;</span>);</span><br><span class="line">                        exchange.getResponseSender().send(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;).build();</span><br><span class="line">            server.start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="启动命令"><a href="#启动命令" class="headerlink" title="启动命令"></a>启动命令</h2><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#更多详细命令查看官网：https://hexo.io/zh-cn/docs/commands.html</span></span><br><span class="line"><span class="comment">#启动</span></span><br><span class="line">hexo s</span><br><span class="line"><span class="comment">#下面为指定配置文件</span></span><br><span class="line">hexo s -<span class="literal">-config</span> custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
+<p>这是一个使用了异常 IO 的简单 Hello World 示例。</p>
+<h2 id="Spring-Boot-amp-Undertow"><a href="#Spring-Boot-amp-Undertow" class="headerlink" title="Spring Boot &amp; Undertow"></a>Spring Boot &amp; Undertow</h2><p>上面讲到，Undertow 是为嵌入式而生的 Web 容器，又是 Spring Boot 默认集成的容器之一，下面栈长带大家来看下如何在 Spring Boot 中使用 Undertow。</p>
+<p>因为在 <code>spring-boot-starter-web</code> 启动器中，Tomcat 是 Spring Boot 默认的嵌入式容器，即：<code>spring-boot-starter-tomcat</code>。</p>
+<p>Spring Boot 还提供了其他两个启动器以方便进行代替：</p>
+<ul>
+<li>spring-boot-starter-jetty</li>
+<li>spring-boot-starter-undertow</li>
+</ul>
+<p>下面来简单实战下，如何在 Spring Boot 中使用 Undertow。Spring Boot 基础知识就不介绍了，不熟悉的可以关注公众号Java技术栈在后台回复boot获取我写的系列教程。</p>
+<p>排除 Tomcat 依赖，然后加入 Undertow 依赖：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">exclusions</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- Exclude the Tomcat dependency --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">exclusion</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-tomcat<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">exclusion</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">exclusions</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- Use Undertow instead --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-undertow<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>打开浏览器输入<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 出现hexo界面则表示启动成功了</p>
-<h2 id="管理与编写博客"><a href="#管理与编写博客" class="headerlink" title="管理与编写博客"></a>管理与编写博客</h2><h3 id="文档管理结构"><a href="#文档管理结构" class="headerlink" title="文档管理结构"></a>文档管理结构</h3><p>下面是我们常见的一个文档管理方式，不论doc也好，还是md也罢，我们都喜欢通过建立文件夹的方式进行分类然后梳理，下面的我通过建立文档同名的方式(或者图床)表示文档需要的文件。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">📦macdown</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂工具</span> <span class="comment">#分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂minio</span> <span class="comment">#分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂minio</span> <span class="comment">#对应md文件的附件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜simplicity.gif</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜minio.md</span> <span class="comment">#md文件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂博客</span> <span class="comment">#分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📂使用Hexo搭建博客</span>  <span class="comment">#对应md文件的附件</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜image-20210623193347044.png</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┣</span> <span class="string">📜使用Hexo搭建博客.md</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜关于管理与写博客.md</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📜常用工具.md</span> <span class="comment">#文章</span></span><br><span class="line"> <span class="string">┣</span> <span class="string">📂开发</span> <span class="comment">#分类</span></span><br><span class="line"> <span class="string">┃</span> <span class="string">┗</span> <span class="string">📂bat</span> <span class="comment">#更多分类与文章</span></span><br></pre></td></tr></table></figure>
+<p>一步就完成集成了，当然实际情况还需要在 application 配置文件中加入 Undertow 的更多自定义或者优化配置参数。</p>
+<p>Undertow容器的具体配置可以看这两个类：</p>
+<ul>
+<li>org.springframework.boot.autoconfigure.web.ServerProperties</li>
+<li>org.springframework.boot.autoconfigure.web.ServerProperties.Undertow</li>
+</ul>
+<p>也可以看 Spring Boot 官方文档：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://docs.spring.io/spring-boot/docs/2.3.2.RELEASE/reference/htmlsingle/#server-properties">https://docs.spring.io/spring-boot/docs/2.3.2.RELEASE/reference/htmlsingle/#server-properties</a></p>
+</blockquote>
+<p>上面有所有 Server 配置参数和说明。</p>
+<p>再写一个测试方法测试下：</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> org.springframework.boot.SpringApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.GetMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RestController;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 微信公众号：Java技术栈</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Application</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">void</span> <span class="function"><span class="title">main</span>(<span class="params"><span class="built_in">String</span>[] args</span>)</span> &#123;</span><br><span class="line">        SpringApplication.run(Application.class);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping</span>(value = <span class="string">&quot;/undertow/test&quot;</span>)</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">String</span> <span class="function"><span class="title">undertow</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;hello undertow&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>上面这个目录结构，我相信不管是写博客还是仅仅做笔记或者整理资料的人，大部分过程应该都是这样的，我习惯将这个结构放在OneDrive中，OneDrive可以通过邀请增加容量，嫌麻烦某宝有售(1.5¥,10G(最大10G,写文章够用),5分钟到)。</p>
-<h3 id="推荐工具"><a href="#推荐工具" class="headerlink" title="推荐工具"></a>推荐工具</h3><p>编辑神器：<a target="_blank" rel="noopener" href="https://typora.io/">Typora</a>  MacDown编辑神器 (万年bate版本，免费使用)</p>
-<p>生产力工具：<a target="_blank" rel="noopener" href="https://u.tools/">uTools</a> -&gt;安装自动化助手 辅助编辑更加方便（免费使用）</p>
-<h2 id="发布配置"><a href="#发布配置" class="headerlink" title="发布配置"></a>发布配置</h2><h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><p>下面的自定义配置为使用git发布博客，首先需安装hexo-deployer-git 插件,其它插件为更方便使用</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">## git上传发布，一键部署时使用</span></span><br><span class="line">npm install hexo<span class="literal">-deployer</span><span class="literal">-git</span> -<span class="literal">-save</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#hexo增强配置，可以不用手动维护 front-matter，文章标题建议使用 20210628 标题.md</span></span><br><span class="line">npm install hexo<span class="literal">-enhancer</span> -<span class="literal">-save</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#处理图片路径转换问题，当开启post_asset_folder时，使用文件路径转换</span></span><br><span class="line">npm hexo<span class="literal">-asset</span><span class="literal">-image</span> -<span class="literal">-save</span></span><br></pre></td></tr></table></figure>
+<p>启动 Application：</p>
+<p><img src="/2022/3FH16VE/1218593-20200824105306581-130064430.png" alt="img"></p>
+<p>如上所示，可以看到 Undertow 的启动日志。</p>
+<p>访问测试方法：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="http://localhost:8080/undertow/test">http://localhost:8080/undertow/test</a></p>
+</blockquote>
+<p><img src="/2022/3FH16VE/1218593-20200824105306889-830058720.png" alt="img"></p>
+<p>输出成功，测试完成。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本文对 Undertow 作了一个介绍和集成实战，虽然 Undertow 性能很炸，但你可以去网上找一圈，根本没啥学习资料。</p>
+<p>所以，对于学习和一般应用来说，Tomcat 足矣，一方面 Tomcat 学习资料多，另一方面 Tomcat 用的更广泛，很多坑别人帮你踩了，很多漏洞也已经暴露出来了。</p>
+<p>那于那些一定要追求极致性能的又不想优化 Tomcat 的，可以考虑使用 Undertow，但同时你要有能力 Hold 住它，需要一定的积累经验，不然出一个问题你线上卡半天显然是不愿意看到的。</p>
+<p>最后，网上很多文章说干掉 Tomcat 而要使用 Undertow 的，这就有点夸张，我只能呵呵了，持有保留意见，用啥都行，关键能不能用好。</p>
 
-<h3 id="自定义配置文件"><a href="#自定义配置文件" class="headerlink" title="自定义配置文件"></a>自定义配置文件</h3><p>自定义配置文件如下，可在hexo目录下建立<strong>custom.yml</strong>文件，自定义以下内容，不污染原始文件便于后期升级hexo</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#详情看附录中配置文件详细介绍</span></span><br><span class="line"><span class="comment">#Site 网站设置 基础设置</span></span><br><span class="line"><span class="comment">#网站标题</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">mixley</span></span><br><span class="line"><span class="comment">#网站副标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;呜啦啦&#x27;</span></span><br><span class="line"><span class="comment">#网站描述，SEO优化时会扫描</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment">#网站关键字，SEO优化时会扫描，多个逗号分隔</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&#x27;技术栈A,技术栈B&#x27;</span></span><br><span class="line"><span class="comment">#作者</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">mixley</span></span><br><span class="line"><span class="comment">#语言，使用主题时支持的语言列表,主题文件中languages文件夹下查看</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="comment">#时区，默认为电脑时区，中国大陆：Asia/Shanghai</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#URL 网址 基础设置,url如果发布到gitbub，请参考注册github.io建立免费页面</span></span><br><span class="line"><span class="comment">#生成的地址中，会携带这个地址，博客根路径(怎么访问的就怎么填写)</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">&#x27;https://mixley.github.io&#x27;</span></span><br><span class="line"><span class="comment">#文章访问编号 hexo-enhancer增强配置中提供</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:abbrlink.html</span></span><br><span class="line"><span class="comment">#网站关键字，增强配置专用，其余tag会收集keywords中tags自动匹配</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">&#x27;关键字A,关键字B&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#启动 Asset 文件夹(推荐开启，会将同名目录一起打包，否则只打包md，也可以使用第三方图床解决)</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment">#把链接改为与根目录的相对位址</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Home page setting 首页文章设置（可以不设置）</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="comment">#每页数量</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Category &amp; Tag   分类 &amp; 标签 中文标签可能存在编码问题，需转换，格式为 中文: 英文 多个记录直接换行</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="comment">#分类对应值 后期建立文件夹，需要在这里增加英文映射</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line">	<span class="string">嘿嘿:</span> <span class="string">heihei</span></span><br><span class="line">	<span class="string">哈哈:</span> <span class="string">haha</span></span><br><span class="line"><span class="comment">#标签对应值 keywords 关键字中文全部需要进行处理，tags中关键字同样需要处理</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br><span class="line">	<span class="string">技术栈A:</span> <span class="string">jA</span></span><br><span class="line">	<span class="string">技术栈B:</span> <span class="string">jB</span></span><br><span class="line">	</span><br><span class="line"><span class="comment">#Pagination 分页设置（可以不设置）</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#使用主题，可以选择其它主题，这是默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#发布配置，若使用git，需要安装 npm install hexo-deployer-git --save</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line"><span class="comment">#多服务配置</span></span><br><span class="line"> <span class="attr">repository:</span></span><br><span class="line">   <span class="comment">#使用ssh的方式，配置ssh密钥可以免登录发布</span></span><br><span class="line">   <span class="attr">github:</span> <span class="string">git@github.com:mixley/mixley.GitHub.io.git</span></span><br><span class="line">   <span class="attr">gitee:</span> <span class="string">git@gitee.com:mixley/mixley.git</span></span><br><span class="line"> <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
 
-<h3 id="Hexo三连命令"><a href="#Hexo三连命令" class="headerlink" title="Hexo三连命令"></a>Hexo三连命令</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">#清除</span></span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"><span class="comment">#指定配置文件生成</span></span><br><span class="line">hexo g -<span class="literal">-config</span> custom.yml</span><br><span class="line"></span><br><span class="line"><span class="comment">#发布</span></span><br><span class="line">hexo d -<span class="literal">-config</span> custom.yml</span><br><span class="line"></span><br><span class="line"><span class="comment">#指定配置文件生成并发布，可以使用下面命令</span></span><br><span class="line"><span class="comment">#hexo g -d --config custom.yml</span></span><br></pre></td></tr></table></figure>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
-<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><h3 id="三连命令操作文件"><a href="#三连命令操作文件" class="headerlink" title="三连命令操作文件"></a>三连命令操作文件</h3><p>手动创建文件push.cmd(任意调整)，针对文章放在OneDrive或其它同步文件夹，不习惯使用hexo目录的，可以使用此cmd进行发布。cmd设置好后，可以放开始菜单快速调用或者使用uTools等效率工具快速呼出 。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">chcp  65001 &gt; nul 2&gt;&amp;1</span><br><span class="line"></span><br><span class="line">@REM 此处设定安装的hexo文件夹路径</span><br><span class="line"><span class="built_in">set</span> dir=E:\work\js\hexo</span><br><span class="line">@REM 此处设定文章目录路径</span><br><span class="line"><span class="built_in">set</span> blog=.</span><br><span class="line"></span><br><span class="line">@REM 备份文件夹路径</span><br><span class="line"><span class="built_in">set</span> backDir=%dir%\back\%DATE%</span><br><span class="line"><span class="built_in">set</span> _postsDir=%dir%\<span class="built_in">source</span>\_posts</span><br><span class="line"><span class="built_in">set</span> aboutDir=%dir%\<span class="built_in">source</span>\about</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> 清理文件</span><br><span class="line">IF EXIST <span class="string">&quot;%backDir%&quot;</span> RD /Q/S <span class="string">&quot;%backDir%&quot;</span> &gt; nul 2&gt;&amp;1</span><br><span class="line">IF NOT EXIST <span class="string">&quot;%backDir%&quot;</span> md <span class="string">&quot;%backDir%&quot;</span> &gt; nul 2&gt;&amp;1</span><br><span class="line"><span class="built_in">echo</span> 备份文件夹（若发现备份异常，请将 关于我.md 中文修改为英文，如 about.md ，系统原因）</span><br><span class="line">IF EXIST <span class="string">&quot;%aboutDir%\index.md&quot;</span> move <span class="string">&quot;%aboutDir%\index.md&quot;</span> <span class="string">&quot;%_postsDir%\关于我.md&quot;</span></span><br><span class="line">move  <span class="string">&quot;%_postsDir%&quot;</span> <span class="string">&quot;%backDir%&quot;</span></span><br><span class="line"><span class="built_in">echo</span> 备份成功，创建文件夹</span><br><span class="line">IF NOT EXIST <span class="string">&quot;%_postsDir%&quot;</span> md <span class="string">&quot;%_postsDir%&quot;</span></span><br><span class="line"><span class="built_in">echo</span> 复制文件夹 </span><br><span class="line">Xcopy <span class="string">&quot;%blog%&quot;</span> <span class="string">&quot;%_postsDir%&quot;</span> /Y/E/C/I &gt; nul 2&gt;&amp;1</span><br><span class="line">move <span class="string">&quot;%_postsDir%\关于我.md&quot;</span> <span class="string">&quot;%aboutDir%\index.md&quot;</span> </span><br><span class="line"></span><br><span class="line">@REM 切换文件夹到hexo路径下执行命令</span><br><span class="line"><span class="built_in">pushd</span> %dir%</span><br><span class="line"><span class="built_in">echo</span> 复制成功，清理中。</span><br><span class="line">call hexo clean &gt; nul 2&gt;&amp;1</span><br><span class="line"><span class="built_in">echo</span> 清理完成，生成发布文章中</span><br><span class="line">call hexo g -d --config custom.yml &gt; nul 2&gt;&amp;1</span><br><span class="line"><span class="built_in">echo</span> 发布文件成功</span><br><span class="line">@REM 切换到当前目录</span><br><span class="line"><span class="built_in">popd</span></span><br><span class="line"><span class="built_in">echo</span> 执行结束</span><br><span class="line"></span><br><span class="line">pause</span><br><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mixley.github.io/2022/1M55EP7.html">
 
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mixley">
+      <meta itemprop="description" content="全栈·架构设计·算法">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mixley">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/1M55EP7.html" class="post-title-link" itemprop="url">Netflix</a>
+        </h2>
 
-<h3 id="uTools自动化助手脚本"><a href="#uTools自动化助手脚本" class="headerlink" title="uTools自动化助手脚本"></a>uTools自动化助手脚本</h3><p>uTools，自动化助手脚本，快速生成<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter.html">Front Matter</a> （PS，开启文本无匹配功能，任意位置可以使用此脚本。另，超级面板输入脚本名称，按中键可以呼出执行脚本）</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//自动化助手，Fornt Matter Date Gennerate</span></span><br><span class="line"><span class="comment">//获取当前日期，格式YYYY-MM-DD</span></span><br><span class="line"><span class="keyword">let</span> getNowFormatDay = <span class="function"><span class="keyword">function</span>(<span class="params">nowDate</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> char = <span class="string">&quot;-&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span>(nowDate == <span class="literal">null</span>)&#123;</span><br><span class="line">        nowDate = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> day = nowDate.getDate();</span><br><span class="line">    <span class="keyword">let</span> month = nowDate.getMonth() + <span class="number">1</span>;<span class="comment">//注意月份需要+1</span></span><br><span class="line">    <span class="keyword">let</span> year = nowDate.getFullYear();</span><br><span class="line">    <span class="comment">//补全0，并拼接</span></span><br><span class="line">    <span class="keyword">return</span> year + char + completeDate(month) + char +completeDate(day);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//获取当前时间，格式YYYY-MM-DD HH:mm:ss</span></span><br><span class="line"><span class="keyword">let</span> getNowFormatTime = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> nowDate = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">let</span> colon = <span class="string">&quot;:&quot;</span>;</span><br><span class="line">    <span class="keyword">let</span> h = nowDate.getHours();</span><br><span class="line">    <span class="keyword">let</span> m = nowDate.getMinutes();</span><br><span class="line">    <span class="keyword">let</span> s = nowDate.getSeconds();</span><br><span class="line">    <span class="comment">//补全0，并拼接</span></span><br><span class="line">    <span class="keyword">return</span> getNowFormatDay(nowDate) + <span class="string">&quot; &quot;</span> + completeDate(h) + colon + completeDate(m) + colon + completeDate(s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//补全0</span></span><br><span class="line"><span class="keyword">let</span> completeDate =<span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> value &lt; <span class="number">10</span> ? <span class="string">&quot;0&quot;</span>+value:value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> date = getNowFormatTime();</span><br><span class="line"><span class="comment">//下面两行自动移动到MD头部增加日期，b</span></span><br><span class="line">utools.simulateKeyboardTap(<span class="string">&#x27;home&#x27;</span>, utools.isMacOs() ? <span class="string">&#x27;command&#x27;</span> : <span class="string">&#x27;ctrl&#x27;</span>)</span><br><span class="line">date=<span class="string">&quot;---\ndate: &quot;</span>+date+<span class="string">&quot;\n---\n &quot;</span></span><br><span class="line"></span><br><span class="line">utools.copyText(date)</span><br><span class="line">utools.simulateKeyboardTap(<span class="string">&#x27;v&#x27;</span>, utools.isMacOs() ? <span class="string">&#x27;command&#x27;</span> : <span class="string">&#x27;ctrl&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
 
+              <time title="创建时间：2022-06-10 22:24:37" itemprop="dateCreated datePublished" datetime="2022-06-10T22:24:37+08:00">2022-06-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-11-03 22:10:56" itemprop="dateModified" datetime="2021-11-03T22:10:56+08:00">2021-11-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a>
+                </span>
+            </span>
 
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2022/1M55EP7.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://mixley.github.io/2022/1M55EP7.html" class="cy_cmt_count" data-xid="2022/1M55EP7.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
 
-<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="主题推荐：next"><a href="#主题推荐：next" class="headerlink" title="主题推荐：next"></a>主题推荐：<a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/getting-started.html">next</a></h3><h3 id="配置文件详解"><a href="#配置文件详解" class="headerlink" title="配置文件详解"></a>配置文件详解</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#Hexo Configuration</span></span><br><span class="line"><span class="comment">##Docs: https://hexo.io/docs/configuration.html</span></span><br><span class="line"><span class="comment">##Source: https://github.com/hexojs/hexo/</span></span><br><span class="line"><span class="comment">##中文文档：https://hexo.io/zh-cn/docs/configuration</span></span><br><span class="line"><span class="comment">#Site 网站设置 基础设置</span></span><br><span class="line"><span class="comment">#网站标题</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hexo</span></span><br><span class="line"><span class="comment">#网站副标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment">#网站描述，SEO优化时会扫描</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;全栈的自我修养……&#x27;</span></span><br><span class="line"><span class="comment">#网站关键字，SEO优化时会扫描，多个逗号分隔</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&#x27;java,C&#x27;</span></span><br><span class="line"><span class="comment">#作者</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">John</span></span><br><span class="line"><span class="comment">#语言，使用主题时支持的语言列表,主题文件中languages文件夹下查看</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="comment">#时区，默认为电脑时区，中国大陆：Asia/Shanghai</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#URL 网址 基础设置,url如果发布到gitbub，请参考注册github.io建立免费</span></span><br><span class="line"><span class="comment">##Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="comment">#生成的地址中，会携带这个地址，博客根路径(怎么访问的就怎么填写)</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">&#x27;http://example.com&#x27;</span></span><br><span class="line"><span class="comment">#文章路径，title为中文在github发布无法显示</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span>	<span class="string">&#x27;&#x27;</span>					<span class="comment">#永久链接中各部分的默认值,如下</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">#permalink_defaults: </span></span><br><span class="line"><span class="comment">#year: 2021</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="comment">#是否在永久链接中保留尾部的 index.html，设置为 false 时去除</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment">#是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#Directory 目录</span></span><br><span class="line"><span class="comment">#资源文件夹，这个文件夹用来存放内容</span></span><br><span class="line"><span class="attr">source_dir:</span> <span class="string">source</span></span><br><span class="line"><span class="comment">#公共文件夹，这个文件夹用于存放生成的站点文件</span></span><br><span class="line"><span class="attr">public_dir:</span> <span class="string">public</span></span><br><span class="line"><span class="comment">#标签文件夹</span></span><br><span class="line"><span class="attr">tag_dir:</span> <span class="string">tags</span></span><br><span class="line"><span class="comment">#归档文件夹</span></span><br><span class="line"><span class="attr">archive_dir:</span> <span class="string">archives</span></span><br><span class="line"><span class="comment">#分类文件夹</span></span><br><span class="line"><span class="attr">category_dir:</span> <span class="string">categories</span></span><br><span class="line"><span class="comment">#Include code 文件夹，source_dir 下的子目录</span></span><br><span class="line"><span class="attr">code_dir:</span> <span class="string">downloads/code</span></span><br><span class="line"><span class="comment">#国际化（i18n）文件夹</span></span><br><span class="line"><span class="attr">i18n_dir:</span> <span class="string">:lang</span></span><br><span class="line"><span class="comment">#跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 public 目录中。您可使用 glob 表达式来匹配路径。如下</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">##skip_render: &quot;mypage/**/*&quot;</span></span><br><span class="line"><span class="comment">#将会直接将 `source/mypage/index.html` 和 `source/mypage/code.js` 不做改动地输出到 &#x27;public&#x27; 目录</span></span><br><span class="line"><span class="comment">#你也可以用这种方法来跳过对指定文章文件的渲染</span></span><br><span class="line"><span class="comment">#skip_render: &quot;_posts/test-post.md&quot;</span></span><br><span class="line"><span class="comment">#这将会忽略对 &#x27;test-post.md&#x27; 的渲染</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">skip_render:</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#Writing 文章 基本不用动，只有那个post_asset_folder用来设置图片路径</span></span><br><span class="line"><span class="comment">#新文章的文件名称</span></span><br><span class="line"><span class="attr">new_post_name:</span> <span class="string">:title.md</span></span><br><span class="line"><span class="comment">#预设布局，默认布局是文章</span></span><br><span class="line"><span class="attr">default_layout:</span> <span class="string">post</span></span><br><span class="line"><span class="comment">#把标题转换为 title case</span></span><br><span class="line"><span class="attr">titlecase:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">external_link:</span></span><br><span class="line">  <span class="comment">#在新标签中打开链接</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment">#对整个网站（site）生效或仅对文章（post）生效</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span></span><br><span class="line">  <span class="comment">#需要排除的域名。主域名和子域名如 www 需分别配置[]</span></span><br><span class="line">  <span class="attr">exclude:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment">#把文件名称转换为 (1) 小写或 (2) 大写</span></span><br><span class="line"><span class="attr">filename_case:</span> <span class="number">0</span></span><br><span class="line"><span class="comment">#显示草稿</span></span><br><span class="line"><span class="attr">render_drafts:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment">#启动 Asset 文件夹(推荐开启)</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment">#把链接改为与根目录的相对位址</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment">#显示未来的文章  ??</span></span><br><span class="line"><span class="attr">future:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment">#代码块的设置, 请参考 Highlight.js 进行设置</span></span><br><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">auto_detect:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">hljs:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment">#代码块的设置, 请参考 PrismJS 进行设置</span></span><br><span class="line"><span class="attr">prismjs:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">preprocess:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Home page setting 首页文章设置</span></span><br><span class="line"><span class="comment">#path: Root path for your blogs index page. (default = &#x27;&#x27;)</span></span><br><span class="line"><span class="comment">#per_page: Posts displayed per page. (0 = disable pagination)</span></span><br><span class="line"><span class="comment">#order_by: Posts order. (Order by date descending by default)</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Category &amp; Tag   分类 &amp; 标签 !!需要映射为URLEncode</span></span><br><span class="line"><span class="comment">#uncategorized默认从属分类,%E6%9C%AA%E5%88%86%E7%B1%BB是未分类的URLEncode值</span></span><br><span class="line"><span class="comment">#default_category: uncategorized</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="comment">#分类对应值</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line"><span class="comment">#标签对应值</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Metadata elements</span></span><br><span class="line"><span class="comment">##https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta</span></span><br><span class="line"><span class="comment">#Meta generator 标签。 值为 false 时 Hexo 不会在头部插入该标签</span></span><br><span class="line"><span class="attr">meta_generator:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Date / Time format</span></span><br><span class="line"><span class="comment">##Hexo uses Moment.js to parse and display date</span></span><br><span class="line"><span class="comment">##You can customize the date format as defined in</span></span><br><span class="line"><span class="comment">##http://momentjs.com/docs/#/displaying/format/</span></span><br><span class="line"><span class="attr">date_format:</span> <span class="string">YYYY-MM-DD</span></span><br><span class="line"><span class="attr">time_format:</span> <span class="string">HH:mm:ss</span></span><br><span class="line"><span class="comment">##updated_option supports &#x27;mtime&#x27;, &#x27;date&#x27;, &#x27;empty&#x27;</span></span><br><span class="line"><span class="attr">updated_option:</span> <span class="string">&#x27;mtime&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Pagination</span></span><br><span class="line"><span class="comment">##Set per_page to 0 to disable pagination</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Include / Exclude file(s)</span></span><br><span class="line"><span class="comment">##include:/exclude: options only apply to the &#x27;source/&#x27; folder</span></span><br><span class="line"><span class="comment">#Hexo 默认会忽略隐藏文件和文件夹（包括名称以下划线和 . 开头的文件和文件夹，Hexo 的 _posts 和 _data 等目录除外）。通过设置此字段将使 Hexo 处理他们并将它们复制到 source 目录下。</span></span><br><span class="line"><span class="attr">include:</span></span><br><span class="line"><span class="comment">#Hexo 会忽略这些文件和目录，项目文件忽略配置</span></span><br><span class="line"><span class="attr">exclude:</span></span><br><span class="line"><span class="comment">#Ignore files/folders,忽略包括themes/下文件与文件夹(所有上传忽略配置)</span></span><br><span class="line"><span class="attr">ignore:</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Extensions</span></span><br><span class="line"><span class="comment">##Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">##Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment">#使用主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Deployment</span></span><br><span class="line"><span class="comment">##Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="comment">#发布配置，若使用git，需要安装 npm install hexo-deployer-git --save</span></span><br><span class="line"><span class="comment">#安装</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="comment">#deploy:</span></span><br><span class="line"><span class="comment"># type: git</span></span><br><span class="line"><span class="comment">#单服务配置</span></span><br><span class="line"><span class="comment"># repo: &lt;repository url&gt; #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io</span></span><br><span class="line"><span class="comment">#多服务配置</span></span><br><span class="line"><span class="comment"># repository:</span></span><br><span class="line"><span class="comment">#   github: &lt;github url&gt;</span></span><br><span class="line"><span class="comment">#   gitee: &lt;gitee url&gt;</span></span><br><span class="line"><span class="comment"># branch: [branch]</span></span><br><span class="line"><span class="comment"># message: [message]</span></span><br><span class="line"><span class="comment">#------------------------</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        </div>
+      </header>
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="Netflix组件替代方案"><a href="#Netflix组件替代方案" class="headerlink" title="Netflix组件替代方案"></a>Netflix组件替代方案</h4><p>Spring Cloud既然把Netflix OSS套件大刀阔斧的砍掉了，那总归得有替代方案吧。那是必然的，Spring Cloud团队给我们推荐了用于替代的产品：</p>
+<table>
+<thead>
+<tr>
+<th>Netflix</th>
+<th>推荐替代品</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Hystrix</td>
+<td>Resilience4j</td>
+<td>Hystrix自己也推荐你使用它代替自己</td>
+</tr>
+<tr>
+<td>Hystrix Dashboard / Turbine</td>
+<td>Micrometer + Monitoring System</td>
+<td>说白了，监控这件事交给更专业的组件去做</td>
+</tr>
+<tr>
+<td>Ribbon</td>
+<td>Spring Cloud Loadbalancer</td>
+<td>忍不住了，Spring终究亲自出手</td>
+</tr>
+<tr>
+<td>Zuul 1</td>
+<td>Spring Cloud Gateway</td>
+<td>忍不住了，Spring终究亲自出手</td>
+</tr>
+<tr>
+<td>Archaius 1</td>
+<td>Spring Boot外部化配置 + Spring Cloud配置</td>
+<td>比Netflix实现的更好、更强大</td>
+</tr>
+</tbody></table>
 
       
     </div>
@@ -333,7 +1479,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -399,20 +1545,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">51</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">20</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -439,7 +1585,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
