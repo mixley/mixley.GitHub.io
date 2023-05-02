@@ -780,7 +780,9 @@ strong,
 	transform: scale(0);
 }
 .p-footer .arrow-d{
-    position: relative;
+	white-space: nowrap;
+    
+	position: relative;
     width: 1px;
     background: rgba(255, 255, 255, 0.15);
     height: 48px;

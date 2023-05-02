@@ -41,6 +41,18 @@ http://themeforest.net/licenses
         <link rel="stylesheet" href="./css/style-font1.css">
         
         <script src="./js/vendor/modernizr-2.7.1.min.js"></script>
+
+
+		<style>
+			
+#positionButtonDiv {background: rgb(58, 56, 63);background: rgba(58, 56, 63, 0.8);border: solid 1px #100000;color: #fff;padding: 8px;text-align: left;position: absolute;right:35px;top:35px;}
+
+#positionButtonDiv .positionButtonSpan img {float: right;border: 0;}
+
+.positionMapClass area {cursor: pointer;}
+
+.zoomButton {border: 0;	cursor: pointer;}
+		</style>
     </head>
     <body id="menu" class="alt-bg">
         <!--[if lt IE 8]>
@@ -91,8 +103,8 @@ http://themeforest.net/licenses
 					</a>
 					<span class="title">时间</span>
 				</li>
-				<li data-menuanchor="register">
-					<a href="#register"><i class="icon ion ion-location"></i>
+				<li data-menuanchor="location">
+					<a href="#location"><i class="icon ion ion-location"></i>
 					</a>
 					<span class="title">地点</span>
 				</li>
@@ -172,8 +184,8 @@ http://themeforest.net/licenses
 				<!-- Scroll down button -->
                 <footer class="p-footer p-scrolldown">
                     <a href="#when">
-                        <div class="arrow-d" style="white-space: nowrap;">
-							<div class="before">告诉我</div>
+                        <div class="arrow-d">
+							<div class="before">获取</div>
 							<div class="after">时间</div>
 							<div class="circle"></div>
 						</div>
@@ -233,10 +245,10 @@ http://themeforest.net/licenses
                     
                 </section>                
                 <footer class="p-footer p-scrolldown">
-                    <a href="#register">
+                    <a href="#location">
                         <div class="arrow-d">
-							<div class="before">Stay&nbsp;in</div>
-							<div class="after">Touch</div>
+							<div class="before">查看</div>
+							<div class="after">位置</div>
 							<div class="circle"></div>
 						</div>
                     </a>                        
@@ -244,59 +256,83 @@ http://themeforest.net/licenses
             </div>
             <!-- End of timer page -->
             
-            <!-- Begin of register page -->
-            <div class="section page-register page page-cent " id="s-register">
+            <!-- Begin of location page -->
+            <div class="section page-location page page-cent " id="s-location">
                 <section class="content">
                     <header class="p-title">
-                        <h3>Register <i class="ion ion-compose"></i></h3> 
+                        <h3>位置 <i class="ion ion-location"></i></h3> 
                     </header>
                     <div>
-                        <form id="mail-subscription" class="form magic send_email_form" method="get" action="ajaxserver/serverfile.php">
-                            <p class="invite center">Please, write your email below to stay in touch with us :</p>
-							<div class="fields clearfix">
-								<div class="input">
-									<label for="reg-email">Email </label>
-									<input id="reg-email" class="email_f"  name="email" type="email" required placeholder="your@email.address" data-validation-type="email"></div>
-								<div class="buttons">
-									<button id="submit-email" class="button email_b" name="submit_email">Ok</button>
-								</div>
-							</div>
-                            
-                            <p class="email-ok invisible"><strong>Thank you</strong> for your subscription. We will inform you.</p>
-                        </form>
+						<div>
+							<h4>结婚地点：家里</h4>
+							<p>汨罗市罗江镇山秀村(白马村)八组14号
+							<br>导航-新平商店</p>
+						</div>
+                        <div id="imgContainer" style="overflow: hidden;position:relative;">
+							<img id="imageFullScreen" src="./img/map.png" alt="地图">
+						</div>
+						
+						<!-- <div id="positionButtonDiv">
+
+							<p><span> <img id="zoomInButton" class="zoomButton" src="./img/zoomIn.png" title="zoom in" alt="zoom in" /> <img id="zoomOutButton" class="zoomButton" src="./img/zoomOut.png" title="zoom out" alt="zoom out" /> </span> </p>
+
+							<p>
+
+							<span class="positionButtonSpan">
+
+								<map name="positionMap" class="positionMapClass">
+
+									<area id="topPositionMap" shape="rect" coords="20,0,40,20" title="move up" alt="move up"/>
+
+									<area id="leftPositionMap" shape="rect" coords="0,20,20,40" title="move left" alt="move left"/>
+
+									<area id="rightPositionMap" shape="rect" coords="40,20,60,40" title="move right" alt="move right"/>
+
+									<area id="bottomPositionMap" shape="rect" coords="20,40,40,60" title="move bottom" alt="move bottom"/>
+
+								</map>
+
+								<img src="./img/position.png" usemap="#positionMap" />
+
+							</span>
+
+							</p>
+
+						</div> -->
+
                     </div>
                 </section>
                 <footer class="p-footer p-scrolldown">
                     <a href="#about-us">
                         <div class="arrow-d">
-							<div class="before">About</div>
-							<div class="after">Lorem</div>
+							<div class="before">新人</div>
+							<div class="after">介绍</div>
 							<div class="circle"></div>
 						</div>
                     </a>                        
                 </footer>
             </div>
-            <!-- End of register page -->
+            <!-- End of location page -->
             
             <!-- Begin of about us page -->
             <div class="section page-about page page-cent" id="s-about-us">
                 <section class="content">
                     <header class="p-title">
-                        <h3>About Us<i class="ion ion-android-information">
+                        <h3>关于我们<i class="ion ion-android-information">
                             </i>
                         </h3>
-						<h2>We <span class="bold">make</span> only <span class="bold">beautiful</span> things</h2>
+						<h2>九九<span class="bold">归真</span> 修成 <span class="bold">正果</span> </h2>
                     </header>
                     <article class="text">
-                        <p>Lorem ipsum <strong>magicum </strong>dolor sit amet, consectetur adipiscing elit. Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla.</p>
-                        <p>Aenean ultricies odio at erat facilisis tincidunt. Fusce tempor auctor justo, nec facilisis quam vehicula vel. Aenean non mattis purus, eget lobortis odio. </p>
+                        <p>2014年 <strong>初见 </strong> 情不知所起 一往而深.</p>
+                        <p>2023年 <strong>奔赴 </strong> 余生，请多指教.</p>
                     </article>
                 </section>
                 <footer class="p-footer p-scrolldown">
                     <a href="#contact">
                         <div class="arrow-d">
-							<div class="before">Contact</div>
-							<div class="after">Message</div>
+							<div class="before">联系</div>
+							<div class="after">登记</div>
 							<div class="circle"></div>
 						</div>
                     </a>                        
@@ -321,7 +357,7 @@ http://themeforest.net/licenses
 									<a title="Contact" href="#contact/information"><i class="ion ion-location"></i></a>
 								</li>-->
 								<li>
-									<a title="Message" href="#contact/message"><i class="ion ion-email"></i></a>
+									<a title="宾客登记" href="#contact/message"><i class="ion ion-compose"></i></a>
 								</li>
 							</ul>
 						</header>
@@ -332,12 +368,16 @@ http://themeforest.net/licenses
 									<ul>
 										<li>
 											<h4>Email</h4>
-											<p><a href="mailto://contact@mail.com">contactemail@mail.com</a></p>
+											<p><a href="mailto://mixley@qq.com">mixley@qq.com</a></p>
 										</li>
 										<li>
-											<h4>婚礼地址</h4>
+											<h4>家庭地址</h4>
 											<p>汨罗市罗江镇山秀村(白马村)八组14号
 											<br>导航-新平商店</p>
+										</li>
+										<li>
+											<h4>通讯地址</h4>
+											<p>长沙星沙六区</p>
 										</li>
 										<li>
 											<h4>手机号码</h4>
@@ -351,17 +391,14 @@ http://themeforest.net/licenses
 										<!-- legal notice -->
 										<li class="show-for-medium-up">
 											<h4>Website</h4>
-											<p><a href="http://www.jq22.com">www.jq22.com</a></p>
+											<p><a href="https://mixley.github.io">mixley.github.io</a></p>
 										</li>
 										<li  class="show-for-medium-up">
 											<h4>Find us on</h4>
 											<!-- Begin of Social links -->
 											<div class="socialnet">
-												<a href="#"><i class="ion ion-social-facebook"></i></a>
-												<a href="#"><i class="ion ion-social-instagram"></i></a>
-												<a href="#"><i class="ion ion-social-twitter"></i></a>
-												<a href="#"><i class="ion ion-social-pinterest"></i></a>
-												<a href="#"><i class="ion ion-social-tumblr"></i></a>
+												微信：mixley_</br>
+												QQ：1039091059
 											</div>
 											<!-- End of Social links -->
 										</li>
@@ -427,7 +464,7 @@ http://themeforest.net/licenses
 											</div>
 										</div>
 										<div class="buttons">
-											<button id="submit-message" type="submit" class="button email_b" name="submit_message">提交</button>
+											<button type="submit" class="button" >提交</button>
 										</div>
 									</form>
 								</div>
@@ -448,9 +485,7 @@ http://themeforest.net/licenses
 		<!-- Begin of site footer -->
 		<footer class="page-footer">
 			<span>Find us on 
-				<a href="#" ><i class="ion icon ion-social-facebook"></i></a>
-				<a href="#" ><i class="ion icon ion-social-instagram"></i></a>
-				<a href="#" ><i class="ion icon ion-social-twitter"></i></a>
+				微信：mixley_
 			</span>
 		</footer>
 		<!-- End of site footer -->
@@ -480,6 +515,7 @@ http://themeforest.net/licenses
 		<!-- Javascript main files -->
         <script src="./js/main.js"></script>
          
+		<script src="./js/e-smart-zoom-jquery.min.js"></script>
 
         <!-- Google Analytics: Uncomment and change UA-XXXXX-X to be your site"s ID. -->
         <!--<script>
@@ -490,6 +526,75 @@ http://themeforest.net/licenses
             r.parentNode.insertBefore(e,r)}(window,document,"script","ga"));
             ga("create","UA-XXXXX-X");ga("send","pageview");
         </script>-->
+		
+		
+<!-- <script>
+
+    $(document).ready(function() {        
+
+        $('#imageFullScreen').smartZoom({'containerClass':'zoomableContainer'});        
+
+        $('#topPositionMap,#leftPositionMap,#rightPositionMap,#bottomPositionMap').bind("click", moveButtonClickHandler);
+
+        $('#zoomInButton,#zoomOutButton').bind("click", zoomButtonClickHandler);
+
+        
+
+        function zoomButtonClickHandler(e){
+
+            var scaleToAdd = 0.8;
+
+            if(e.target.id == 'zoomOutButton')
+
+                scaleToAdd = -scaleToAdd;
+
+            $('#imageFullScreen').smartZoom('zoom', scaleToAdd);
+
+        }        
+
+        function moveButtonClickHandler(e){
+
+            var pixelsToMoveOnX = 0;
+
+            var pixelsToMoveOnY = 0;
+
+    
+
+            switch(e.target.id){
+
+                case "leftPositionMap":
+
+                    pixelsToMoveOnX = 50;	
+
+                break;
+
+                case "rightPositionMap":
+
+                    pixelsToMoveOnX = -50;
+
+                break;
+
+                case "topPositionMap":
+
+                    pixelsToMoveOnY = 50;	
+
+                break;
+
+                case "bottomPositionMap":
+
+                    pixelsToMoveOnY = -50;	
+
+                break;
+
+            }
+
+            $('#imageFullScreen').smartZoom('pan', pixelsToMoveOnX, pixelsToMoveOnY);
+
+        } 
+
+    });
+
+</script> -->
     </body>
 	<script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
 
