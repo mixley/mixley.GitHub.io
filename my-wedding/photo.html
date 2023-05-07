@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport"
+        content="width=device-width, initial-scale=1">
+<title>照片显示</title>
+<!-- Set render engine for 360 browser -->
+<meta name="renderer" content="webkit">
+<!-- No Baidu Siteapp-->
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<!-- Add to homescreen for Chrome on Android -->	
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+<link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+<!-- Tile icon for Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+<meta name="msapplication-TileColor" content="#0e90d2">
+<link rel="stylesheet" type="text/css" href="css/style1.css" />
+
+
+        <!-- Initializer -->
+        <!-- <link rel="stylesheet" href="./css/normalize.css">         -->
+        
+        <!-- Web fonts and Web Icons -->
+        <!-- <link rel="stylesheet" href="./css/pageloader.css"> -->
+        <!-- <link rel="stylesheet" href="./fonts/opensans/stylesheet.css"> -->
+        <!-- <link rel="stylesheet" href="./fonts/asap/stylesheet.css"> -->
+        <!-- <link rel="stylesheet" href=" https://cdn.bootcss.com/ionicons/1.5.2/css/ionicons.min.css"> -->
+        
+        <!-- Vendor CSS style -->
+        <link rel="stylesheet" href="./css/foundation.min.css">
+        <!-- <link rel="stylesheet" href="./js/vendor/jquery.fullPage.css"> -->
+        <!-- <link rel="stylesheet" href="./js/vegas/vegas.min.css"> -->
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/main_responsive.css">
+<link rel="stylesheet" href="./css/style-font1.css">
+
+<!-- <style>
+	
+/* 1. Link and logo at top  */
+.header-top{
+    position: fixed;
+    z-index: 20;
+    top:0;
+    left: 0;
+	height: 56px;
+/*
+	background: rgba(255, 255, 255, 0.15);
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2), 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2), 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+*/
+}
+.header-top.material{
+	background: rgba(255, 255, 255, 0.15);
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2), 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2), 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+	.header-top>div{
+		display: inline-block;
+		float: left;
+	}
+	.header-top .logo img{
+		height: 56px;
+		width: auto;
+		padding: 8px 16px;
+	}
+	.header-top .logo{
+		transition: 0.3s;
+	}
+	.header-top .logo:hover{
+		background: rgba(255, 255, 255, 0.15);
+	}
+
+	.header-top.material .menu{
+		border-right: 1px solid #f5f5f5;
+	}
+	.header-top.material .menu:last-child{
+		border-right: none;
+	}
+	.header-top.material .menu a,
+	.header-top .menu a{
+		height: 56px;
+/*		display: inline-block;*/
+		display: block;
+		float: left;
+		background: #fff;
+		color: #5677fc;
+		text-transform: capitalize;
+		text-align: center;
+		font-size:18px;
+    	font-family: 'Asap';
+		font-weight: normal;
+		padding: 14px 16px;
+		-webkit-transition: 0.3s;
+		transition: 0.3s;
+	}
+	.header-top .menu a{
+		background: transparent;
+		font-weight: normal;
+/*		font-weight: bold;*/
+		color: #fff;
+		position: relative;
+	}
+	.header-top.material .menu a:first-child:after{
+		display: none;
+	}
+	.header-top .menu a:first-child:after{
+		position: absolute;
+		left: 0;
+		top: 25%;
+		height: 50%;
+		width: 1px;
+		background: #fff;
+		content: "";
+	}
+
+	.header-top.material .menu a:hover{
+		background: #5677fc;
+	}
+	.header-top .menu a:hover{
+		background: rgba(255, 255, 255, 0.15);
+		color: #fff;
+	}
+ 
+ 
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
+  a {
+    color: #008cba;
+    text-decoration: none;
+    line-height: inherit;
+
+  }
+
+
+    
+</style> -->
+<script src="js/modernizr-custom.js"></script>
+
+	<!--[if IE]>
+		<script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body >
+        
+        <!-- BEGIN OF site header Menu -->
+		<!-- Add "material" class for a material design style -->
+		<header class="header-top" style="display: block;width: 100%;background: brown;">
+<!--		<header class="header-top material">-->
+			<div class="logo">
+				<a href="#home">
+					<img src="img/logo_large.png" alt="Logo Brand">
+				</a>
+			</div>
+            <div class="menu clearfix">
+                <a href="index.html#about-us">新人介绍</a>
+				<!-- Add other menu similar to "about" here -->
+                <a href="index.html#contact/message">嘉宾登记</a>
+
+                <a href="photo.html">相册</a>
+            </div>
+		</header>
+
+			<div class="container " style="padding-top: 80px;background: brown;">
+				<div class="content">
+					<div class="grid">
+						<!-- 大相册 -->
+						<div class="grid__item" data-size="769x480"> <a href="images/lager/1.jpg" class="img-wrap"><img src="images/lager/1 (小).jpg" alt="img1" />
+							<div class="description description--grid">首页</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x308"> <a href="images/lager/2.jpg" class="img-wrap"><img src="images/lager/2 (小).jpg" alt="img2" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x308"> <a href="images/lager/3.jpg" class="img-wrap"><img src="images/lager/3 (小).jpg" alt="img3" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x308"> <a href="images/lager/4.jpg" class="img-wrap"><img src="images/lager/4 (小).jpg" alt="img4" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x308"> <a href="images/lager/5.jpg" class="img-wrap"><img src="images/lager/5 (小).jpg" alt="img5" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x308"> <a href="images/lager/6.jpg" class="img-wrap"><img src="images/lager/6 (小).jpg" alt="img6" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x308"> <a href="images/lager/7.jpg" class="img-wrap"><img src="images/lager/7 (小).jpg" alt="img7" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x308"> <a href="images/lager/8.jpg" class="img-wrap"><img src="images/lager/8 (小).jpg" alt="img8" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x308"> <a href="images/lager/9.jpg" class="img-wrap"><img src="images/lager/9 (小).jpg" alt="img9" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x308"> <a href="images/lager/10.jpg" class="img-wrap"><img src="images/lager/10 (小).jpg" alt="img10" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x308"> <a href="images/lager/11.jpg" class="img-wrap"><img src="images/lager/11 (小).jpg" alt="img11" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x308"> <a href="images/lager/12.jpg" class="img-wrap"><img src="images/lager/12 (小).jpg" alt="img12" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="769x480"> <a href="images/lager/13.jpg" class="img-wrap"><img src="images/lager/13 (小).jpg" alt="img13" />
+							<div class="description description--grid">尾页</div>
+							</a> </div>
+						
+			
+							<!-- 小相册 -->
+						<div class="grid__item" data-size="483x480"> <a href="images/mini/1.jpg" class="img-wrap"><img src="images/mini/1 (小).jpg" alt="img1" />
+							<div class="description description--grid">首页</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x435"> <a href="images/mini/2.jpg" class="img-wrap"><img src="images/mini/2 (小).jpg" alt="img2" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x435"> <a href="images/mini/3.jpg" class="img-wrap"><img src="images/mini/3 (小).jpg" alt="img3" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x435"> <a href="images/mini/4.jpg" class="img-wrap"><img src="images/mini/4 (小).jpg" alt="img4" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x435"> <a href="images/mini/5.jpg" class="img-wrap"><img src="images/mini/5 (小).jpg" alt="img5" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x435"> <a href="images/mini/6.jpg" class="img-wrap"><img src="images/mini/6 (小).jpg" alt="img6" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x435"> <a href="images/mini/7.jpg" class="img-wrap"><img src="images/mini/7 (小).jpg" alt="img7" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x435"> <a href="images/mini/8.jpg" class="img-wrap"><img src="images/mini/8 (小).jpg" alt="img8" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x435"> <a href="images/mini/9.jpg" class="img-wrap"><img src="images/mini/9 (小).jpg" alt="img9" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x435"> <a href="images/mini/10.jpg" class="img-wrap"><img src="images/mini/10 (小).jpg" alt="img10" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x435"> <a href="images/mini/11.jpg" class="img-wrap"><img src="images/mini/11 (小).jpg" alt="img11" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="854x435"> <a href="images/mini/12.jpg" class="img-wrap"><img src="images/mini/12 (小).jpg" alt="img12" />
+							<div class="description description--grid">欢喜</div>
+							</a> </div>
+						<div class="grid__item" data-size="483x480"> <a href="images/mini/13.jpg" class="img-wrap"><img src="images/mini/13 (小).jpg" alt="img13" />
+							<div class="description description--grid">尾页</div>
+							</a> </div>
+					</div>
+					<!-- /grid -->
+					<div class="preview">
+						<button class="action action--close"><i class="fa fa-times">x</i><span class="text-hidden">Close</span></button>
+						<div class="description description--preview"></div>
+					</div>
+					<!-- /preview -->
+				</div>
+			</div>
+
+<!-- /container -->
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/photo_main.js"></script>
+	<script>
+		(function() {
+			// create SVG circle overlay and append it to the preview element
+			function createCircleOverlay(previewEl) {
+				var dummy = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+				dummy.setAttributeNS(null, 'version', '1.1');
+				dummy.setAttributeNS(null, 'width', '100%');
+				dummy.setAttributeNS(null, 'height', '100%');
+				dummy.setAttributeNS(null, 'class', 'overlay');
+				var g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+				var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+				circle.setAttributeNS(null, 'cx', 0);
+				circle.setAttributeNS(null, 'cy', 0);
+				circle.setAttributeNS(null, 'r', Math.sqrt(Math.pow(previewEl.offsetWidth,2) + Math.pow(previewEl.offsetHeight,2)));
+				dummy.appendChild(g);
+				g.appendChild(circle);
+				previewEl.appendChild(dummy);
+			}
+			
+			new GridFx(document.querySelector('.grid'), {
+				onInit : function(instance) {
+					createCircleOverlay(instance.previewEl);
+				},
+				onResize : function(instance) {
+					instance.previewEl.querySelector('svg circle').setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
+				},
+				onOpenItem : function(instance, item) {
+					// item's image
+					var gridImg = item.querySelector('img'),
+						gridImgOffset = gridImg.getBoundingClientRect(),
+						win = {width: document.documentElement.clientWidth, height: window.innerHeight},
+						SVGCircleGroupEl = instance.previewEl.querySelector('svg > g'),
+						SVGCircleEl = SVGCircleGroupEl.querySelector('circle');
+						
+					SVGCircleEl.setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
+					// set the transform for the SVG g node. This will animate the circle overlay. The origin of the circle depends on the position of the clicked item.
+					if( gridImgOffset.left + gridImg.offsetWidth/2 < win.width/2 ) {
+						SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(' + win.width + ', ' + (gridImgOffset.top + gridImg.offsetHeight/2 < win.height/2 ? win.height : 0) + ')');
+					}
+					else {
+						SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(0, ' + (gridImgOffset.top + gridImg.offsetHeight/2 < win.height/2 ? win.height : 0) + ')');
+					}
+				}
+			});
+		})();
+	</script>
+</body>
+</html>
